@@ -1,0 +1,171 @@
+2019-04-28 15:30:45.0909 Error Parsing configuration from C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\NLog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\NLog.config.  ---> NLog.NLogConfigurationException: Target errorFile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-04-28 15:30:45.1058 Warn Failed loading config from C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\NLog.config. Invalid XML?
+2019-04-28 15:30:45.2777 Error Parsing configuration from C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\nlog.config.  ---> NLog.NLogConfigurationException: Target errorFile not found.
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-04-28 15:30:45.2777 Warn Failed loading config from C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\nlog.config. Invalid XML?
+2019-04-28 15:34:11.9318 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 15:34:12.0906 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 15:41:36.7842 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 15:41:36.9485 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 16:05:08.6814 Error Parsing configuration from C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\NLog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\NLog.config.  ---> System.ArgumentException: Unknown log level: Information
+   at NLog.LogLevel.FromString(String levelName)
+   at NLog.Config.XmlLoggingConfiguration.ParseLevels(NLogXmlElement loggerElement, LoggingRule rule)
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-04-28 16:05:08.6931 Warn Failed loading config from C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\NLog.config. Invalid XML?
+2019-04-28 16:05:08.8413 Error Parsing configuration from C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\nlog.config.  ---> System.ArgumentException: Unknown log level: Information
+   at NLog.LogLevel.FromString(String levelName)
+   at NLog.Config.XmlLoggingConfiguration.ParseLevels(NLogXmlElement loggerElement, LoggingRule rule)
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-04-28 16:05:08.8413 Warn Failed loading config from C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\nlog.config. Invalid XML?
+2019-04-28 16:12:33.2500 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 16:12:33.4499 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 16:14:21.6682 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 16:14:21.9171 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 16:15:37.4483 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 16:15:37.6359 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 16:21:56.4016 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 16:21:56.6399 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 16:35:05.5237 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 16:35:05.9274 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 16:35:44.4457 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2019-04-28 16:35:44.4457 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: ownFile-web
+2019-04-28 16:35:44.4457 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: error
+2019-04-28 16:35:44.4457 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 16:36:51.9888 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: ownFile-web
+2019-04-28 16:36:52.0089 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 16:36:52.3277 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: ownFile-web
+2019-04-28 16:36:52.3327 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 16:38:25.1059 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 17:05:35.1243 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 17:05:35.3541 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 17:36:32.5991 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 17:36:32.9649 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 17:37:00.3019 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 17:37:00.4742 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 17:40:56.2689 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 17:40:56.4836 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 17:59:30.2537 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-04-28 17:59:30.4947 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 11:31:15.3800 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 11:31:15.7756 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 11:48:14.5239 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 11:48:14.6804 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 11:51:10.4985 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 11:51:10.6910 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 11:55:00.5566 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 11:55:00.7209 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 14:24:48.5723 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 14:24:48.6935 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 14:29:48.4085 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 14:29:48.5641 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 14:35:08.4472 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 14:35:08.6601 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 15:29:35.7460 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 15:29:35.9228 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 15:31:36.8126 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 15:31:36.9672 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 15:43:21.2196 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 15:43:21.3358 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 15:44:17.9702 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 15:46:34.7190 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 15:59:24.9009 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 15:59:25.2124 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:01:29.9643 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:01:30.1585 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:02:32.0488 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:02:32.1612 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:04:01.6368 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:04:01.7698 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:05:11.8747 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:05:56.3051 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:10:13.9288 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:13:02.5025 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:23:51.0855 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:23:51.2135 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:34:09.3521 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:34:09.4843 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:36:49.0467 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:47:14.1421 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:47:14.2906 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:52:02.5597 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:53:42.4992 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:53:42.6382 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 16:56:10.4639 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 17:00:00.3808 Error Parsing configuration from C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\nlog.config.  ---> System.ArgumentException: Unknown log level: Warning
+   at NLog.LogLevel.FromString(String levelName)
+   at NLog.Config.XmlLoggingConfiguration.ParseLevels(NLogXmlElement loggerElement, LoggingRule rule)
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-05-06 17:00:00.3808 Warn NLog configuration while reloading Exception: NLog.NLogConfigurationException: Configuration.Reload() failed. Invalid XML?
+   at NLog.LogFactory.ReloadConfigOnTimer(Object state)
+2019-05-06 17:03:11.4115 Error Parsing configuration from C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\NLog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\NLog.config.  ---> System.ArgumentException: Unknown log level: Warning
+   at NLog.LogLevel.FromString(String levelName)
+   at NLog.Config.XmlLoggingConfiguration.ParseLevels(NLogXmlElement loggerElement, LoggingRule rule)
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-05-06 17:03:11.4398 Warn Failed loading config from C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\NLog.config. Invalid XML?
+2019-05-06 17:03:11.8374 Error Parsing configuration from C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\nlog.config.  ---> System.ArgumentException: Unknown log level: Warning
+   at NLog.LogLevel.FromString(String levelName)
+   at NLog.Config.XmlLoggingConfiguration.ParseLevels(NLogXmlElement loggerElement, LoggingRule rule)
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-05-06 17:03:11.8775 Warn Failed loading config from C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\nlog.config. Invalid XML?
+2019-05-06 17:04:31.7527 Error Parsing configuration from C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\NLog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\NLog.config.  ---> System.ArgumentException: Unknown log level: Warning
+   at NLog.LogLevel.FromString(String levelName)
+   at NLog.Config.XmlLoggingConfiguration.ParseLevels(NLogXmlElement loggerElement, LoggingRule rule)
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-05-06 17:04:31.7859 Warn Failed loading config from C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\NLog.config. Invalid XML?
+2019-05-06 17:04:31.9928 Error Parsing configuration from C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\nlog.config.  ---> System.ArgumentException: Unknown log level: Warning
+   at NLog.LogLevel.FromString(String levelName)
+   at NLog.Config.XmlLoggingConfiguration.ParseLevels(NLogXmlElement loggerElement, LoggingRule rule)
+   at NLog.Config.XmlLoggingConfiguration.ParseLoggerElement(NLogXmlElement loggerElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseRulesElement(NLogXmlElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(NLogXmlElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-05-06 17:04:31.9928 Warn Failed loading config from C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\nlog.config. Invalid XML?
+2019-05-06 17:06:43.1108 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 17:08:51.8887 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 17:08:56.9390 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 17:09:56.5814 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 17:09:56.7716 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 17:11:02.2759 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 17:11:02.4869 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 17:12:31.2258 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 17:12:31.3451 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 17:51:19.4827 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 17:51:19.6783 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 17:52:54.5785 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 17:52:54.7148 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 17:55:01.3797 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole
+2019-05-06 17:55:01.7452 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: blackhole

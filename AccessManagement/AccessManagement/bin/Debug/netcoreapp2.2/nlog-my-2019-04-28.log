@@ -1,0 +1,943 @@
+2019-04-28 16:14:23.3857|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 16:14:23.8407|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 16:14:23.9500|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 16:14:24.2966|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 16:14:24.3200|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.JsonResult in 0.7367ms. 
+2019-04-28 16:14:24.3424|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|INFO|Executing JsonResult, writing value of type 'System.String'. 
+2019-04-28 16:14:24.4734|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 501.6277ms 
+2019-04-28 16:14:24.4734|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 16:14:24.5389|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:14:24.5596|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 16:14:24.5779|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1224.372ms 200 application/json; charset=utf-8 
+2019-04-28 16:15:38.7085|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 16:15:38.9340|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:15:39.1888|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 16:15:39.2910|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 16:15:39.6215|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 16:15:39.6695|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.JsonResult in 5.4892ms. 
+2019-04-28 16:15:39.7405|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|INFO|Executing JsonResult, writing value of type 'System.String'. 
+2019-04-28 16:15:39.9545|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 622.8254ms 
+2019-04-28 16:15:40.1955|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 16:15:40.2345|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:15:40.2649|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 16:15:40.3132|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1620.3562ms 200 application/json; charset=utf-8 
+2019-04-28 16:15:53.5200|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 16:15:53.5402|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:15:53.5522|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 16:15:53.5522|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 16:15:53.6263|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 16:15:53.6263|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.JsonResult in 0.0317ms. 
+2019-04-28 16:15:53.6514|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|INFO|Executing JsonResult, writing value of type 'System.String'. 
+2019-04-28 16:15:53.6780|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 88.2002ms 
+2019-04-28 16:15:53.7451|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 16:15:53.7653|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:15:53.7820|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 16:15:53.7820|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 270.5777ms 200 application/json; charset=utf-8 
+2019-04-28 16:15:53.8191|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 16:15:53.8191|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:15:53.8828|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-04-28 16:15:53.9043|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 85.9265ms 200 image/x-icon 
+2019-04-28 16:16:26.0631|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/home/Privacy   
+2019-04-28 16:16:26.0940|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:/home/Privacy
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:16:26.1869|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-04-28 16:16:26.1999|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) 
+2019-04-28 16:16:26.2761|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-04-28 16:16:30.4833|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-04-28 16:16:30.5061|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4219.2004ms. 
+2019-04-28 16:16:30.5729|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-04-28 16:16:31.0910|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 560.8195ms. 
+2019-04-28 16:16:31.1345|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 4901.4599ms 
+2019-04-28 16:16:31.1606|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-04-28 16:16:31.1779|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/home/Privacy
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:16:31.1931|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/home/Privacy
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 16:16:31.2119|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 5142.9208ms 200 text/html; charset=utf-8 
+2019-04-28 16:16:31.2684|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/css/site.css   
+2019-04-28 16:16:31.2868|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/css/bootstrap.css   
+2019-04-28 16:16:31.2868|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/jquery/dist/jquery.js   
+2019-04-28 16:16:31.3771|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:/css/site.css
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:16:31.4361|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:/lib/bootstrap/dist/css/bootstrap.css
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:16:31.4989|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/js/bootstrap.bundle.js   
+2019-04-28 16:16:31.5175|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /css/site.css was not modified 
+2019-04-28 16:16:31.6049|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/css/bootstrap.css was not modified 
+2019-04-28 16:16:31.6852|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:/lib/bootstrap/dist/js/bootstrap.bundle.js
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:16:31.7584|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 392.1403ms 304 text/css 
+2019-04-28 16:16:31.7584|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 479.8562ms 304 text/css 
+2019-04-28 16:16:31.7707|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/js/bootstrap.bundle.js was not modified 
+2019-04-28 16:16:31.7707|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:/lib/jquery/dist/jquery.js
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:16:31.7707|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0   
+2019-04-28 16:16:31.8117|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 415.8827ms 304 application/javascript 
+2019-04-28 16:16:31.8353|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/jquery/dist/jquery.js was not modified 
+2019-04-28 16:16:31.8488|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:/js/site.js
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:16:31.8836|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 561.3638ms 304 application/javascript 
+2019-04-28 16:16:31.9284|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /js/site.js was not modified 
+2019-04-28 16:16:32.0565|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 622.77ms 304 application/javascript 
+2019-04-28 16:21:57.4722|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 16:21:57.4722|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/api/Account   
+2019-04-28 16:22:08.4763|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/api/Account
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:22:08.4763|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:22:08.6627|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Api.AccountController.Get (AccessManagement)' 
+2019-04-28 16:22:08.6627|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 16:22:08.7333|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 16:22:08.7349|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Get", controller = "Account"}. Executing action AccessManagement.Api.AccountController.Get (AccessManagement) 
+2019-04-28 16:22:08.9121|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Api.AccountController.Get (AccessManagement) - Validation state: Valid 
+2019-04-28 16:22:08.9121|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 16:22:08.9417|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.JsonResult in 1.1554ms. 
+2019-04-28 16:22:08.9417|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Api.AccountController.Get (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.8289ms. 
+2019-04-28 16:22:08.9752|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|INFO|Executing JsonResult, writing value of type 'System.String'. 
+2019-04-28 16:22:09.0035|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|INFO|Executing ObjectResult, writing value of type 'System.String[]'. 
+2019-04-28 16:22:09.1004|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 348.5941ms 
+2019-04-28 16:22:09.1004|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Api.AccountController.Get (AccessManagement) in 352.7311ms 
+2019-04-28 16:22:09.1221|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Api.AccountController.Get (AccessManagement)' 
+2019-04-28 16:22:09.1360|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 16:22:09.1999|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 16:22:09.2228|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/api/Account
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 16:22:09.2554|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 11788.1536ms 200 application/json; charset=utf-8 
+2019-04-28 16:22:09.2697|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 11822.7263ms 200 application/json; charset=utf-8 
+2019-04-28 16:22:13.1627|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/api/Account   
+2019-04-28 16:22:40.3386|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/api/Account
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:22:40.3500|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Api.AccountController.Get (AccessManagement)' 
+2019-04-28 16:22:40.4508|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Get", controller = "Account"}. Executing action AccessManagement.Api.AccountController.Get (AccessManagement) 
+2019-04-28 16:22:40.5332|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Api.AccountController.Get (AccessManagement) - Validation state: Valid 
+2019-04-28 16:22:40.5555|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Api.AccountController.Get (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0879ms. 
+2019-04-28 16:22:40.6036|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|INFO|Executing ObjectResult, writing value of type 'System.String[]'. 
+2019-04-28 16:22:40.6754|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Api.AccountController.Get (AccessManagement) in 162.3629ms 
+2019-04-28 16:22:40.7330|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Api.AccountController.Get (AccessManagement)' 
+2019-04-28 16:35:07.4222|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 16:35:12.2396|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:35:12.5137|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 16:35:12.5876|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 16:35:13.4324|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 16:35:13.4807|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.JsonResult in 0.779ms. 
+2019-04-28 16:35:13.6600|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|INFO|Executing JsonResult, writing value of type 'System.String'. 
+2019-04-28 16:35:14.3850|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1751.0534ms 
+2019-04-28 16:35:14.4433|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 16:35:14.5595|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 16:35:14.6018|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 7176.673ms 200 application/json; charset=utf-8 
+2019-04-28 16:35:14.8388|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 16:35:14.8542|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:35:14.9530|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /favicon.ico was not modified 
+2019-04-28 16:35:15.0392|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/favicon.ico
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 16:35:15.1219|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 219.7964ms 304 image/x-icon 
+2019-04-28 16:38:33.5398|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/home/Privacy   
+2019-04-28 16:38:33.5772|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/home/Privacy
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:38:33.6726|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-04-28 16:38:33.8129|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) 
+2019-04-28 16:38:33.9531|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-04-28 16:38:33.9851|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-04-28 16:38:34.0141|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 38.59ms. 
+2019-04-28 16:38:34.5841|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-04-28 16:38:34.8893|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 540.0951ms. 
+2019-04-28 16:38:35.4339|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 1120.0366ms 
+2019-04-28 16:38:35.8923|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-04-28 16:38:35.9319|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/home/Privacy
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 16:38:35.9933|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2419.9998ms 200 text/html; charset=utf-8 
+2019-04-28 16:38:36.2052|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 16:38:36.2423|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 16:38:36.2851|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-04-28 16:38:36.3066|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/favicon.ico
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 16:38:36.3308|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 279.1148ms 200 image/x-icon 
+2019-04-28 17:05:36.9750|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 17:05:36.9750|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/api/Account   
+2019-04-28 17:05:36.9750|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/home/Privacy   
+2019-04-28 17:05:37.1659|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:05:37.1659|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/api/Account
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:05:37.1659|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/home/Privacy
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:05:37.3706|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:05:37.4165|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Api.AccountController.Get (AccessManagement)' 
+2019-04-28 17:05:37.3808|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-04-28 17:05:37.4641|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Get", controller = "Account"}. Executing action AccessManagement.Api.AccountController.Get (AccessManagement) 
+2019-04-28 17:05:37.4659|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 17:05:37.4659|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) 
+2019-04-28 17:05:37.9935|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Api.AccountController.Get (AccessManagement) - Validation state: Valid 
+2019-04-28 17:05:37.9935|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-04-28 17:05:37.9935|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 17:05:38.0379|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Api.AccountController.Get (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.2539ms. 
+2019-04-28 17:05:38.0674|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.JsonResult in 4.8147ms. 
+2019-04-28 17:05:38.2782|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-04-28 17:05:38.9250|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|INFO|Executing JsonResult, writing value of type 'System.String'. 
+2019-04-28 17:05:39.1491|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 914.1906ms. 
+2019-04-28 17:05:39.3228|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|INFO|Executing ObjectResult, writing value of type 'System.String[]'. 
+2019-04-28 17:05:39.6311|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-04-28 17:05:39.9677|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 2198.2324ms 
+2019-04-28 17:05:40.0578|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Api.AccountController.Get (AccessManagement) in 2366.5823ms 
+2019-04-28 17:05:40.1174|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:05:40.2436|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Api.AccountController.Get (AccessManagement)' 
+2019-04-28 17:05:40.5207|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:05:40.6232|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/api/Account
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:05:40.6607|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 3687.5021ms 200 application/json; charset=utf-8 
+2019-04-28 17:05:40.8213|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 3843.6241ms 200 application/json; charset=utf-8 
+2019-04-28 17:05:41.0734|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 1573.2625ms. 
+2019-04-28 17:05:41.0852|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 3594.1596ms 
+2019-04-28 17:05:41.0932|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-04-28 17:05:41.1079|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/home/Privacy
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:05:41.1259|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 4172.3351ms 200 text/html; charset=utf-8 
+2019-04-28 17:05:48.4977|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/api/Account   
+2019-04-28 17:05:48.6841|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/api/Account
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:05:48.7264|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Api.AccountController.Get (AccessManagement)' 
+2019-04-28 17:05:48.7510|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Get", controller = "Account"}. Executing action AccessManagement.Api.AccountController.Get (AccessManagement) 
+2019-04-28 17:05:48.8420|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Api.AccountController.Get (AccessManagement) - Validation state: Valid 
+2019-04-28 17:05:48.8420|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Api.AccountController.Get (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0548ms. 
+2019-04-28 17:05:48.8646|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|INFO|Executing ObjectResult, writing value of type 'System.String[]'. 
+2019-04-28 17:05:48.8767|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Api.AccountController.Get (AccessManagement) in 107.4966ms 
+2019-04-28 17:05:48.9461|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Api.AccountController.Get (AccessManagement)' 
+2019-04-28 17:05:49.1096|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/api/Account
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:05:49.1496|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 648.7855ms 200 application/json; charset=utf-8 
+2019-04-28 17:05:49.2250|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 17:05:49.2491|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:05:49.3495|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-04-28 17:05:49.4254|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/favicon.ico
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:05:49.4758|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 230.3461ms 200 image/x-icon 
+2019-04-28 17:06:11.4368|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/api/Account   
+2019-04-28 17:06:11.6617|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/api/Account
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:06:11.6946|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Api.AccountController.Get (AccessManagement)' 
+2019-04-28 17:06:11.7351|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Get", controller = "Account"}. Executing action AccessManagement.Api.AccountController.Get (AccessManagement) 
+2019-04-28 17:06:11.8173|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Api.AccountController.Get (AccessManagement) - Validation state: Valid 
+2019-04-28 17:06:11.8355|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Api.AccountController.Get (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0142ms. 
+2019-04-28 17:06:11.8524|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|INFO|Executing ObjectResult, writing value of type 'System.String[]'. 
+2019-04-28 17:06:11.8842|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Api.AccountController.Get (AccessManagement) in 97.4589ms 
+2019-04-28 17:06:12.0032|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Api.AccountController.Get (AccessManagement)' 
+2019-04-28 17:10:37.6851|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/api/Account
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:10:37.7172|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 266308.3552ms 200 application/json; charset=utf-8 
+2019-04-28 17:10:38.1630|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 17:10:38.1945|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:10:38.2315|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-04-28 17:10:40.3343|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/favicon.ico
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:10:40.3528|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2192.2247ms 200 image/x-icon 
+2019-04-28 17:37:01.4954|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 17:37:01.7734|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:37:02.0039|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:37:02.1123|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 17:37:02.3629|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 17:37:02.3828|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.4386ms. 
+2019-04-28 17:37:02.4654|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 17:37:02.9348|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 516.7897ms. 
+2019-04-28 17:37:02.9537|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 826.0078ms 
+2019-04-28 17:37:03.1004|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0   
+2019-04-28 17:37:03.1004|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/js/bootstrap.bundle.js   
+2019-04-28 17:37:03.1056|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/css/site.css   
+2019-04-28 17:37:03.1215|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:37:03.1215|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/js/site.js
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:37:03.1379|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/lib/bootstrap/dist/js/bootstrap.bundle.js
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:37:03.1056|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/css/bootstrap.css   
+2019-04-28 17:37:03.1379|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/css/site.css
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:37:03.1774|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:37:03.1880|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/lib/bootstrap/dist/css/bootstrap.css
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:37:03.2128|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/js/bootstrap.bundle.js was not modified 
+2019-04-28 17:37:03.2145|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /js/site.js was not modified 
+2019-04-28 17:37:03.2145|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /css/site.css was not modified 
+2019-04-28 17:37:03.2315|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/lib/bootstrap/dist/js/bootstrap.bundle.js
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:37:03.2315|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1747.6373ms 200 text/html; charset=utf-8 
+2019-04-28 17:37:03.3399|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/css/site.css
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:37:03.2145|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/css/bootstrap.css was not modified 
+2019-04-28 17:37:03.2466|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/js/site.js
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:37:03.3975|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 191.7105ms 304 application/javascript 
+2019-04-28 17:37:03.4500|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/jquery/dist/jquery.js   
+2019-04-28 17:37:03.4500|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 334.5097ms 304 application/javascript 
+2019-04-28 17:37:03.4899|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 266.9398ms 304 text/css 
+2019-04-28 17:37:03.5160|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/lib/bootstrap/dist/css/bootstrap.css
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:37:03.5160|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/lib/jquery/dist/jquery.js
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:37:03.5885|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 430.7491ms 304 text/css 
+2019-04-28 17:37:03.6137|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/jquery/dist/jquery.js was not modified 
+2019-04-28 17:37:03.6650|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/lib/jquery/dist/jquery.js
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:37:03.7102|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 416.1439ms 304 application/javascript 
+2019-04-28 17:40:57.6338|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 17:40:57.8909|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:40:58.1380|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:40:58.6879|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 17:40:59.3827|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 17:40:59.4003|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.3219ms. 
+2019-04-28 17:40:59.4754|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 17:40:59.6956|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 268.0075ms. 
+2019-04-28 17:40:59.7263|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1004.8188ms 
+2019-04-28 17:40:59.7676|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:40:59.7831|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:40:59.8309|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2198.1397ms 200 text/html; charset=utf-8 
+2019-04-28 17:41:01.1776|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/wwwroot/images/timg.jpg   
+2019-04-28 17:41:01.1857|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/wwwroot/images/timg.jpg
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:41:01.2129|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/wwwroot/images/timg.jpg
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:41:01.2523|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 57.8195ms 404  
+2019-04-28 17:42:10.8068|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 17:42:11.0673|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:42:11.1195|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:42:11.1667|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 17:42:11.2846|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 17:42:11.3651|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.151ms. 
+2019-04-28 17:42:15.8941|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 17:42:15.9318|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 4544.4952ms. 
+2019-04-28 17:42:15.9534|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 4758.4086ms 
+2019-04-28 17:42:16.0016|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:42:16.1575|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:42:16.1768|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/images/timg.jpg   
+2019-04-28 17:42:16.1981|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 5391.5755ms 200 text/html; charset=utf-8 
+2019-04-28 17:42:16.2397|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/images/timg.jpg
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:42:16.4210|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/images/timg.jpg'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\images\timg.jpg' 
+2019-04-28 17:42:16.4782|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/images/timg.jpg
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:42:16.5103|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 427.5869ms 200 image/jpeg 
+2019-04-28 17:42:17.2830|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/wwwroot/images/timg.jpg   
+2019-04-28 17:42:17.5399|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/wwwroot/images/timg.jpg
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:42:17.6354|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/wwwroot/images/timg.jpg
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:42:17.6714|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 461.9435ms 404  
+2019-04-28 17:42:17.7369|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 17:42:17.7481|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:42:17.7716|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-04-28 17:42:17.7937|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/favicon.ico
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:42:17.7937|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 84.9678ms 200 image/x-icon 
+2019-04-28 17:42:43.2548|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 17:42:43.2851|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:42:43.3205|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:42:43.3348|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 17:42:43.3984|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 17:42:43.4140|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0258ms. 
+2019-04-28 17:42:44.4998|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 17:42:44.6842|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 1111.0375ms. 
+2019-04-28 17:42:45.0356|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1355.8511ms 
+2019-04-28 17:42:45.3636|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/~/images/timg.jpg   
+2019-04-28 17:42:45.6639|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:42:45.8160|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/~/images/timg.jpg
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:42:45.8524|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:42:45.8629|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/~/images/timg.jpg
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:42:45.8975|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2686.608ms 200 text/html; charset=utf-8 
+2019-04-28 17:42:45.9156|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 838.635ms 404  
+2019-04-28 17:42:46.3486|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 17:42:46.5012|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:42:46.7666|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-04-28 17:42:46.7934|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/favicon.ico
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:42:46.8085|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 733.787ms 200 image/x-icon 
+2019-04-28 17:43:02.4172|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 17:43:02.4637|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:43:02.4827|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:43:02.5151|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 17:43:02.7176|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 17:43:02.7176|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0273ms. 
+2019-04-28 17:43:03.1530|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 17:43:03.2362|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 444.0817ms. 
+2019-04-28 17:43:03.3029|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 731.2348ms 
+2019-04-28 17:43:03.4929|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:43:03.8875|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:43:03.9617|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1481.4726ms 200 text/html; charset=utf-8 
+2019-04-28 17:43:04.2360|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 17:43:04.2798|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:43:04.3234|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-04-28 17:43:04.3407|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/favicon.ico
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:43:04.3804|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 170.3638ms 200 image/x-icon 
+2019-04-28 17:43:10.8852|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 17:43:10.9032|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:43:10.9220|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:43:10.9394|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 17:43:11.0404|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 17:43:11.0954|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0619ms. 
+2019-04-28 17:43:11.1049|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 17:43:11.1049|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 13.1368ms. 
+2019-04-28 17:43:11.1657|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 172.5062ms 
+2019-04-28 17:43:11.1841|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:43:11.2056|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:43:11.3340|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 347.9891ms 200 text/html; charset=utf-8 
+2019-04-28 17:43:11.3867|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 17:43:11.4126|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:43:11.4309|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-04-28 17:43:11.4466|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/favicon.ico
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:43:11.4593|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 73.2402ms 200 image/x-icon 
+2019-04-28 17:44:10.8228|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 17:44:11.0707|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:44:11.1034|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:44:11.3835|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 17:44:11.5151|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 17:44:11.5318|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1127ms. 
+2019-04-28 17:44:12.1835|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 17:44:12.4630|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 677.9652ms. 
+2019-04-28 17:44:12.6974|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/images/timg.jpg   
+2019-04-28 17:44:12.7618|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1310.9396ms 
+2019-04-28 17:44:12.7618|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/images/timg.jpg
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:44:12.7886|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:44:12.8170|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:44:12.8170|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/timg.jpg was not modified 
+2019-04-28 17:44:12.8477|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2051.9179ms 200 text/html; charset=utf-8 
+2019-04-28 17:44:12.8477|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/images/timg.jpg
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:44:12.9433|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 393.9867ms 304 image/jpeg 
+2019-04-28 17:44:12.9695|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 17:44:13.0036|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:44:13.1317|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-04-28 17:44:13.2267|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/favicon.ico
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:44:13.2413|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 301.21ms 200 image/x-icon 
+2019-04-28 17:44:49.1707|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 17:44:49.1878|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:44:49.2038|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:44:49.2330|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 17:44:49.3198|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 17:44:49.3368|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0449ms. 
+2019-04-28 17:44:49.8722|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 17:44:49.9810|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 548.8246ms. 
+2019-04-28 17:44:50.0322|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 748.9033ms 
+2019-04-28 17:44:50.2622|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:44:50.4718|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:44:50.5170|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1370.4955ms 200 text/html; charset=utf-8 
+2019-04-28 17:44:50.6902|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 17:44:50.7967|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:44:50.8961|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-04-28 17:44:51.0046|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/favicon.ico
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:44:51.0253|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 420.9329ms 200 image/x-icon 
+2019-04-28 17:45:20.3978|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 17:45:20.4282|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:45:20.4460|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:45:20.4763|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 17:45:20.6221|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 17:45:20.6479|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0456ms. 
+2019-04-28 17:45:21.3483|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 17:45:21.3970|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 709.3562ms. 
+2019-04-28 17:45:21.5465|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 918.0353ms 
+2019-04-28 17:45:21.9236|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:45:22.0663|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:45:22.1928|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1691.5535ms 200 text/html; charset=utf-8 
+2019-04-28 17:45:22.3727|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 17:45:22.4014|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:45:22.4468|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-04-28 17:45:22.4795|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/favicon.ico
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:45:22.5211|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 178.2257ms 200 image/x-icon 
+2019-04-28 17:45:42.4540|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 17:45:42.4837|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:45:42.5274|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:45:42.5802|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 17:45:42.6978|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 17:45:42.7138|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0265ms. 
+2019-04-28 17:45:43.2325|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 17:45:43.2711|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 547.2246ms. 
+2019-04-28 17:45:43.5472|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 713.9215ms 
+2019-04-28 17:45:43.6799|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:45:43.7214|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/images/timg.jpg   
+2019-04-28 17:45:43.7382|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:45:43.7902|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/images/timg.jpg
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:45:43.9013|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1358.1299ms 200 text/html; charset=utf-8 
+2019-04-28 17:45:43.9036|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/timg.jpg was not modified 
+2019-04-28 17:45:43.9532|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/images/timg.jpg
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:45:44.0046|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 363.8039ms 304 image/jpeg 
+2019-04-28 17:45:44.0687|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 17:45:44.1464|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:45:44.2708|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-04-28 17:45:44.4037|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/favicon.ico
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:45:44.4805|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 418.815ms 200 image/x-icon 
+2019-04-28 17:48:42.8034|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 17:48:42.8174|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:48:42.8450|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:48:42.8701|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 17:48:42.9433|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 17:48:42.9536|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0885ms. 
+2019-04-28 17:48:43.6396|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 17:48:43.8188|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 703.0979ms. 
+2019-04-28 17:48:43.8367|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 945.4048ms 
+2019-04-28 17:48:43.9352|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:48:44.1980|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/images/timg (1).jpg   
+2019-04-28 17:48:44.5466|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:48:44.6026|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/images/timg%20(1).jpg
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:48:44.6482|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1830.7712ms 200 text/html; charset=utf-8 
+2019-04-28 17:48:44.7880|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/images/timg (1).jpg'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\images\timg (1).jpg' 
+2019-04-28 17:48:44.8101|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/images/timg%20(1).jpg
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:48:44.8267|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 775.0636ms 200 image/jpeg 
+2019-04-28 17:48:45.1911|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 17:48:45.2403|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:48:45.2855|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-04-28 17:48:45.3081|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/favicon.ico
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:48:45.3296|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 296.964ms 200 image/x-icon 
+2019-04-28 17:52:56.6249|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 17:52:56.6907|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:52:56.8784|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:52:56.9973|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 17:52:57.1980|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 17:52:57.2192|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0355ms. 
+2019-04-28 17:52:57.9619|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 17:52:57.9927|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 755.2859ms. 
+2019-04-28 17:52:58.3686|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 973.9403ms 
+2019-04-28 17:52:58.4890|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:52:58.5478|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/images/timg (3).jpg   
+2019-04-28 17:52:58.7242|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:52:58.8199|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/images/timg%20(3).jpg
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:52:58.9024|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2170.1809ms 200 text/html; charset=utf-8 
+2019-04-28 17:52:59.6974|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/images/timg (3).jpg'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\images\timg (3).jpg' 
+2019-04-28 17:52:59.8489|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/images/timg%20(3).jpg
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:52:59.8722|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1392.7144ms 200 image/jpeg 
+2019-04-28 17:52:59.9295|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 17:52:59.9553|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:52:59.9739|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-04-28 17:52:59.9907|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/favicon.ico
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:53:00.1477|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 84.0091ms 200 image/x-icon 
+2019-04-28 17:59:31.7046|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 17:59:31.8913|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:59:32.6618|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:59:32.9777|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 17:59:33.6344|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 17:59:33.6522|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.5697ms. 
+2019-04-28 17:59:33.8808|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 17:59:34.5726|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 777.7411ms. 
+2019-04-28 17:59:34.6830|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1594.0204ms 
+2019-04-28 17:59:34.7240|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 17:59:34.7404|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:59:34.8085|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 3095.7903ms 200 text/html; charset=utf-8 
+2019-04-28 17:59:34.9566|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/images/timg (3).jpg   
+2019-04-28 17:59:34.9845|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/images/timg%20(3).jpg
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 17:59:35.0373|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/timg (3).jpg was not modified 
+2019-04-28 17:59:35.3122|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/images/timg%20(3).jpg
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 17:59:35.6311|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 424.2037ms 304 image/jpeg 
+2019-04-28 18:01:03.4021|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/?   
+2019-04-28 18:01:03.4021|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:01:03.4781|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:01:03.4907|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 18:01:03.5579|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 18:01:03.6101|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1301ms. 
+2019-04-28 18:01:03.6489|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 18:01:03.6633|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 40.2283ms. 
+2019-04-28 18:01:03.7195|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 197.7905ms 
+2019-04-28 18:01:03.7599|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:01:03.7860|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:01:03.8230|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 391.1692ms 200 text/html; charset=utf-8 
+2019-04-28 18:01:03.9035|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/images/timg (3).jpg   
+2019-04-28 18:01:03.9588|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/images/timg%20(3).jpg
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:01:03.9870|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/timg (3).jpg was not modified 
+2019-04-28 18:01:04.0039|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/images/timg%20(3).jpg
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:01:04.0558|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 138.2506ms 304 image/jpeg 
+2019-04-28 18:01:05.1019|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/?   
+2019-04-28 18:01:05.1226|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:01:05.1505|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:01:05.1653|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 18:01:05.2406|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 18:01:05.2582|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0285ms. 
+2019-04-28 18:01:05.2699|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 18:01:05.2848|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 12.6763ms. 
+2019-04-28 18:01:05.3035|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 114.5654ms 
+2019-04-28 18:01:05.3225|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:01:05.3389|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:01:05.3545|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 250.7732ms 200 text/html; charset=utf-8 
+2019-04-28 18:01:26.6049|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/?   
+2019-04-28 18:01:26.6367|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:01:26.7367|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:01:26.7588|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 18:01:26.8290|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 18:01:26.8459|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0375ms. 
+2019-04-28 18:01:26.8459|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 18:01:26.8832|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 15.5455ms. 
+2019-04-28 18:01:26.9245|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 130.7945ms 
+2019-04-28 18:01:26.9549|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:01:26.9777|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:01:26.9951|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 387.7295ms 200 text/html; charset=utf-8 
+2019-04-28 18:01:34.0767|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/?   
+2019-04-28 18:01:34.1045|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:01:34.1785|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:01:34.1996|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 18:01:34.3339|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 18:01:34.4001|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.8191ms. 
+2019-04-28 18:01:34.4139|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 18:01:34.4301|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 14.9919ms. 
+2019-04-28 18:01:34.5366|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 263.0334ms 
+2019-04-28 18:01:34.7174|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:01:34.7456|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:01:34.8784|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 734.5197ms 200 text/html; charset=utf-8 
+2019-04-28 18:02:34.0875|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/?   
+2019-04-28 18:02:34.1117|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:02:34.1833|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:02:34.2067|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 18:02:34.3075|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 18:02:34.3318|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0286ms. 
+2019-04-28 18:02:39.6533|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 18:02:40.0217|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 5347.5096ms. 
+2019-04-28 18:02:40.1899|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/images/timg (3).jpg   
+2019-04-28 18:02:40.2533|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 5958.0178ms 
+2019-04-28 18:02:40.2533|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/images/timg%20(3).jpg
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:02:40.2707|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:02:40.2824|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/timg (3).jpg was not modified 
+2019-04-28 18:02:40.3182|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:02:40.3243|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/images/timg%20(3).jpg
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:02:40.3545|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 6293.2861ms 200 text/html; charset=utf-8 
+2019-04-28 18:02:40.3782|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 312.9181ms 304 image/jpeg 
+2019-04-28 18:02:40.5417|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 18:02:40.5873|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:02:40.7345|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-04-28 18:02:40.7546|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/favicon.ico
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:02:40.7712|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 247.8708ms 200 image/x-icon 
+2019-04-28 18:02:42.9205|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/index?   
+2019-04-28 18:02:42.9512|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/index
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:02:42.9838|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/index
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:02:43.0913|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 170.0665ms 404  
+2019-04-28 18:03:08.3056|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/index?   
+2019-04-28 18:03:08.3465|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/index
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:03:08.3915|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/index
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:03:08.4032|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 125.7728ms 404  
+2019-04-28 18:03:40.7336|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/index?   
+2019-04-28 18:03:40.8289|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/index
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:03:40.8501|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/index
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:03:40.9294|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 230.7302ms 404  
+2019-04-28 18:04:06.2380|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 18:04:06.3018|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:04:06.3147|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:04:06.3292|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 18:04:06.4132|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 18:04:11.9000|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5480.2966ms. 
+2019-04-28 18:04:12.3393|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 18:04:12.3946|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 463.1501ms. 
+2019-04-28 18:04:12.5042|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 6128.3524ms 
+2019-04-28 18:04:12.5649|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:04:12.6320|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/images/timg (3).jpg   
+2019-04-28 18:04:12.6672|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:04:12.6772|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/images/timg%20(3).jpg
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:04:12.7274|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 6487.8835ms 200 text/html; charset=utf-8 
+2019-04-28 18:04:12.7320|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/timg (3).jpg was not modified 
+2019-04-28 18:04:12.7871|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/images/timg%20(3).jpg
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:04:12.9753|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 229.815ms 304 image/jpeg 
+2019-04-28 18:05:13.7472|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 18:05:13.7982|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:05:13.7982|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:05:13.8208|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 18:05:14.0023|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 18:05:16.6404|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2628.4041ms. 
+2019-04-28 18:05:17.1684|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 18:05:17.2494|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 553.806ms. 
+2019-04-28 18:05:17.2913|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 3428.9375ms 
+2019-04-28 18:05:17.3980|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:05:17.4946|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:05:17.5274|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 3782.828ms 200 text/html; charset=utf-8 
+2019-04-28 18:05:18.0045|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 18:05:18.0465|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:05:18.3081|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-04-28 18:05:18.3489|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/favicon.ico
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:05:18.3998|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 716.7559ms 200 image/x-icon 
+2019-04-28 18:05:19.6697|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/index application/x-www-form-urlencoded 0 
+2019-04-28 18:05:19.6881|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/Home/index
+ requestMethod:POST requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:05:19.7120|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:05:19.7667|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 18:05:19.8884|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) with arguments (System.Object) - Validation state: Valid 
+2019-04-28 18:05:24.2692|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 4371.4084ms. 
+2019-04-28 18:05:24.2907|Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor|INFO|Executing RedirectResult, redirecting to Privacy. 
+2019-04-28 18:05:24.3055|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 4527.9654ms 
+2019-04-28 18:05:24.3162|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:05:24.3283|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/Home/index
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:05:24.3423|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 4671.2326ms 302  
+2019-04-28 18:05:24.3636|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-04-28 18:05:24.3780|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/Home/Privacy
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:05:24.4006|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-04-28 18:05:24.4275|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) 
+2019-04-28 18:05:24.4973|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-04-28 18:05:24.5348|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-04-28 18:05:24.5638|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 39.3661ms. 
+2019-04-28 18:05:24.5761|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-04-28 18:05:24.9038|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 328.3151ms. 
+2019-04-28 18:05:25.0414|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 482.6874ms 
+2019-04-28 18:05:25.0588|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0   
+2019-04-28 18:05:25.0748|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/css/site.css   
+2019-04-28 18:05:25.0946|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/css/bootstrap.css   
+2019-04-28 18:05:25.0946|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/jquery/dist/jquery.js   
+2019-04-28 18:05:25.0588|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/js/bootstrap.bundle.js   
+2019-04-28 18:05:25.1414|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-04-28 18:05:25.1519|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/js/site.js
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:05:25.1519|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/css/site.css
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:05:25.1519|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/lib/bootstrap/dist/css/bootstrap.css
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:05:25.1519|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/lib/jquery/dist/jquery.js
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:05:25.1818|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/lib/bootstrap/dist/js/bootstrap.bundle.js
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:05:25.2197|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /js/site.js was not modified 
+2019-04-28 18:05:25.2197|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/Home/Privacy
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:05:25.2197|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /css/site.css was not modified 
+2019-04-28 18:05:25.5539|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/css/bootstrap.css was not modified 
+2019-04-28 18:05:25.6300|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/jquery/dist/jquery.js was not modified 
+2019-04-28 18:05:25.7517|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/js/site.js
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:05:25.8554|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/js/bootstrap.bundle.js was not modified 
+2019-04-28 18:05:25.9354|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1391.2784ms 200 text/html; charset=utf-8 
+2019-04-28 18:05:25.9580|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 760.4942ms 304 application/javascript 
+2019-04-28 18:05:25.9674|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/css/site.css
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:05:26.1496|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/lib/bootstrap/dist/css/bootstrap.css
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:05:26.2214|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/lib/jquery/dist/jquery.js
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:05:26.2425|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1113.0529ms 304 text/css 
+2019-04-28 18:05:26.2496|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1111.5358ms 304 text/css 
+2019-04-28 18:05:26.3735|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1173.4236ms 304 application/javascript 
+2019-04-28 18:05:26.4650|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/lib/bootstrap/dist/js/bootstrap.bundle.js
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:05:26.6871|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/css/bootstrap.css.map   
+2019-04-28 18:05:26.7648|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1512.9614ms 304 application/javascript 
+2019-04-28 18:05:26.7866|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/lib/bootstrap/dist/css/bootstrap.css.map
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:05:26.8012|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/css/bootstrap.css.map was not modified 
+2019-04-28 18:05:27.0546|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/lib/bootstrap/dist/css/bootstrap.css.map
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:05:27.1379|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 600.9365ms 304 text/plain 
+2019-04-28 18:05:27.1834|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/js/bootstrap.bundle.js.map   
+2019-04-28 18:05:27.2020|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/lib/bootstrap/dist/js/bootstrap.bundle.js.map
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:05:27.2305|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/js/bootstrap.bundle.js.map was not modified 
+2019-04-28 18:05:27.2465|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/lib/bootstrap/dist/js/bootstrap.bundle.js.map
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:05:27.2818|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 110.0027ms 304 text/plain 
+2019-04-28 18:06:04.3523|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-04-28 18:06:04.3722|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:06:04.3882|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:06:04.4023|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-04-28 18:06:04.7117|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-04-28 18:06:06.8448|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1993.8525ms. 
+2019-04-28 18:06:08.3005|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-04-28 18:06:08.3548|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 1487.0835ms. 
+2019-04-28 18:06:09.0844|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 3951.0583ms 
+2019-04-28 18:06:09.3650|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-04-28 18:06:09.5875|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/images/timg (5).jpg   
+2019-04-28 18:06:09.7738|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:06:09.7946|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/images/timg%20(5).jpg
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:06:09.8989|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 5462.677ms 200 text/html; charset=utf-8 
+2019-04-28 18:06:10.2878|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/images/timg (5).jpg'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\images\timg (5).jpg' 
+2019-04-28 18:06:10.3473|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/images/timg%20(5).jpg
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:06:10.6451|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1158.6187ms 200 image/jpeg 
+2019-04-28 18:06:10.7349|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-04-28 18:06:10.7529|AccessManagement.Middleware.LogMiddleware|DEBUG|Request Path:/favicon.ico
+ requestMethod:GET requestHost:localhost:44334
+ requestHeaders:Microsoft.AspNetCore.HttpSys.Internal.RequestHeaders 
+2019-04-28 18:06:10.7998|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-04-28 18:06:10.8670|AccessManagement.Middleware.LogMiddleware|DEBUG|Response Path:/favicon.ico
+Body:Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream 
+2019-04-28 18:06:10.9680|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 162.0945ms 200 image/x-icon 

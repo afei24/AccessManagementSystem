@@ -28,3 +28,11 @@ C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\net
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\AccessManagement.dll
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\AccessManagement.pdb
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\AccessManagement.csproj.CopyComplete
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\AccessManagementData.dll
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\AccessManagementData.pdb
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\AccessManagementServices.dll
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\bin\Debug\netcoreapp2.2\AccessManagementServices.pdb
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Views\Company\Index.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Views\Company\Edit.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Views\Company\Details.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Views\Company\Create.g.cshtml.cs
