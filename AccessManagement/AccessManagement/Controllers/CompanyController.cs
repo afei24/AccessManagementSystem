@@ -71,9 +71,10 @@ namespace AccessManagement.Controllers
         }
 
         // GET: Company/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<ActionResult> Edit(int id)
         {
-            return View();
+            var vm =  await _companyServices.GetById(id);
+            return View(vm);
         }
 
         // POST: Company/Edit/5

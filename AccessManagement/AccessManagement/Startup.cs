@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AccessManagement.Middleware;
 using AccessManagementData;
+using AccessManagementServices.DOTS;
 using AccessManagementServices.Services;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
@@ -43,6 +44,7 @@ namespace AccessManagement
             services.AddDbContext<AccessManagementContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient<CompanyServices, CompanyServices>();
             services.AddTransient<BasicInfoServices, BasicInfoServices>();
+            services.AddTransient<AppMenuServices>();
             services.AddAutoMapper(typeof(Startup));
         }
 

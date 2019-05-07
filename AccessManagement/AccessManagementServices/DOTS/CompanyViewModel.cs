@@ -9,6 +9,10 @@ namespace AccessManagementServices.DOTS
 {
     public class CompanyViewModel
     {
+        public CompanyViewModel()
+        {
+            Functions = new List<FunctionViewModel>();
+        }
         public int Id { get; set; }
 
         [Required]

@@ -74,34 +74,5 @@ namespace AccessManagementServices.DOTS
         [StringLength(32)]
         [Display(Name = "操作指令名称10")]
         public string OpName10 { get; set; }
-
-        [StringLength(32)]
-        [Display(Name = "操作指令名称11")]
-        public string OpName11 { get; set; }
-
-        [StringLength(32)]
-        [Display(Name = "操作指令名称12")]
-        public string OpName12 { get; set; }
-
-        [StringLength(32)]
-        [Display(Name = "操作指令名称13")]
-        public string OpName13 { get; set; }
-
-        [StringLength(32)]
-        [Display(Name = "操作指令名称14")]
-        public string OpName14 { get; set; }
-
-        [StringLength(32)]
-        [Display(Name = "操作指令名称15")]
-        public string OpName15 { get; set; }
-
-        [StringLength(32)]
-        [Display(Name = "操作指令名称16")]
-        public string OpName16 { get; set; }
-
-        public int? sortId { get; set; }
-
-        [Display(Name = "所属菜单")]
-        public string MenuName { get; set; }
     }
 }

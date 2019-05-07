@@ -14,6 +14,8 @@ namespace AccessManagement
         {
             CreateMap<CompanyViewModel, Company>();
             CreateMap<Company, CompanyViewModel>();
+            CreateMap<AppMenuViewModel, AppMenu>();
+            CreateMap<AppMenu, AppMenuViewModel>();
         }
     }
 }

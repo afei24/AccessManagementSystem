@@ -12,5 +12,8 @@ namespace AccessManagementData
         {
         }
         public virtual DbSet<Company> Company { get; set; }
+        public virtual DbSet<Function> Function { get; set; }
+        public virtual DbSet<AppMenu> AppMenu { get; set; }
+        public virtual DbSet<ReSetFunction> ReSetFunction { get; set; }
     }
 }

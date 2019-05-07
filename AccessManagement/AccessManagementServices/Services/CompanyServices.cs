@@ -2,6 +2,7 @@
 using AccessManagementServices.Common;
 using AccessManagementServices.DOTS;
 using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,26 @@ namespace AccessManagementServices.Services
            
         }
 
+        public async Task<CompanyViewModel> GetById(int id)
+        {
+            try
+            {
+                var query =await _context.Company.FirstOrDefaultAsync(o=>o.Id==id);
+                var vm =  _mapper.Map<CompanyViewModel>(query);
+                var functions =  await _context.Function.Where(o => o.CompanyId == vm.Id).ToListAsync();
+                foreach (var function in functions)
+                {
+                    vm.Functions.Add(_mapper.Map<FunctionViewModel>(function));
+                }
+                return vm;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+
+        }
+
         public async Task<ServiceResponseBase> Create(CompanyViewModel vm)
         {
             try
@@ -50,6 +71,25 @@ namespace AccessManagementServices.Services
                 return new ServiceResponseBase() { Status = Status.error,Message = ex.Message };
             }
             
+        }
+
+        public async Task<ServiceResponseBase> Update(CompanyViewModel vm)
+        {
+            try
+            {
+                var query =  await _context.Company.FirstOrDefaultAsync(o => o.Id == vm.Id);
+                vm.UpdateTime = DateTime.Now;
+                vm.CreateTime = query.CreateTime;
+                query = _mapper.Map<Company>(vm);
+                _context.Entry(query).State = EntityState.Modified;
+                await _context.SaveChangesAsync();
+                return new ServiceResponseBase() { Status = Status.ok };
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResponseBase() { Status = Status.error, Message = ex.Message };
+            }
+
         }
     }
 }
