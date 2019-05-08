@@ -24,11 +24,11 @@ namespace AccessManagementData
 
         public DateTime CreateTime { get; set; }
 
-        public int CreateUserId { get; set; }
+        //public int CreateUserId { get; set; }
 
         public virtual Company Company { get; set; }
 
-        public virtual Account CreateUser { get; set; }
+        //public virtual Account CreateUser { get; set; }
 
         public virtual ICollection<Account> Accounts { get; set; }
 

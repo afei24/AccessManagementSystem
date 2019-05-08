@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AccessManagementServices.Common;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
@@ -8,33 +9,40 @@ namespace AccessManagementServices.DOTS
     public class AccountViewModel
     {
         public int Id { get; set; }
-        [Display(Name ="账号")]
+
         [Required]
-        public string Account { get; set; }
-        [Display(Name = "名称")]
+        [StringLength(100)]
+        [Display(Name = "账号")]
+        public string AccountName { get; set; }
+
         [Required]
-        public string Name { get; set; }
         [Display(Name = "密码")]
-        [Required]
         public string Password { get; set; }
-        [Display(Name = "省")]
-        public string Province { get; set; }
-        [Display(Name = "市")]
+        [Required]
+        [Display(Name = "姓名")]
+        public string Name { get; set; }
+        [Required]
+        [Display(Name = "类型")]
+        public AccountType Type { get; set; }
+        [Display(Name = "状态")]
+        [Required]
+        public AccountStatus Status { get; set; }
+
+        [Required]
+        [Display(Name = "城市")]
         public string City { get; set; }
-        [Display(Name = "地址")]
-        public string Address { get; set; }
-        [Display(Name = "电话")]
+        [Required]
+        [Display(Name = "手机")]
         public string Phone { get; set; }
         [Display(Name = "创建时间")]
         public DateTime CreateTime { get; set; }
+
         [Display(Name = "创建人")]
-        public string CreateUser { get; set; }
-        [Display(Name = "更新时间")]
-        public DateTime? UpdateTime { get; set; }
-        [Display(Name = "更新人")]
-        public string UpdateUser { get; set; }
-        [Display(Name = "所属企业")]
+        public int CreateUserId { get; set; }
+        [Display(Name = "公司")]
         public int CompanyId { get; set; }
+        [Display(Name = "网点")]
+        public int BranchId { get; set; }
         public List<FunctionViewModel> Functions { get; set; }
     }
 }

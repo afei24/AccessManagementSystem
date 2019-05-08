@@ -1,6 +1,7 @@
 ﻿using AccessManagementServices.Common;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 
 namespace AccessManagementData
@@ -30,16 +31,15 @@ namespace AccessManagementData
         public DateTime CreateTime { get; set; }
 
         public int CreateUserId { get; set; }
-
+        [ForeignKey("Company")]
         public int CompanyId { get; set; }
 
         public virtual Company Company { get; set; }
-
-
+        [ForeignKey("Branch")]
+        public int BranchId { get; set; }
         public virtual Branch Branch { get; set; }
 
-
-        public int BranchId { get; set; }
+        
 
 
         /// <summary>
