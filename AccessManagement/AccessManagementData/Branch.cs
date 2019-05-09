@@ -24,7 +24,7 @@ namespace AccessManagementData
 
         public DateTime CreateTime { get; set; }
 
-        //public int CreateUserId { get; set; }
+        public int CreateUserId { get; set; }
 
         public virtual Company Company { get; set; }
 
