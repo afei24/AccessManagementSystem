@@ -14,18 +14,16 @@ namespace AccessManagementServices.Services
 {
     public class AppMenuServices
     {
-        IMapper _mapper;
         private AccessManagementContext _accessManagementContext;
-        public AppMenuServices(AccessManagementContext accessManagementContext, IMapper mapper)
+        public AppMenuServices(AccessManagementContext accessManagementContext)
         {
             _accessManagementContext = accessManagementContext;
-            _mapper = mapper;
         }
 
         public async Task<List<AppMenuViewModel>> GetList()
         {
             var query =  _accessManagementContext.AppMenu.Where(o=>o.Id != 0);
-            var vms =await _mapper.ProjectTo<AppMenuViewModel>(query).ToListAsync();
+            var vms =await query.ProjectTo<AppMenuViewModel>().ToListAsync();
             return vms;
         }
         public async Task<AppMenuViewModel> GetById(int id)
@@ -33,7 +31,7 @@ namespace AccessManagementServices.Services
             try
             {
                 var query = await _accessManagementContext.AppMenu.FirstOrDefaultAsync(o => o.Id == id);
-                var vm = _mapper.Map<AppMenuViewModel>(query);
+                var vm = Mapper.Map<AppMenuViewModel>(query);
                 return vm;
             }
             catch (Exception ex)
@@ -52,7 +50,7 @@ namespace AccessManagementServices.Services
                 {
                     return new ServiceResponseBase() { Status = Status.error, Message = "存在重复编码！" };
                 }
-                var appMenu = _mapper.Map<AppMenu>(vm);
+                var appMenu = Mapper.Map<AppMenu>(vm);
                 await _accessManagementContext.AppMenu.AddAsync(appMenu);
                 
                 var reSetFunction = new ReSetFunction() {
@@ -95,7 +93,7 @@ namespace AccessManagementServices.Services
                         function.Code = vm.Code;
                     }
                 }
-                query = _mapper.Map<AppMenu>(vm);
+                query = Mapper.Map<AppMenu>(vm);
                 _accessManagementContext.Entry(query).State = EntityState.Modified;
                 await _accessManagementContext.SaveChangesAsync();
                 return new ServiceResponseBase() { Status = Status.ok };

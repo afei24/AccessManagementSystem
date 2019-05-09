@@ -45,5 +45,6 @@ namespace AccessManagementData
         public string OpName10 { get; set; }
 
         public virtual Company Company { get; set; }
+        public virtual ICollection<Role> Roles { get; set; }
     }
 }

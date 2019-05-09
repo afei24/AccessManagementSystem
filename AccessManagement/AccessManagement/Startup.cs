@@ -47,6 +47,12 @@ namespace AccessManagement
             services.AddTransient<AppMenuServices>();
             services.AddTransient<AccountServices>();
             services.AddAutoMapper(typeof(Startup));
+            Mapper.Initialize(cfg =>
+                {
+                    cfg.AddProfile<AccessManagementProfile>();
+                }
+            );
+            //Mapper.Initialize(cfg => cfg.CreateMap<AppMenu, AppMenuViewModel>());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

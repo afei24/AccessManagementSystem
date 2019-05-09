@@ -16,6 +16,7 @@ namespace AccessManagementData
         public virtual DbSet<AppMenu> AppMenu { get; set; }
         public virtual DbSet<ReSetFunction> ReSetFunction { get; set; }
         public virtual DbSet<Account> Account { get; set; }
+        public virtual DbSet<Role> Role { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
