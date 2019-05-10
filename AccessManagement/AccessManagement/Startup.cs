@@ -41,7 +41,9 @@ namespace AccessManagement
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddDbContext<AccessManagementContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<AccessManagementContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
+                providerOptions => providerOptions.EnableRetryOnFailure()));
             services.AddTransient<CompanyServices, CompanyServices>();
             services.AddTransient<BasicInfoServices, BasicInfoServices>();
             services.AddTransient<AppMenuServices>();

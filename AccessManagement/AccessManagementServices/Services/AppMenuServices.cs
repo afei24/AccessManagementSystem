@@ -45,6 +45,7 @@ namespace AccessManagementServices.Services
         {
             try
             {
+                var strategy = _accessManagementContext.Database.CreateExecutionStrategy();
                 var isExist =await _accessManagementContext.AppMenu.AnyAsync(o=>o.Code==vm.Code);
                 if (isExist)
                 {

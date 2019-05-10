@@ -25,7 +25,7 @@ namespace AccessManagementServices.Services
         {
             try
             {
-                var query = _context.Account;
+                var query = _context.Account.Include(a => a.Branch).Include(a => a.Company);
                 var s = query.ToList();
                 return await _mapper.ProjectTo<AccountViewModel>(query).ToListAsync();
             }

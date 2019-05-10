@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AccessManagementData;
 using AccessManagementServices.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AccessManagement.Controllers
 {
@@ -21,6 +23,21 @@ namespace AccessManagement.Controllers
             var vms = await _accountServices.GetList();
             return View(vms);
         }
+
+        //private readonly AccessManagementContext _context;
+
+        //public AccountController(AccessManagementContext context)
+        //{
+        //    _context = context;
+        //}
+
+        //// GET: Accounts
+        //public async Task<IActionResult> Index()
+        //{
+        //    var accessManagementContext = _context.Account.Include(a => a.Branch).Include(a => a.Company);
+        //    var res = await accessManagementContext.ToListAsync();
+        //    return View(await accessManagementContext.ToListAsync());
+        //}
 
         // GET: Account/Details/5
         public ActionResult Details(int id)
