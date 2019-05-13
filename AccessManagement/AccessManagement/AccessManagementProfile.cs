@@ -16,6 +16,9 @@ namespace AccessManagement
             CreateMap<Company, CompanyViewModel>();
             CreateMap<AppMenuViewModel, AppMenu>();
             CreateMap<AppMenu, AppMenuViewModel>();
+            CreateMap<BranchViewModel, Branch>();
+            CreateMap<Branch, BranchViewModel>()
+                .ForMember(d => d.ParentBranchName, conf => conf.MapFrom(s => s.ParentBranch.Name)); ;
         }
     }
 }

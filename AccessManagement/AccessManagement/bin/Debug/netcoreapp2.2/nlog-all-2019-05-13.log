@@ -1,0 +1,148 @@
+2019-05-13 17:36:31.3195|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Branch   
+2019-05-13 17:36:31.3195|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-05-13 17:36:31.7179|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.BranchController.Index (AccessManagement)' 
+2019-05-13 17:36:31.7179|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-13 17:36:31.7909|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-05-13 17:36:31.7945|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Branch"}. Executing action AccessManagement.Controllers.BranchController.Index (AccessManagement) 
+2019-05-13 17:36:32.0533|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-05-13 17:36:32.0533|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.BranchController.Index (AccessManagement) - Validation state: Valid 
+2019-05-13 17:36:32.0692|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.BranchController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.0235ms. 
+2019-05-13 17:36:32.0692|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.3392ms. 
+2019-05-13 17:36:32.1575|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-13 17:36:32.1575|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-13 17:36:32.3928|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 294.6401ms. 
+2019-05-13 17:36:32.3928|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 601.5379ms 
+2019-05-13 17:36:32.4092|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-13 17:36:32.4328|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1128.1712ms 200 text/html; charset=utf-8 
+2019-05-13 17:36:32.7001|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.BranchController.Index (AccessManagement) in 899.5419ms 
+2019-05-13 17:36:32.7001|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.BranchController.Index (AccessManagement)' 
+2019-05-13 17:36:32.8840|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. Object reference not set to an instance of an object.
+2019-05-13 17:36:33.2773|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1833.0503ms 500 text/html; charset=utf-8 
+2019-05-13 17:39:22.0092|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-05-13 17:39:22.3960|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-13 17:39:22.4421|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-05-13 17:39:22.7135|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-05-13 17:39:22.7332|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3.6162ms. 
+2019-05-13 17:39:22.8518|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-13 17:39:23.0400|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 260.8646ms. 
+2019-05-13 17:39:23.0469|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 598.1318ms 
+2019-05-13 17:39:23.0469|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-13 17:39:23.1286|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1088.8408ms 200 text/html; charset=utf-8 
+2019-05-13 17:39:23.4839|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/images/loginBck.jpg   
+2019-05-13 17:39:23.5082|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/loginBck.jpg was not modified 
+2019-05-13 17:39:23.5256|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 39.74ms 304 image/jpeg 
+2019-05-13 17:39:34.1782|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/branch   
+2019-05-13 17:39:34.2158|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.BranchController.Index (AccessManagement)' 
+2019-05-13 17:39:34.2737|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Branch"}. Executing action AccessManagement.Controllers.BranchController.Index (AccessManagement) 
+2019-05-13 17:39:35.1647|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.BranchController.Index (AccessManagement) - Validation state: Valid 
+2019-05-13 17:39:37.1514|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-13 17:39:46.4304|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (94ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[City], [o].[CompanyId], [o].[CreateTime], [o].[Id], [o].[Name], [o].[ParentBranchId], [o].[Type]
+FROM [Branch] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-13 17:40:55.4741|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (72ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[City], [o].[CompanyId], [o].[CreateTime], [o].[CreateUserId], [o].[Name], [o].[ParentBranchId], [o].[Type]
+FROM [Branch] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-13 17:41:24.5589|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.BranchController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 109389.4297ms. 
+2019-05-13 17:41:24.6121|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-13 17:41:25.0661|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 484.4222ms. 
+2019-05-13 17:41:25.1145|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.BranchController.Index (AccessManagement) in 110810.0261ms 
+2019-05-13 17:41:25.1493|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/css/site.css   
+2019-05-13 17:41:25.1665|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0   
+2019-05-13 17:41:25.1691|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/css/bootstrap.css   
+2019-05-13 17:41:25.1984|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.BranchController.Index (AccessManagement)' 
+2019-05-13 17:41:25.2027|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /css/site.css was not modified 
+2019-05-13 17:41:25.2027|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /js/site.js was not modified 
+2019-05-13 17:41:25.2027|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/css/bootstrap.css was not modified 
+2019-05-13 17:41:25.2641|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 118.9747ms 304 application/javascript 
+2019-05-13 17:41:25.2641|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 128.2548ms 304 text/css 
+2019-05-13 17:41:25.2802|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/js/bootstrap.bundle.js   
+2019-05-13 17:41:25.2802|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 156.0684ms 304 text/css 
+2019-05-13 17:41:25.3004|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/js/bootstrap.bundle.js was not modified 
+2019-05-13 17:41:25.3004|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/jquery/dist/jquery.js   
+2019-05-13 17:41:25.3123|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 111141.0245ms 200 text/html; charset=utf-8 
+2019-05-13 17:41:25.3303|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 46.1986ms 304 application/javascript 
+2019-05-13 17:41:25.3303|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/jquery/dist/jquery.js was not modified 
+2019-05-13 17:41:25.3477|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 52.9306ms 304 application/javascript 
+2019-05-13 17:41:59.2145|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Branch/Create   
+2019-05-13 17:41:59.2424|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.BranchController.Create (AccessManagement)' 
+2019-05-13 17:41:59.2892|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Create", controller = "Branch"}. Executing action AccessManagement.Controllers.BranchController.Create (AccessManagement) 
+2019-05-13 17:41:59.3660|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.BranchController.Create (AccessManagement) - Validation state: Valid 
+2019-05-13 17:41:59.3733|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.BranchController.Create (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4236ms. 
+2019-05-13 17:41:59.3733|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Create. 
+2019-05-13 17:41:59.6904|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Create executed in 311.6004ms. 
+2019-05-13 17:41:59.7030|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.BranchController.Create (AccessManagement) in 402.3186ms 
+2019-05-13 17:41:59.7410|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.BranchController.Create (AccessManagement)' 
+2019-05-13 17:41:59.7961|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 533.3453ms 200 text/html; charset=utf-8 
+2019-05-13 17:41:59.7961|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/jquery-validation/dist/jquery.validate.js   
+2019-05-13 17:41:59.8098|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   
+2019-05-13 17:41:59.8292|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/jquery-validation/dist/jquery.validate.js was not modified 
+2019-05-13 17:41:59.8292|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js was not modified 
+2019-05-13 17:41:59.8468|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 78.8519ms 304 application/javascript 
+2019-05-13 17:41:59.8468|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 78.8613ms 304 application/javascript 
+2019-05-13 17:55:47.5750|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-05-13 17:55:47.5750|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Branch   
+2019-05-13 17:55:47.8924|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.BranchController.Index (AccessManagement)' 
+2019-05-13 17:55:47.8924|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-13 17:55:47.9708|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-05-13 17:55:47.9708|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Branch"}. Executing action AccessManagement.Controllers.BranchController.Index (AccessManagement) 
+2019-05-13 17:55:48.2455|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-05-13 17:55:48.2784|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 15.1559ms. 
+2019-05-13 17:55:48.3712|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-13 17:55:48.9157|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 608.1487ms. 
+2019-05-13 17:55:48.9219|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 944.0134ms 
+2019-05-13 17:55:48.9400|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-13 17:55:48.9595|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1409.0212ms 200 text/html; charset=utf-8 
+2019-05-13 17:55:49.2157|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.BranchController.Index (AccessManagement) - Validation state: Valid 
+2019-05-13 17:55:51.0614|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-13 17:55:59.1543|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (141ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[City], [o].[CompanyId], [o].[CreateTime], [o].[Id], [o].[Name] AS [Name0], [o].[ParentBranchId], [o.ParentBranch].[Name] AS [ParentBranchName], [o].[Type]
+FROM [Branch] AS [o]
+LEFT JOIN [Branch] AS [o.ParentBranch] ON [o].[ParentBranchId] = [o.ParentBranch].[Id]
+WHERE [o].[Id] <> 0 
+2019-05-13 17:56:07.4860|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.BranchController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 18258.523ms. 
+2019-05-13 17:56:07.5639|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-13 17:56:08.1508|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 629.7213ms. 
+2019-05-13 17:56:08.1891|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.BranchController.Index (AccessManagement) in 20201.3273ms 
+2019-05-13 17:56:08.2884|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.BranchController.Index (AccessManagement)' 
+2019-05-13 17:56:08.3080|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 20756.2409ms 200 text/html; charset=utf-8 
+2019-05-13 18:08:45.2558|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/presetFunction   
+2019-05-13 18:08:45.2118|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-05-13 18:08:45.2118|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/presetFunctionServices   
+2019-05-13 18:08:45.3107|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/_presetFunctionServices   
+2019-05-13 18:08:46.3453|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.PresetFunctionController.Index (AccessManagement)' 
+2019-05-13 18:08:46.3725|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-13 18:08:46.3996|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1281.2544ms 0  
+2019-05-13 18:08:46.4144|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1280.8264ms 0  
+2019-05-13 18:08:46.4748|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "PresetFunction"}. Executing action AccessManagement.Controllers.PresetFunctionController.Index (AccessManagement) 
+2019-05-13 18:08:46.5010|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing action AccessManagement.Controllers.HomeController.Index (AccessManagement) 
+2019-05-13 18:08:46.9570|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-05-13 18:08:47.0029|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.7883ms. 
+2019-05-13 18:08:47.1119|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-13 18:08:47.8353|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 790.547ms. 
+2019-05-13 18:08:47.8455|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1336.3193ms 
+2019-05-13 18:08:47.8455|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-13 18:08:47.8754|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2827.6028ms 200 text/html; charset=utf-8 
+2019-05-13 18:08:48.0668|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.PresetFunctionController.Index (AccessManagement) - Validation state: Valid 
+2019-05-13 18:08:50.1055|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-13 18:08:51.7090|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (141ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[OpName1], [o].[OpName10], [o].[OpName2], [o].[OpName3], [o].[OpName4], [o].[OpName5], [o].[OpName6], [o].[OpName7], [o].[OpName8], [o].[OpName9], [o].[Type]
+FROM [ReSetFunction] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-13 18:08:51.8419|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.PresetFunctionController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3763.9008ms. 
+2019-05-13 18:08:51.9844|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-13 18:08:52.3334|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 464.8618ms. 
+2019-05-13 18:08:52.3472|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.PresetFunctionController.Index (AccessManagement) in 5864.4878ms 
+2019-05-13 18:08:52.3472|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.PresetFunctionController.Index (AccessManagement)' 
+2019-05-13 18:08:52.4351|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 7371.905ms 200 text/html; charset=utf-8 
+2019-05-13 18:09:15.6038|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/PresetFunction/Edit/1   
+2019-05-13 18:09:15.6182|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.PresetFunctionController.Edit (AccessManagement)' 
+2019-05-13 18:09:15.6820|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Edit", controller = "PresetFunction"}. Executing action AccessManagement.Controllers.PresetFunctionController.Edit (AccessManagement) 
+2019-05-13 18:09:15.7862|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.PresetFunctionController.Edit (AccessManagement) with arguments (1) - Validation state: Valid 
+2019-05-13 18:09:15.7930|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.PresetFunctionController.Edit (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.2881ms. 
+2019-05-13 18:09:15.8159|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Edit. 
+2019-05-13 18:09:16.0566|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Edit executed in 256.0538ms. 
+2019-05-13 18:09:16.0674|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.PresetFunctionController.Edit (AccessManagement) in 374.5338ms 
+2019-05-13 18:09:16.0955|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.PresetFunctionController.Edit (AccessManagement)' 
+2019-05-13 18:09:16.1115|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 509.3219ms 200 text/html; charset=utf-8 

@@ -48,6 +48,9 @@ namespace AccessManagement
             services.AddTransient<BasicInfoServices, BasicInfoServices>();
             services.AddTransient<AppMenuServices>();
             services.AddTransient<AccountServices>();
+            services.AddTransient<BranchServices>();
+            services.AddTransient<PresetFunctionServices>();
+
             services.AddAutoMapper(typeof(Startup));
             Mapper.Initialize(cfg =>
                 {

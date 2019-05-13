@@ -8,6 +8,10 @@ namespace AccessManagementServices.DOTS
 {
     public class BranchViewModel
     {
+        public BranchViewModel()
+        {
+            ParentBranchs = new List<BranchViewModel>();
+        }
         public int Id { get; set; }
 
         public int? ParentBranchId { get; set; }
@@ -36,5 +40,9 @@ namespace AccessManagementServices.DOTS
         public string UpdateUser { get; set; }
         [Display(Name = "所属企业")]
         public int CompanyId { get; set; }
+        [Display(Name = "父机构")]
+        public ICollection<BranchViewModel> ParentBranchs { get; set; }
+        [Display(Name = "父机构")]
+        public string ParentBranchName { get; set; }
     }
 }
