@@ -1,2 +1,0 @@
-2019-05-08 16:49:24.1817|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. Unable to resolve service for type 'AccessManagementServices.Services.AccountServices' while attempting to activate 'AccessManagement.Controllers.AccountController'.
-2019-05-08 17:06:49.8493|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. Object reference not set to an instance of an object.

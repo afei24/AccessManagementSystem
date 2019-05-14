@@ -74,5 +74,7 @@ namespace AccessManagementServices.DOTS
         [StringLength(32)]
         [Display(Name = "操作指令名称10")]
         public string OpName10 { get; set; }
+
+        public string AppmenuName { get; set; }
     }
 }

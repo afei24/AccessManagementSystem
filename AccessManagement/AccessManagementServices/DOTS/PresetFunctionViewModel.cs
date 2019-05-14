@@ -24,7 +24,7 @@ namespace AccessManagementServices.DOTS
         /// <summary>
         /// 权限检查程序使用的代码
         /// </summary>
-        [Required]
+        [Required(ErrorMessage = "请填写编码")]
         [StringLength(64)]
         [Display(Name = "编码")]
         public string Code { get; set; }
@@ -72,6 +72,7 @@ namespace AccessManagementServices.DOTS
         [StringLength(32)]
         [Display(Name = "功能10")]
         public string OpName10 { get; set; }
+
 
     }
 }

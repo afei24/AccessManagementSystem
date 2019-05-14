@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AccessManagementServices.Common;
 using AccessManagementServices.DOTS;
 using AccessManagementServices.Services;
 using Microsoft.AspNetCore.Http;
@@ -80,12 +81,15 @@ namespace AccessManagement.Controllers
         // POST: Company/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, CompanyViewModel collection)
+        public async Task<ActionResult> Edit(int id, CompanyViewModel vm)
         {
             try
             {
-                // TODO: Add update logic here
-
+                var result = await _companyServices.Update(vm);
+                if (result.Status != Status.ok)
+                {
+                    return Content("<script>alert('保存失败');history.back();</script>");
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch(Exception ex)
@@ -93,6 +97,12 @@ namespace AccessManagement.Controllers
                 _logger.LogError(ex, ex.Message);
                 return View();
             }
+        }
+
+        public async Task<ActionResult> Setting(int id)
+        {
+            var vm = await _companyServices.GetSettingById(id);
+            return View(vm);
         }
 
         // GET: Company/Delete/5

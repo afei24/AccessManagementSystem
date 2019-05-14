@@ -4,6 +4,7 @@ using AccessManagementServices.DOTS;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +13,11 @@ using System.Threading.Tasks;
 
 namespace AccessManagementServices.Services
 {
-    public class PresetFunctionServices
+    public class PresetFunctionServices: BaseServices
     {
         private AccessManagementContext _context;
-        public PresetFunctionServices(AccessManagementContext context)
+        public PresetFunctionServices(AccessManagementContext context, ILogger<PresetFunctionServices> logger)
+            :base(logger)
         {
             _context = context;
         }
@@ -36,6 +38,7 @@ namespace AccessManagementServices.Services
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex.Message,ex);
                 return null;
             }
 
@@ -53,13 +56,14 @@ namespace AccessManagementServices.Services
                     return new ServiceResponseBase() { Status = Status.error, Message = "存在重复编码！" };
                 }
                 var query = await _context.ReSetFunction.FirstOrDefaultAsync(o => o.Id == vm.Id);
-                query = Mapper.Map<ReSetFunction>(vm);
+                Mapper.Map(vm, query); //不能使用Mapper.Map<ReSetFunction>(vm),会创建一个新的实例
                 _context.Entry(query).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
                 return new ServiceResponseBase() { Status = Status.ok };
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex.Message, ex);
                 return new ServiceResponseBase() { Status = Status.error, Message = ex.Message };
             }
 

@@ -1,4 +1,5 @@
 ﻿using AccessManagementData;
+using AccessManagementServices.Common;
 using AccessManagementServices.DOTS;
 using AutoMapper;
 using System;
@@ -12,13 +13,21 @@ namespace AccessManagement
     {
         public AccessManagementProfile()
         {
-            CreateMap<CompanyViewModel, Company>();
-            CreateMap<Company, CompanyViewModel>();
+            CreateMap<CompanyViewModel, Company>()
+                .ForMember(c => c.Status, conf => conf.MapFrom(s => (ComapnyStatus)s.Status));
+            CreateMap<Company, CompanyViewModel>().
+                ForMember(c=>c.StatusName,conf=>conf.MapFrom(s=>s.Status.ToString()))
+                .ForMember(c => c.Status, conf => conf.MapFrom(s => (int)s.Status));
+
             CreateMap<AppMenuViewModel, AppMenu>();
             CreateMap<AppMenu, AppMenuViewModel>();
+
             CreateMap<BranchViewModel, Branch>();
             CreateMap<Branch, BranchViewModel>()
-                .ForMember(d => d.ParentBranchName, conf => conf.MapFrom(s => s.ParentBranch.Name)); ;
+                .ForMember(d => d.ParentBranchName, conf => conf.MapFrom(s => s.ParentBranch.Name));
+
+            CreateMap<PresetFunctionViewModel, ReSetFunction>();
+            CreateMap<ReSetFunction, PresetFunctionViewModel>();
         }
     }
 }

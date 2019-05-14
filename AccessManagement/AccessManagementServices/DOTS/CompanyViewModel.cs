@@ -11,7 +11,7 @@ namespace AccessManagementServices.DOTS
     {
         public CompanyViewModel()
         {
-            Functions = new List<FunctionViewModel>();
+            CompanyFunctionViewModels = new List<CompanyFunctionViewModel>();
         }
         public int Id { get; set; }
 
@@ -26,7 +26,9 @@ namespace AccessManagementServices.DOTS
         public string Tel { get; set; }
 
         [Display(Name = "状态")]
-        public ComapnyStatus Status { get; set; }
+        public string StatusName { get; set; }
+        [Display(Name = "状态")]
+        public int Status { get; set; }
 
         [Display(Name = "创建时间")]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
@@ -35,7 +37,7 @@ namespace AccessManagementServices.DOTS
         [Display(Name = "更新时间")]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime? UpdateTime { get; set; }
-        public List<FunctionViewModel> Functions { get; set; }
         public IList<SelectListItem> ComapnyStatuss { get; set; }
+        public List<CompanyFunctionViewModel> CompanyFunctionViewModels { get; set; }
     }
 }

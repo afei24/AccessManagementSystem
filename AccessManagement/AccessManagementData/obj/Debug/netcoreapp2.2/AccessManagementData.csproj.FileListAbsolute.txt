@@ -6,4 +6,3 @@ C:\项目\AccessManagementSystem\AccessManagement\AccessManagementData\obj\Debug
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementData\bin\Debug\netcoreapp2.2\AccessManagementData.pdb
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementData\obj\Debug\netcoreapp2.2\AccessManagementData.dll
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementData\obj\Debug\netcoreapp2.2\AccessManagementData.pdb
-C:\项目\AccessManagementSystem\AccessManagement\AccessManagementData\obj\Debug\netcoreapp2.2\AccessManagementData.csprojAssemblyReference.cache

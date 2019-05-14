@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AccessManagementServices.Common;
 using AccessManagementServices.DOTS;
 using AccessManagementServices.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace AccessManagement.Controllers
 {
@@ -21,6 +23,12 @@ namespace AccessManagement.Controllers
         {
             var vms = await _presetFunctionServices.GetList();
             return View(vms);
+        }
+        public async Task<ActionResult> AjaxIndex()
+        {
+            var vms = await _presetFunctionServices.GetList();
+            var json =  JsonConvert.SerializeObject(vms);
+            return Json(json);
         }
 
         // GET: PresetFunction/Details/5
@@ -53,20 +61,24 @@ namespace AccessManagement.Controllers
         }
 
         // GET: PresetFunction/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<ActionResult> Edit(int id)
         {
-            return View();
+            var vm = await _presetFunctionServices.GetById(id);
+            return View(vm);
         }
 
         // POST: PresetFunction/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, PresetFunctionViewModel collection)
+        public async Task<ActionResult> Edit(int id, PresetFunctionViewModel vm)
         {
             try
             {
-                // TODO: Add update logic here
-
+                var result =  await _presetFunctionServices.Update(vm);
+                if (result.Status != Status.ok)
+                {
+                    return Content($"<script>alert('保存失败：{result.Message}');history.back();</script>");
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch
