@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AccessManagementData;
+using AccessManagementServices;
 using AccessManagementServices.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -12,8 +13,8 @@ namespace AccessManagement.Controllers
 {
     public class AccountController : Controller
     {
-        private AccountServices _accountServices;
-        public AccountController(AccountServices accountServices)
+        private IAccountServices _accountServices;
+        public AccountController(IAccountServices accountServices)
         {
             _accountServices = accountServices;
         }

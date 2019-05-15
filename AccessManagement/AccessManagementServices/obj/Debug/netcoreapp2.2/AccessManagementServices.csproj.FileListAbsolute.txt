@@ -12,3 +12,15 @@ C:\项目\AccessManagementSystem\AccessManagement\AccessManagementServices\obj\D
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementServices\obj\Debug\netcoreapp2.2\AccessManagementServices.pdb
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementServices\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementServices\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementServices\obj\Debug\netcoreapp2.2\AccessManagementServices.csprojAssemblyReference.cache
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementServices\obj\Debug\netcoreapp2.2\AccessManagementServices.csproj.CoreCompileInputs.cache
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementServices\obj\Debug\netcoreapp2.2\AccessManagementServices.AssemblyInfoInputs.cache
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementServices\obj\Debug\netcoreapp2.2\AccessManagementServices.AssemblyInfo.cs
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementServices\obj\Debug\netcoreapp2.2\AccessManagementServices.dll
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementServices\obj\Debug\netcoreapp2.2\AccessManagementServices.pdb
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementServices\bin\Debug\netcoreapp2.2\AccessManagementServices.deps.json
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementServices\bin\Debug\netcoreapp2.2\AccessManagementServices.dll
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementServices\bin\Debug\netcoreapp2.2\AccessManagementServices.pdb
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementServices\bin\Debug\netcoreapp2.2\AccessManagementData.dll
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementServices\bin\Debug\netcoreapp2.2\AccessManagementData.pdb
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementServices\obj\Debug\netcoreapp2.2\AccessManagementServices.csproj.CopyComplete
