@@ -6,4 +6,16 @@ C:\项目\AccessManagementSystem\AccessManagement\AccessManagementData\obj\Debug
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementData\bin\Debug\netcoreapp2.2\AccessManagementData.pdb
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementData\obj\Debug\netcoreapp2.2\AccessManagementData.dll
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementData\obj\Debug\netcoreapp2.2\AccessManagementData.pdb
+<<<<<<< HEAD
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementData\obj\Debug\netcoreapp2.2\AccessManagementData.csprojAssemblyReference.cache
+=======
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementData\bin\Debug\netcoreapp2.2\AccessManagementData.deps.json
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementData\bin\Debug\netcoreapp2.2\AccessManagementData.dll
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementData\bin\Debug\netcoreapp2.2\AccessManagementData.pdb
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementData\obj\Debug\netcoreapp2.2\AccessManagementData.csprojAssemblyReference.cache
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementData\obj\Debug\netcoreapp2.2\AccessManagementData.csproj.CoreCompileInputs.cache
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementData\obj\Debug\netcoreapp2.2\AccessManagementData.AssemblyInfoInputs.cache
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementData\obj\Debug\netcoreapp2.2\AccessManagementData.AssemblyInfo.cs
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementData\obj\Debug\netcoreapp2.2\AccessManagementData.dll
+C:\projects\AMS\AccessManagementSystem\AccessManagementSystem\AccessManagement\AccessManagementData\obj\Debug\netcoreapp2.2\AccessManagementData.pdb
+>>>>>>> refs/remotes/origin/master

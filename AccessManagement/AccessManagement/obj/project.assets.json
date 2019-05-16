@@ -4773,6 +4773,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
+          "Microsoft.AspNetCore": "2.2.0",
+          "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.4"
         },
         "compile": {
@@ -4787,7 +4789,9 @@
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "AccessManagementData": "1.0.0",
-          "AutoMapper": "8.1.0"
+          "AutoMapper": "8.1.0",
+          "Microsoft.AspNetCore": "2.2.0",
+          "Microsoft.AspNetCore.Mvc": "2.2.0"
         },
         "compile": {
           "bin/placeholder/AccessManagementServices.dll": {}
@@ -8161,8 +8165,6 @@
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
-        "Newtonsoft.Json.11.0.2.nupkg.sha512",
-        "Newtonsoft.Json.nuspec",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -8180,7 +8182,9 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml"
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
       ]
     },
     "Newtonsoft.Json.Bson/1.0.1": {
@@ -8995,6 +8999,7 @@
       "path": "system.composition.convention/1.0.31",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Composition.Convention.dll",
@@ -9037,6 +9042,7 @@
       "path": "system.composition.typedparts/1.0.31",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Composition.TypedParts.dll",
@@ -10317,8 +10323,6 @@
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
-        "System.Memory.4.5.1.nupkg.sha512",
-        "System.Memory.nuspec",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netcoreapp2.1/_._",
         "lib/netstandard1.1/System.Memory.dll",
@@ -10330,6 +10334,8 @@
         "ref/netstandard1.1/System.Memory.xml",
         "ref/netstandard2.0/System.Memory.dll",
         "ref/netstandard2.0/System.Memory.xml",
+        "system.memory.4.5.1.nupkg.sha512",
+        "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -11094,9 +11100,6 @@
       "path": "system.runtime/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
-        "System.Runtime.4.3.0.nupkg.sha512",
-        "System.Runtime.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11177,7 +11180,9 @@
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._"
+        "ref/xamarinwatchos10/_._",
+        "system.runtime.4.3.0.nupkg.sha512",
+        "system.runtime.nuspec"
       ]
     },
     "System.Runtime.CompilerServices.Unsafe/4.5.1": {
@@ -12662,6 +12667,7 @@
       "path": "system.threading.tasks.parallel/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12757,15 +12763,14 @@
       "path": "system.valuetuple/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
-        "System.ValueTuple.4.3.0.nupkg.sha512",
-        "System.ValueTuple.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/.xml",
         "lib/netstandard1.0/System.ValueTuple.dll",
         "lib/portable-net40+sl4+win8+wp8/.xml",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll"
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "system.valuetuple.4.3.0.nupkg.sha512",
+        "system.valuetuple.nuspec"
       ]
     },
     "System.Xml.ReaderWriter/4.3.0": {
@@ -13109,7 +13114,9 @@
       "AccessManagementServices >= 1.0.0",
       "AutoMapper >= 8.1.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 6.1.0",
+      "Microsoft.AspNetCore >= 2.2.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
+      "Microsoft.AspNetCore.Mvc >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.0",
@@ -13172,11 +13179,19 @@
             "target": "Package",
             "version": "[6.1.0, )"
           },
+          "Microsoft.AspNetCore": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.2.0, )",
             "autoReferenced": true
+          },
+          "Microsoft.AspNetCore.Mvc": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           },
           "Microsoft.AspNetCore.Razor.Design": {
             "suppressParent": "All",

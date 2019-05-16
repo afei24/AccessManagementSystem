@@ -28,7 +28,9 @@
           "AccessManagementServices": "1.0.0",
           "AutoMapper": "8.1.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.1.0",
+          "Microsoft.AspNetCore": "2.2.0",
           "Microsoft.AspNetCore.App": "2.2.0",
+          "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.0",
@@ -688,6 +690,8 @@
       },
       "AccessManagementData/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore": "2.2.0",
+          "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.4"
         },
         "runtime": {
@@ -700,7 +704,9 @@
       "AccessManagementServices/1.0.0": {
         "dependencies": {
           "AccessManagementData": "1.0.0",
-          "AutoMapper": "8.1.0"
+          "AutoMapper": "8.1.0",
+          "Microsoft.AspNetCore": "2.2.0",
+          "Microsoft.AspNetCore.Mvc": "2.2.0"
         },
         "runtime": {
           "AccessManagementServices.dll": {}

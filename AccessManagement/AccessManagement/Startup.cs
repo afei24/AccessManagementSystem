@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AccessManagement.Middleware;
 using AccessManagementData;
+using AccessManagementServices;
 using AccessManagementServices.DOTS;
 using AccessManagementServices.Services;
 using AutoMapper;
@@ -47,7 +48,7 @@ namespace AccessManagement
             services.AddTransient<CompanyServices, CompanyServices>();
             services.AddTransient<BasicInfoServices, BasicInfoServices>();
             services.AddTransient<AppMenuServices>();
-            services.AddTransient<AccountServices>();
+            services.AddTransient<IAccountServices,AccountServices>();
             services.AddTransient<BranchServices>();
             services.AddTransient<PresetFunctionServices>();
 

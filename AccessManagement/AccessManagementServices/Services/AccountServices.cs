@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace AccessManagementServices.Services
 {
-    public class AccountServices
+    public class AccountServices:IAccountServices
     {
         IMapper _mapper;
         AccessManagementContext _context;
