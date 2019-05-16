@@ -1,0 +1,206 @@
+2019-05-16 16:45:30.1487|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-05-16 16:45:30.5597|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-16 16:45:30.6290|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-05-16 16:45:30.8888|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-05-16 16:45:30.9085|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.6765ms. 
+2019-05-16 16:45:31.0197|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-16 16:45:31.2946|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 292.6861ms. 
+2019-05-16 16:45:31.4257|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 668.4532ms 
+2019-05-16 16:45:31.4657|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-16 16:45:31.6182|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1370.7242ms 200 text/html; charset=utf-8 
+2019-05-16 16:45:33.6223|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-05-16 16:45:33.6223|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-16 16:45:33.6404|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-05-16 16:45:33.8025|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-05-16 16:45:33.8224|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3452ms. 
+2019-05-16 16:45:33.8322|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-16 16:45:33.9725|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 122.6824ms. 
+2019-05-16 16:45:33.9906|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 341.1795ms 
+2019-05-16 16:45:34.0003|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-16 16:45:34.0196|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 384.9378ms 200 text/html; charset=utf-8 
+2019-05-16 16:45:34.7790|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-05-16 16:45:34.8394|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-05-16 16:45:34.8394|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 79.3561ms 200 image/x-icon 
+2019-05-16 16:45:43.7685|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/account   
+2019-05-16 16:45:43.8141|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AccountController.Index (AccessManagement)' 
+2019-05-16 16:45:43.9207|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AccountController (AccessManagement). 
+2019-05-16 16:45:44.9171|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AccountController.Index (AccessManagement) - Validation state: Valid 
+2019-05-16 16:45:45.6064|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-16 16:45:46.6240|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (315ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccountName], [a].[BranchId], [a].[City], [a].[CompanyId], [a].[CreateTime], [a].[CreateUserId], [a].[Name], [a].[Password], [a].[Phone], [a].[Status], [a].[Type], [a.Company].[Id], [a.Company].[CreateTime], [a.Company].[Name], [a.Company].[Status], [a.Company].[Tel], [a.Company].[UpdateTime], [a.Branch].[Id], [a.Branch].[City], [a.Branch].[CompanyId], [a.Branch].[CreateTime], [a.Branch].[CreateUserId], [a.Branch].[Name], [a.Branch].[ParentBranchId], [a.Branch].[Type]
+FROM [Account] AS [a]
+INNER JOIN [Company] AS [a.Company] ON [a].[CompanyId] = [a.Company].[Id]
+INNER JOIN [Branch] AS [a.Branch] ON [a].[BranchId] = [a.Branch].[Id] 
+2019-05-16 16:45:47.1967|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AccountController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2274.2368ms. 
+2019-05-16 16:45:47.2137|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-16 16:45:47.6178|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AccountController.Index (AccessManagement) in 3678.7594ms 
+2019-05-16 16:45:47.6378|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AccountController.Index (AccessManagement)' 
+2019-05-16 16:45:47.9642|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. Object reference not set to an instance of an object.
+2019-05-16 16:45:48.3298|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 4533.8939ms 500 text/html; charset=utf-8 
+2019-05-16 16:45:48.6206|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-05-16 16:45:48.6460|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-05-16 16:45:48.6548|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 37.6202ms 200 image/x-icon 
+2019-05-16 16:46:08.7004|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/account   
+2019-05-16 16:46:08.7842|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AccountController.Index (AccessManagement)' 
+2019-05-16 16:46:08.9315|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AccountController (AccessManagement). 
+2019-05-16 16:46:09.5979|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AccountController.Index (AccessManagement) - Validation state: Valid 
+2019-05-16 16:46:16.9520|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-16 16:46:18.9749|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (107ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccountName], [a].[BranchId], [a].[City], [a].[CompanyId], [a].[CreateTime], [a].[CreateUserId], [a].[Name], [a].[Password], [a].[Phone], [a].[Status], [a].[Type], [a.Company].[Id], [a.Company].[CreateTime], [a.Company].[Name], [a.Company].[Status], [a.Company].[Tel], [a.Company].[UpdateTime], [a.Branch].[Id], [a.Branch].[City], [a.Branch].[CompanyId], [a.Branch].[CreateTime], [a.Branch].[CreateUserId], [a.Branch].[Name], [a.Branch].[ParentBranchId], [a.Branch].[Type]
+FROM [Account] AS [a]
+INNER JOIN [Company] AS [a.Company] ON [a].[CompanyId] = [a.Company].[Id]
+INNER JOIN [Branch] AS [a.Branch] ON [a].[BranchId] = [a.Branch].[Id] 
+2019-05-16 16:47:02.4614|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AccountController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 52855.714ms. 
+2019-05-16 16:47:02.5083|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-16 16:47:02.8220|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AccountController.Index (AccessManagement) in 53885.0087ms 
+2019-05-16 16:47:02.8394|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AccountController.Index (AccessManagement)' 
+2019-05-16 16:47:02.8617|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. Object reference not set to an instance of an object.
+2019-05-16 16:47:02.9463|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 54220.8408ms 500 text/html; charset=utf-8 
+2019-05-16 16:47:03.1187|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-05-16 16:47:03.2041|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-05-16 16:47:03.2283|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 131.8586ms 200 image/x-icon 
+2019-05-16 16:47:08.2499|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/appmenu   
+2019-05-16 16:47:08.2499|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-16 16:47:08.2862|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-16 16:47:08.3412|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-16 16:47:08.3584|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-16 16:47:08.6536|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (192ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-16 16:47:08.7017|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 353.2716ms. 
+2019-05-16 16:47:08.7268|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-16 16:47:09.1033|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 204.2091ms. 
+2019-05-16 16:47:09.1438|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/css/layui.css   
+2019-05-16 16:47:09.1523|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/css/bootstrap.css   
+2019-05-16 16:47:09.1710|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/js/layui.js   
+2019-05-16 16:47:09.1710|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 824.4863ms 
+2019-05-16 16:47:09.2013|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/css/site.css   
+2019-05-16 16:47:09.2013|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/js/layui.js'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\js\layui.js' 
+2019-05-16 16:47:09.2212|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/css/bootstrap.css was not modified 
+2019-05-16 16:47:09.2212|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 100.9273ms 200 application/javascript 
+2019-05-16 16:47:09.2370|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-16 16:47:09.2697|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/jquery/dist/jquery.js   
+2019-05-16 16:47:09.3369|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1002.2316ms 200 text/html; charset=utf-8 
+2019-05-16 16:47:09.3477|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 159.2361ms 304 text/css 
+2019-05-16 16:47:09.3477|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/js/bootstrap.bundle.js   
+2019-05-16 16:47:09.3477|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/jquery/dist/jquery.js was not modified 
+2019-05-16 16:47:09.3612|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0   
+2019-05-16 16:47:09.3738|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/js/bootstrap.bundle.js was not modified 
+2019-05-16 16:47:09.3612|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /css/site.css was not modified 
+2019-05-16 16:47:09.4014|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 147.2658ms 304 application/javascript 
+2019-05-16 16:47:09.4308|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 113.0203ms 304 application/javascript 
+2019-05-16 16:47:09.4308|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /js/site.js was not modified 
+2019-05-16 16:47:09.4426|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 208.2173ms 304 text/css 
+2019-05-16 16:47:09.4628|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 92.3127ms 304 application/javascript 
+2019-05-16 16:47:09.4969|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/css/layui.css'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\css\layui.css' 
+2019-05-16 16:47:09.6139|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 393.6729ms 200 text/css 
+2019-05-16 16:47:34.1197|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/appmenu   
+2019-05-16 16:47:34.1340|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-16 16:47:34.1691|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-16 16:47:34.2416|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-16 16:47:34.2508|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-16 16:47:34.3381|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (78ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-16 16:47:34.3452|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 97.9722ms. 
+2019-05-16 16:47:40.1017|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-16 16:47:40.3198|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 5880.3872ms. 
+2019-05-16 16:47:40.3690|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 6148.3551ms 
+2019-05-16 16:47:40.6502|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-16 16:47:40.6724|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 6539.2335ms 200 text/html; charset=utf-8 
+2019-05-16 16:47:40.6724|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/js/lay/modules/layer.js   
+2019-05-16 16:47:40.7224|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 29.6798ms 404  
+2019-05-16 16:47:40.7741|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-05-16 16:47:40.7865|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-05-16 16:47:40.7865|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 18.1657ms 200 image/x-icon 
+2019-05-16 16:47:45.6852|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/css/bootstrap.css.map   
+2019-05-16 16:47:45.6852|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/js/bootstrap.bundle.js.map   
+2019-05-16 16:47:45.9114|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/css/bootstrap.css.map was not modified 
+2019-05-16 16:47:46.0444|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/js/bootstrap.bundle.js.map was not modified 
+2019-05-16 16:47:46.0832|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 237.0485ms 304 text/plain 
+2019-05-16 16:47:46.1079|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 365.7983ms 304 text/plain 
+2019-05-16 16:49:35.7573|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/appmenu   
+2019-05-16 16:49:35.8151|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-16 16:49:35.9078|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-16 16:49:36.2092|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-16 16:49:36.2258|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-16 16:49:36.3653|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (127ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-16 16:49:36.3722|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 155.4886ms. 
+2019-05-16 16:49:36.4252|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-16 16:49:36.5202|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 95.8082ms. 
+2019-05-16 16:49:36.6798|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 612.9773ms 
+2019-05-16 16:49:37.0299|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-16 16:49:37.5057|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1399.0766ms 200 text/html; charset=utf-8 
+2019-05-16 16:49:43.6233|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/js/lay/modules/layer.js   
+2019-05-16 16:49:43.7028|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 52.9705ms 404  
+2019-05-16 16:49:57.7444|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-05-16 16:49:57.7734|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-05-16 16:49:57.8025|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 44.8051ms 200 image/x-icon 
+2019-05-16 16:50:59.2138|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/js/lay/modules/layer.js   
+2019-05-16 16:50:59.2734|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 55.5954ms 404  
+2019-05-16 16:51:24.4711|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/js/site.js   
+2019-05-16 16:51:24.4958|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/js/site.js'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\js\site.js' 
+2019-05-16 16:51:24.5738|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 69.7094ms 200 application/javascript 
+2019-05-16 16:55:24.3847|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/appmenu   
+2019-05-16 16:55:24.3847|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-05-16 16:55:24.6871|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-16 16:55:24.6871|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-16 16:55:24.7493|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-05-16 16:55:24.7493|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-16 16:55:25.0065|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-05-16 16:55:25.0205|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.3301ms. 
+2019-05-16 16:55:25.4617|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-16 16:55:25.7499|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-16 16:55:25.8416|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 792.9862ms. 
+2019-05-16 16:55:25.8416|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1095.1405ms 
+2019-05-16 16:55:25.8616|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-16 16:55:25.8853|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1520.2811ms 200 text/html; charset=utf-8 
+2019-05-16 16:55:26.4198|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-16 16:55:27.3329|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (130ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-16 16:55:27.3965|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1641.801ms. 
+2019-05-16 16:55:27.6727|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-16 16:55:28.0118|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 555.1388ms. 
+2019-05-16 16:55:28.0118|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 3259.0439ms 
+2019-05-16 16:55:28.0288|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-16 16:55:28.0288|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 3671.5621ms 200 text/html; charset=utf-8 
+2019-05-16 16:55:28.1556|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/layui/layui.js   
+2019-05-16 16:55:28.1556|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/layui/css/layui.css   
+2019-05-16 16:55:28.1781|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/layui/layui.js'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\layui\layui.js' 
+2019-05-16 16:55:28.1863|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 31.7477ms 200 application/javascript 
+2019-05-16 16:55:28.2141|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/layui/css/layui.css'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\layui\css\layui.css' 
+2019-05-16 16:55:28.2196|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 66.7542ms 200 text/css 
+2019-05-16 16:55:28.4786|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/layui/lay/modules/layer.js   
+2019-05-16 16:55:28.5909|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/layui/lay/modules/layer.js'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\layui\lay\modules\layer.js' 
+2019-05-16 16:55:28.5909|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 141.2532ms 200 application/javascript 
+2019-05-16 16:55:28.6252|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/layui/css/modules/layer/default/layer.css?v=3.1.1   
+2019-05-16 16:55:28.6252|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/layui/lay/modules/form.js   
+2019-05-16 16:55:28.6434|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/layui/css/modules/layer/default/layer.css'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\layui\css\modules\layer\default\layer.css' 
+2019-05-16 16:55:28.6434|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/layui/lay/modules/form.js'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\layui\lay\modules\form.js' 
+2019-05-16 16:55:28.6559|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 30.6417ms 200 text/css 
+2019-05-16 16:55:28.6559|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 30.3895ms 200 application/javascript 
+2019-05-16 16:55:37.9116|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/appmenu   
+2019-05-16 16:55:37.9221|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-16 16:55:37.9221|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-16 16:55:38.0029|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-16 16:55:38.0416|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-16 16:55:38.2697|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (203ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-16 16:55:38.2831|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 270.5464ms. 
+2019-05-16 16:55:38.2831|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-16 16:55:38.3590|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 52.2807ms. 
+2019-05-16 16:55:38.3968|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 444.7859ms 
+2019-05-16 16:55:38.4054|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-16 16:55:38.4600|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 500.9261ms 200 text/html; charset=utf-8 
+2019-05-16 16:55:39.8598|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-05-16 16:55:39.8732|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-05-16 16:55:39.8732|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 21.8352ms 200 image/x-icon 
