@@ -61,15 +61,16 @@
                 @Html.DisplayFor(modelItem => item.ParentId)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("编辑", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("详情", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("删除", "Delete", new { /* id=item.PrimaryKey */ })
             </td>
         </tr>
 }
     </tbody>
 </table>
-<script>
+
+@*<script>
 //一般直接写在一个js文件中
 layui.use(['layer', 'form'], function(){
   var layer = layui.layer
@@ -77,4 +78,4 @@ layui.use(['layer', 'form'], function(){
 
   layer.msg('Hello World');
 });
-</script>
+</script>*@

@@ -1,0 +1,619 @@
+2019-05-17 14:58:32.0181|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu   
+2019-05-17 14:58:32.0181|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-05-17 14:58:32.4358|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-17 14:58:32.4358|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 14:58:32.4923|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-05-17 14:58:32.5002|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 14:58:32.7966|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 14:58:32.8286|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.0434ms. 
+2019-05-17 14:58:32.9673|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 14:58:33.5563|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 14:58:33.6445|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 771.666ms. 
+2019-05-17 14:58:33.6585|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1153.4662ms 
+2019-05-17 14:58:33.6932|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-17 14:58:33.7123|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1716.7884ms 200 text/html; charset=utf-8 
+2019-05-17 14:58:34.1564|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 14:58:35.1397|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (183ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 14:58:35.2167|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1652.8023ms. 
+2019-05-17 14:58:35.2467|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 14:58:35.5256|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 290.7293ms. 
+2019-05-17 14:58:35.5367|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 3030.9379ms 
+2019-05-17 14:58:35.5461|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 14:58:35.5605|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 3565.7084ms 200 text/html; charset=utf-8 
+2019-05-17 14:58:35.6717|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/src/layui.js   
+2019-05-17 14:58:35.6927|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 21.9427ms 404  
+2019-05-17 14:58:36.1178|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/src/layui.js   
+2019-05-17 14:58:36.1405|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 10.5132ms 404  
+2019-05-17 14:58:36.2237|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/layui/lay/modules/element.js   
+2019-05-17 14:58:36.2925|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/layui/lay/modules/element.js'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\layui\lay\modules\element.js' 
+2019-05-17 14:58:36.2925|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 91.9169ms 200 application/javascript 
+2019-05-17 14:59:49.6043|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu   
+2019-05-17 14:59:49.6474|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 14:59:49.6686|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 14:59:49.8238|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 14:59:49.8360|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 14:59:50.0904|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (223ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 14:59:50.1154|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 270.8829ms. 
+2019-05-17 14:59:54.3838|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 14:59:54.5319|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 4287.075ms. 
+2019-05-17 14:59:54.5643|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/src/layui.js   
+2019-05-17 14:59:54.5922|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 4868.9176ms 
+2019-05-17 14:59:54.6112|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 55.5709ms 404  
+2019-05-17 14:59:54.6450|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 14:59:54.6631|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 5071.3666ms 200 text/html; charset=utf-8 
+2019-05-17 14:59:54.7562|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/src/layui.js   
+2019-05-17 14:59:54.7635|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 10.8787ms 404  
+2019-05-17 14:59:54.9384|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-05-17 14:59:54.9384|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-05-17 14:59:54.9609|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 17.8931ms 200 image/x-icon 
+2019-05-17 15:00:00.7122|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu   
+2019-05-17 15:00:00.7549|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:00:00.7622|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:00:01.0641|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:00:01.3216|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:00:01.9047|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (526ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:00:01.9396|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu   
+2019-05-17 15:00:01.9396|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 861.3117ms. 
+2019-05-17 15:00:01.9524|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:00:02.0112|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:00:02.0272|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:00:02.0272|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 68.957ms. 
+2019-05-17 15:00:02.1242|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 1277.9894ms 
+2019-05-17 15:00:02.1242|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:00:02.1643|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:00:02.1833|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:00:02.4237|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1563.9509ms 200 text/html; charset=utf-8 
+2019-05-17 15:00:02.4237|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (220ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:00:02.4410|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 286.7038ms. 
+2019-05-17 15:00:02.4410|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:00:02.4602|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 12.2325ms. 
+2019-05-17 15:00:02.5115|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 429.0553ms 
+2019-05-17 15:00:02.6077|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:00:02.6457|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/src/layui.js   
+2019-05-17 15:00:02.6971|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 738.0034ms 200 text/html; charset=utf-8 
+2019-05-17 15:00:02.7690|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 130.9423ms 404  
+2019-05-17 15:02:09.2862|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/appmenu   
+2019-05-17 15:02:09.2862|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-05-17 15:02:09.7793|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:02:09.7793|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-17 15:02:09.8436|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-05-17 15:02:09.8436|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:02:10.1716|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:02:10.2755|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.3543ms. 
+2019-05-17 15:02:10.7906|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:02:11.0746|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:02:11.1909|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 841.0683ms. 
+2019-05-17 15:02:11.2018|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1347.2424ms 
+2019-05-17 15:02:11.2018|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-17 15:02:11.2407|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1978.172ms 200 text/html; charset=utf-8 
+2019-05-17 15:02:11.9811|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:02:13.0692|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (233ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:02:13.1971|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2085.4837ms. 
+2019-05-17 15:02:13.2529|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:02:13.4065|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 3547.0841ms 
+2019-05-17 15:02:13.4065|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:02:13.5515|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. RenderBody has not been called for the page at '/Views/Shared/_Layout.cshtml'. To ignore call IgnoreBody().
+2019-05-17 15:02:13.7598|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 4497.9289ms 500 text/html; charset=utf-8 
+2019-05-17 15:04:09.4435|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-05-17 15:04:09.4435|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/appmenu   
+2019-05-17 15:04:09.8195|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-17 15:04:09.8195|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:04:09.8786|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:04:09.8786|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-05-17 15:04:10.3236|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:04:10.3742|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 23.557ms. 
+2019-05-17 15:04:10.5526|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:04:11.1030|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:04:11.2730|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 850.809ms. 
+2019-05-17 15:04:11.2847|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1390.5171ms 
+2019-05-17 15:04:11.3042|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-17 15:04:11.3380|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1910.2571ms 200 text/html; charset=utf-8 
+2019-05-17 15:04:12.0313|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:04:13.0453|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (179ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:04:13.1349|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2013.8502ms. 
+2019-05-17 15:04:13.2563|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:04:13.3847|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 227.6085ms. 
+2019-05-17 15:04:13.3961|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 3505.6291ms 
+2019-05-17 15:04:13.4098|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:04:13.4444|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 3996.7601ms 200 text/html; charset=utf-8 
+2019-05-17 15:04:13.4968|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/src/layui.js   
+2019-05-17 15:04:13.5249|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 34.2799ms 404  
+2019-05-17 15:04:13.8524|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/src/layui.js   
+2019-05-17 15:04:13.8656|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 19.4859ms 404  
+2019-05-17 15:04:53.3619|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/appmenu   
+2019-05-17 15:04:53.3857|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:04:53.4118|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:04:53.5128|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:04:53.5128|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:04:53.7430|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (201ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:04:53.7570|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 231.2254ms. 
+2019-05-17 15:04:58.2940|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:04:58.5472|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 4768.0377ms. 
+2019-05-17 15:04:58.5887|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 5125.7052ms 
+2019-05-17 15:04:58.5945|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/src/layui.js   
+2019-05-17 15:04:58.5945|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:04:58.6081|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 13.7748ms 404  
+2019-05-17 15:04:58.6081|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 5251.3117ms 200 text/html; charset=utf-8 
+2019-05-17 15:04:58.7235|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/src/layui.js   
+2019-05-17 15:04:58.7235|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 12.868ms 404  
+2019-05-17 15:04:58.7903|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-05-17 15:04:58.8163|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-05-17 15:04:58.8163|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 30.9081ms 200 image/x-icon 
+2019-05-17 15:27:18.9689|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-05-17 15:27:18.9689|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu   
+2019-05-17 15:27:19.3874|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:27:19.3874|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-17 15:27:19.5955|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-05-17 15:27:19.6112|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:27:20.0447|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:27:20.0763|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.3865ms. 
+2019-05-17 15:27:20.3579|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:27:21.0734|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:27:21.1472|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 1035.4213ms. 
+2019-05-17 15:27:21.1549|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1550.0612ms 
+2019-05-17 15:27:21.1549|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-05-17 15:27:21.1851|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2299.7378ms 200 text/html; charset=utf-8 
+2019-05-17 15:27:21.8852|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:27:22.7362|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (139ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:27:22.8436|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1753.5327ms. 
+2019-05-17 15:27:22.8819|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:27:23.4409|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 572.8051ms. 
+2019-05-17 15:27:23.4663|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 3832.8086ms 
+2019-05-17 15:27:23.4663|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:27:23.5106|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 4576.4119ms 200 text/html; charset=utf-8 
+2019-05-17 15:27:28.0069|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu/Create   
+2019-05-17 15:27:28.0938|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:27:28.1333|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Create", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Create() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:27:28.2719|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement) - Validation state: Valid 
+2019-05-17 15:27:28.2992|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:27:28.5468|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (216ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Code], [a].[Description], [a].[Id], [a].[Name], [a].[Order], [a].[ParentId], [a].[Route]
+FROM [AppMenu] AS [a]
+WHERE [a].[ParentId] IS NULL OR ([a].[ParentId] = 0) 
+2019-05-17 15:27:28.5692|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 282.2293ms. 
+2019-05-17 15:27:28.5947|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Create. 
+2019-05-17 15:27:28.8744|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Create (AccessManagement) in 726.9587ms 
+2019-05-17 15:27:28.8744|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:27:29.0178|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The following sections have been defined but have not been rendered by the page at '/Views/Shared/_Layout.cshtml': 'Scripts'. To ignore an unrendered section call IgnoreSection("sectionName").
+2019-05-17 15:27:29.3831|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1219.7142ms 500 text/html; charset=utf-8 
+2019-05-17 15:29:14.9817|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu/Create   
+2019-05-17 15:29:15.0081|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:29:15.0150|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Create", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Create() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:29:15.1017|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement) - Validation state: Valid 
+2019-05-17 15:29:15.1136|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:29:15.7432|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (601ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Code], [a].[Description], [a].[Id], [a].[Name], [a].[Order], [a].[ParentId], [a].[Route]
+FROM [AppMenu] AS [a]
+WHERE [a].[ParentId] IS NULL OR ([a].[ParentId] = 0) 
+2019-05-17 15:29:15.8078|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 641.3516ms. 
+2019-05-17 15:29:15.8169|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Create. 
+2019-05-17 15:29:24.3580|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Create (AccessManagement) in 9107.8942ms 
+2019-05-17 15:29:24.7407|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:29:25.1039|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The following sections have been defined but have not been rendered by the page at '/Views/Shared/_Layout.cshtml': 'Scripts'. To ignore an unrendered section call IgnoreSection("sectionName").
+2019-05-17 15:29:25.2760|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 10166.8415ms 500 text/html; charset=utf-8 
+2019-05-17 15:29:25.5137|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-05-17 15:29:25.8428|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-05-17 15:29:25.8930|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 352.3702ms 200 image/x-icon 
+2019-05-17 15:29:34.5047|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu/Create   
+2019-05-17 15:29:34.5126|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:29:34.5126|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Create", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Create() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:29:34.7467|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement) - Validation state: Valid 
+2019-05-17 15:29:34.7467|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:29:34.9214|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (144ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Code], [a].[Description], [a].[Id], [a].[Name], [a].[Order], [a].[ParentId], [a].[Route]
+FROM [AppMenu] AS [a]
+WHERE [a].[ParentId] IS NULL OR ([a].[ParentId] = 0) 
+2019-05-17 15:29:34.9367|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 180.9359ms. 
+2019-05-17 15:29:36.3164|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Create. 
+2019-05-17 15:29:36.4260|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Create executed in 1465.0839ms. 
+2019-05-17 15:29:36.6782|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Create (AccessManagement) in 1900.0787ms 
+2019-05-17 15:29:36.6971|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:29:36.7271|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2198.9185ms 200 text/html; charset=utf-8 
+2019-05-17 15:29:36.8272|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-05-17 15:29:37.0295|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-05-17 15:29:37.0650|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 214.744ms 200 image/x-icon 
+2019-05-17 15:30:05.9271|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu/Create   
+2019-05-17 15:30:05.9400|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:30:05.9501|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Create", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Create() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:30:06.0324|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement) - Validation state: Valid 
+2019-05-17 15:30:06.0324|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:30:06.1081|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (61ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Code], [a].[Description], [a].[Id], [a].[Name], [a].[Order], [a].[ParentId], [a].[Route]
+FROM [AppMenu] AS [a]
+WHERE [a].[ParentId] IS NULL OR ([a].[ParentId] = 0) 
+2019-05-17 15:30:06.1081|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 76.3709ms. 
+2019-05-17 15:30:06.9268|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Create. 
+2019-05-17 15:30:07.0156|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Create (AccessManagement) in 1057.5584ms 
+2019-05-17 15:30:07.0156|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:30:07.0401|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The following sections have been defined but have not been rendered by the page at '/Views/Shared/_Layout.cshtml': 'Scripts'. To ignore an unrendered section call IgnoreSection("sectionName").
+2019-05-17 15:30:07.1337|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1202.5819ms 500 text/html; charset=utf-8 
+2019-05-17 15:30:07.2067|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-05-17 15:30:07.2176|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-05-17 15:30:07.2331|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 31.251ms 200 image/x-icon 
+2019-05-17 15:30:41.6631|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu   
+2019-05-17 15:30:41.6754|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:30:41.7160|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:30:41.8019|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:30:41.8096|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:30:41.9384|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (120ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:30:41.9384|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 137.9188ms. 
+2019-05-17 15:30:41.9549|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:30:42.5238|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 562.9319ms. 
+2019-05-17 15:30:42.5754|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 849.6433ms 
+2019-05-17 15:30:42.5754|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:30:42.5958|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 937.7112ms 200 text/html; charset=utf-8 
+2019-05-17 15:30:42.6939|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-05-17 15:30:42.7136|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-05-17 15:30:42.7583|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 32.1298ms 200 image/x-icon 
+2019-05-17 15:30:45.1474|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu/Create   
+2019-05-17 15:30:45.1713|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:30:45.1713|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Create", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Create() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:30:45.2578|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement) - Validation state: Valid 
+2019-05-17 15:30:45.2671|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:30:45.4278|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (153ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Code], [a].[Description], [a].[Id], [a].[Name], [a].[Order], [a].[ParentId], [a].[Route]
+FROM [AppMenu] AS [a]
+WHERE [a].[ParentId] IS NULL OR ([a].[ParentId] = 0) 
+2019-05-17 15:30:45.4503|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 170.1273ms. 
+2019-05-17 15:30:45.4770|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Create. 
+2019-05-17 15:30:45.7401|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Create executed in 81.8838ms. 
+2019-05-17 15:30:45.8392|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Create (AccessManagement) in 564.8345ms 
+2019-05-17 15:30:45.8392|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/jquery-validation/dist/jquery.validate.js   
+2019-05-17 15:30:45.9529|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   
+2019-05-17 15:30:45.9698|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:30:45.9698|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 833.2413ms 200 text/html; charset=utf-8 
+2019-05-17 15:30:45.9698|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/jquery-validation/dist/jquery.validate.js was not modified 
+2019-05-17 15:30:45.9900|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js was not modified 
+2019-05-17 15:30:46.0824|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 207.215ms 304 application/javascript 
+2019-05-17 15:30:46.1064|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 174.0171ms 304 application/javascript 
+2019-05-17 15:35:22.0636|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu   
+2019-05-17 15:35:22.0894|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:35:22.1117|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:35:22.2325|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:35:22.2737|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:35:22.4055|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (121ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:35:22.4055|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 169.0988ms. 
+2019-05-17 15:35:22.4178|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:35:22.4546|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 36.6567ms. 
+2019-05-17 15:35:22.4650|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 343.1996ms 
+2019-05-17 15:35:22.5254|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:35:22.5421|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 474.8632ms 200 text/html; charset=utf-8 
+2019-05-17 15:35:54.2327|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu/Create   
+2019-05-17 15:35:54.2327|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:35:54.2797|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Create", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Create() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:35:54.3532|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement) - Validation state: Valid 
+2019-05-17 15:35:54.3629|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:35:54.5127|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (91ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Code], [a].[Description], [a].[Id], [a].[Name], [a].[Order], [a].[ParentId], [a].[Route]
+FROM [AppMenu] AS [a]
+WHERE [a].[ParentId] IS NULL OR ([a].[ParentId] = 0) 
+2019-05-17 15:35:54.5127|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 158.9358ms. 
+2019-05-17 15:35:54.5316|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Create. 
+2019-05-17 15:35:54.6635|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Create executed in 11.1711ms. 
+2019-05-17 15:35:54.6951|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Create (AccessManagement) in 384.6016ms 
+2019-05-17 15:35:54.7097|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:35:54.7248|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 482.5423ms 200 text/html; charset=utf-8 
+2019-05-17 15:36:30.0821|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/AppMenu/Create application/x-www-form-urlencoded 296 
+2019-05-17 15:36:30.1013|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:36:30.2884|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Create", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Create(AccessManagementServices.DOTS.AppMenuViewModel) on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:36:30.5132|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement) - Validation state: Valid 
+2019-05-17 15:36:45.5894|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:36:46.4253|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (121ms) [Parameters=[@__vm_Code_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppMenu] AS [o]
+        WHERE [o].[Code] = @__vm_Code_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2019-05-17 15:36:51.0974|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (88ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 4000), @p2='?' (Size = 50), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AppMenu] ([Code], [Description], [Name], [Order], [ParentId], [Route])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [Id]
+FROM [AppMenu]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-05-17 15:36:51.3937|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (253ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 4000), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?' (Size = 50), @p13='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ReSetFunction] ([Code], [Description], [Name], [OpName1], [OpName10], [OpName2], [OpName3], [OpName4], [OpName5], [OpName6], [OpName7], [OpName8], [OpName9], [Type])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT [Id]
+FROM [ReSetFunction]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-05-17 15:36:51.4234|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 20904.3009ms. 
+2019-05-17 15:36:51.4234|Microsoft.AspNetCore.Mvc.RedirectToActionResult|INFO|Executing RedirectResult, redirecting to /AppMenu. 
+2019-05-17 15:36:51.4384|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Create (AccessManagement) in 21143.0471ms 
+2019-05-17 15:36:51.4384|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:36:51.4945|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 21439.2327ms 302  
+2019-05-17 15:36:51.5002|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu   
+2019-05-17 15:36:51.5164|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:36:51.5288|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:36:51.6348|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:36:51.8270|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:36:52.0160|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (181ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:36:52.0278|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 380.7986ms. 
+2019-05-17 15:36:52.0580|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:36:52.1359|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 69.6687ms. 
+2019-05-17 15:36:52.4555|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 607.1983ms 
+2019-05-17 15:36:52.5371|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:36:52.6209|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1049.3075ms 200 text/html; charset=utf-8 
+2019-05-17 15:37:03.9436|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu/Edit   
+2019-05-17 15:37:03.9894|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Edit (AccessManagement)' 
+2019-05-17 15:37:04.0285|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Edit", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Edit(Int32) on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:37:04.1281|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Edit (AccessManagement) - Validation state: Valid 
+2019-05-17 15:37:04.1435|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:37:04.4601|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (171ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[Id], [o].[Code], [o].[Description], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] = @__id_0 
+2019-05-17 15:37:04.4973|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Edit (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 363.8713ms. 
+2019-05-17 15:37:04.5178|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Edit. 
+2019-05-17 15:37:04.8121|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Edit executed in 155.2686ms. 
+2019-05-17 15:37:04.9220|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Edit (AccessManagement) in 786.2605ms 
+2019-05-17 15:37:04.9398|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Edit (AccessManagement)' 
+2019-05-17 15:37:04.9539|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1007.8191ms 200 text/html; charset=utf-8 
+2019-05-17 15:37:31.0434|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu/Create   
+2019-05-17 15:37:31.0434|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:37:31.0960|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Create", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Create() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:37:31.1509|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement) - Validation state: Valid 
+2019-05-17 15:37:31.1623|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:37:31.2610|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (74ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Code], [a].[Description], [a].[Id], [a].[Name], [a].[Order], [a].[ParentId], [a].[Route]
+FROM [AppMenu] AS [a]
+WHERE [a].[ParentId] IS NULL OR ([a].[ParentId] = 0) 
+2019-05-17 15:37:31.2610|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 108.7864ms. 
+2019-05-17 15:37:31.2610|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Create. 
+2019-05-17 15:37:31.3435|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Create executed in 15.4811ms. 
+2019-05-17 15:37:31.3435|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Create (AccessManagement) in 247.9843ms 
+2019-05-17 15:37:31.3678|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:37:31.3760|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 354.6721ms 200 text/html; charset=utf-8 
+2019-05-17 15:38:44.5569|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/AppMenu/Create application/x-www-form-urlencoded 286 
+2019-05-17 15:38:44.5726|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:38:44.6107|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Create", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Create(AccessManagementServices.DOTS.AppMenuViewModel) on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:38:44.8849|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement) - Validation state: Valid 
+2019-05-17 15:38:51.2377|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:38:51.3940|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (127ms) [Parameters=[@__vm_Code_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppMenu] AS [o]
+        WHERE [o].[Code] = @__vm_Code_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2019-05-17 15:38:51.6233|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (215ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 4000), @p2='?' (Size = 50), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AppMenu] ([Code], [Description], [Name], [Order], [ParentId], [Route])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [Id]
+FROM [AppMenu]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-05-17 15:38:51.6904|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (59ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 4000), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?' (Size = 50), @p13='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ReSetFunction] ([Code], [Description], [Name], [OpName1], [OpName10], [OpName2], [OpName3], [OpName4], [OpName5], [OpName6], [OpName7], [OpName8], [OpName9], [Type])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT [Id]
+FROM [ReSetFunction]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-05-17 15:38:51.7010|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 6810.1306ms. 
+2019-05-17 15:38:51.7250|Microsoft.AspNetCore.Mvc.RedirectToActionResult|INFO|Executing RedirectResult, redirecting to /AppMenu. 
+2019-05-17 15:38:51.7250|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Create (AccessManagement) in 7089.8196ms 
+2019-05-17 15:38:51.7365|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:38:51.7466|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 7236.0369ms 302  
+2019-05-17 15:38:51.7466|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu   
+2019-05-17 15:38:51.7466|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:38:51.7678|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:38:51.8141|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:38:51.8141|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:38:51.8865|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (61ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:38:51.8865|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 74.1435ms. 
+2019-05-17 15:38:51.8865|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:38:51.9392|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 29.5202ms. 
+2019-05-17 15:38:51.9888|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 172.1651ms 
+2019-05-17 15:38:52.0066|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:38:52.0270|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 261.6213ms 200 text/html; charset=utf-8 
+2019-05-17 15:38:56.5202|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu/Create   
+2019-05-17 15:38:56.5408|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:38:56.5500|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Create", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Create() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:38:56.6342|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement) - Validation state: Valid 
+2019-05-17 15:38:56.6495|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:38:56.8357|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (168ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Code], [a].[Description], [a].[Id], [a].[Name], [a].[Order], [a].[ParentId], [a].[Route]
+FROM [AppMenu] AS [a]
+WHERE [a].[ParentId] IS NULL OR ([a].[ParentId] = 0) 
+2019-05-17 15:38:56.8528|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 199.7673ms. 
+2019-05-17 15:38:56.8610|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Create. 
+2019-05-17 15:38:56.9422|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Create executed in 15.2888ms. 
+2019-05-17 15:38:56.9967|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Create (AccessManagement) in 403.3597ms 
+2019-05-17 15:38:57.0136|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:38:57.0786|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 506.0118ms 200 text/html; charset=utf-8 
+2019-05-17 15:39:35.5823|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/AppMenu/Create application/x-www-form-urlencoded 294 
+2019-05-17 15:39:35.6006|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:39:35.6668|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Create", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Create(AccessManagementServices.DOTS.AppMenuViewModel) on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:39:35.7541|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement) - Validation state: Valid 
+2019-05-17 15:39:35.7669|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:39:35.8600|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (69ms) [Parameters=[@__vm_Code_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppMenu] AS [o]
+        WHERE [o].[Code] = @__vm_Code_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2019-05-17 15:39:35.9400|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (58ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 4000), @p2='?' (Size = 50), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AppMenu] ([Code], [Description], [Name], [Order], [ParentId], [Route])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [Id]
+FROM [AppMenu]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-05-17 15:39:35.9887|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (44ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 4000), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (Size = 50), @p10='?' (Size = 50), @p11='?' (Size = 50), @p12='?' (Size = 50), @p13='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ReSetFunction] ([Code], [Description], [Name], [OpName1], [OpName10], [OpName2], [OpName3], [OpName4], [OpName5], [OpName6], [OpName7], [OpName8], [OpName9], [Type])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT [Id]
+FROM [ReSetFunction]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2019-05-17 15:39:35.9976|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Create (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 237.3332ms. 
+2019-05-17 15:39:35.9976|Microsoft.AspNetCore.Mvc.RedirectToActionResult|INFO|Executing RedirectResult, redirecting to /AppMenu. 
+2019-05-17 15:39:35.9976|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Create (AccessManagement) in 334.5121ms 
+2019-05-17 15:39:35.9976|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Create (AccessManagement)' 
+2019-05-17 15:39:36.0190|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 440.956ms 302  
+2019-05-17 15:39:36.0274|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu   
+2019-05-17 15:39:36.0274|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:39:36.0274|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:39:36.0779|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:39:36.0779|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:39:36.1595|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (63ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:39:36.1709|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 79.8432ms. 
+2019-05-17 15:39:36.2088|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:39:36.2628|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 85.9499ms. 
+2019-05-17 15:39:36.2628|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 229.0056ms 
+2019-05-17 15:39:36.3051|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:39:36.3176|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 287.2014ms 200 text/html; charset=utf-8 
+2019-05-17 15:44:56.4795|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu   
+2019-05-17 15:44:56.4925|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:44:56.5046|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:44:56.6278|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:44:56.6608|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:44:56.8228|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (75ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:44:56.8554|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 188.5578ms. 
+2019-05-17 15:44:56.8554|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:44:56.9455|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 83.1213ms. 
+2019-05-17 15:44:56.9634|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 440.5137ms 
+2019-05-17 15:44:56.9945|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:44:57.0258|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 550.0234ms 200 text/html; charset=utf-8 
+2019-05-17 15:44:59.9087|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu   
+2019-05-17 15:44:59.9087|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:44:59.9269|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:44:59.9788|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:44:59.9894|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:45:00.3388|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (336ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:45:00.3512|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 363.8293ms. 
+2019-05-17 15:45:00.3627|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:45:00.4107|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 53.1023ms. 
+2019-05-17 15:45:01.3478|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 496.347ms 
+2019-05-17 15:45:01.9085|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:45:01.9752|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu   
+2019-05-17 15:45:01.9843|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2049.1807ms 200 text/html; charset=utf-8 
+2019-05-17 15:45:02.0835|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:45:02.1234|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:45:02.4030|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:45:02.4030|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:45:02.6774|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (241ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:45:02.7241|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 304.8665ms. 
+2019-05-17 15:45:02.7359|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu   
+2019-05-17 15:45:02.8572|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:45:02.9404|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:45:02.9527|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:45:03.2227|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:45:03.2401|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 448.1955ms. 
+2019-05-17 15:45:03.2627|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:45:03.3646|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 1114.9014ms 
+2019-05-17 15:45:03.7086|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:45:03.7199|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (438ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:45:03.7199|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1790.2515ms 200 text/html; charset=utf-8 
+2019-05-17 15:45:03.7447|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 494.2137ms. 
+2019-05-17 15:45:03.7582|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:45:03.8507|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 75.2237ms. 
+2019-05-17 15:45:03.8831|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 898.1461ms 
+2019-05-17 15:45:03.9457|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:45:03.9792|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1239.7871ms 200 text/html; charset=utf-8 
+2019-05-17 15:45:05.2394|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu   
+2019-05-17 15:45:05.2524|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:45:05.2524|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:45:05.3059|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:45:05.3153|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:45:05.3860|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (64ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:45:05.3860|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 81.5175ms. 
+2019-05-17 15:45:05.3860|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:45:05.4437|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 44.5098ms. 
+2019-05-17 15:45:05.4916|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 185.5837ms 
+2019-05-17 15:45:05.5108|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:45:05.5258|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 285.5325ms 200 text/html; charset=utf-8 
+2019-05-17 15:46:00.4546|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu   
+2019-05-17 15:46:00.4904|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:46:00.5536|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:46:00.7093|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:46:00.7611|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:46:00.9463|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (177ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:46:00.9563|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 239.9911ms. 
+2019-05-17 15:46:00.9563|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:46:01.0281|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 63.0523ms. 
+2019-05-17 15:46:01.0775|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 483.9228ms 
+2019-05-17 15:46:01.1082|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:46:01.1277|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 668.8416ms 200 text/html; charset=utf-8 
+2019-05-17 15:46:51.6878|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/AppMenu   
+2019-05-17 15:46:51.6878|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:46:51.7226|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "AppMenu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AppMenuController (AccessManagement). 
+2019-05-17 15:46:51.8154|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement) - Validation state: Valid 
+2019-05-17 15:46:51.8367|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-05-17 15:46:52.0393|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (187ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Code], [o].[Description], [o].[Id], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Id] <> 0 
+2019-05-17 15:46:52.0486|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AppMenuController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 217.0483ms. 
+2019-05-17 15:46:52.0486|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-05-17 15:46:52.9100|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 853.9743ms. 
+2019-05-17 15:46:52.9404|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AppMenuController.Index (AccessManagement) in 1193.1181ms 
+2019-05-17 15:46:52.9506|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AppMenuController.Index (AccessManagement)' 
+2019-05-17 15:46:52.9767|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1282.1079ms 200 text/html; charset=utf-8 
+2019-05-17 15:46:53.1169|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-05-17 15:46:53.1296|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-05-17 15:46:53.1390|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 21.4728ms 200 image/x-icon 

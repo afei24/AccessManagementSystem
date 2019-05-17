@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
@@ -23,5 +24,6 @@ namespace AccessManagementServices.DOTS
         public string Description { get; set; }
         [Display(Name = "父菜单")]
         public int? ParentId { get; set; }
+        public IList<SelectListItem> ParentAppMenus { get; set; }
     }
 }

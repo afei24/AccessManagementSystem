@@ -6,15 +6,18 @@ using AccessManagementServices.DOTS;
 using AccessManagementServices.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace AccessManagement.Controllers
 {
     public class AppMenuController : Controller
     {
         private AppMenuServices _appMenuServices;
-        public AppMenuController(AppMenuServices appMenuServices)
+        private BasicInfoServices _basicInfoServices;
+        public AppMenuController(AppMenuServices appMenuServices, BasicInfoServices basicInfoServices)
         {
             _appMenuServices = appMenuServices;
+            _basicInfoServices = basicInfoServices;
         }
         // GET: AppMenu
         public async Task<ActionResult> Index()
@@ -31,9 +34,11 @@ namespace AccessManagement.Controllers
         }
 
         // GET: AppMenu/Create
-        public ActionResult Create()
+        public async Task<ActionResult> Create()
         {
-            return View();
+            var vm = new AppMenuViewModel();
+            await Init(vm);
+            return View(vm);
         }
 
         // POST: AppMenu/Create
@@ -98,6 +103,13 @@ namespace AccessManagement.Controllers
             {
                 return View();
             }
+        }
+
+        public async Task Init(AppMenuViewModel vm)
+        {
+            vm.ParentAppMenus =  (await _basicInfoServices.GetParentAppMenu())
+                .Select(a=>new SelectListItem() { Text = a.Name,Value = a.Id.ToString()})
+                .ToList();
         }
     }
 }
