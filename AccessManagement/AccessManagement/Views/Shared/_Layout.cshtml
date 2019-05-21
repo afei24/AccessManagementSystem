@@ -107,7 +107,8 @@
         </div>
     </div>
     <script>
-        //JavaScript代码区域
+        //千万不要忘了加载 element模块。虽然大部分行为都是在加载完该模块后自动完成的，
+        //但一些交互操作，如呼出二级菜单等，需借助element模块才能使用
         layui.use('element', function () {
             var element = layui.element;
 
