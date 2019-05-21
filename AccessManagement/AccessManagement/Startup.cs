@@ -66,7 +66,7 @@ namespace AccessManagement
         {
             loggerFactory.AddNLog(); //添加NLog
             NLog.LogManager.LoadConfiguration("nlog.config");
-            //app.UseLog();
+            app.UseLog();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

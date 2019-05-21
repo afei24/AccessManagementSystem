@@ -1,0 +1,1083 @@
+2019-05-21 10:47:25.6810|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/ requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-05-21 10:47:25.6810|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/appmenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-05-21 10:47:27.5691|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/
+Body:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 实例</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body @*style="background-image: url('/images/loginBck.jpg');background-repeat:no-repeat;"*@>
+    <form action="Home/index" method="post">
+        <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd">
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Remember me
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</body>
+</html> 
+2019-05-21 10:47:29.6321|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/appmenu
+Body:<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index - 权限管理系统</title>
+
+    
+        <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    
+    
+    <link rel="stylesheet" href="/css/site.css" />
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css" />
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+    <link href="/layui/css/layui.css" rel="stylesheet" />
+    <script src="/layui/layui.js"></script>
+</head>
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo">layui 后台布局</div>
+            <!-- 头部区域（可配合layui已有的水平导航） -->
+            <ul class="layui-nav layui-layout-left">
+                <li class="layui-nav-item"><a href="">控制台</a></li>
+                <li class="layui-nav-item"><a href="">商品管理</a></li>
+                <li class="layui-nav-item"><a href="">用户</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">其它系统</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">邮件管理</a></dd>
+                        <dd><a href="">消息管理</a></dd>
+                        <dd><a href="">授权管理</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                        贤心
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">基本资料</a></dd>
+                        <dd><a href="">安全设置</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="">退了</a></li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;">所有商品</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;">列表一</a></dd>
+                            <dd><a href="javascript:;">列表二</a></dd>
+                            <dd><a href="javascript:;">列表三</a></dd>
+                            <dd><a href="">超链接</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">解决方案</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;">列表一</a></dd>
+                            <dd><a href="javascript:;">列表二</a></dd>
+                            <dd><a href="">超链接</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item"><a href="">云市场</a></li>
+                    <li class="layui-nav-item"><a href="">发布商品</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <div class="container">
+                
+
+
+                <main role="main" class="pb-3">
+                    
+
+<h1>Index</h1>
+
+<p>
+    <a href="/AppMenu/Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                &#x540D;&#x79F0;
+            </th>
+            <th>
+                &#x8DEF;&#x7531;
+            </th>
+            <th>
+                &#x987A;&#x5E8F;
+            </th>
+            <th>
+                &#x7F16;&#x7801;
+            </th>
+            <th>
+                &#x63CF;&#x8FF0;
+            </th>
+            <th>
+                &#x7236;&#x83DC;&#x5355;
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                2
+            </td>
+            <td>
+                &#x8D26;&#x53F7;&#x7BA1;&#x7406;
+            </td>
+            <td>
+                Company
+            </td>
+            <td>
+                1
+            </td>
+            <td>
+                AccountManage
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1002
+            </td>
+            <td>
+                &#x6743;&#x9650;&#x7BA1;&#x7406;
+            </td>
+            <td>
+                4
+            </td>
+            <td>
+                4
+            </td>
+            <td>
+                4
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1003
+            </td>
+            <td>
+                &#x673A;&#x6784;&#x7BA1;&#x7406;
+            </td>
+            <td>
+                Branch
+            </td>
+            <td>
+                2
+            </td>
+            <td>
+                BranchManage
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1004
+            </td>
+            <td>
+                &#x516C;&#x53F8;&#x7BA1;&#x7406;
+            </td>
+            <td>
+                Company
+            </td>
+            <td>
+                0
+            </td>
+            <td>
+                CompanyManagement
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1005
+            </td>
+            <td>
+                &#x89D2;&#x8272;&#x7BA1;&#x7406;
+            </td>
+            <td>
+                Role
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                RoleManage
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1006
+            </td>
+            <td>
+                &#x529F;&#x80FD;&#x7BA1;&#x7406;
+            </td>
+            <td>
+                Function
+            </td>
+            <td>
+                5
+            </td>
+            <td>
+                FunctionManage
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1007
+            </td>
+            <td>
+                &#x6D4B;&#x8BD5;
+            </td>
+            <td>
+                1
+            </td>
+            <td>
+                0
+            </td>
+            <td>
+                1
+            </td>
+            <td>
+                1
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1008
+            </td>
+            <td>
+                &#x5BA2;&#x670D;
+            </td>
+            <td>
+                2
+            </td>
+            <td>
+                0
+            </td>
+            <td>
+                2
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1009
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                0
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1010
+            </td>
+            <td>
+                &#x6D4B;&#x8BD5;&#x516C;&#x53F8;1
+            </td>
+            <td>
+                r
+            </td>
+            <td>
+                0
+            </td>
+            <td>
+                rr
+            </td>
+            <td>
+                &#x5343;&#x4E07;&#x5BCC;&#x7FC1;
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+                </main>
+            </div>
+        </div>
+
+        <div class="layui-footer">
+            <!-- 底部固定区域 -->
+            © layui.com - 底部固定区域
+        </div>
+    </div>
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function () {
+            var element = layui.element;
+
+        });
+    </script>
+    
+</body>
+</html>
+ 
+2019-05-21 10:47:35.6374|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/AppMenu/Create requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-05-21 10:47:36.1721|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/AppMenu/Create
+Body:<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create - 权限管理系统</title>
+
+    
+        <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    
+    
+    <link rel="stylesheet" href="/css/site.css" />
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css" />
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+    <link href="/layui/css/layui.css" rel="stylesheet" />
+    <script src="/layui/layui.js"></script>
+</head>
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo">layui 后台布局</div>
+            <!-- 头部区域（可配合layui已有的水平导航） -->
+            <ul class="layui-nav layui-layout-left">
+                <li class="layui-nav-item"><a href="">控制台</a></li>
+                <li class="layui-nav-item"><a href="">商品管理</a></li>
+                <li class="layui-nav-item"><a href="">用户</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">其它系统</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">邮件管理</a></dd>
+                        <dd><a href="">消息管理</a></dd>
+                        <dd><a href="">授权管理</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                        贤心
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">基本资料</a></dd>
+                        <dd><a href="">安全设置</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="">退了</a></li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;">所有商品</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;">列表一</a></dd>
+                            <dd><a href="javascript:;">列表二</a></dd>
+                            <dd><a href="javascript:;">列表三</a></dd>
+                            <dd><a href="">超链接</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">解决方案</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;">列表一</a></dd>
+                            <dd><a href="javascript:;">列表二</a></dd>
+                            <dd><a href="">超链接</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item"><a href="">云市场</a></li>
+                    <li class="layui-nav-item"><a href="">发布商品</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <div class="container">
+                
+
+
+                <main role="main" class="pb-3">
+                    
+
+<h1>Create</h1>
+
+<h4>AppMenuViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form action="/AppMenu/Create" method="post">
+            
+            <div class="form-group">
+                <label class="control-label" for="Name">&#x540D;&#x79F0;</label>
+                <input class="form-control" type="text" data-val="true" data-val-required="The &#x540D;&#x79F0; field is required." id="Name" name="Name" value="" />
+                <span class="text-danger field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Route">&#x8DEF;&#x7531;</label>
+                <input class="form-control" type="text" data-val="true" data-val-required="The &#x8DEF;&#x7531; field is required." id="Route" name="Route" value="" />
+                <span class="text-danger field-validation-valid" data-valmsg-for="Route" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Order">&#x987A;&#x5E8F;</label>
+                <input class="form-control" type="number" data-val="true" data-val-required="The &#x987A;&#x5E8F; field is required." id="Order" name="Order" value="0" />
+                <span class="text-danger field-validation-valid" data-valmsg-for="Order" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Code">&#x7F16;&#x7801;</label>
+                <input class="form-control" type="text" data-val="true" data-val-required="The &#x7F16;&#x7801; field is required." id="Code" name="Code" value="" />
+                <span class="text-danger field-validation-valid" data-valmsg-for="Code" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Description">&#x63CF;&#x8FF0;</label>
+                <input class="form-control" type="text" id="Description" name="Description" value="" />
+                <span class="text-danger field-validation-valid" data-valmsg-for="Description" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="ParentId">&#x7236;&#x83DC;&#x5355;</label>
+                <select class="form-control" id="ParentId" name="ParentId"><option value="1002">&#x6743;&#x9650;&#x7BA1;&#x7406;</option>
+</select>
+                <span class="text-danger field-validation-valid" data-valmsg-for="ParentId" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8HpNWGmIHV1JgRa71CTXXSW6JSRK-OmtmoF9SD-_J8pSJA-X5yYDuDQZvd1WCqZM5HpBJMU853ypKj6YxUC3Md_iMUH2lXQGLllQ33UJZMAP-5ahcFbH7vzlrWFxUQM12xym9xteCP-0EfEOkOngCPk" /></form>
+    </div>
+</div>
+
+<div>
+    <a href="/AppMenu">Back to List</a>
+</div>
+
+
+                </main>
+            </div>
+        </div>
+
+        <div class="layui-footer">
+            <!-- 底部固定区域 -->
+            © layui.com - 底部固定区域
+        </div>
+    </div>
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function () {
+            var element = layui.element;
+
+        });
+    </script>
+    
+
+    <script src="/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+
+
+</body>
+</html>
+ 
+2019-05-21 10:47:45.4386|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/AppMenu/Create requestMethod:POST requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-05-21 10:48:01.4539|AccessManagement.Middleware.LogMiddleware|INFO|Request Body:Name=%E5%AE%A2%E6%9C%8D&Route=6&Order=0&Code=3&Description=&ParentId=1002&__RequestVerificationToken=CfDJ8HpNWGmIHV1JgRa71CTXXSW6JSRK-OmtmoF9SD-_J8pSJA-X5yYDuDQZvd1WCqZM5HpBJMU853ypKj6YxUC3Md_iMUH2lXQGLllQ33UJZMAP-5ahcFbH7vzlrWFxUQM12xym9xteCP-0EfEOkOngCPk 
+2019-05-21 10:48:02.8972|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/AppMenu/Create
+Body: 
+2019-05-21 10:48:02.9668|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/AppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-05-21 10:48:20.0515|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/AppMenu
+Body:<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index - 权限管理系统</title>
+
+    
+        <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    
+    
+    <link rel="stylesheet" href="/css/site.css" />
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css" />
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+    <link href="/layui/css/layui.css" rel="stylesheet" />
+    <script src="/layui/layui.js"></script>
+</head>
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo">layui 后台布局</div>
+            <!-- 头部区域（可配合layui已有的水平导航） -->
+            <ul class="layui-nav layui-layout-left">
+                <li class="layui-nav-item"><a href="">控制台</a></li>
+                <li class="layui-nav-item"><a href="">商品管理</a></li>
+                <li class="layui-nav-item"><a href="">用户</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">其它系统</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">邮件管理</a></dd>
+                        <dd><a href="">消息管理</a></dd>
+                        <dd><a href="">授权管理</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                        贤心
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">基本资料</a></dd>
+                        <dd><a href="">安全设置</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="">退了</a></li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;">所有商品</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;">列表一</a></dd>
+                            <dd><a href="javascript:;">列表二</a></dd>
+                            <dd><a href="javascript:;">列表三</a></dd>
+                            <dd><a href="">超链接</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">解决方案</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;">列表一</a></dd>
+                            <dd><a href="javascript:;">列表二</a></dd>
+                            <dd><a href="">超链接</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item"><a href="">云市场</a></li>
+                    <li class="layui-nav-item"><a href="">发布商品</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <div class="container">
+                
+
+
+                <main role="main" class="pb-3">
+                    
+
+<h1>Index</h1>
+
+<p>
+    <a href="/AppMenu/Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                &#x540D;&#x79F0;
+            </th>
+            <th>
+                &#x8DEF;&#x7531;
+            </th>
+            <th>
+                &#x987A;&#x5E8F;
+            </th>
+            <th>
+                &#x7F16;&#x7801;
+            </th>
+            <th>
+                &#x63CF;&#x8FF0;
+            </th>
+            <th>
+                &#x7236;&#x83DC;&#x5355;
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                2
+            </td>
+            <td>
+                &#x8D26;&#x53F7;&#x7BA1;&#x7406;
+            </td>
+            <td>
+                Company
+            </td>
+            <td>
+                1
+            </td>
+            <td>
+                AccountManage
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1002
+            </td>
+            <td>
+                &#x6743;&#x9650;&#x7BA1;&#x7406;
+            </td>
+            <td>
+                4
+            </td>
+            <td>
+                4
+            </td>
+            <td>
+                4
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1003
+            </td>
+            <td>
+                &#x673A;&#x6784;&#x7BA1;&#x7406;
+            </td>
+            <td>
+                Branch
+            </td>
+            <td>
+                2
+            </td>
+            <td>
+                BranchManage
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1004
+            </td>
+            <td>
+                &#x516C;&#x53F8;&#x7BA1;&#x7406;
+            </td>
+            <td>
+                Company
+            </td>
+            <td>
+                0
+            </td>
+            <td>
+                CompanyManagement
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1005
+            </td>
+            <td>
+                &#x89D2;&#x8272;&#x7BA1;&#x7406;
+            </td>
+            <td>
+                Role
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                RoleManage
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1006
+            </td>
+            <td>
+                &#x529F;&#x80FD;&#x7BA1;&#x7406;
+            </td>
+            <td>
+                Function
+            </td>
+            <td>
+                5
+            </td>
+            <td>
+                FunctionManage
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1007
+            </td>
+            <td>
+                &#x6D4B;&#x8BD5;
+            </td>
+            <td>
+                1
+            </td>
+            <td>
+                0
+            </td>
+            <td>
+                1
+            </td>
+            <td>
+                1
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1008
+            </td>
+            <td>
+                &#x5BA2;&#x670D;
+            </td>
+            <td>
+                2
+            </td>
+            <td>
+                0
+            </td>
+            <td>
+                2
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1009
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                0
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1010
+            </td>
+            <td>
+                &#x6D4B;&#x8BD5;&#x516C;&#x53F8;1
+            </td>
+            <td>
+                r
+            </td>
+            <td>
+                0
+            </td>
+            <td>
+                rr
+            </td>
+            <td>
+                &#x5343;&#x4E07;&#x5BCC;&#x7FC1;
+            </td>
+            <td>
+                1002
+            </td>
+            <td>
+                <a href="/AppMenu/Edit">&#x7F16;&#x8F91;</a> |
+                <a href="/AppMenu/Details">&#x8BE6;&#x60C5;</a> |
+                <a href="/AppMenu/Delete">&#x5220;&#x9664;</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+                </main>
+            </div>
+        </div>
+
+        <div class="layui-footer">
+            <!-- 底部固定区域 -->
+            © layui.com - 底部固定区域
+        </div>
+    </div>
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function () {
+            var element = layui.element;
+
+        });
+    </script>
+    
+</body>
+</html>
+ 
