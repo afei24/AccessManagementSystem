@@ -25,7 +25,12 @@ namespace AccessManagement.Controllers
             var vms = await _appMenuServices.GetList();
             return View(vms);
         }
-
+        public async Task<ActionResult> AjaxIndex()
+        {
+            var vms = await _appMenuServices.GetList();
+            return View(vms);
+        }
+        
         // GET: AppMenu/Details/5
         public async Task<ActionResult> Details(int id)
         {

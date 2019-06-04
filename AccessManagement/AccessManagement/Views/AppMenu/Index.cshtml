@@ -7,10 +7,10 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">新建</a>
 </p>
-<table class="table" id="appmenuTb">
-    <thead>
+<table class="table" id="appmenu_tb" lay-filter="appmenu">
+    @*<thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Id)
@@ -68,15 +68,104 @@
                 </td>
             </tr>
         }
-    </tbody>
+    </tbody>*@
 </table>
-<div id="test1"></div>
+<script type="text/html" id="bar">
+    <a class="layui-btn layui-btn-xs" lay-event="detail">查看</a>
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+
+    <!-- 这里同样支持 laytpl 语法，如： -->
+    @*{{#  if(d.auth > 2){ }}
+    <a class="layui-btn layui-btn-xs" lay-event="check">审核</a>
+    {{#  } }}*@
+</script>
 <script>
-    layui.use('colorpicker', function () {
-        var colorpicker = layui.colorpicker;
-        //渲染
-        colorpicker.render({
-            elem: '#test1'  //绑定元素
+    layui.use('table', function () {
+        var table = layui.table;
+
+        //第一个实例
+        var tableIns =  table.render({
+            elem: '#appmenu_tb'
+            , height: 312
+            , url: '/appmenu/AjaxIndex/' //数据接口
+            , where: { token: 'sasasas', id: 123 }
+            , parseData: function (res) { //res 即为原始返回的数据
+                return {
+                    "code": res.status, //解析接口状态
+                    "msg": res.message, //解析提示文本
+                    "count": res.total, //解析数据长度
+                    "data": res.data.item //解析数据列表
+                };
+            }
+            , page: true //开启分页
+            , cols: [[ //表头
+                { field: 'Id', fixed: 'left', type:'checkbox' }
+                , { field: 'Name', title: 'Name', width: 80 }
+                , { field: 'Route', title: 'Route', width: 80, sort: true }
+                , { field: 'Order', title: 'Order', width: 80, totalRow: true, totalRowText:'合计' }
+                , { field: 'Code', title: 'Code', width: 177 }
+                , { field: 'Description', title: 'Description', width: 80, sort: true }
+                , { field: 'ParentId', title: 'ParentId', width: 80, sort: true }
+                , { fixed: 'right', width: 150, align: 'center', toolbar: '#bar' }
+            ]]
+            , toolbar: 'default' 
+            , defaultToolbar: ['filter', 'print', 'exports']
+            , title: '菜单'
+            , done: function (res, curr, count) {
+                //如果是异步请求数据方式，res即为你接口返回的信息。
+                //如果是直接赋值的方式，res即为：{data: [], count: 99} data为当前页数据、count为数据总长度
+                console.log(res);
+
+                //得到当前页码
+                console.log(curr);
+
+                //得到数据总量
+                console.log(count);
+            },
+            text: {
+                none: '暂无相关数据' //默认：无数据。注：该属性为 layui 2.2.5 开始新增
+            }
+            , even: true
+            , skin: line
         });
+
+        //监听工具条
+        table.on('tool(appmenu)', function (obj) { //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
+            var data = obj.data; //获得当前行数据
+            var layEvent = obj.event; //获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
+            var tr = obj.tr; //获得当前行 tr 的DOM对象
+
+            if (layEvent === 'detail') { //查看
+                //do somehing
+            } else if (layEvent === 'del') { //删除
+                layer.confirm('真的删除行么', function (index) {
+                    obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
+                    layer.close(index);
+                    //向服务端发送删除指令
+                });
+            } else if (layEvent === 'edit') { //编辑
+                //do something
+
+                //同步更新缓存对应的值
+                obj.update({
+                    username: '123'
+                    , title: 'xxx'
+                });
+            }
+        });
+
+        //这里以搜索为例
+        tableIns.reload({
+            where: { //设定异步数据接口的额外参数，任意设
+                aaaaaa: 'xxx'
+                , bbb: 'yyy'
+                //…
+            }
+            , page: {
+                curr: 1 //重新从第 1 页开始
+            }
+        });
+
     });
 </script>
