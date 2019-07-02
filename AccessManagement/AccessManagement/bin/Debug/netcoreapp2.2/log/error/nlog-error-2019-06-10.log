@@ -1,0 +1,34 @@
+2019-06-10 09:53:13.6168|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 09:53:43.6327|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 09:54:23.6225|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 09:54:31.6287|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 10:10:56.8161|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|ERROR|Connection ID "17942340917054748297", Request ID "8001368a-0000-f900-b63f-84710c7967bb": An unhandled exception was thrown by the application. Object reference not set to an instance of an object.
+2019-06-10 10:11:01.3963|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. Type 'AccessManagementServices.DOTS.AccountViewModel' in Assembly 'AccessManagementServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' is not marked as serializable.
+2019-06-10 10:11:05.1179|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|ERROR|Connection ID "17293822579303325476", Request ID "80011f25-0002-f000-b63f-84710c7967bb": An unhandled exception was thrown by the application. Object reference not set to an instance of an object.
+2019-06-10 11:13:40.3404|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:14:16.7364|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:14:32.1222|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:14:57.3564|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:15:25.7954|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:51:47.6330|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|ERROR|Connection ID "17005592194561727370", Request ID "8001db8b-0000-ec00-b63f-84710c7967bb": An unhandled exception was thrown by the application. The CancellationTokenSource has been disposed.
+2019-06-10 11:55:04.0037|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:55:06.4412|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:55:07.3959|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:55:38.2528|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:55:50.2398|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:57:23.7626|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:57:34.0108|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:57:45.0564|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:58:00.2709|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:59:04.6779|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:59:07.2154|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:59:52.3068|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:41:00.8204|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:41:21.3998|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:41:40.3725|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:59:03.8816|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:59:12.4335|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:59:23.5981|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 15:00:11.5039|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 15:00:13.1264|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 15:00:14.6225|AccessManagement.Controllers.HomeController|ERROR|error error

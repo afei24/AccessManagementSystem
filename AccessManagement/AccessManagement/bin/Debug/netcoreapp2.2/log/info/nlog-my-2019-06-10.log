@@ -1,0 +1,35 @@
+2019-06-10 09:53:13.6168|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 09:53:43.6327|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 09:54:23.6225|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 09:54:31.6287|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:13:40.3404|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:14:16.7364|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:14:32.1222|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:14:57.3564|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:15:25.7954|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:55:04.0037|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:55:06.4412|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:55:07.3959|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:55:38.2528|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:55:50.2398|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:57:23.7626|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:57:34.0108|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:57:45.0564|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:58:00.2709|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:59:04.6779|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:59:07.2154|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:59:52.3068|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:41:00.8204|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:41:21.3998|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:41:40.3725|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:59:03.7203|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:1 password:1 
+2019-06-10 14:59:03.8816|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:59:12.4335|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:59:23.2845|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:zhangg password:8888 
+2019-06-10 14:59:23.5981|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 15:00:11.3415|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:zhangg password:8888 
+2019-06-10 15:00:11.5039|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 15:00:13.0472|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:zhangg password:8888 
+2019-06-10 15:00:13.1264|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 15:00:14.5622|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:zhangg password:8888 
+2019-06-10 15:00:14.6225|AccessManagement.Controllers.HomeController|ERROR|error error

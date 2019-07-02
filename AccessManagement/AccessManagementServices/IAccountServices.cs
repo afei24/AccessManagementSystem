@@ -1,4 +1,5 @@
-﻿using AccessManagementServices.DOTS;
+﻿using AccessManagementData;
+using AccessManagementServices.DOTS;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,5 +10,6 @@ namespace AccessManagementServices
     public interface IAccountServices
     {
         Task<List<AccountViewModel>> GetList();
+        Task<Account> Login(AccountViewModel vm);
     }
 }

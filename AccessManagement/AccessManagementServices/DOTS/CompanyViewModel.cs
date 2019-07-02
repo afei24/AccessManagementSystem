@@ -7,6 +7,7 @@ using System.Text;
 
 namespace AccessManagementServices.DOTS
 {
+    [Serializable]
     public class CompanyViewModel
     {
         public CompanyViewModel()

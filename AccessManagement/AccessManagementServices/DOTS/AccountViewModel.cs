@@ -6,6 +6,7 @@ using System.Text;
 
 namespace AccessManagementServices.DOTS
 {
+    [Serializable]
     public class AccountViewModel
     {
         public int Id { get; set; }
@@ -23,11 +24,8 @@ namespace AccessManagementServices.DOTS
         public string Name { get; set; }
         [Required]
         [Display(Name = "类型")]
-        public AccountType Type { get; set; }
-        [Display(Name = "状态")]
-        [Required]
-        public AccountStatus Status { get; set; }
-
+        public int Type { get; set; }
+        public string StatusName { get; set; }
         [Required]
         [Display(Name = "城市")]
         public string City { get; set; }
@@ -43,6 +41,7 @@ namespace AccessManagementServices.DOTS
         public int CompanyId { get; set; }
         [Display(Name = "网点")]
         public int BranchId { get; set; }
+        public bool RememberMe { get; set; }
         public List<FunctionViewModel> Functions { get; set; }
     }
 }

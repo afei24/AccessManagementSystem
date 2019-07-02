@@ -1,6 +1,7 @@
 ﻿using AccessManagementData;
 using AccessManagementServices.Common;
 using AccessManagementServices.DOTS;
+using AccessManagementServices.Helper;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -48,6 +49,23 @@ namespace AccessManagementServices.Services
                 //    vm.Functions.Add(_mapper.Map<FunctionViewModel>(function));
                 //}
                 return vm;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+
+        }
+
+        public async Task<Account> Login(AccountViewModel vm)
+        {
+            try
+            {
+                var account = await _context.Account.Include(a => a.Branch).Include(a => a.Company)
+                    .Include(a=>a.AccountFunction).Include(a => a.AccountRole)
+                    .FirstOrDefaultAsync(o => o.AccountName == vm.AccountName
+                    && o.Password == vm.Password);
+                return account;
             }
             catch (Exception ex)
             {

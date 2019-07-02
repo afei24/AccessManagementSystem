@@ -1,0 +1,20 @@
+2019-06-27 10:40:38.6185|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-27 10:40:41.6034|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-27 10:40:42.7629|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-27 10:41:01.7282|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:lpf password:123 
+2019-06-27 10:41:05.6171|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 
+2019-06-27 10:41:06.4366|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[]} 
+2019-06-27 10:41:11.8926|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-27 10:41:13.6341|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-27 10:41:14.3773|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-27 10:41:52.1754|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-27 10:41:57.1025|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-27 10:41:59.5113|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-27 10:42:26.0725|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:lpf password:123 
+2019-06-27 10:42:29.2449|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 
+2019-06-27 10:42:31.4967|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[]} 

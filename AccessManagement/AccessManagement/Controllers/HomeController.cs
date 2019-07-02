@@ -6,24 +6,35 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using AccessManagement.Models;
 using Microsoft.Extensions.Logging;
+using AccessManagementData;
+using AccessManagementServices.DOTS;
+using System.Net;
+using System.Text;
+using System.IO;
+using AccessManagementServices.Common;
 
 namespace AccessManagement.Controllers
 {
     public class HomeController : BaseController
     {
-        public HomeController(ILogger<HomeController> logger)
+        private readonly AccessManagementContext _context;
+
+        public HomeController(ILogger<HomeController> logger, AccessManagementContext context)
             :base(logger)
         {
+            _context = context;
         }
         public IActionResult Index()
         {
             return View();
         }
         [HttpPost]
-        public IActionResult Index(object o)
+        public IActionResult Index(AccountViewModel vm)
         {
+            HttpContext.Session.Set("account", SerializeHelper.SerializeToBinary(vm));
             return Redirect("Privacy");
         }
+
         public IActionResult Privacy()
         {
             var ex = new Exception("error");

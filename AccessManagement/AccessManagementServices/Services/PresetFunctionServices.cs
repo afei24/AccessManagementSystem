@@ -28,6 +28,12 @@ namespace AccessManagementServices.Services
             var vms = await query.ProjectTo<PresetFunctionViewModel>().ToListAsync();
             return vms;
         }
+        public async Task<List<FunctionViewModel>> GetFunctionList(int companyId)
+        {
+            var query = _context.Function.Where(o => o.Id != 0 & o.CompanyId== companyId);
+            var vms = await query.ProjectTo<FunctionViewModel>().ToListAsync();
+            return vms;
+        }
         public async Task<PresetFunctionViewModel> GetById(int id)
         {
             try

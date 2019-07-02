@@ -6,6 +6,7 @@ using System.Text;
 
 namespace AccessManagementServices.DOTS
 {
+    [Serializable]
     public class BranchViewModel
     {
         public BranchViewModel()

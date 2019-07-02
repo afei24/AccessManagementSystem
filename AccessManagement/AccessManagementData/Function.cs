@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace AccessManagementData
 {
+    [Serializable]
     public partial class Function
     {
         public Function()

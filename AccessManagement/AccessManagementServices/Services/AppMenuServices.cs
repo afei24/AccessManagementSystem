@@ -1,6 +1,8 @@
 ﻿using AccessManagementData;
 using AccessManagementServices.Common;
 using AccessManagementServices.DOTS;
+using AccessManagementServices.Filters;
+using AccessManagementServices.Models;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
@@ -20,12 +22,55 @@ namespace AccessManagementServices.Services
             _accessManagementContext = accessManagementContext;
         }
 
-        public async Task<List<AppMenuViewModel>> GetList()
+        public async Task<ResponseModel<AppMenuViewModel>> GetList(AppmenuFilters filters, SortCol sortCol)
         {
             var query =  _accessManagementContext.AppMenu.Where(o=>o.Id != 0);
-            var vms =await query.ProjectTo<AppMenuViewModel>().ToListAsync();
-            return vms;
+            query = Search(query,filters);
+            query = Sort(query,sortCol);
+            var vms =await query.Skip((filters.Page-1)*filters.Limit).Take(filters.Limit)
+                .ProjectTo<AppMenuViewModel>().ToListAsync();
+            ResponseModel<AppMenuViewModel> result = new ResponseModel<AppMenuViewModel>();
+            result.status = 0;
+            result.message = "";
+            result.total = query.Count();
+            result.data = vms;
+            return result;
         }
+        public IQueryable<AppMenu> Search(IQueryable<AppMenu> query, AppmenuFilters filters)
+        {
+            if (!string.IsNullOrWhiteSpace(filters.Name))
+            {
+                query = query.Where(o=>o.Name.Contains(filters.Name));
+            }
+            if (!string.IsNullOrWhiteSpace(filters.Code))
+            {
+                query = query.Where(o => o.Code.Contains(filters.Code));
+            }
+            return query;
+        }
+        public IQueryable<AppMenu> Sort(IQueryable<AppMenu> query, SortCol sortCol)
+        {
+            switch (sortCol.Field)
+            {
+                case "id":
+                    query = sortCol.Type == "desc" ? query.OrderBy(o => o.Id) :
+                        query.OrderByDescending(o=>o.Id);
+                    break;
+                case "order":
+                    query = sortCol.Type == "desc" ? query.OrderBy(o => o.Order) :
+                        query.OrderByDescending(o => o.Order);
+                    break;
+                case "code":
+                    query = sortCol.Type == "desc" ? query.OrderBy(o => o.Code) :
+                        query.OrderByDescending(o => o.Code);
+                    break;
+                default:
+                    query = query.OrderByDescending(o => o.Id);
+                    break;
+            }
+            return query;
+        }
+
         public async Task<AppMenuViewModel> GetById(int id)
         {
             try
@@ -96,6 +141,34 @@ namespace AccessManagementServices.Services
                 }
                 query = Mapper.Map<AppMenu>(vm);
                 _accessManagementContext.Entry(query).State = EntityState.Modified;
+                await _accessManagementContext.SaveChangesAsync();
+                return new ServiceResponseBase() { Status = Status.ok };
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResponseBase() { Status = Status.error, Message = ex.Message };
+            }
+
+        }
+
+        public async Task<ServiceResponseBase> Delete(string idStr)
+        {
+            try
+            {
+                var ids = idStr.Split(',');
+                foreach (var id in ids)
+                {
+                    if (string.IsNullOrWhiteSpace(id))
+                        continue;
+
+                    var _id = Convert.ToInt32(id);
+                    var appmenu =await _accessManagementContext.AppMenu.FirstOrDefaultAsync(o=>o.Id==_id);
+                    if (appmenu != null)
+                    {
+                        _accessManagementContext.Entry(appmenu).State = EntityState.Deleted;
+                    }
+                }
+                
                 await _accessManagementContext.SaveChangesAsync();
                 return new ServiceResponseBase() { Status = Status.ok };
             }

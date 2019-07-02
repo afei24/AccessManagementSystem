@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AccessManagementServices.Common;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
@@ -31,28 +32,31 @@ namespace AccessManagement.Middleware
             //_logger.LogInformation("Request Path:" + requestPath + Environment.NewLine
             //    + " requestMethod:" + requestMethod + " requestHost:" + requestHost + Environment.NewLine
             //    + " requestHeaders:" + requestHeaders);
-            _logger.LogInformation("Request Path:" + requestHost+ requestPath + " requestMethod:" + requestMethod 
+            if (requestPath.Contains("api"))
+            {
+                _logger.LogInformation("Request Path:" + requestHost + requestPath + " requestMethod:" + requestMethod
                 + " requestHeaders User-Agent:" + requestHeaders["User-Agent"]);
-            if (requestMethod == "POST")
-            {
-                var requestBody = await ReadBodyAsync(context.Request);
-                _logger.LogInformation("Request Body:" + requestBody);  
-            }
-            this.EnableReadAsync(context.Response);
-
-            context.Response.OnCompleted(async o =>
-            {
-                var c = o as HttpContext;
-                if (c != null)
+                if (requestMethod == "POST")
                 {
-                    var retStr = await this.ReadBodyAsync(c.Response).ConfigureAwait(false);
-                    _logger.LogInformation("Response Path:" + requestHost + requestPath + Environment.NewLine
-                        + "Body:" + retStr);
+                    var requestBody = await ReadBodyAsync(context.Request);
+                    _logger.LogInformation("Request Body:" + requestBody);
                 }
-            }, context);
+                this.EnableReadAsync(context.Response);
+
+                context.Response.OnCompleted(async o =>
+                {
+                    var c = o as HttpContext;
+                    if (c != null)
+                    {
+                        var retStr = await this.ReadBodyAsync(c.Response).ConfigureAwait(false);
+                        _logger.LogInformation("Response Path:" + requestHost + requestPath + Environment.NewLine
+                            + "Body:" + retStr);
+                    }
+                }, context);
+            }
+            
             await _next.Invoke(context);
             
-
         }
 
         private async Task<string> ReadBodyAsync(HttpRequest request)

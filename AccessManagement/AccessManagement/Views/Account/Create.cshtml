@@ -38,9 +38,9 @@
                 <span asp-validation-for="Type" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Status" class="control-label"></label>
-                <input asp-for="Status" class="form-control" />
-                <span asp-validation-for="Status" class="text-danger"></span>
+                <label asp-for="StatusName" class="control-label"></label>
+                <input asp-for="StatusName" class="form-control" />
+                <span asp-validation-for="StatusName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="City" class="control-label"></label>
@@ -58,11 +58,43 @@
         </form>
     </div>
 </div>
-
+<div id="test1" style="padding-left:20px;"></div>
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+<script>
+  layui.use('tree', function(){
+    var tree = layui.tree;
 
+    //渲染
+    var inst1 = tree.render({
+        elem: '#test1'  //绑定元素
+        , showCheckbox: true
+        //, edit: ['add', 'update', 'del']
+        , accordion: true
+        , showLine:true
+      ,data: [{
+        title: '江西' //一级菜单
+        ,children: [{
+          title: '南昌' //二级菜单
+          ,children: [{
+            title: '高新区' //三级菜单
+            //…… //以此类推，可无限层级
+          },
+              {
+                  title: '高新区' //三级菜单
+                  //…… //以此类推，可无限层级
+              }]
+        }]
+      },{
+        title: '陕西' //一级菜单
+        ,children: [{
+          title: '西安' //二级菜单
+        }]
+      }]
+    });
+  });
+</script>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

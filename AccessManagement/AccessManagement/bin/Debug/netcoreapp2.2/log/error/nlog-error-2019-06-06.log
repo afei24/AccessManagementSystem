@@ -1,0 +1,5 @@
+2019-06-06 10:21:39.1048|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|ERROR|The view 'Details' was not found. Searched locations: /Views/AppMenu/Details.cshtml, /Views/Shared/Details.cshtml, /Pages/Shared/Details.cshtml 
+2019-06-06 10:21:39.6279|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The view 'Details' was not found. The following locations were searched:
+/Views/AppMenu/Details.cshtml
+/Views/Shared/Details.cshtml
+/Pages/Shared/Details.cshtml

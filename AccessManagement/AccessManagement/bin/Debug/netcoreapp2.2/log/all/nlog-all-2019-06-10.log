@@ -1,0 +1,994 @@
+2019-06-10 09:51:40.2630|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 09:51:41.3363|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 09:51:41.7107|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 09:51:46.0709|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 09:51:46.0969|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.7666ms. 
+2019-06-10 09:51:46.7784|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 09:51:47.0917|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 854.4561ms. 
+2019-06-10 09:51:47.1110|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 5385.7128ms 
+2019-06-10 09:51:47.1253|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 09:51:56.5712|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 16331.3319ms 200 text/html; charset=utf-8 
+2019-06-10 09:52:59.9503|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/index application/x-www-form-urlencoded 24 
+2019-06-10 09:53:00.2750|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 09:53:00.7966|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(AccessManagementServices.DOTS.AccountViewModel) on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 09:53:00.9568|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Invalid 
+2019-06-10 09:53:07.3276|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 6358.9145ms. 
+2019-06-10 09:53:07.3587|Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor|INFO|Executing RedirectResult, redirecting to Privacy. 
+2019-06-10 09:53:07.4122|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 6595.1175ms 
+2019-06-10 09:53:07.4196|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 09:53:13.5058|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 13556.136ms 302  
+2019-06-10 09:53:13.5280|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 09:53:13.5569|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 09:53:13.5744|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 09:53:13.5900|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 09:53:13.6168|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 09:53:13.6965|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 63.3874ms. 
+2019-06-10 09:53:13.7193|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 09:53:13.8963|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 187.2792ms. 
+2019-06-10 09:53:14.0251|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 319.598ms 
+2019-06-10 09:53:14.1289|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 09:53:14.1374|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/css/site.css   
+2019-06-10 09:53:14.1289|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/css/bootstrap.css   
+2019-06-10 09:53:14.1374|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/js/paging.js   
+2019-06-10 09:53:26.9800|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 13455.2763ms 200 text/html; charset=utf-8 
+2019-06-10 09:53:26.9960|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /js/paging.js was not modified 
+2019-06-10 09:53:26.9960|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /css/site.css was not modified 
+2019-06-10 09:53:26.9960|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/css/bootstrap.css was not modified 
+2019-06-10 09:53:30.5586|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/layui/layui.js   
+2019-06-10 09:53:30.5770|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 16401.2209ms 304 text/css 
+2019-06-10 09:53:30.5586|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 16444.3417ms 304 text/css 
+2019-06-10 09:53:30.5770|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 16406.4604ms 304 application/javascript 
+2019-06-10 09:53:30.6117|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /layui/layui.js was not modified 
+2019-06-10 09:53:30.6425|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/layui/css/layui.css   
+2019-06-10 09:53:30.6615|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /layui/css/layui.css was not modified 
+2019-06-10 09:53:30.6615|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 165.8964ms 304 application/javascript 
+2019-06-10 09:53:30.6910|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 63.7683ms 304 text/css 
+2019-06-10 09:53:30.9973|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/layui/lay/modules/element.js   
+2019-06-10 09:53:31.0125|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /layui/lay/modules/element.js was not modified 
+2019-06-10 09:53:31.0351|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 126.5243ms 304 application/javascript 
+2019-06-10 09:53:36.1654|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/css/bootstrap.css.map   
+2019-06-10 09:53:36.2450|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/dist/css/bootstrap.css.map was not modified 
+2019-06-10 09:53:36.3635|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 144.3912ms 304 text/plain 
+2019-06-10 09:53:42.9968|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 09:53:43.1100|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 09:53:43.5789|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 09:53:43.6058|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 09:53:43.6327|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 09:53:43.9068|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 58.0072ms. 
+2019-06-10 09:53:43.9304|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 09:53:43.9460|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 27.6135ms. 
+2019-06-10 09:53:43.9715|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 369.1082ms 
+2019-06-10 09:53:44.1377|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 09:53:44.2274|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1275.5764ms 200 text/html; charset=utf-8 
+2019-06-10 09:53:44.7228|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-10 09:53:44.7744|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-06-10 09:53:45.1571|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 318.7747ms 200 image/x-icon 
+2019-06-10 09:54:08.3993|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 09:54:08.4436|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 09:54:08.4941|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 09:54:08.5115|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 09:54:08.5340|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2556ms. 
+2019-06-10 09:54:08.7427|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 09:54:08.8612|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 228.8842ms. 
+2019-06-10 09:54:08.9490|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 370.2483ms 
+2019-06-10 09:54:08.9643|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 09:54:09.0030|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 626.6604ms 200 text/html; charset=utf-8 
+2019-06-10 09:54:18.4691|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-10 09:54:18.4863|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-06-10 09:54:18.5026|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 29.2104ms 200 image/x-icon 
+2019-06-10 09:54:20.7695|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/index application/x-www-form-urlencoded 32 
+2019-06-10 09:54:20.7864|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 09:54:20.8125|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(AccessManagementServices.DOTS.AccountViewModel) on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 09:54:20.8427|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Invalid 
+2019-06-10 09:54:23.3879|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 2499.9505ms. 
+2019-06-10 09:54:23.4245|Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor|INFO|Executing RedirectResult, redirecting to Privacy. 
+2019-06-10 09:54:23.4414|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 2610.454ms 
+2019-06-10 09:54:23.4762|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 09:54:23.5104|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2719.0779ms 302  
+2019-06-10 09:54:23.5137|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 09:54:23.5520|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 09:54:23.5831|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 09:54:23.6069|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 09:54:23.6225|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 09:54:23.6432|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 20.2303ms. 
+2019-06-10 09:54:23.6432|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 09:54:23.6620|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 8.3333ms. 
+2019-06-10 09:54:23.9171|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 78.6943ms 
+2019-06-10 09:54:23.9454|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/css/bootstrap.css   
+2019-06-10 09:54:23.9792|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/layui/layui.js   
+2019-06-10 09:54:23.9939|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 09:54:24.0047|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/css/site.css   
+2019-06-10 09:54:24.0328|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/layui/css/layui.css   
+2019-06-10 09:54:24.0434|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 505.3189ms 200 text/html; charset=utf-8 
+2019-06-10 09:54:24.0594|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/layui/layui.js'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\layui\layui.js' 
+2019-06-10 09:54:24.0878|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/css/site.css'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\css\site.css' 
+2019-06-10 09:54:24.1048|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 145.3565ms 200 application/javascript 
+2019-06-10 09:54:24.1207|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/js/paging.js   
+2019-06-10 09:54:24.1497|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 179.0775ms 200 text/css 
+2019-06-10 09:54:24.1734|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/layui/css/layui.css'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\layui\css\layui.css' 
+2019-06-10 09:54:24.1734|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/js/paging.js'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\js\paging.js' 
+2019-06-10 09:54:24.1873|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 230.0914ms 200 text/css 
+2019-06-10 09:54:24.1873|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 96.3135ms 200 application/javascript 
+2019-06-10 09:54:24.2016|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\lib\bootstrap\dist\css\bootstrap.css' 
+2019-06-10 09:54:24.2016|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 395.7337ms 200 text/css 
+2019-06-10 09:54:24.9613|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/layui/lay/modules/element.js   
+2019-06-10 09:54:25.0703|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/layui/lay/modules/element.js'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\layui\lay\modules\element.js' 
+2019-06-10 09:54:25.1855|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 326.0285ms 200 application/javascript 
+2019-06-10 09:54:28.9131|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/css/bootstrap.css.map   
+2019-06-10 09:54:28.9607|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css.map'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map' 
+2019-06-10 09:54:29.0115|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 57.0651ms 200 text/plain 
+2019-06-10 09:54:31.5787|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 09:54:31.5787|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 09:54:31.5992|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 09:54:31.6107|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 09:54:31.6287|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 09:54:31.6630|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 24.1894ms. 
+2019-06-10 09:54:31.6890|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 09:54:31.7099|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 23.8731ms. 
+2019-06-10 09:54:31.8430|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 114.5852ms 
+2019-06-10 09:54:31.9804|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 09:54:32.7526|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 419.5595ms 200 text/html; charset=utf-8 
+2019-06-10 10:10:39.9406|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 10:10:40.5890|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 10:10:40.6748|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 10:10:41.9240|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 10:10:41.9464|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.6228ms. 
+2019-06-10 10:10:42.0812|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 10:10:42.3805|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 350.1372ms. 
+2019-06-10 10:10:42.4118|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1719.3701ms 
+2019-06-10 10:10:42.5240|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 10:10:56.2439|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/index application/x-www-form-urlencoded 24 
+2019-06-10 10:10:56.4155|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 10:10:56.7156|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(AccessManagementServices.DOTS.AccountViewModel) on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 10:10:56.8161|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|ERROR|Connection ID "17942340917054748297", Request ID "8001368a-0000-f900-b63f-84710c7967bb": An unhandled exception was thrown by the application. Object reference not set to an instance of an object.
+2019-06-10 10:10:56.8434|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 16930.0792ms 200 text/html; charset=utf-8 
+2019-06-10 10:10:56.9675|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Invalid 
+2019-06-10 10:11:01.3126|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 4590.2826ms 
+2019-06-10 10:11:01.3546|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 10:11:01.3963|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. Type 'AccessManagementServices.DOTS.AccountViewModel' in Assembly 'AccessManagementServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' is not marked as serializable.
+2019-06-10 10:11:05.1179|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|ERROR|Connection ID "17293822579303325476", Request ID "80011f25-0002-f000-b63f-84710c7967bb": An unhandled exception was thrown by the application. Object reference not set to an instance of an object.
+2019-06-10 10:11:05.1312|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 8924.3587ms 500 text/html; charset=utf-8 
+2019-06-10 11:12:19.4085|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 11:12:19.7458|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:12:19.7841|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:12:20.6697|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 11:12:20.6833|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.8956ms. 
+2019-06-10 11:12:20.7989|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 11:12:21.0105|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 242.5037ms. 
+2019-06-10 11:12:21.0209|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1230.9017ms 
+2019-06-10 11:12:21.0292|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:12:21.1028|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1664.5178ms 200 text/html; charset=utf-8 
+2019-06-10 11:12:25.2100|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/index application/x-www-form-urlencoded 24 
+2019-06-10 11:12:25.3008|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:12:25.4413|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(AccessManagementServices.DOTS.AccountViewModel) on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:12:25.6013|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Invalid 
+2019-06-10 11:13:23.6963|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 11:13:24.1747|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:13:24.2133|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:13:25.1380|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 11:13:25.1630|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 14.6094ms. 
+2019-06-10 11:13:25.2726|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 11:13:25.6638|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 475.7164ms. 
+2019-06-10 11:13:25.6693|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1451.1572ms 
+2019-06-10 11:13:25.6693|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:13:25.7592|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2074.1689ms 200 text/html; charset=utf-8 
+2019-06-10 11:13:27.4745|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/index application/x-www-form-urlencoded 24 
+2019-06-10 11:13:27.5095|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:13:27.6225|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(AccessManagementServices.DOTS.AccountViewModel) on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:13:27.8767|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Invalid 
+2019-06-10 11:13:27.9085|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 23.5904ms. 
+2019-06-10 11:13:27.9192|Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor|INFO|Executing RedirectResult, redirecting to Privacy. 
+2019-06-10 11:13:27.9352|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 298.3521ms 
+2019-06-10 11:13:27.9610|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:13:40.1449|Microsoft.AspNetCore.Session.DistributedSession|INFO|Session started; Key:d2b4f2ba-c572-4585-711c-9145d4db3911, Id:399264de-6c9d-3bcd-5b7c-e37e10448046 
+2019-06-10 11:13:40.2032|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 12708.7604ms 302  
+2019-06-10 11:13:40.2032|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:13:40.2307|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:13:40.2307|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:13:40.3240|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 11:13:40.3404|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:13:40.4745|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 41.0159ms. 
+2019-06-10 11:13:40.4916|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 11:13:40.6180|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 137.171ms. 
+2019-06-10 11:13:40.6980|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 370.8684ms 
+2019-06-10 11:13:40.7184|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:13:48.2038|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 7993.6511ms 200 text/html; charset=utf-8 
+2019-06-10 11:13:59.6259|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 11:13:59.6744|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:13:59.7491|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:13:59.8600|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 11:13:59.8600|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0322ms. 
+2019-06-10 11:13:59.8837|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 11:13:59.9164|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 25.9732ms. 
+2019-06-10 11:14:00.3254|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 166.3949ms 
+2019-06-10 11:14:00.5052|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:14:00.5486|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 890.2682ms 200 text/html; charset=utf-8 
+2019-06-10 11:14:02.8554|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/index application/x-www-form-urlencoded 32 
+2019-06-10 11:14:02.8554|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:14:02.8931|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(AccessManagementServices.DOTS.AccountViewModel) on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:14:03.0118|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Invalid 
+2019-06-10 11:14:03.0305|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 3.9655ms. 
+2019-06-10 11:14:03.0486|Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor|INFO|Executing RedirectResult, redirecting to Privacy. 
+2019-06-10 11:14:03.0486|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 155.0421ms 
+2019-06-10 11:14:03.0602|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:14:16.5817|Microsoft.AspNetCore.Session.DistributedSession|INFO|Session started; Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4, Id:ef07d3b7-669a-4f94-da24-a159fe852dc1 
+2019-06-10 11:14:16.6224|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 13739.1394ms 302  
+2019-06-10 11:14:16.6224|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:14:16.6462|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:14:16.6551|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:14:16.7289|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 11:14:16.7364|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:14:16.7536|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 13.5408ms. 
+2019-06-10 11:14:16.7634|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 11:14:16.7830|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 13.2199ms. 
+2019-06-10 11:14:17.0040|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 128.6979ms 
+2019-06-10 11:14:17.0649|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:14:24.7735|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 8146.9086ms 200 text/html; charset=utf-8 
+2019-06-10 11:14:31.8887|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:14:31.8887|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:14:31.9100|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:14:32.1081|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 11:14:32.1222|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:14:32.1375|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 18.3016ms. 
+2019-06-10 11:14:32.1530|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 11:14:32.1782|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 17.6343ms. 
+2019-06-10 11:14:32.2897|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 296.6507ms 
+2019-06-10 11:14:32.4098|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:14:43.6522|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 11735.3643ms 200 text/html; charset=utf-8 
+2019-06-10 11:14:43.7278|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-10 11:14:43.7755|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-06-10 11:14:53.5081|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 9796.9478ms 200 image/x-icon 
+2019-06-10 11:14:57.1149|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:14:57.1899|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:14:57.2323|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:14:57.3452|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 11:14:57.3564|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:14:57.4032|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 28.4399ms. 
+2019-06-10 11:14:57.4032|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 11:14:57.4293|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 15.7587ms. 
+2019-06-10 11:14:57.5446|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 196.6225ms 
+2019-06-10 11:14:57.6031|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:14:57.7442|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 503.8383ms 200 text/html; charset=utf-8 
+2019-06-10 11:14:57.9069|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-10 11:14:57.9532|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-06-10 11:14:57.9730|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 62.5154ms 200 image/x-icon 
+2019-06-10 11:15:25.1059|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:15:25.3989|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:15:25.7039|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:15:25.7954|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 11:15:25.7954|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:15:25.8091|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.3792ms. 
+2019-06-10 11:15:25.8091|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 11:15:25.8271|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 10.4393ms. 
+2019-06-10 11:15:25.8510|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 123.8558ms 
+2019-06-10 11:15:26.1608|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:15:26.5139|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1090.2048ms 200 text/html; charset=utf-8 
+2019-06-10 11:41:27.7851|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 11:41:28.0812|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 11:41:28.1036|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 344.4331ms 0  
+2019-06-10 11:42:51.4116|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 11:42:51.6119|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 11:42:51.7060|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 305.2675ms 302  
+2019-06-10 11:42:51.7183|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 11:42:51.7183|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 11:42:51.7360|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 26.9275ms 200  
+2019-06-10 11:43:07.7306|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 11:43:07.7481|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 11:43:07.8000|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 66.5893ms 200  
+2019-06-10 11:43:23.4593|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 11:43:23.5214|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 11:43:23.5609|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 124.2983ms 200  
+2019-06-10 11:51:46.0096|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:51:46.0293|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 11:51:46.1100|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 126.5376ms 302  
+2019-06-10 11:51:46.2570|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 11:51:46.3258|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 11:51:46.3572|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 189.7002ms 200  
+2019-06-10 11:51:46.8852|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 11:51:46.9838|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 11:51:47.0094|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 218.4638ms 200  
+2019-06-10 11:51:47.3294|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-10 11:51:47.3619|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 11:51:47.3955|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 64.0819ms 302  
+2019-06-10 11:51:47.4507|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 11:51:47.4507|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 11:51:47.4780|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 34.0907ms 200  
+2019-06-10 11:51:47.6330|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|ERROR|Connection ID "17005592194561727370", Request ID "8001db8b-0000-ec00-b63f-84710c7967bb": An unhandled exception was thrown by the application. The CancellationTokenSource has been disposed.
+2019-06-10 11:52:00.1913|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 11:52:00.2362|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 11:52:00.2818|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 73.1669ms 200  
+2019-06-10 11:52:00.7188|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-10 11:52:00.7593|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 11:52:00.8213|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 188.6531ms 302  
+2019-06-10 11:52:00.8313|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 11:52:00.8580|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 11:52:00.9239|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 50.8854ms 200  
+2019-06-10 11:52:26.1068|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 11:52:26.1297|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 11:52:26.2884|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 164.0435ms 200  
+2019-06-10 11:52:26.7699|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-10 11:52:26.7885|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 11:52:26.8190|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 45.1848ms 302  
+2019-06-10 11:52:26.8689|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 11:52:26.8855|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 11:52:26.8975|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 44.8043ms 200  
+2019-06-10 11:52:51.4497|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 11:52:51.5955|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 11:52:51.6315|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 11:52:51.6315|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 11:52:51.6440|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 210.4615ms 302  
+2019-06-10 11:52:51.6440|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 16.169ms 200  
+2019-06-10 11:54:53.9799|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 11:54:54.4867|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:54:54.5391|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:54:55.7592|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 11:55:00.3631|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4588.6659ms. 
+2019-06-10 11:55:00.5262|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 11:55:00.8211|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 390.549ms. 
+2019-06-10 11:55:00.8874|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 6335.4793ms 
+2019-06-10 11:55:00.9188|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:55:01.0014|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 7017.5415ms 200 text/html; charset=utf-8 
+2019-06-10 11:55:03.5115|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/index application/x-www-form-urlencoded 24 
+2019-06-10 11:55:03.5692|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:55:03.6583|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(AccessManagementServices.DOTS.AccountViewModel) on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:55:03.8147|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Invalid 
+2019-06-10 11:55:03.8380|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 11:55:03.8479|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 24.8126ms. 
+2019-06-10 11:55:03.8552|Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor|INFO|Executing RedirectResult, redirecting to Privacy. 
+2019-06-10 11:55:03.8552|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 199.041ms 
+2019-06-10 11:55:03.8552|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:55:03.8845|Microsoft.AspNetCore.Session.DistributedSession|INFO|Session started; Key:d2b4f2ba-c572-4585-711c-9145d4db3911, Id:6543ad52-d9c3-b753-f23e-6dca39303842 
+2019-06-10 11:55:03.9040|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 395.3979ms 302  
+2019-06-10 11:55:03.9278|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:55:03.9402|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:55:03.9495|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:55:03.9944|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 11:55:04.0037|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:55:04.0200|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 21.143ms. 
+2019-06-10 11:55:04.0338|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 11:55:04.2800|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 127.1433ms. 
+2019-06-10 11:55:04.5498|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 331.0959ms 
+2019-06-10 11:55:04.5989|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:55:04.6078|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 675.8044ms 200 text/html; charset=utf-8 
+2019-06-10 11:55:06.2799|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:55:06.2958|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:55:06.2958|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:55:06.4298|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 11:55:06.4412|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:55:06.4551|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 15.4532ms. 
+2019-06-10 11:55:06.4661|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 11:55:06.4802|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 9.3085ms. 
+2019-06-10 11:55:06.4802|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 177.4135ms 
+2019-06-10 11:55:06.5084|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:55:06.5321|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 236.8954ms 200 text/html; charset=utf-8 
+2019-06-10 11:55:06.6935|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-10 11:55:06.7507|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-06-10 11:55:06.7730|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 89.9804ms 200 image/x-icon 
+2019-06-10 11:55:07.2773|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:55:07.2960|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:55:07.2960|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:55:07.3818|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 11:55:07.3959|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:55:07.4274|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 17.4404ms. 
+2019-06-10 11:55:07.4367|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 11:55:07.4555|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 19.0903ms. 
+2019-06-10 11:55:07.5771|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 210.2533ms 
+2019-06-10 11:55:07.6100|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:55:07.6398|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 347.1281ms 200 text/html; charset=utf-8 
+2019-06-10 11:55:07.7788|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-10 11:55:07.7936|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-06-10 11:55:07.7936|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 21.0285ms 200 image/x-icon 
+2019-06-10 11:55:12.1053|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 11:55:12.1403|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:55:12.1403|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:55:12.3167|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 11:55:12.3466|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0662ms. 
+2019-06-10 11:55:12.3599|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 11:55:12.3955|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 28.8287ms. 
+2019-06-10 11:55:12.5496|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 309.0124ms 
+2019-06-10 11:55:12.6385|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:55:12.6629|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 542.2336ms 200 text/html; charset=utf-8 
+2019-06-10 11:55:13.2054|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-10 11:55:13.2386|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-06-10 11:55:13.2517|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 94.3968ms 200 image/x-icon 
+2019-06-10 11:55:14.7623|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/Home/index application/x-www-form-urlencoded 32 
+2019-06-10 11:55:14.7892|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 11:55:14.8126|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 55.3298ms 302  
+2019-06-10 11:55:14.8884|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 11:55:14.9104|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:55:14.9353|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:55:14.9992|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 11:55:14.9992|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1454ms. 
+2019-06-10 11:55:15.0139|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 11:55:15.0139|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 6.4672ms. 
+2019-06-10 11:55:15.0372|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 80.5749ms 
+2019-06-10 11:55:15.3611|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:55:15.5625|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 498.1524ms 200 text/html; charset=utf-8 
+2019-06-10 11:55:17.4624|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/Home/index application/x-www-form-urlencoded 32 
+2019-06-10 11:55:17.4907|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 11:55:17.5791|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 76.6747ms 302  
+2019-06-10 11:55:17.5949|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 11:55:17.6088|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:55:17.6372|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:55:17.7193|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 11:55:17.7193|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1869ms. 
+2019-06-10 11:55:17.7318|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 11:55:17.7318|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 7.1852ms. 
+2019-06-10 11:55:17.7550|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 104.5255ms 
+2019-06-10 11:55:17.7760|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:55:17.8858|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 254.2208ms 200 text/html; charset=utf-8 
+2019-06-10 11:55:30.5127|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/Home/index application/x-www-form-urlencoded 32 
+2019-06-10 11:55:30.5127|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 11:55:30.5522|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 23.2738ms 302  
+2019-06-10 11:55:30.5595|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 11:55:30.6054|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:55:30.6247|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:55:30.6907|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 11:55:30.6907|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2298ms. 
+2019-06-10 11:55:30.7063|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 11:55:30.7063|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 6.1668ms. 
+2019-06-10 11:55:30.7367|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 87.7266ms 
+2019-06-10 11:55:30.8615|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:55:30.9222|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 312.3726ms 200 text/html; charset=utf-8 
+2019-06-10 11:55:38.0309|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:55:38.0753|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:55:38.1105|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:55:38.2381|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 11:55:38.2528|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:55:38.2903|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 19.3857ms. 
+2019-06-10 11:55:38.3072|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 11:55:38.4972|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 24.5192ms. 
+2019-06-10 11:55:38.7113|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 384.2975ms 
+2019-06-10 11:55:38.8544|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:55:38.9355|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 979.8864ms 200 text/html; charset=utf-8 
+2019-06-10 11:55:43.8107|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 11:55:43.8862|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:55:43.9378|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:55:44.0997|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 11:55:44.1199|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0265ms. 
+2019-06-10 11:55:44.1295|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 11:55:44.1389|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 11.8992ms. 
+2019-06-10 11:55:44.3851|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 204.3627ms 
+2019-06-10 11:55:44.5534|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:55:44.5960|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 751.5866ms 200 text/html; charset=utf-8 
+2019-06-10 11:55:47.4183|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/index application/x-www-form-urlencoded 32 
+2019-06-10 11:55:47.4776|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:55:47.4964|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(AccessManagementServices.DOTS.AccountViewModel) on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:55:47.5706|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Invalid 
+2019-06-10 11:55:50.0508|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 11:55:50.0581|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 2478.3363ms. 
+2019-06-10 11:55:50.0581|Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor|INFO|Executing RedirectResult, redirecting to Privacy. 
+2019-06-10 11:55:50.0799|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 2567.8115ms 
+2019-06-10 11:55:50.0799|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:55:50.1052|Microsoft.AspNetCore.Session.DistributedSession|INFO|Session started; Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4, Id:2f21ac0d-3714-38d8-082c-5f6dccf6ba1e 
+2019-06-10 11:55:50.1211|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2780.4349ms 302  
+2019-06-10 11:55:50.1389|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:55:50.1389|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:55:50.1597|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:55:50.2282|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 11:55:50.2398|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:55:50.2647|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 17.5605ms. 
+2019-06-10 11:55:50.3521|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 11:55:50.5382|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 86.2966ms. 
+2019-06-10 11:55:50.6139|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 375.8209ms 
+2019-06-10 11:55:50.6403|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:55:50.6594|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 510.5278ms 200 text/html; charset=utf-8 
+2019-06-10 11:57:23.5779|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:57:23.6106|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:57:23.6694|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:57:23.7570|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 11:57:23.7626|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:57:23.7626|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.1105ms. 
+2019-06-10 11:57:23.7990|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 11:57:23.7990|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 27.987ms. 
+2019-06-10 11:57:23.8232|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 137.1711ms 
+2019-06-10 11:57:23.9482|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:57:24.0404|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 396.651ms 200 text/html; charset=utf-8 
+2019-06-10 11:57:24.5558|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-10 11:57:24.6219|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-06-10 11:57:24.7283|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 103.7276ms 200 image/x-icon 
+2019-06-10 11:57:33.8382|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:57:33.8661|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:57:33.8790|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:57:33.9946|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 11:57:34.0108|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:57:34.0258|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 23.9262ms. 
+2019-06-10 11:57:34.0519|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 11:57:34.0594|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 6.6615ms. 
+2019-06-10 11:57:34.0594|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 181.0297ms 
+2019-06-10 11:57:34.3586|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:57:34.4593|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 527.9872ms 200 text/html; charset=utf-8 
+2019-06-10 11:57:34.5951|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-10 11:57:34.6106|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-06-10 11:57:34.6290|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 52.9847ms 200 image/x-icon 
+2019-06-10 11:57:44.7105|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:57:44.7305|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:57:44.7555|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:57:44.9650|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 11:57:45.0564|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:57:45.1094|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 101.8468ms. 
+2019-06-10 11:57:45.1582|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 11:57:45.1736|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 51.4141ms. 
+2019-06-10 11:57:45.4548|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 418.9234ms 
+2019-06-10 11:57:45.6546|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:57:45.9310|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 989.2134ms 200 text/html; charset=utf-8 
+2019-06-10 11:57:52.5367|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 11:57:52.5689|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:57:52.5875|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:57:52.7071|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 11:57:52.7247|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2741ms. 
+2019-06-10 11:57:52.7303|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 11:57:52.7303|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 6.7959ms. 
+2019-06-10 11:57:52.7534|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 149.8836ms 
+2019-06-10 11:57:52.8088|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:57:52.8774|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 301.7638ms 200 text/html; charset=utf-8 
+2019-06-10 11:57:54.6558|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/index application/x-www-form-urlencoded 32 
+2019-06-10 11:57:54.7008|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:57:54.7278|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(AccessManagementServices.DOTS.AccountViewModel) on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:57:54.8235|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Invalid 
+2019-06-10 11:57:59.7927|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 4964.0972ms. 
+2019-06-10 11:57:59.7927|Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor|INFO|Executing RedirectResult, redirecting to Privacy. 
+2019-06-10 11:57:59.8180|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 5079.2176ms 
+2019-06-10 11:57:59.8291|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:57:59.8425|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 5183.3822ms 302  
+2019-06-10 11:57:59.8875|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:57:59.9085|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:57:59.9418|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:58:00.2580|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 11:58:00.2709|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:58:00.2864|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 16.7804ms. 
+2019-06-10 11:58:00.3161|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 11:58:00.3974|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 31.7836ms. 
+2019-06-10 11:58:00.6257|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 453.335ms 
+2019-06-10 11:58:00.6714|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:58:00.6995|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 817.0974ms 200 text/html; charset=utf-8 
+2019-06-10 11:58:37.0957|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 11:58:37.7186|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:58:37.8033|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:58:38.9392|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 11:58:38.9628|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3.5254ms. 
+2019-06-10 11:58:39.0507|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 11:58:39.3165|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 297.8946ms. 
+2019-06-10 11:58:39.3326|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1516.1073ms 
+2019-06-10 11:58:39.3414|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:58:39.4967|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2353.3011ms 200 text/html; charset=utf-8 
+2019-06-10 11:58:59.6530|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/index application/x-www-form-urlencoded 24 
+2019-06-10 11:58:59.7353|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:58:59.8812|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(AccessManagementServices.DOTS.AccountViewModel) on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:59:00.1383|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Invalid 
+2019-06-10 11:59:04.2554|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 11:59:04.2696|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 4114.9733ms. 
+2019-06-10 11:59:04.2960|Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor|INFO|Executing RedirectResult, redirecting to Privacy. 
+2019-06-10 11:59:04.3190|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 4421.2391ms 
+2019-06-10 11:59:04.3297|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:59:04.3834|Microsoft.AspNetCore.Session.DistributedSession|INFO|Session started; Key:d2b4f2ba-c572-4585-711c-9145d4db3911, Id:fc64315f-cace-c8f0-fbe1-fdb41fcee361 
+2019-06-10 11:59:04.5448|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 4793.3744ms 302  
+2019-06-10 11:59:04.5448|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:59:04.5674|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:59:04.5768|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:59:04.6496|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 11:59:04.6779|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:59:04.7296|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 51.7638ms. 
+2019-06-10 11:59:04.7454|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 11:59:04.8470|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 107.4553ms. 
+2019-06-10 11:59:04.9914|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 270.9461ms 
+2019-06-10 11:59:05.0125|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:59:05.0125|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 469.6945ms 200 text/html; charset=utf-8 
+2019-06-10 11:59:07.0853|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:59:07.1227|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:59:07.1372|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:59:07.2055|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 11:59:07.2154|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:59:07.2303|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 14.2795ms. 
+2019-06-10 11:59:07.2498|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 11:59:07.2790|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 21.1536ms. 
+2019-06-10 11:59:07.3799|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 160.6754ms 
+2019-06-10 11:59:07.4190|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:59:07.4463|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 341.8668ms 200 text/html; charset=utf-8 
+2019-06-10 11:59:07.5755|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-10 11:59:07.6123|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-06-10 11:59:07.6123|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 55.1019ms 200 image/x-icon 
+2019-06-10 11:59:44.1322|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 11:59:44.7074|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:59:44.8005|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:59:47.6827|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 11:59:47.7750|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.799ms. 
+2019-06-10 11:59:48.0223|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 11:59:48.6741|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 822.2244ms. 
+2019-06-10 11:59:48.7639|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 3889.258ms 
+2019-06-10 11:59:48.8068|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:59:48.9696|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 4792.6711ms 200 text/html; charset=utf-8 
+2019-06-10 11:59:51.7079|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/index application/x-www-form-urlencoded 24 
+2019-06-10 11:59:51.7375|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:59:51.8365|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(AccessManagementServices.DOTS.AccountViewModel) on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:59:52.0703|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Invalid 
+2019-06-10 11:59:52.0966|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 11:59:52.0966|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 28.0917ms. 
+2019-06-10 11:59:52.1108|Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor|INFO|Executing RedirectResult, redirecting to Privacy. 
+2019-06-10 11:59:52.1216|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 279.0611ms 
+2019-06-10 11:59:52.1216|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 11:59:52.1372|Microsoft.AspNetCore.Session.DistributedSession|INFO|Session started; Key:d2b4f2ba-c572-4585-711c-9145d4db3911, Id:c596c40b-afab-3a5e-53ed-8582abf16141 
+2019-06-10 11:59:52.1545|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 452.3195ms 302  
+2019-06-10 11:59:52.1545|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 11:59:52.1849|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:59:52.1849|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 11:59:52.2896|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 11:59:52.3068|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 11:59:52.3271|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 28.2006ms. 
+2019-06-10 11:59:52.3462|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 11:59:52.4585|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 125.7439ms. 
+2019-06-10 11:59:52.4762|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 260.6288ms 
+2019-06-10 11:59:52.5117|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 11:59:52.5373|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 364.2934ms 200 text/html; charset=utf-8 
+2019-06-10 14:40:53.7338|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 14:40:54.1769|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:40:54.2298|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:40:56.0207|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:40:56.0590|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 22.703ms. 
+2019-06-10 14:40:56.1769|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:40:56.5901|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 459.1486ms. 
+2019-06-10 14:40:56.6191|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 2374.4733ms 
+2019-06-10 14:40:56.7362|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:40:56.7972|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 3065.7264ms 200 text/html; charset=utf-8 
+2019-06-10 14:40:59.2584|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/index application/x-www-form-urlencoded 24 
+2019-06-10 14:40:59.3014|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:40:59.5308|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(AccessManagementServices.DOTS.AccountViewModel) on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:40:59.8434|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Invalid 
+2019-06-10 14:40:59.8848|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:40:59.8983|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 38.7195ms. 
+2019-06-10 14:40:59.9242|Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor|INFO|Executing RedirectResult, redirecting to Privacy. 
+2019-06-10 14:40:59.9343|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 383.43ms 
+2019-06-10 14:40:59.9343|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:40:59.9528|Microsoft.AspNetCore.Session.DistributedSession|INFO|Session started; Key:d2b4f2ba-c572-4585-711c-9145d4db3911, Id:f85caea1-ed06-e2e3-6470-10f375b59b5a 
+2019-06-10 14:40:59.9804|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 723.186ms 302  
+2019-06-10 14:41:00.0008|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 14:41:00.1988|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 14:41:00.3228|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:41:00.7471|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 14:41:00.8204|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:41:00.9190|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 96.5586ms. 
+2019-06-10 14:41:01.0271|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 14:41:01.3651|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 254.1341ms. 
+2019-06-10 14:41:01.5601|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 1039.7098ms 
+2019-06-10 14:41:01.6205|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 14:41:01.6507|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1637.1858ms 200 text/html; charset=utf-8 
+2019-06-10 14:41:21.1219|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 14:41:21.1379|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 14:41:21.1994|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:41:21.3329|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 14:41:21.3998|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:41:21.4445|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 81.0455ms. 
+2019-06-10 14:41:21.5069|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 14:41:21.6522|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 88.0203ms. 
+2019-06-10 14:41:21.7506|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 455.3076ms 
+2019-06-10 14:41:21.8576|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 14:41:21.8905|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 742.5048ms 200 text/html; charset=utf-8 
+2019-06-10 14:41:40.1513|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 14:41:40.1679|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 14:41:40.2427|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:41:40.3549|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 14:41:40.3725|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:41:40.4196|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 21.1763ms. 
+2019-06-10 14:41:40.4558|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 14:41:40.5596|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 31.7533ms. 
+2019-06-10 14:41:40.6938|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 314.4294ms 
+2019-06-10 14:41:40.7178|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 14:41:40.7652|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 575.4715ms 200 text/html; charset=utf-8 
+2019-06-10 14:41:41.0522|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-10 14:41:41.1099|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-06-10 14:41:41.1310|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 109.3412ms 200 image/x-icon 
+2019-06-10 14:43:31.4803|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 14:43:38.6836|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:43:41.0700|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:43:41.2162|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:43:43.1365|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:43:43.1604|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.8011ms. 
+2019-06-10 14:43:43.3095|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:43:43.9084|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 703.5473ms. 
+2019-06-10 14:43:43.9639|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 2700.2479ms 
+2019-06-10 14:43:44.2462|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:43:44.5091|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 14:43:44.6135|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 13073.8038ms 302 text/html; charset=utf-8 
+2019-06-10 14:43:49.8861|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:43:49.9879|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:43:50.0443|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:43:50.1610|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:43:50.1897|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5566ms. 
+2019-06-10 14:43:50.2431|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:43:50.3295|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 76.7106ms. 
+2019-06-10 14:43:50.3638|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 289.2624ms 
+2019-06-10 14:43:50.4059|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:43:50.4344|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 6177.4725ms 200 text/html; charset=utf-8 
+2019-06-10 14:43:52.3372|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/Home/index application/x-www-form-urlencoded 24 
+2019-06-10 14:43:52.3498|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:43:52.3864|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 44.5353ms 404  
+2019-06-10 14:44:26.1895|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 14:44:26.5418|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:44:26.6925|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:44:26.7324|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:44:27.9149|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:44:27.9629|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 10.3367ms. 
+2019-06-10 14:44:28.0912|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:44:28.4462|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 321.7643ms. 
+2019-06-10 14:44:28.4942|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1714.7831ms 
+2019-06-10 14:44:28.5102|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:44:28.5130|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 14:44:28.5391|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2354.9136ms 302 text/html; charset=utf-8 
+2019-06-10 14:44:28.5589|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:44:28.6415|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:44:28.6632|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:44:28.7540|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:44:28.7744|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1678ms. 
+2019-06-10 14:44:28.7934|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:44:28.8718|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 29.7984ms. 
+2019-06-10 14:44:28.8718|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 210.2716ms 
+2019-06-10 14:44:28.8946|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:44:28.9036|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 391.9925ms 200 text/html; charset=utf-8 
+2019-06-10 14:44:31.0535|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/Home/index application/x-www-form-urlencoded 24 
+2019-06-10 14:44:31.0657|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:44:31.0931|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 45.8479ms 404  
+2019-06-10 14:45:21.8787|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 14:45:22.1071|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:45:22.1905|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:45:22.2335|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:45:23.0460|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:45:23.1671|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 19.0258ms. 
+2019-06-10 14:45:23.2869|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:45:23.4908|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 276.7226ms. 
+2019-06-10 14:45:23.5094|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1254.116ms 
+2019-06-10 14:45:23.5332|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:45:23.6225|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1723.5347ms 302 text/html; charset=utf-8 
+2019-06-10 14:45:23.6737|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 14:45:23.6897|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:45:23.7299|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:45:23.7719|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:45:23.8221|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:45:23.8330|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4669ms. 
+2019-06-10 14:45:23.8330|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:45:23.8570|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 14.1723ms. 
+2019-06-10 14:45:23.9154|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 93.7517ms 
+2019-06-10 14:45:23.9447|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:45:23.9654|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 283.0386ms 200 text/html; charset=utf-8 
+2019-06-10 14:45:34.3563|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/Home/index application/x-www-form-urlencoded 24 
+2019-06-10 14:45:34.3563|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:46:01.6268|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 27235.1202ms 404  
+2019-06-10 14:46:05.8128|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/Home/index application/x-www-form-urlencoded 24 
+2019-06-10 14:46:33.8651|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 14:46:47.4002|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:47:05.2589|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:47:05.3058|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:47:05.8129|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:47:05.8393|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 17.0945ms. 
+2019-06-10 14:47:05.8898|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:47:06.0691|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 206.5412ms. 
+2019-06-10 14:47:06.1067|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 758.8035ms 
+2019-06-10 14:47:06.2101|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:47:06.2430|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 14:47:13.6344|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:47:13.6465|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 39798.7326ms 302 text/html; charset=utf-8 
+2019-06-10 14:47:13.6783|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:47:13.7321|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:47:13.8157|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:47:13.8306|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1537ms. 
+2019-06-10 14:47:13.8666|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:47:13.9178|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 25.3449ms. 
+2019-06-10 14:47:13.9918|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 211.1535ms 
+2019-06-10 14:47:14.0140|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:47:14.0283|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 7783.9166ms 200 text/html; charset=utf-8 
+2019-06-10 14:47:23.6108|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/Home/index application/x-www-form-urlencoded 24 
+2019-06-10 14:48:01.6136|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:48:17.8922|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 54286.0415ms 404  
+2019-06-10 14:49:04.7118|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 14:49:06.8182|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:49:06.9309|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:49:06.9819|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:49:07.9592|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:49:07.9881|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 10.7928ms. 
+2019-06-10 14:49:08.0834|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:49:08.3312|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 299.4483ms. 
+2019-06-10 14:49:08.3312|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 1346.0859ms 
+2019-06-10 14:49:08.3596|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:49:08.4242|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 3699.8227ms 302 text/html; charset=utf-8 
+2019-06-10 14:49:08.5392|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/default   
+2019-06-10 14:49:13.4198|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:49:13.5425|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 4951.8899ms 404  
+2019-06-10 14:50:15.7141|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 14:50:15.9482|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:52:42.6682|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:52:42.7359|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:52:44.5737|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:52:44.6159|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.9991ms. 
+2019-06-10 14:52:44.7034|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:52:44.8962|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 230.0791ms. 
+2019-06-10 14:52:44.9171|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 2123.683ms 
+2019-06-10 14:52:44.9409|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:52:44.9794|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 14:52:44.9846|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 149280.7583ms 302 text/html; charset=utf-8 
+2019-06-10 14:52:45.0120|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:52:45.0479|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:52:45.0607|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:52:45.1756|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:52:45.1851|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3728ms. 
+2019-06-10 14:52:45.1851|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:52:45.2084|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 11.9514ms. 
+2019-06-10 14:52:45.2314|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 147.4192ms 
+2019-06-10 14:52:45.2689|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:52:45.2829|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 296.2548ms 200 text/html; charset=utf-8 
+2019-06-10 14:52:48.4846|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/Home/index application/x-www-form-urlencoded 24 
+2019-06-10 14:52:48.5410|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:56:16.9619|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 208485.3643ms 404  
+2019-06-10 14:56:27.5396|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 14:56:27.6726|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:56:43.6171|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:56:43.6305|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:56:43.7350|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:56:43.7549|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0471ms. 
+2019-06-10 14:56:43.7657|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:56:43.7928|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 12.7519ms. 
+2019-06-10 14:56:43.9748|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 128.9716ms 
+2019-06-10 14:56:44.0112|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:56:44.0594|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 14:56:44.0819|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 16531.8ms 302 text/html; charset=utf-8 
+2019-06-10 14:56:44.0819|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:56:44.1036|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:56:44.1229|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:56:44.1988|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:56:44.1988|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1115ms. 
+2019-06-10 14:56:44.2211|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:56:44.2436|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 13.2775ms. 
+2019-06-10 14:56:44.5442|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 132.6965ms 
+2019-06-10 14:56:44.8566|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:56:44.8907|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 819.5675ms 200 text/html; charset=utf-8 
+2019-06-10 14:56:55.4336|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/Home/index application/x-www-form-urlencoded 24 
+2019-06-10 14:56:55.4765|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:57:17.5234|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 22099.5444ms 404  
+2019-06-10 14:57:53.5251|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 14:57:53.5865|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:57:56.0243|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:57:56.0378|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:57:56.0924|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:57:56.1068|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0551ms. 
+2019-06-10 14:58:00.6713|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/Home/index application/x-www-form-urlencoded 24 
+2019-06-10 14:58:00.6858|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:58:05.0397|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 4367.0933ms 404  
+2019-06-10 14:58:06.4604|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:58:06.4888|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 10372.7088ms. 
+2019-06-10 14:58:06.4888|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 10450.5174ms 
+2019-06-10 14:58:06.5026|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:58:06.5026|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 13001.2715ms 302 text/html; charset=utf-8 
+2019-06-10 14:58:46.4749|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-10 14:58:46.9336|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:58:51.0152|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:58:51.0826|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:58:51.9114|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:58:52.3022|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 9.5216ms. 
+2019-06-10 14:58:52.8446|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:58:53.3354|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 982.8312ms. 
+2019-06-10 14:58:53.4038|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 2253.7198ms 
+2019-06-10 14:58:53.4315|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 14:58:53.4816|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:58:53.5164|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:58:53.5403|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 7107.738ms 302 text/html; charset=utf-8 
+2019-06-10 14:58:53.6015|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:58:53.7856|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:58:54.2259|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:58:54.2545|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.564ms. 
+2019-06-10 14:58:54.2984|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:58:54.4481|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 50.6234ms. 
+2019-06-10 14:58:54.6241|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 650.635ms 
+2019-06-10 14:58:54.6860|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:58:54.7584|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1310.153ms 200 text/html; charset=utf-8 
+2019-06-10 14:58:56.4767|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/index application/x-www-form-urlencoded 24 
+2019-06-10 14:58:56.5373|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:d2b4f2ba-c572-4585-711c-9145d4db3911 
+2019-06-10 14:59:00.7479|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:59:00.8453|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(AccessManagementServices.DOTS.AccountViewModel) on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:59:01.1247|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Invalid 
+2019-06-10 14:59:03.3999|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 2233.5498ms. 
+2019-06-10 14:59:03.4234|Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor|INFO|Executing RedirectResult, redirecting to Privacy. 
+2019-06-10 14:59:03.4489|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 2584.4335ms 
+2019-06-10 14:59:03.4656|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:59:03.4908|Microsoft.AspNetCore.Session.DistributedSession|INFO|Session started; Key:d2b4f2ba-c572-4585-711c-9145d4db3911, Id:5bef74d0-0dff-3ff7-b998-9dd4e418e35e 
+2019-06-10 14:59:03.6226|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 7100.3417ms 302  
+2019-06-10 14:59:03.6692|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 14:59:03.7203|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:1 password:1 
+2019-06-10 14:59:03.7455|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 14:59:03.7625|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:59:03.8592|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 14:59:03.8816|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:59:03.9077|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 33.6711ms. 
+2019-06-10 14:59:03.9199|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 14:59:04.0352|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 119.0064ms. 
+2019-06-10 14:59:04.1931|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 273.6597ms 
+2019-06-10 14:59:04.2897|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 14:59:04.3689|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 689.1825ms 200 text/html; charset=utf-8 
+2019-06-10 14:59:09.7880|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 14:59:09.8309|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 14:59:12.3086|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 14:59:12.3275|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:59:12.4206|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 14:59:12.4335|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:59:12.5615|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 16.8923ms. 
+2019-06-10 14:59:12.6002|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 14:59:12.6259|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 36.4064ms. 
+2019-06-10 14:59:12.6520|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 296.7321ms 
+2019-06-10 14:59:12.6663|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Index   
+2019-06-10 14:59:12.7050|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 14:59:12.7368|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 14:59:12.7625|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:59:12.8218|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2978.2044ms 302 text/html; charset=utf-8 
+2019-06-10 14:59:12.8218|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:59:12.9527|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-10 14:59:12.9893|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0484ms. 
+2019-06-10 14:59:12.9987|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-10 14:59:13.0112|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 14.0045ms. 
+2019-06-10 14:59:13.3674|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 184.7924ms 
+2019-06-10 14:59:13.6201|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:59:13.6748|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 973.235ms 200 text/html; charset=utf-8 
+2019-06-10 14:59:15.5925|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Home/index application/x-www-form-urlencoded 32 
+2019-06-10 14:59:15.6406|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4 
+2019-06-10 14:59:19.6513|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:59:19.8783|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(AccessManagementServices.DOTS.AccountViewModel) on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:59:20.0194|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Invalid 
+2019-06-10 14:59:23.1350|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 3107.9182ms. 
+2019-06-10 14:59:23.1608|Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor|INFO|Executing RedirectResult, redirecting to Privacy. 
+2019-06-10 14:59:23.1767|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 3282.55ms 
+2019-06-10 14:59:23.1867|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-10 14:59:23.2087|Microsoft.AspNetCore.Session.DistributedSession|INFO|Session started; Key:4824fe4b-9a6d-7ade-f7fa-893e0196ddd4, Id:17d278d0-51e8-55f4-96ff-dd73d65cfcd4 
+2019-06-10 14:59:23.2217|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 7657ms 302  
+2019-06-10 14:59:23.2699|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 14:59:23.2845|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:zhangg password:8888 
+2019-06-10 14:59:23.3047|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 14:59:23.3218|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 14:59:23.5748|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 14:59:23.5981|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 14:59:23.6141|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 21.53ms. 
+2019-06-10 14:59:23.6307|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 14:59:23.6428|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 9.3331ms. 
+2019-06-10 14:59:23.6984|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 322.2764ms 
+2019-06-10 14:59:23.8373|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 14:59:23.8944|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 579.8275ms 200 text/html; charset=utf-8 
+2019-06-10 15:00:11.3278|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 15:00:11.3415|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:zhangg password:8888 
+2019-06-10 15:00:11.3899|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 15:00:11.4134|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 15:00:11.4865|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 15:00:11.5039|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 15:00:11.5163|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 16.6602ms. 
+2019-06-10 15:00:11.5163|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 15:00:11.5377|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 15.8898ms. 
+2019-06-10 15:00:11.5834|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 125.5993ms 
+2019-06-10 15:00:11.6296|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 15:00:11.8705|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 355.6417ms 200 text/html; charset=utf-8 
+2019-06-10 15:00:11.9648|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-10 15:00:12.0881|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-06-10 15:00:12.1040|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 154.8597ms 200 image/x-icon 
+2019-06-10 15:00:13.0330|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 15:00:13.0472|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:zhangg password:8888 
+2019-06-10 15:00:13.0592|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 15:00:13.0592|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 15:00:13.1264|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 15:00:13.1264|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 15:00:13.1417|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.5989ms. 
+2019-06-10 15:00:13.1417|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 15:00:13.1534|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 6.451ms. 
+2019-06-10 15:00:13.1534|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 85.3477ms 
+2019-06-10 15:00:13.1940|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 15:00:13.2414|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 290.6488ms 200 text/html; charset=utf-8 
+2019-06-10 15:00:13.5405|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-10 15:00:13.5636|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-06-10 15:00:13.5793|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 93.5667ms 200 image/x-icon 
+2019-06-10 15:00:14.5566|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Home/Privacy   
+2019-06-10 15:00:14.5622|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:zhangg password:8888 
+2019-06-10 15:00:14.5622|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 15:00:14.5751|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-10 15:00:14.6225|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement) - Validation state: Valid 
+2019-06-10 15:00:14.6225|AccessManagement.Controllers.HomeController|ERROR|error error
+2019-06-10 15:00:14.6225|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Privacy (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.4872ms. 
+2019-06-10 15:00:14.6397|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Privacy. 
+2019-06-10 15:00:14.6397|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Privacy executed in 5.5221ms. 
+2019-06-10 15:00:14.7176|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Privacy (AccessManagement) in 81.3169ms 
+2019-06-10 15:00:14.7402|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Privacy (AccessManagement)' 
+2019-06-10 15:00:14.7915|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 379.8753ms 200 text/html; charset=utf-8 
+2019-06-10 15:00:15.0251|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-10 15:00:15.1290|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-06-10 15:00:15.1451|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 147.5616ms 200 image/x-icon 

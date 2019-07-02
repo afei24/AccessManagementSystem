@@ -1,0 +1,1543 @@
+2019-06-25 10:35:48.3933|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 10:36:33.0742|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 10:39:28.9613|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 11:35:56.1092|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 11:36:17.8567|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 11:58:35.3202|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 11:59:00.5270|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 11:59:02.3695|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 11:59:02.6999|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 11:59:55.4846|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 11:59:58.1910|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 11:59:59.9772|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 12:00:12.1169|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 12:00:17.2322|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account
+Body:["value1","value2"] 
+2019-06-25 13:48:17.3377|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 13:48:19.6624|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 13:48:19.6863|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/GetAppMenu
+Body: 
+2019-06-25 13:48:35.1043|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 13:48:37.4020|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 13:48:37.4271|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/GetAppMenu
+Body: 
+2019-06-25 13:50:37.7247|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 13:50:39.8824|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 13:50:39.9259|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/GetAppMenu
+Body: 
+2019-06-25 13:50:54.3058|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 13:50:55.2420|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 13:50:55.2592|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/GetAppMenu
+Body: 
+2019-06-25 13:51:20.1144|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 13:51:32.7713|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 13:51:34.8279|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"errors":{"id":["The value 'GetAppMenu' is not valid."]},"title":"One or more validation errors occurred.","status":400,"traceId":"800137e6-0000-f900-b63f-84710c7967bb"} 
+2019-06-25 13:53:25.5348|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 13:53:27.8458|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 13:53:36.0891|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[]} 
+2019-06-25 13:53:55.1744|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 13:53:56.9183|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 13:54:12.9595|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[]} 
+2019-06-25 13:55:00.3829|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 13:55:05.7758|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 13:59:37.9910|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 13:59:39.9533|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 14:00:05.5849|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:<!DOCTYPE html>
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Internal Server Error</title>
+        <style>
+            body {
+    font-family: 'Segoe UI', Tahoma, Arial, Helvetica, sans-serif;
+    font-size: .813em;
+    color: #222;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+    /*font-family: 'Segoe UI',Tahoma,Arial,Helvetica,sans-serif;*/
+    font-weight: 100;
+}
+
+h1 {
+    color: #44525e;
+    margin: 15px 0 15px 0;
+}
+
+h2 {
+    margin: 10px 5px 0 0;
+}
+
+h3 {
+    color: #363636;
+    margin: 5px 5px 0 0;
+}
+
+code {
+    font-family: Consolas, "Courier New", courier, monospace;
+}
+
+body .titleerror {
+    padding: 3px 3px 6px 3px;
+    display: block;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+body .location {
+    margin: 3px 0 10px 30px;
+}
+
+#header {
+    font-size: 18px;
+    padding: 15px 0;
+    border-top: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+    margin-bottom: 0;
+}
+
+    #header li {
+        display: inline;
+        margin: 5px;
+        padding: 5px;
+        color: #a0a0a0;
+        cursor: pointer;
+    }
+
+    #header .selected {
+        background: #44c5f2;
+        color: #fff;
+    }
+
+#stackpage ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    /*border-bottom: 1px #ddd solid;*/
+}
+
+#stackpage .details {
+    font-size: 1.2em;
+    padding: 3px;
+    color: #000;
+}
+
+#stackpage .stackerror {
+    padding: 5px;
+    border-bottom: 1px #ddd solid;
+}
+
+
+#stackpage .frame {
+    padding: 0;
+    margin: 0 0 0 30px;
+}
+
+    #stackpage .frame h3 {
+        padding: 2px;
+        margin: 0;
+    }
+
+#stackpage .source {
+    padding: 0 0 0 30px;
+}
+
+    #stackpage .source ol li {
+        font-family: Consolas, "Courier New", courier, monospace;
+        white-space: pre;
+        background-color: #fbfbfb;
+    }
+
+#stackpage .frame .source .highlight li span {
+    color: #FF0000;
+}
+
+#stackpage .source ol.collapsible li {
+    color: #888;
+}
+
+    #stackpage .source ol.collapsible li span {
+        color: #606060;
+    }
+
+.page table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0 0 20px;
+}
+
+.page th {
+    vertical-align: bottom;
+    padding: 10px 5px 5px 5px;
+    font-weight: 400;
+    color: #a0a0a0;
+    text-align: left;
+}
+
+.page td {
+    padding: 3px 10px;
+}
+
+.page th, .page td {
+    border-right: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+    border-left: 1px transparent solid;
+    border-top: 1px transparent solid;
+    box-sizing: border-box;
+}
+
+    .page th:last-child, .page td:last-child {
+        border-right: 1px transparent solid;
+    }
+
+.page .length {
+    text-align: right;
+}
+
+a {
+    color: #1ba1e2;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #13709e;
+        text-decoration: underline;
+    }
+
+.showRawException {
+    cursor: pointer;
+    color: #44c5f2;
+    background-color: transparent;
+    font-size: 1.2em;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    border: 0;
+    padding: 0;
+}
+
+.rawExceptionStackTrace {
+    font-size: 1.2em;
+}
+
+.rawExceptionBlock {
+    border-top: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+}
+
+.showRawExceptionContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.expandCollapseButton {
+    cursor: pointer;
+    float: left;
+    height: 16px;
+    width: 16px;
+    font-size: 10px;
+    position: absolute;
+    left: 10px;
+    background-color: #eee;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+        </style>
+    </head>
+    <body>
+        <h1>An unhandled exception occurred while processing the request.</h1>
+            <div class="titleerror">NullReferenceException: Object reference not set to an instance of an object.</div>
+                <p class="location">AccessManagement.Api.AccountController&#x2B;&lt;&gt;c.&lt;GetAppMenu&gt;b__3_0(Function o) in <code title="C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\Api\AccountController.cs">AccountController.cs</code>, line 47</p>
+        <ul id="header">
+            <li id="stack" tabindex="1" class="selected">
+                Stack
+            </li>
+            <li id="query" tabindex="2">
+                Query
+            </li>
+            <li id="cookies" tabindex="3">
+                Cookies
+            </li>
+            <li id="headers" tabindex="4">
+                Headers
+            </li>
+        </ul>
+
+        <div id="stackpage" class="page">
+            <ul>
+                                    <li>
+                        <h2 class="stackerror">NullReferenceException: Object reference not set to an instance of an object.</h2>
+                        <ul>
+                            <li class="frame" id="frame1">
+                                    <h3>AccessManagement.Api.AccountController&#x2B;&lt;&gt;c.&lt;GetAppMenu&gt;b__3_0(Function o) in <code title="C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\Api\AccountController.cs">AccountController.cs</code></h3>
+
+                                    <button class="expandCollapseButton" data-frameId="frame1">+</button>
+                                    <div class="source">
+                                            <ol start="41" class="collapsible">
+                                                    <li><span>        [Route(&quot;GetAppMenu&quot;)]</span></li>
+                                                    <li><span>        public ApiResponse GetAppMenu()</span></li>
+                                                    <li><span>        {</span></li>
+                                                    <li><span>            if (HttpContext.Session.Get(&quot;functions&quot;) != null)</span></li>
+                                                    <li><span>            {</span></li>
+                                                    <li><span>                var functions = (List&lt;Function&gt;)SerializeHelper.DeserializeWithBinary(HttpContext.Session.Get(&quot;functions&quot;));</span></li>
+                                            </ol>
+
+                                        <ol start="47" class="highlight">
+                                                <li><span>                var codes = functions.Select(o =&gt; o.Code).ToList();</span></li>
+                                        </ol>
+
+                                            <ol start='48' class="collapsible">
+                                                    <li><span>                var appmenu = _context.AppMenu.Where(o =&gt; codes.Contains(o.Code));</span></li>
+                                                    <li><span>                return new ApiResponse() { code = 0, data = appmenu };</span></li>
+                                                    <li><span>            }</span></li>
+                                                    <li><span>            else</span></li>
+                                                    <li><span>            {</span></li>
+                                                    <li><span>                return new ApiResponse() { code = -1 };</span></li>
+                                            </ol>
+                                    </div>
+                            </li>
+                            <li class="frame" id="frame2">
+                                    <h3>System.Linq.Enumerable&#x2B;SelectListIterator&lt;TSource, TResult&gt;.ToList()</h3>
+
+                            </li>
+                            <li class="frame" id="frame3">
+                                    <h3>System.Linq.Enumerable.ToList&lt;TSource&gt;(IEnumerable&lt;TSource&gt; source)</h3>
+
+                            </li>
+                            <li class="frame" id="frame4">
+                                    <h3>AccessManagement.Api.AccountController.GetAppMenu() in <code title="C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\Api\AccountController.cs">AccountController.cs</code></h3>
+
+                                    <button class="expandCollapseButton" data-frameId="frame4">+</button>
+                                    <div class="source">
+                                            <ol start="41" class="collapsible">
+                                                    <li><span>        [Route(&quot;GetAppMenu&quot;)]</span></li>
+                                                    <li><span>        public ApiResponse GetAppMenu()</span></li>
+                                                    <li><span>        {</span></li>
+                                                    <li><span>            if (HttpContext.Session.Get(&quot;functions&quot;) != null)</span></li>
+                                                    <li><span>            {</span></li>
+                                                    <li><span>                var functions = (List&lt;Function&gt;)SerializeHelper.DeserializeWithBinary(HttpContext.Session.Get(&quot;functions&quot;));</span></li>
+                                            </ol>
+
+                                        <ol start="47" class="highlight">
+                                                <li><span>                var codes = functions.Select(o =&gt; o.Code).ToList();</span></li>
+                                        </ol>
+
+                                            <ol start='48' class="collapsible">
+                                                    <li><span>                var appmenu = _context.AppMenu.Where(o =&gt; codes.Contains(o.Code));</span></li>
+                                                    <li><span>                return new ApiResponse() { code = 0, data = appmenu };</span></li>
+                                                    <li><span>            }</span></li>
+                                                    <li><span>            else</span></li>
+                                                    <li><span>            {</span></li>
+                                                    <li><span>                return new ApiResponse() { code = -1 };</span></li>
+                                            </ol>
+                                    </div>
+                            </li>
+                            <li class="frame" id="frame5">
+                                    <h3>lambda_method(Closure , object , object[] )</h3>
+
+                            </li>
+                            <li class="frame" id="frame6">
+                                    <h3>Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(object target, object[] parameters)</h3>
+
+                            </li>
+                            <li class="frame" id="frame7">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor&#x2B;SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, object controller, object[] arguments)</h3>
+
+                            </li>
+                            <li class="frame" id="frame8">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()</h3>
+
+                            </li>
+                            <li class="frame" id="frame9">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()</h3>
+
+                            </li>
+                            <li class="frame" id="frame10">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)</h3>
+
+                            </li>
+                            <li class="frame" id="frame11">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(ref State next, ref Scope scope, ref object state, ref bool isCompleted)</h3>
+
+                            </li>
+                            <li class="frame" id="frame12">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()</h3>
+
+                            </li>
+                            <li class="frame" id="frame13">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()</h3>
+
+                            </li>
+                            <li class="frame" id="frame14">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)</h3>
+
+                            </li>
+                            <li class="frame" id="frame15">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(ref State next, ref Scope scope, ref object state, ref bool isCompleted)</h3>
+
+                            </li>
+                            <li class="frame" id="frame16">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()</h3>
+
+                            </li>
+                            <li class="frame" id="frame17">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()</h3>
+
+                            </li>
+                            <li class="frame" id="frame18">
+                                    <h3>Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)</h3>
+
+                            </li>
+                            <li class="frame" id="frame19">
+                                    <h3>Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)</h3>
+
+                            </li>
+                            <li class="frame" id="frame20">
+                                    <h3>AccessManagement.Middleware.AccountSessionMiddleware.Invoke(HttpContext context) in <code title="C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\Middleware\AccountSessionMiddleware.cs">AccountSessionMiddleware.cs</code></h3>
+
+                                    <button class="expandCollapseButton" data-frameId="frame20">+</button>
+                                    <div class="source">
+                                            <ol start="34" class="collapsible">
+                                                    <li><span>                else if (!requestPath.Contains(&quot;Account/Login&quot;))</span></li>
+                                                    <li><span>                {</span></li>
+                                                    <li><span>                    context.Response.Redirect(&quot;/Account/Login&quot;);</span></li>
+                                                    <li><span>                }</span></li>
+                                                    <li><span>            }</span></li>
+                                                    <li><span></span></li>
+                                            </ol>
+
+                                        <ol start="40" class="highlight">
+                                                <li><span>            await _next.Invoke(context);</span></li>
+                                        </ol>
+
+                                            <ol start='41' class="collapsible">
+                                                    <li><span></span></li>
+                                                    <li><span>        }</span></li>
+                                                    <li><span>    }</span></li>
+                                                    <li><span>}</span></li>
+                                            </ol>
+                                    </div>
+                            </li>
+                            <li class="frame" id="frame21">
+                                    <h3>Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)</h3>
+
+                            </li>
+                            <li class="frame" id="frame22">
+                                    <h3>Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)</h3>
+
+                            </li>
+                            <li class="frame" id="frame23">
+                                    <h3>Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)</h3>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <br/>
+                        <div class="rawExceptionBlock">
+                            <div class="showRawExceptionContainer">
+                                <button class="showRawException" data-exceptionDetailId="exceptionDetail1">Show raw exception details</button>
+                            </div>
+                            <div id="exceptionDetail1" class="rawExceptionDetails">
+                                <pre class="rawExceptionStackTrace">System.NullReferenceException: Object reference not set to an instance of an object.&#xD;&#xA;   at AccessManagement.Api.AccountController.&lt;&gt;c.&lt;GetAppMenu&gt;b__3_0(Function o) in C:\&#x9879;&#x76EE;\AccessManagementSystem\AccessManagement\AccessManagement\Api\AccountController.cs:line 47&#xD;&#xA;   at System.Linq.Enumerable.SelectListIterator`2.ToList()&#xD;&#xA;   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)&#xD;&#xA;   at AccessManagement.Api.AccountController.GetAppMenu() in C:\&#x9879;&#x76EE;\AccessManagementSystem\AccessManagement\AccessManagement\Api\AccountController.cs:line 47&#xD;&#xA;   at lambda_method(Closure , Object , Object[] )&#xD;&#xA;   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State&amp; next, Scope&amp; scope, Object&amp; state, Boolean&amp; isCompleted)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State&amp; next, Scope&amp; scope, Object&amp; state, Boolean&amp; isCompleted)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()&#xD;&#xA;   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)&#xD;&#xA;   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)&#xD;&#xA;   at AccessManagement.Middleware.AccountSessionMiddleware.Invoke(HttpContext context) in C:\&#x9879;&#x76EE;\AccessManagementSystem\AccessManagement\AccessManagement\Middleware\AccountSessionMiddleware.cs:line 40&#xD;&#xA;   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)&#xD;&#xA;   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)&#xD;&#xA;   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)</pre>
+                            </div>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+
+        <div id="querypage" class="page">
+                <p>No QueryString data.</p>
+        </div>
+
+        <div id="cookiespage" class="page">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Variable</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>.AspNet.Consent</td>
+                                <td>yes</td>
+                            </tr>
+                            <tr>
+                                <td>.AspNetCore.Antiforgery.YXHvEpvZ_PA</td>
+                                <td>CfDJ8FzePytvuwpOvn-chXfFz95I2-k6AP27xtO7A3VZWYFsuAkLd0Y8GLvbOPhWxyi0R-cmDpUGAS2sF5_B_6rItAGDBd6rSWzyik__CHlYMJJBg1AzRHhgw4knV7_Sza4MkFeE46wz7s1xcOnfDQUhZws</td>
+                            </tr>
+                            <tr>
+                                <td>.AspNetCore.Session</td>
+                                <td>CfDJ8FzePytvuwpOvn&#x2B;chXfFz96C&#x2B;Fc/TjrYVjqHfyPVFN3fc7SDIWRKAv33rH0B27Vcg85jbYtK4eO3R0jEhbD8MYMOJDAVCZfdkwX3jLhjED9A0MPyDDYxUkW/iQtCZAw6GhY/s/LBGsThBrxkDAEe/R/mMnm/9Oiew3DK8bTBLRxf</td>
+                            </tr>
+                    </tbody>
+                </table>
+        </div>
+        <div id="headerspage" class="page">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Variable</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                <tr>
+                                    <td>Accept</td>
+                                    <td>application/json, text/javascript, */*; q=0.01</td>
+                                </tr>
+                                <tr>
+                                    <td>Accept-Encoding</td>
+                                    <td>gzip, deflate, br</td>
+                                </tr>
+                                <tr>
+                                    <td>Accept-Language</td>
+                                    <td>zh-CN,zh;q=0.9</td>
+                                </tr>
+                                <tr>
+                                    <td>Connection</td>
+                                    <td>close</td>
+                                </tr>
+                                <tr>
+                                    <td>Content-Type</td>
+                                    <td>application/json</td>
+                                </tr>
+                                <tr>
+                                    <td>Cookie</td>
+                                    <td>.AspNet.Consent=yes; .AspNetCore.Antiforgery.YXHvEpvZ_PA=CfDJ8FzePytvuwpOvn-chXfFz95I2-k6AP27xtO7A3VZWYFsuAkLd0Y8GLvbOPhWxyi0R-cmDpUGAS2sF5_B_6rItAGDBd6rSWzyik__CHlYMJJBg1AzRHhgw4knV7_Sza4MkFeE46wz7s1xcOnfDQUhZws; .AspNetCore.Session=CfDJ8FzePytvuwpOvn%2BchXfFz96C%2BFc%2FTjrYVjqHfyPVFN3fc7SDIWRKAv33rH0B27Vcg85jbYtK4eO3R0jEhbD8MYMOJDAVCZfdkwX3jLhjED9A0MPyDDYxUkW%2FiQtCZAw6GhY%2Fs%2FLBGsThBrxkDAEe%2FR%2FmMnm%2F9Oiew3DK8bTBLRxf</td>
+                                </tr>
+                                <tr>
+                                    <td>Host</td>
+                                    <td>localhost:44334</td>
+                                </tr>
+                                <tr>
+                                    <td>Referer</td>
+                                    <td>https://localhost:44334/Account/Index</td>
+                                </tr>
+                                <tr>
+                                    <td>User-Agent</td>
+                                    <td>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36</td>
+                                </tr>
+                                <tr>
+                                    <td>x-requested-with</td>
+                                    <td>XMLHttpRequest</td>
+                                </tr>
+                    </tbody>
+                </table>
+        </div>
+        <script>
+            //<!--
+            (function (window, undefined) {
+    "use strict";
+
+    function ns(selector, element) {
+        return new NodeCollection(selector, element);
+    }
+
+    function NodeCollection(selector, element) {
+        this.items = [];
+        element = element || window.document;
+
+        var nodeList;
+
+        if (typeof (selector) === "string") {
+            nodeList = element.querySelectorAll(selector);
+            for (var i = 0, l = nodeList.length; i < l; i++) {
+                this.items.push(nodeList.item(i));
+            }
+        }
+    }
+
+    NodeCollection.prototype = {
+        each: function (callback) {
+            for (var i = 0, l = this.items.length; i < l; i++) {
+                callback(this.items[i], i);
+            }
+            return this;
+        },
+
+        children: function (selector) {
+            var children = [];
+
+            this.each(function (el) {
+                children = children.concat(ns(selector, el).items);
+            });
+
+            return ns(children);
+        },
+
+        hide: function () {
+            this.each(function (el) {
+                el.style.display = "none";
+            });
+
+            return this;
+        },
+
+        toggle: function () {
+            this.each(function (el) {
+                el.style.display = el.style.display === "none" ? "" : "none";
+            });
+
+            return this;
+        },
+
+        show: function () {
+            this.each(function (el) {
+                el.style.display = "";
+            });
+
+            return this;
+        },
+
+        addClass: function (className) {
+            this.each(function (el) {
+                var existingClassName = el.className,
+                    classNames;
+                if (!existingClassName) {
+                    el.className = className;
+                } else {
+                    classNames = existingClassName.split(" ");
+                    if (classNames.indexOf(className) < 0) {
+                        el.className = existingClassName + " " + className;
+                    }
+                }
+            });
+
+            return this;
+        },
+
+        removeClass: function (className) {
+            this.each(function (el) {
+                var existingClassName = el.className,
+                    classNames, index;
+                if (existingClassName === className) {
+                    el.className = "";
+                } else if (existingClassName) {
+                    classNames = existingClassName.split(" ");
+                    index = classNames.indexOf(className);
+                    if (index > 0) {
+                        classNames.splice(index, 1);
+                        el.className = classNames.join(" ");
+                    }
+                }
+            });
+
+            return this;
+        },
+
+        attr: function (name) {
+            if (this.items.length === 0) {
+                return null;
+            }
+
+            return this.items[0].getAttribute(name);
+        },
+
+        on: function (eventName, handler) {
+            this.each(function (el, idx) {
+                var callback = function (e) {
+                    e = e || window.event;
+                    if (!e.which && e.keyCode) {
+                        e.which = e.keyCode; // Normalize IE8 key events
+                    }
+                    handler.apply(el, [e]);
+                };
+
+                if (el.addEventListener) { // DOM Events
+                    el.addEventListener(eventName, callback, false);
+                } else if (el.attachEvent) { // IE8 events
+                    el.attachEvent("on" + eventName, callback);
+                } else {
+                    el["on" + type] = callback;
+                }
+            });
+
+            return this;
+        },
+
+        click: function (handler) {
+            return this.on("click", handler);
+        },
+
+        keypress: function (handler) {
+            return this.on("keypress", handler);
+        }
+    };
+
+    function frame(el) {
+        ns(".source .collapsible", el).toggle();
+    }
+
+    function expandCollapseButton(el) {
+        var frameId = el.getAttribute("data-frameId");
+        frame(document.getElementById(frameId));
+        if (el.innerText === "+") {
+            el.innerText = "-";
+        }
+        else {
+            el.innerText = "+";
+        }
+    }
+
+    function tab(el) {
+        var unselected = ns("#header .selected").removeClass("selected").attr("id");
+        var selected = ns("#" + el.id).addClass("selected").attr("id");
+
+        ns("#" + unselected + "page").hide();
+        ns("#" + selected + "page").show();
+    }
+
+    ns(".rawExceptionDetails").hide();
+    ns(".collapsible").hide();
+    ns(".page").hide();
+    ns("#stackpage").show();
+
+    ns(".expandCollapseButton")
+        .click(function () {
+            expandCollapseButton(this);
+        })
+        .keypress(function (e) {
+            if (e.which === 13) {
+                expandCollapseButton(this);
+            }
+        });
+
+    ns("#header li")
+        .click(function () {
+            tab(this);
+        })
+        .keypress(function (e) {
+            if (e.which === 13) {
+                tab(this);
+            }
+        });
+
+    ns(".showRawException")
+        .click(function () {
+            var exceptionDetailId = this.getAttribute("data-exceptionDetailId");
+            ns("#" + exceptionDetailId).toggle();
+        });
+})(window);
+            //-->
+        </script>
+    </body>
+</html>
+ 
+2019-06-25 14:00:08.1764|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 14:00:08.9752|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 14:00:39.2511|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:<!DOCTYPE html>
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Internal Server Error</title>
+        <style>
+            body {
+    font-family: 'Segoe UI', Tahoma, Arial, Helvetica, sans-serif;
+    font-size: .813em;
+    color: #222;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+    /*font-family: 'Segoe UI',Tahoma,Arial,Helvetica,sans-serif;*/
+    font-weight: 100;
+}
+
+h1 {
+    color: #44525e;
+    margin: 15px 0 15px 0;
+}
+
+h2 {
+    margin: 10px 5px 0 0;
+}
+
+h3 {
+    color: #363636;
+    margin: 5px 5px 0 0;
+}
+
+code {
+    font-family: Consolas, "Courier New", courier, monospace;
+}
+
+body .titleerror {
+    padding: 3px 3px 6px 3px;
+    display: block;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+body .location {
+    margin: 3px 0 10px 30px;
+}
+
+#header {
+    font-size: 18px;
+    padding: 15px 0;
+    border-top: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+    margin-bottom: 0;
+}
+
+    #header li {
+        display: inline;
+        margin: 5px;
+        padding: 5px;
+        color: #a0a0a0;
+        cursor: pointer;
+    }
+
+    #header .selected {
+        background: #44c5f2;
+        color: #fff;
+    }
+
+#stackpage ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    /*border-bottom: 1px #ddd solid;*/
+}
+
+#stackpage .details {
+    font-size: 1.2em;
+    padding: 3px;
+    color: #000;
+}
+
+#stackpage .stackerror {
+    padding: 5px;
+    border-bottom: 1px #ddd solid;
+}
+
+
+#stackpage .frame {
+    padding: 0;
+    margin: 0 0 0 30px;
+}
+
+    #stackpage .frame h3 {
+        padding: 2px;
+        margin: 0;
+    }
+
+#stackpage .source {
+    padding: 0 0 0 30px;
+}
+
+    #stackpage .source ol li {
+        font-family: Consolas, "Courier New", courier, monospace;
+        white-space: pre;
+        background-color: #fbfbfb;
+    }
+
+#stackpage .frame .source .highlight li span {
+    color: #FF0000;
+}
+
+#stackpage .source ol.collapsible li {
+    color: #888;
+}
+
+    #stackpage .source ol.collapsible li span {
+        color: #606060;
+    }
+
+.page table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0 0 20px;
+}
+
+.page th {
+    vertical-align: bottom;
+    padding: 10px 5px 5px 5px;
+    font-weight: 400;
+    color: #a0a0a0;
+    text-align: left;
+}
+
+.page td {
+    padding: 3px 10px;
+}
+
+.page th, .page td {
+    border-right: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+    border-left: 1px transparent solid;
+    border-top: 1px transparent solid;
+    box-sizing: border-box;
+}
+
+    .page th:last-child, .page td:last-child {
+        border-right: 1px transparent solid;
+    }
+
+.page .length {
+    text-align: right;
+}
+
+a {
+    color: #1ba1e2;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #13709e;
+        text-decoration: underline;
+    }
+
+.showRawException {
+    cursor: pointer;
+    color: #44c5f2;
+    background-color: transparent;
+    font-size: 1.2em;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    border: 0;
+    padding: 0;
+}
+
+.rawExceptionStackTrace {
+    font-size: 1.2em;
+}
+
+.rawExceptionBlock {
+    border-top: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+}
+
+.showRawExceptionContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.expandCollapseButton {
+    cursor: pointer;
+    float: left;
+    height: 16px;
+    width: 16px;
+    font-size: 10px;
+    position: absolute;
+    left: 10px;
+    background-color: #eee;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+        </style>
+    </head>
+    <body>
+        <h1>An unhandled exception occurred while processing the request.</h1>
+            <div class="titleerror">NullReferenceException: Object reference not set to an instance of an object.</div>
+                <p class="location">AccessManagement.Api.AccountController&#x2B;&lt;&gt;c.&lt;GetAppMenu&gt;b__3_0(Function o) in <code title="C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\Api\AccountController.cs">AccountController.cs</code>, line 47</p>
+        <ul id="header">
+            <li id="stack" tabindex="1" class="selected">
+                Stack
+            </li>
+            <li id="query" tabindex="2">
+                Query
+            </li>
+            <li id="cookies" tabindex="3">
+                Cookies
+            </li>
+            <li id="headers" tabindex="4">
+                Headers
+            </li>
+        </ul>
+
+        <div id="stackpage" class="page">
+            <ul>
+                                    <li>
+                        <h2 class="stackerror">NullReferenceException: Object reference not set to an instance of an object.</h2>
+                        <ul>
+                            <li class="frame" id="frame1">
+                                    <h3>AccessManagement.Api.AccountController&#x2B;&lt;&gt;c.&lt;GetAppMenu&gt;b__3_0(Function o) in <code title="C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\Api\AccountController.cs">AccountController.cs</code></h3>
+
+                                    <button class="expandCollapseButton" data-frameId="frame1">+</button>
+                                    <div class="source">
+                                            <ol start="41" class="collapsible">
+                                                    <li><span>        [Route(&quot;GetAppMenu&quot;)]</span></li>
+                                                    <li><span>        public ApiResponse GetAppMenu()</span></li>
+                                                    <li><span>        {</span></li>
+                                                    <li><span>            if (HttpContext.Session.Get(&quot;functions&quot;) != null)</span></li>
+                                                    <li><span>            {</span></li>
+                                                    <li><span>                var functions = (List&lt;Function&gt;)SerializeHelper.DeserializeWithBinary(HttpContext.Session.Get(&quot;functions&quot;));</span></li>
+                                            </ol>
+
+                                        <ol start="47" class="highlight">
+                                                <li><span>                var codes = functions.Select(o =&gt; o.Code).ToList();</span></li>
+                                        </ol>
+
+                                            <ol start='48' class="collapsible">
+                                                    <li><span>                var appmenu = _context.AppMenu.Where(o =&gt; codes.Contains(o.Code));</span></li>
+                                                    <li><span>                return new ApiResponse() { code = 0, data = appmenu };</span></li>
+                                                    <li><span>            }</span></li>
+                                                    <li><span>            else</span></li>
+                                                    <li><span>            {</span></li>
+                                                    <li><span>                return new ApiResponse() { code = -1 };</span></li>
+                                            </ol>
+                                    </div>
+                            </li>
+                            <li class="frame" id="frame2">
+                                    <h3>System.Linq.Enumerable&#x2B;SelectListIterator&lt;TSource, TResult&gt;.ToList()</h3>
+
+                            </li>
+                            <li class="frame" id="frame3">
+                                    <h3>System.Linq.Enumerable.ToList&lt;TSource&gt;(IEnumerable&lt;TSource&gt; source)</h3>
+
+                            </li>
+                            <li class="frame" id="frame4">
+                                    <h3>AccessManagement.Api.AccountController.GetAppMenu() in <code title="C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\Api\AccountController.cs">AccountController.cs</code></h3>
+
+                                    <button class="expandCollapseButton" data-frameId="frame4">+</button>
+                                    <div class="source">
+                                            <ol start="41" class="collapsible">
+                                                    <li><span>        [Route(&quot;GetAppMenu&quot;)]</span></li>
+                                                    <li><span>        public ApiResponse GetAppMenu()</span></li>
+                                                    <li><span>        {</span></li>
+                                                    <li><span>            if (HttpContext.Session.Get(&quot;functions&quot;) != null)</span></li>
+                                                    <li><span>            {</span></li>
+                                                    <li><span>                var functions = (List&lt;Function&gt;)SerializeHelper.DeserializeWithBinary(HttpContext.Session.Get(&quot;functions&quot;));</span></li>
+                                            </ol>
+
+                                        <ol start="47" class="highlight">
+                                                <li><span>                var codes = functions.Select(o =&gt; o.Code).ToList();</span></li>
+                                        </ol>
+
+                                            <ol start='48' class="collapsible">
+                                                    <li><span>                var appmenu = _context.AppMenu.Where(o =&gt; codes.Contains(o.Code));</span></li>
+                                                    <li><span>                return new ApiResponse() { code = 0, data = appmenu };</span></li>
+                                                    <li><span>            }</span></li>
+                                                    <li><span>            else</span></li>
+                                                    <li><span>            {</span></li>
+                                                    <li><span>                return new ApiResponse() { code = -1 };</span></li>
+                                            </ol>
+                                    </div>
+                            </li>
+                            <li class="frame" id="frame5">
+                                    <h3>lambda_method(Closure , object , object[] )</h3>
+
+                            </li>
+                            <li class="frame" id="frame6">
+                                    <h3>Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(object target, object[] parameters)</h3>
+
+                            </li>
+                            <li class="frame" id="frame7">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor&#x2B;SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, object controller, object[] arguments)</h3>
+
+                            </li>
+                            <li class="frame" id="frame8">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()</h3>
+
+                            </li>
+                            <li class="frame" id="frame9">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()</h3>
+
+                            </li>
+                            <li class="frame" id="frame10">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)</h3>
+
+                            </li>
+                            <li class="frame" id="frame11">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(ref State next, ref Scope scope, ref object state, ref bool isCompleted)</h3>
+
+                            </li>
+                            <li class="frame" id="frame12">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()</h3>
+
+                            </li>
+                            <li class="frame" id="frame13">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()</h3>
+
+                            </li>
+                            <li class="frame" id="frame14">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)</h3>
+
+                            </li>
+                            <li class="frame" id="frame15">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(ref State next, ref Scope scope, ref object state, ref bool isCompleted)</h3>
+
+                            </li>
+                            <li class="frame" id="frame16">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()</h3>
+
+                            </li>
+                            <li class="frame" id="frame17">
+                                    <h3>Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()</h3>
+
+                            </li>
+                            <li class="frame" id="frame18">
+                                    <h3>Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)</h3>
+
+                            </li>
+                            <li class="frame" id="frame19">
+                                    <h3>Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)</h3>
+
+                            </li>
+                            <li class="frame" id="frame20">
+                                    <h3>AccessManagement.Middleware.AccountSessionMiddleware.Invoke(HttpContext context) in <code title="C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\Middleware\AccountSessionMiddleware.cs">AccountSessionMiddleware.cs</code></h3>
+
+                                    <button class="expandCollapseButton" data-frameId="frame20">+</button>
+                                    <div class="source">
+                                            <ol start="34" class="collapsible">
+                                                    <li><span>                else if (!requestPath.Contains(&quot;Account/Login&quot;))</span></li>
+                                                    <li><span>                {</span></li>
+                                                    <li><span>                    context.Response.Redirect(&quot;/Account/Login&quot;);</span></li>
+                                                    <li><span>                }</span></li>
+                                                    <li><span>            }</span></li>
+                                                    <li><span></span></li>
+                                            </ol>
+
+                                        <ol start="40" class="highlight">
+                                                <li><span>            await _next.Invoke(context);</span></li>
+                                        </ol>
+
+                                            <ol start='41' class="collapsible">
+                                                    <li><span></span></li>
+                                                    <li><span>        }</span></li>
+                                                    <li><span>    }</span></li>
+                                                    <li><span>}</span></li>
+                                            </ol>
+                                    </div>
+                            </li>
+                            <li class="frame" id="frame21">
+                                    <h3>Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)</h3>
+
+                            </li>
+                            <li class="frame" id="frame22">
+                                    <h3>Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)</h3>
+
+                            </li>
+                            <li class="frame" id="frame23">
+                                    <h3>Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)</h3>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <br/>
+                        <div class="rawExceptionBlock">
+                            <div class="showRawExceptionContainer">
+                                <button class="showRawException" data-exceptionDetailId="exceptionDetail1">Show raw exception details</button>
+                            </div>
+                            <div id="exceptionDetail1" class="rawExceptionDetails">
+                                <pre class="rawExceptionStackTrace">System.NullReferenceException: Object reference not set to an instance of an object.&#xD;&#xA;   at AccessManagement.Api.AccountController.&lt;&gt;c.&lt;GetAppMenu&gt;b__3_0(Function o) in C:\&#x9879;&#x76EE;\AccessManagementSystem\AccessManagement\AccessManagement\Api\AccountController.cs:line 47&#xD;&#xA;   at System.Linq.Enumerable.SelectListIterator`2.ToList()&#xD;&#xA;   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)&#xD;&#xA;   at AccessManagement.Api.AccountController.GetAppMenu() in C:\&#x9879;&#x76EE;\AccessManagementSystem\AccessManagement\AccessManagement\Api\AccountController.cs:line 47&#xD;&#xA;   at lambda_method(Closure , Object , Object[] )&#xD;&#xA;   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State&amp; next, Scope&amp; scope, Object&amp; state, Boolean&amp; isCompleted)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State&amp; next, Scope&amp; scope, Object&amp; state, Boolean&amp; isCompleted)&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()&#xD;&#xA;   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()&#xD;&#xA;   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)&#xD;&#xA;   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)&#xD;&#xA;   at AccessManagement.Middleware.AccountSessionMiddleware.Invoke(HttpContext context) in C:\&#x9879;&#x76EE;\AccessManagementSystem\AccessManagement\AccessManagement\Middleware\AccountSessionMiddleware.cs:line 40&#xD;&#xA;   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)&#xD;&#xA;   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)&#xD;&#xA;   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)</pre>
+                            </div>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+
+        <div id="querypage" class="page">
+                <p>No QueryString data.</p>
+        </div>
+
+        <div id="cookiespage" class="page">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Variable</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>.AspNet.Consent</td>
+                                <td>yes</td>
+                            </tr>
+                            <tr>
+                                <td>.AspNetCore.Antiforgery.YXHvEpvZ_PA</td>
+                                <td>CfDJ8FzePytvuwpOvn-chXfFz95I2-k6AP27xtO7A3VZWYFsuAkLd0Y8GLvbOPhWxyi0R-cmDpUGAS2sF5_B_6rItAGDBd6rSWzyik__CHlYMJJBg1AzRHhgw4knV7_Sza4MkFeE46wz7s1xcOnfDQUhZws</td>
+                            </tr>
+                            <tr>
+                                <td>.AspNetCore.Session</td>
+                                <td>CfDJ8FzePytvuwpOvn&#x2B;chXfFz96C&#x2B;Fc/TjrYVjqHfyPVFN3fc7SDIWRKAv33rH0B27Vcg85jbYtK4eO3R0jEhbD8MYMOJDAVCZfdkwX3jLhjED9A0MPyDDYxUkW/iQtCZAw6GhY/s/LBGsThBrxkDAEe/R/mMnm/9Oiew3DK8bTBLRxf</td>
+                            </tr>
+                    </tbody>
+                </table>
+        </div>
+        <div id="headerspage" class="page">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Variable</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                <tr>
+                                    <td>Accept</td>
+                                    <td>application/json, text/javascript, */*; q=0.01</td>
+                                </tr>
+                                <tr>
+                                    <td>Accept-Encoding</td>
+                                    <td>gzip, deflate, br</td>
+                                </tr>
+                                <tr>
+                                    <td>Accept-Language</td>
+                                    <td>zh-CN,zh;q=0.9</td>
+                                </tr>
+                                <tr>
+                                    <td>Connection</td>
+                                    <td>close</td>
+                                </tr>
+                                <tr>
+                                    <td>Content-Type</td>
+                                    <td>application/json</td>
+                                </tr>
+                                <tr>
+                                    <td>Cookie</td>
+                                    <td>.AspNet.Consent=yes; .AspNetCore.Antiforgery.YXHvEpvZ_PA=CfDJ8FzePytvuwpOvn-chXfFz95I2-k6AP27xtO7A3VZWYFsuAkLd0Y8GLvbOPhWxyi0R-cmDpUGAS2sF5_B_6rItAGDBd6rSWzyik__CHlYMJJBg1AzRHhgw4knV7_Sza4MkFeE46wz7s1xcOnfDQUhZws; .AspNetCore.Session=CfDJ8FzePytvuwpOvn%2BchXfFz96C%2BFc%2FTjrYVjqHfyPVFN3fc7SDIWRKAv33rH0B27Vcg85jbYtK4eO3R0jEhbD8MYMOJDAVCZfdkwX3jLhjED9A0MPyDDYxUkW%2FiQtCZAw6GhY%2Fs%2FLBGsThBrxkDAEe%2FR%2FmMnm%2F9Oiew3DK8bTBLRxf</td>
+                                </tr>
+                                <tr>
+                                    <td>Host</td>
+                                    <td>localhost:44334</td>
+                                </tr>
+                                <tr>
+                                    <td>Referer</td>
+                                    <td>https://localhost:44334/Account/Index</td>
+                                </tr>
+                                <tr>
+                                    <td>User-Agent</td>
+                                    <td>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36</td>
+                                </tr>
+                                <tr>
+                                    <td>x-requested-with</td>
+                                    <td>XMLHttpRequest</td>
+                                </tr>
+                    </tbody>
+                </table>
+        </div>
+        <script>
+            //<!--
+            (function (window, undefined) {
+    "use strict";
+
+    function ns(selector, element) {
+        return new NodeCollection(selector, element);
+    }
+
+    function NodeCollection(selector, element) {
+        this.items = [];
+        element = element || window.document;
+
+        var nodeList;
+
+        if (typeof (selector) === "string") {
+            nodeList = element.querySelectorAll(selector);
+            for (var i = 0, l = nodeList.length; i < l; i++) {
+                this.items.push(nodeList.item(i));
+            }
+        }
+    }
+
+    NodeCollection.prototype = {
+        each: function (callback) {
+            for (var i = 0, l = this.items.length; i < l; i++) {
+                callback(this.items[i], i);
+            }
+            return this;
+        },
+
+        children: function (selector) {
+            var children = [];
+
+            this.each(function (el) {
+                children = children.concat(ns(selector, el).items);
+            });
+
+            return ns(children);
+        },
+
+        hide: function () {
+            this.each(function (el) {
+                el.style.display = "none";
+            });
+
+            return this;
+        },
+
+        toggle: function () {
+            this.each(function (el) {
+                el.style.display = el.style.display === "none" ? "" : "none";
+            });
+
+            return this;
+        },
+
+        show: function () {
+            this.each(function (el) {
+                el.style.display = "";
+            });
+
+            return this;
+        },
+
+        addClass: function (className) {
+            this.each(function (el) {
+                var existingClassName = el.className,
+                    classNames;
+                if (!existingClassName) {
+                    el.className = className;
+                } else {
+                    classNames = existingClassName.split(" ");
+                    if (classNames.indexOf(className) < 0) {
+                        el.className = existingClassName + " " + className;
+                    }
+                }
+            });
+
+            return this;
+        },
+
+        removeClass: function (className) {
+            this.each(function (el) {
+                var existingClassName = el.className,
+                    classNames, index;
+                if (existingClassName === className) {
+                    el.className = "";
+                } else if (existingClassName) {
+                    classNames = existingClassName.split(" ");
+                    index = classNames.indexOf(className);
+                    if (index > 0) {
+                        classNames.splice(index, 1);
+                        el.className = classNames.join(" ");
+                    }
+                }
+            });
+
+            return this;
+        },
+
+        attr: function (name) {
+            if (this.items.length === 0) {
+                return null;
+            }
+
+            return this.items[0].getAttribute(name);
+        },
+
+        on: function (eventName, handler) {
+            this.each(function (el, idx) {
+                var callback = function (e) {
+                    e = e || window.event;
+                    if (!e.which && e.keyCode) {
+                        e.which = e.keyCode; // Normalize IE8 key events
+                    }
+                    handler.apply(el, [e]);
+                };
+
+                if (el.addEventListener) { // DOM Events
+                    el.addEventListener(eventName, callback, false);
+                } else if (el.attachEvent) { // IE8 events
+                    el.attachEvent("on" + eventName, callback);
+                } else {
+                    el["on" + type] = callback;
+                }
+            });
+
+            return this;
+        },
+
+        click: function (handler) {
+            return this.on("click", handler);
+        },
+
+        keypress: function (handler) {
+            return this.on("keypress", handler);
+        }
+    };
+
+    function frame(el) {
+        ns(".source .collapsible", el).toggle();
+    }
+
+    function expandCollapseButton(el) {
+        var frameId = el.getAttribute("data-frameId");
+        frame(document.getElementById(frameId));
+        if (el.innerText === "+") {
+            el.innerText = "-";
+        }
+        else {
+            el.innerText = "+";
+        }
+    }
+
+    function tab(el) {
+        var unselected = ns("#header .selected").removeClass("selected").attr("id");
+        var selected = ns("#" + el.id).addClass("selected").attr("id");
+
+        ns("#" + unselected + "page").hide();
+        ns("#" + selected + "page").show();
+    }
+
+    ns(".rawExceptionDetails").hide();
+    ns(".collapsible").hide();
+    ns(".page").hide();
+    ns("#stackpage").show();
+
+    ns(".expandCollapseButton")
+        .click(function () {
+            expandCollapseButton(this);
+        })
+        .keypress(function (e) {
+            if (e.which === 13) {
+                expandCollapseButton(this);
+            }
+        });
+
+    ns("#header li")
+        .click(function () {
+            tab(this);
+        })
+        .keypress(function (e) {
+            if (e.which === 13) {
+                tab(this);
+            }
+        });
+
+    ns(".showRawException")
+        .click(function () {
+            var exceptionDetailId = this.getAttribute("data-exceptionDetailId");
+            ns("#" + exceptionDetailId).toggle();
+        });
+})(window);
+            //-->
+        </script>
+    </body>
+</html>
+ 
+2019-06-25 14:00:41.8444|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 14:00:43.4197|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:04:57.2882|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:04:59.9090|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:05:09.6338|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"Company","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"Branch","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 15:05:14.1098|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:05:14.8729|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:05:20.9251|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"Company","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"Branch","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 15:05:30.4523|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:05:31.4663|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:05:31.9843|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"Company","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"Branch","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 15:06:21.3013|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:06:39.5414|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:06:43.2761|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"Company","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"Branch","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 15:06:52.3853|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:06:55.1597|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:06:57.0328|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"Company","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"Branch","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 15:07:20.5987|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:07:22.2536|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:07:22.9645|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"Company","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"Branch","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 15:07:25.1770|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:09:31.6899|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:09:33.3233|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:09:34.0989|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 15:09:35.9408|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:09:38.3984|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:09:38.8878|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 15:09:42.8103|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:09:43.9283|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:09:44.3763|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 15:09:45.4680|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:09:48.4599|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:09:49.9829|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 15:10:00.2557|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:10:01.3341|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:10:02.1792|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 15:10:02.7920|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:10:13.9761|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:10:15.8969|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:10:27.8499|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:10:33.5528|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:10:41.1758|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:10:41.9993|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:10:42.0123|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:10:42.7448|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 15:10:44.6999|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:10:47.0370|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:10:49.8214|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:11:41.9538|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:11:43.7666|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:11:43.8653|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:11:44.9056|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 15:11:57.7728|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:11:58.9834|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:11:59.4624|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:12:02.6570|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:12:16.7563|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:12:18.2927|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:12:18.5117|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:12:19.7670|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 15:12:20.5303|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:12:22.0605|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:12:22.3563|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 15:12:51.1818|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:12:52.2514|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:12:52.8805|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:12:52.8999|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:12:53.3466|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 15:14:23.7929|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:14:24.9642|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:14:25.2327|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 15:14:26.6525|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 15:14:27.4574|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 15:14:27.7169|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 17:51:21.0758|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 17:51:21.8944|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 17:51:22.2965|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 17:51:25.6784|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 17:51:26.3183|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 17:51:26.5456|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 17:51:29.5796|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 17:51:30.1094|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 17:51:30.4051|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 17:51:31.7200|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 17:51:32.2625|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 17:51:32.5962|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 18:02:24.9469|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 18:02:28.0328|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-25 18:02:28.2457|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 18:03:15.6960|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 18:03:16.3859|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 
+2019-06-25 18:03:16.6858|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-25 18:03:19.1047|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-25 18:03:20.0153|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 
+2019-06-25 18:03:20.2970|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 

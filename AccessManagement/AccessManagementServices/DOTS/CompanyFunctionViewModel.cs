@@ -5,6 +5,7 @@ using System.Text;
 
 namespace AccessManagementServices.DOTS
 {
+    [Serializable]
     public class CompanyFunctionViewModel
     {
         public CompanyFunctionViewModel()
@@ -22,6 +23,7 @@ namespace AccessManagementServices.DOTS
         public  List<FunctionSelected> FunctionSelecteds { get; set; }
     }
 
+    [Serializable]
     public class FunctionSelected
     {
         public string Name { get; set; }

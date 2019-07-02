@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 namespace AccessManagementData
 {
+    [Serializable]
     public partial class Company
     {
         public Company()

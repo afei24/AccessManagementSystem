@@ -1,0 +1,51 @@
+2019-06-05 15:48:41.6674|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|ERROR|The view 'Delete' was not found. Searched locations: /Views/AppMenu/Delete.cshtml, /Views/Shared/Delete.cshtml, /Pages/Shared/Delete.cshtml 
+2019-06-05 15:48:41.9185|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The view 'Delete' was not found. The following locations were searched:
+/Views/AppMenu/Delete.cshtml
+/Views/Shared/Delete.cshtml
+/Pages/Shared/Delete.cshtml
+2019-06-05 15:49:57.2742|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|ERROR|The view 'Delete' was not found. Searched locations: /Views/AppMenu/Delete.cshtml, /Views/Shared/Delete.cshtml, /Pages/Shared/Delete.cshtml 
+2019-06-05 15:49:57.3288|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The view 'Delete' was not found. The following locations were searched:
+/Views/AppMenu/Delete.cshtml
+/Views/Shared/Delete.cshtml
+/Pages/Shared/Delete.cshtml
+2019-06-05 15:50:18.1139|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|ERROR|The view 'Delete' was not found. Searched locations: /Views/AppMenu/Delete.cshtml, /Views/Shared/Delete.cshtml, /Pages/Shared/Delete.cshtml 
+2019-06-05 15:50:18.1658|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The view 'Delete' was not found. The following locations were searched:
+/Views/AppMenu/Delete.cshtml
+/Views/Shared/Delete.cshtml
+/Pages/Shared/Delete.cshtml
+2019-06-05 15:51:54.7490|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|ERROR|The view 'Delete' was not found. Searched locations: /Views/AppMenu/Delete.cshtml, /Views/Shared/Delete.cshtml, /Pages/Shared/Delete.cshtml 
+2019-06-05 15:51:54.8472|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The view 'Delete' was not found. The following locations were searched:
+/Views/AppMenu/Delete.cshtml
+/Views/Shared/Delete.cshtml
+/Pages/Shared/Delete.cshtml
+2019-06-05 15:52:01.7676|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|ERROR|The view 'Delete' was not found. Searched locations: /Views/AppMenu/Delete.cshtml, /Views/Shared/Delete.cshtml, /Pages/Shared/Delete.cshtml 
+2019-06-05 15:52:01.8432|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The view 'Delete' was not found. The following locations were searched:
+/Views/AppMenu/Delete.cshtml
+/Views/Shared/Delete.cshtml
+/Pages/Shared/Delete.cshtml
+2019-06-05 15:52:31.5296|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|ERROR|The view 'Delete' was not found. Searched locations: /Views/AppMenu/Delete.cshtml, /Views/Shared/Delete.cshtml, /Pages/Shared/Delete.cshtml 
+2019-06-05 15:52:31.5601|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. The view 'Delete' was not found. The following locations were searched:
+/Views/AppMenu/Delete.cshtml
+/Views/Shared/Delete.cshtml
+/Pages/Shared/Delete.cshtml
+2019-06-05 16:36:42.0288|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred while iterating over the results of a query for context type 'AccessManagementData.AccessManagementContext'.
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'AccessManagementContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.StartTracking(Object entity, EntityTrackingInfo entityTrackingInfo)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.<>c__DisplayClass18_0`2.<_TrackEntities>b__0(TOut result)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 109
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken) Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'AccessManagementContext'.
+2019-06-05 16:36:42.0905|Microsoft.EntityFrameworkCore.Query|ERROR|An exception occurred while iterating over the results of a query for context type 'AccessManagementData.AccessManagementContext'.
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'AsyncDisposer'.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.AsyncDisposer.Dispose()
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType) Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'AsyncDisposer'.

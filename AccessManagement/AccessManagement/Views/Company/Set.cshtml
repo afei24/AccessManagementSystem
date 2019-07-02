@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "设置";
+}
+
+<br/>
+<h3>@ViewData["Name"]</h3>
+<input style="display:none;" id="CompanyId" value="@ViewData["Id"]">
+<br />
+<div id="test1" style="padding-left:20px;"></div>
+<script>
+    layui.use('tree', function () {
+        var tree = layui.tree;
+        $.ajax({
+            url: "/Company/GetReFunctions?id=" + $("#CompanyId").val(),
+            dataType: "json",
+            type: "Get",
+            contentType: "application/json",
+            error: function (data) {
+                alert(data.message);
+            },
+            success: function (data) {
+                //渲染
+                var inst1 = tree.render({
+                    elem: '#test1'  //绑定元素
+                    , showCheckbox: true
+                    //, edit: ['add', 'update', 'del']
+                    //, accordion: true
+                    //, showLine: true
+                    , data: data
+                });
+            }
+        });
+        
+        
+    });
+</script>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

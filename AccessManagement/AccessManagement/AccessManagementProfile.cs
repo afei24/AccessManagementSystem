@@ -28,6 +28,10 @@ namespace AccessManagement
 
             CreateMap<PresetFunctionViewModel, ReSetFunction>();
             CreateMap<ReSetFunction, PresetFunctionViewModel>();
+
+            CreateMap<AccountViewModel, Account>();
+            CreateMap<Account, AccountViewModel>().
+                ForMember(c => c.StatusName, conf => conf.MapFrom(s => s.Status.ToString()));
         }
     }
 }

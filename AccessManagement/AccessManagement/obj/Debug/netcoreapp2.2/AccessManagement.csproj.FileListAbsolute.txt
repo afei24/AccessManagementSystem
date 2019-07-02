@@ -47,3 +47,6 @@ C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\net
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\AccessManagement.csproj.CopyComplete
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\AccessManagement.dll
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\AccessManagement.pdb
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Views\AppMenu\Details.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Views\Company\Set.g.cshtml.cs

@@ -1,0 +1,385 @@
+2019-06-27 10:40:14.9544|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-27 10:40:14.9544|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/   
+2019-06-27 10:40:15.7818|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:485fa885-0c53-5c50-f28a-5687adc758b5 
+2019-06-27 10:40:15.9633|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-27 10:40:15.9981|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-27 10:40:16.0571|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-27 10:40:16.0571|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AccessManagement.Controllers.HomeController (AccessManagement). 
+2019-06-27 10:40:18.5560|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-27 10:40:18.5560|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.HomeController.Index (AccessManagement) - Validation state: Valid 
+2019-06-27 10:40:18.8904|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.1855ms. 
+2019-06-27 10:40:18.9158|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.HomeController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3.8098ms. 
+2019-06-27 10:40:19.0560|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-27 10:40:19.1290|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-27 10:40:20.2819|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 1300.2233ms. 
+2019-06-27 10:40:20.2819|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 1198.2227ms. 
+2019-06-27 10:40:20.3771|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 4225.4693ms 
+2019-06-27 10:40:20.4166|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.HomeController.Index (AccessManagement) in 4340.1936ms 
+2019-06-27 10:40:20.4611|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-27 10:40:20.4372|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Account/Login   
+2019-06-27 10:40:20.4819|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Account/Login   
+2019-06-27 10:40:20.5635|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:485fa885-0c53-5c50-f28a-5687adc758b5 
+2019-06-27 10:40:20.5848|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.HomeController.Index (AccessManagement)' 
+2019-06-27 10:40:20.5848|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AccountController.Login (AccessManagement)' 
+2019-06-27 10:40:20.5927|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AccountController.Login (AccessManagement)' 
+2019-06-27 10:40:20.6166|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login() on controller AccessManagement.Controllers.AccountController (AccessManagement). 
+2019-06-27 10:40:20.6350|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login() on controller AccessManagement.Controllers.AccountController (AccessManagement). 
+2019-06-27 10:40:21.6446|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 5780.4926ms 302 text/html; charset=utf-8 
+2019-06-27 10:40:21.6542|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AccountController.Login (AccessManagement) - Validation state: Valid 
+2019-06-27 10:40:21.7486|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 6725.5415ms 302 text/html; charset=utf-8 
+2019-06-27 10:40:21.7486|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AccountController.Login (AccessManagement) - Validation state: Valid 
+2019-06-27 10:40:21.7656|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AccountController.Login (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.2415ms. 
+2019-06-27 10:40:21.7886|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AccountController.Login (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0654ms. 
+2019-06-27 10:40:21.8137|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Login. 
+2019-06-27 10:40:21.8137|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Login. 
+2019-06-27 10:40:22.7979|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Login executed in 997.7687ms. 
+2019-06-27 10:40:23.0553|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Login executed in 1012.1982ms. 
+2019-06-27 10:40:23.5802|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AccountController.Login (AccessManagement) in 2173.774ms 
+2019-06-27 10:40:24.0808|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/images/h3.png   
+2019-06-27 10:40:24.7718|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/images/username.png   
+2019-06-27 10:40:24.8782|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/images/password.png   
+2019-06-27 10:40:24.9481|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AccountController.Login (AccessManagement)' 
+2019-06-27 10:40:24.9948|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/images/h3.png   
+2019-06-27 10:40:25.0039|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/images/password.png'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\images\password.png' 
+2019-06-27 10:40:25.0039|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 4531.3554ms 200 text/html; charset=utf-8 
+2019-06-27 10:40:25.0155|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/h3.png was not modified 
+2019-06-27 10:40:25.0155|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AccountController.Login (AccessManagement) in 2541.7611ms 
+2019-06-27 10:40:25.0686|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/images/username.png'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\images\username.png' 
+2019-06-27 10:40:25.1490|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1464.0495ms 200 image/png 
+2019-06-27 10:40:25.3186|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/images/h3.png'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\images\h3.png' 
+2019-06-27 10:40:25.5194|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1887.0035ms 304 image/png 
+2019-06-27 10:40:25.6936|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AccountController.Login (AccessManagement)' 
+2019-06-27 10:40:25.8111|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1811.1284ms 200 image/png 
+2019-06-27 10:40:26.1130|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 509.3961ms 200 image/png 
+2019-06-27 10:40:26.2309|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 5349.1865ms 200 text/html; charset=utf-8 
+2019-06-27 10:40:30.8006|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Account/Login application/x-www-form-urlencoded 235 
+2019-06-27 10:40:30.8272|Microsoft.AspNetCore.Session.DistributedSession|INFO|Accessing expired session, Key:485fa885-0c53-5c50-f28a-5687adc758b5 
+2019-06-27 10:40:30.8530|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AccountController.Login (AccessManagement)' 
+2019-06-27 10:40:30.9321|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(AccessManagementServices.DOTS.AccountViewModel) on controller AccessManagement.Controllers.AccountController (AccessManagement). 
+2019-06-27 10:40:31.1683|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AccountController.Login (AccessManagement) - Validation state: Invalid 
+2019-06-27 10:40:32.7148|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-27 10:40:35.4949|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (435ms) [Parameters=[@__vm_AccountName_0='?' (Size = 50), @__vm_Password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccountName], [a].[BranchId], [a].[City], [a].[CompanyId], [a].[CreateTime], [a].[CreateUserId], [a].[Name], [a].[Password], [a].[Phone], [a].[Status], [a].[Type], [a.Company].[Id], [a.Company].[CreateTime], [a.Company].[Name], [a.Company].[Status], [a.Company].[Tel], [a.Company].[UpdateTime], [a.Branch].[Id], [a.Branch].[City], [a.Branch].[CompanyId], [a.Branch].[CreateTime], [a.Branch].[CreateUserId], [a.Branch].[Name], [a.Branch].[ParentBranchId], [a.Branch].[Type]
+FROM [Account] AS [a]
+INNER JOIN [Company] AS [a.Company] ON [a].[CompanyId] = [a.Company].[Id]
+INNER JOIN [Branch] AS [a.Branch] ON [a].[BranchId] = [a.Branch].[Id]
+WHERE ([a].[AccountName] = @__vm_AccountName_0) AND ([a].[Password] = @__vm_Password_1)
+ORDER BY [a].[Id] 
+2019-06-27 10:40:36.7801|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (689ms) [Parameters=[@__vm_AccountName_0='?' (Size = 50), @__vm_Password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT [a.AccountFunction].[Id], [a.AccountFunction].[AccountId], [a.AccountFunction].[FunctionId]
+FROM [AccountFunction] AS [a.AccountFunction]
+INNER JOIN (
+    SELECT DISTINCT [t].*
+    FROM (
+        SELECT TOP(1) [a0].[Id]
+        FROM [Account] AS [a0]
+        INNER JOIN [Company] AS [a.Company0] ON [a0].[CompanyId] = [a.Company0].[Id]
+        INNER JOIN [Branch] AS [a.Branch0] ON [a0].[BranchId] = [a.Branch0].[Id]
+        WHERE ([a0].[AccountName] = @__vm_AccountName_0) AND ([a0].[Password] = @__vm_Password_1)
+        ORDER BY [a0].[Id]
+    ) AS [t]
+) AS [t0] ON [a.AccountFunction].[AccountId] = [t0].[Id]
+ORDER BY [t0].[Id] 
+2019-06-27 10:40:36.9914|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (130ms) [Parameters=[@__vm_AccountName_0='?' (Size = 50), @__vm_Password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT [a.AccountRole].[Id], [a.AccountRole].[AccountId], [a.AccountRole].[RoleId]
+FROM [AccountRole] AS [a.AccountRole]
+INNER JOIN (
+    SELECT DISTINCT [t1].*
+    FROM (
+        SELECT TOP(1) [a1].[Id]
+        FROM [Account] AS [a1]
+        INNER JOIN [Company] AS [a.Company1] ON [a1].[CompanyId] = [a.Company1].[Id]
+        INNER JOIN [Branch] AS [a.Branch1] ON [a1].[BranchId] = [a.Branch1].[Id]
+        WHERE ([a1].[AccountName] = @__vm_AccountName_0) AND ([a1].[Password] = @__vm_Password_1)
+        ORDER BY [a1].[Id]
+    ) AS [t1]
+) AS [t2] ON [a.AccountRole].[AccountId] = [t2].[Id]
+ORDER BY [t2].[Id] 
+2019-06-27 10:40:38.1125|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (710ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[Code], [o].[CompanyId], [o].[Description], [o].[Name], [o].[OpName1], [o].[OpName10], [o].[OpName2], [o].[OpName3], [o].[OpName4], [o].[OpName5], [o].[OpName6], [o].[OpName7], [o].[OpName8], [o].[OpName9], [o].[Type]
+FROM [Function] AS [o]
+WHERE [o].[Id] IN (2, 1) 
+2019-06-27 10:40:38.2497|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AccountController.Login (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 7066.6248ms. 
+2019-06-27 10:40:38.3476|Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor|INFO|Executing RedirectResult, redirecting to Index. 
+2019-06-27 10:40:38.3779|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AccountController.Login (AccessManagement) in 7411.1903ms 
+2019-06-27 10:40:38.3967|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AccountController.Login (AccessManagement)' 
+2019-06-27 10:40:38.4103|Microsoft.AspNetCore.Session.DistributedSession|INFO|Session started; Key:485fa885-0c53-5c50-f28a-5687adc758b5, Id:3009143e-d88c-6c9a-ba68-056c00dd2cf3 
+2019-06-27 10:40:38.4736|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 7735.5951ms 302  
+2019-06-27 10:40:38.4939|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Account/Index   
+2019-06-27 10:40:38.6185|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-27 10:40:38.6737|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AccountController.Index (AccessManagement)' 
+2019-06-27 10:40:38.8712|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AccountController (AccessManagement). 
+2019-06-27 10:40:39.1021|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AccountController.Index (AccessManagement) - Validation state: Valid 
+2019-06-27 10:40:39.1308|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-27 10:40:39.5699|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (321ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccountName], [a].[BranchId], [a].[City], [a].[CompanyId], [a].[CreateTime], [a].[CreateUserId], [a].[Name], [a].[Password], [a].[Phone], [a].[Status], [a].[Type], [a.Company].[Id], [a.Company].[CreateTime], [a.Company].[Name], [a.Company].[Status], [a.Company].[Tel], [a.Company].[UpdateTime], [a.Branch].[Id], [a.Branch].[City], [a.Branch].[CompanyId], [a.Branch].[CreateTime], [a.Branch].[CreateUserId], [a.Branch].[Name], [a.Branch].[ParentBranchId], [a.Branch].[Type]
+FROM [Account] AS [a]
+INNER JOIN [Company] AS [a.Company] ON [a].[CompanyId] = [a.Company].[Id]
+INNER JOIN [Branch] AS [a.Branch] ON [a].[BranchId] = [a.Branch].[Id] 
+2019-06-27 10:40:39.7006|Microsoft.EntityFrameworkCore.Query|WARN|The Include operation for navigation '[a].Branch' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information. 
+2019-06-27 10:40:39.7006|Microsoft.EntityFrameworkCore.Query|WARN|The Include operation for navigation '[a].Company' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information. 
+2019-06-27 10:40:40.2879|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (293ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[AccountName], [a].[BranchId], [a].[City], [a].[CompanyId], [a].[CreateTime], [a].[CreateUserId], [a].[Id], [a].[Name], [a].[Password], [a].[Phone], CONVERT(VARCHAR(11), [a].[Status]) AS [StatusName], [a].[Type]
+FROM [Account] AS [a] 
+2019-06-27 10:40:40.3218|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AccountController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1206.2337ms. 
+2019-06-27 10:40:40.3471|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-27 10:40:40.6341|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 304.1043ms. 
+2019-06-27 10:40:40.8658|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AccountController.Index (AccessManagement) in 1772.0799ms 
+2019-06-27 10:40:40.8868|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/layui/css/layui.css   
+2019-06-27 10:40:40.9112|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AccountController.Index (AccessManagement)' 
+2019-06-27 10:40:40.9112|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /layui/css/layui.css was not modified 
+2019-06-27 10:40:40.9713|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2459.72ms 200 text/html; charset=utf-8 
+2019-06-27 10:40:40.9929|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 158.7397ms 304 text/css 
+2019-06-27 10:40:41.2594|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/api/Account/GetAppMenu application/json  
+2019-06-27 10:40:41.6034|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-27 10:40:41.6293|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Api.AccountController.GetAppMenu (AccessManagement)' 
+2019-06-27 10:40:41.6383|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "GetAppMenu", controller = "Account"}. Executing controller action with signature AccessManagement.Models.ApiResponse GetAppMenu() on controller AccessManagement.Api.AccountController (AccessManagement). 
+2019-06-27 10:40:41.7046|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Api.AccountController.GetAppMenu (AccessManagement) - Validation state: Valid 
+2019-06-27 10:40:41.7670|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-27 10:40:41.8063|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Api.AccountController.GetAppMenu (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 63.9259ms. 
+2019-06-27 10:40:41.8465|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|INFO|Executing ObjectResult, writing value of type 'AccessManagement.Models.ApiResponse'. 
+2019-06-27 10:40:42.4361|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (322ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[Code], [o].[Description], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Code] IN (N'AccountManage', N'BranchManage') 
+2019-06-27 10:40:42.6990|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Api.AccountController.GetAppMenu (AccessManagement) in 938.8489ms 
+2019-06-27 10:40:42.6990|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Api.AccountController.GetAppMenu (AccessManagement)' 
+2019-06-27 10:40:42.7629|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-27 10:40:42.7786|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1571.8905ms 200 application/json; charset=utf-8 
+2019-06-27 10:40:49.7424|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Account/Login application/x-www-form-urlencoded 255 
+2019-06-27 10:40:49.7879|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AccountController.Login (AccessManagement)' 
+2019-06-27 10:40:49.8002|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(AccessManagementServices.DOTS.AccountViewModel) on controller AccessManagement.Controllers.AccountController (AccessManagement). 
+2019-06-27 10:40:50.1130|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AccountController.Login (AccessManagement) - Validation state: Invalid 
+2019-06-27 10:40:50.2218|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-27 10:40:51.0750|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (826ms) [Parameters=[@__vm_AccountName_0='?' (Size = 50), @__vm_Password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccountName], [a].[BranchId], [a].[City], [a].[CompanyId], [a].[CreateTime], [a].[CreateUserId], [a].[Name], [a].[Password], [a].[Phone], [a].[Status], [a].[Type], [a.Company].[Id], [a.Company].[CreateTime], [a.Company].[Name], [a.Company].[Status], [a.Company].[Tel], [a.Company].[UpdateTime], [a.Branch].[Id], [a.Branch].[City], [a.Branch].[CompanyId], [a.Branch].[CreateTime], [a.Branch].[CreateUserId], [a.Branch].[Name], [a.Branch].[ParentBranchId], [a.Branch].[Type]
+FROM [Account] AS [a]
+INNER JOIN [Company] AS [a.Company] ON [a].[CompanyId] = [a.Company].[Id]
+INNER JOIN [Branch] AS [a.Branch] ON [a].[BranchId] = [a.Branch].[Id]
+WHERE ([a].[AccountName] = @__vm_AccountName_0) AND ([a].[Password] = @__vm_Password_1)
+ORDER BY [a].[Id] 
+2019-06-27 10:40:51.0989|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AccountController.Login (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 961.6722ms. 
+2019-06-27 10:40:51.1172|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Login. 
+2019-06-27 10:40:51.4408|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Login executed in 27.6503ms. 
+2019-06-27 10:40:51.5411|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AccountController.Login (AccessManagement) in 1639.7804ms 
+2019-06-27 10:40:51.6181|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AccountController.Login (AccessManagement)' 
+2019-06-27 10:40:51.9439|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2080.0902ms 200 text/html; charset=utf-8 
+2019-06-27 10:40:59.2184|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 POST https://localhost:44334/Account/Login application/x-www-form-urlencoded 228 
+2019-06-27 10:40:59.3167|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AccountController.Login (AccessManagement)' 
+2019-06-27 10:40:59.4841|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(AccessManagementServices.DOTS.AccountViewModel) on controller AccessManagement.Controllers.AccountController (AccessManagement). 
+2019-06-27 10:40:59.7137|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AccountController.Login (AccessManagement) - Validation state: Invalid 
+2019-06-27 10:40:59.9223|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-27 10:41:00.8374|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (895ms) [Parameters=[@__vm_AccountName_0='?' (Size = 50), @__vm_Password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccountName], [a].[BranchId], [a].[City], [a].[CompanyId], [a].[CreateTime], [a].[CreateUserId], [a].[Name], [a].[Password], [a].[Phone], [a].[Status], [a].[Type], [a.Company].[Id], [a.Company].[CreateTime], [a.Company].[Name], [a.Company].[Status], [a.Company].[Tel], [a.Company].[UpdateTime], [a.Branch].[Id], [a.Branch].[City], [a.Branch].[CompanyId], [a.Branch].[CreateTime], [a.Branch].[CreateUserId], [a.Branch].[Name], [a.Branch].[ParentBranchId], [a.Branch].[Type]
+FROM [Account] AS [a]
+INNER JOIN [Company] AS [a.Company] ON [a].[CompanyId] = [a.Company].[Id]
+INNER JOIN [Branch] AS [a.Branch] ON [a].[BranchId] = [a.Branch].[Id]
+WHERE ([a].[AccountName] = @__vm_AccountName_0) AND ([a].[Password] = @__vm_Password_1)
+ORDER BY [a].[Id] 
+2019-06-27 10:41:00.9575|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (108ms) [Parameters=[@__vm_AccountName_0='?' (Size = 50), @__vm_Password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT [a.AccountFunction].[Id], [a.AccountFunction].[AccountId], [a.AccountFunction].[FunctionId]
+FROM [AccountFunction] AS [a.AccountFunction]
+INNER JOIN (
+    SELECT DISTINCT [t].*
+    FROM (
+        SELECT TOP(1) [a0].[Id]
+        FROM [Account] AS [a0]
+        INNER JOIN [Company] AS [a.Company0] ON [a0].[CompanyId] = [a.Company0].[Id]
+        INNER JOIN [Branch] AS [a.Branch0] ON [a0].[BranchId] = [a.Branch0].[Id]
+        WHERE ([a0].[AccountName] = @__vm_AccountName_0) AND ([a0].[Password] = @__vm_Password_1)
+        ORDER BY [a0].[Id]
+    ) AS [t]
+) AS [t0] ON [a.AccountFunction].[AccountId] = [t0].[Id]
+ORDER BY [t0].[Id] 
+2019-06-27 10:41:01.2304|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (256ms) [Parameters=[@__vm_AccountName_0='?' (Size = 50), @__vm_Password_1='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT [a.AccountRole].[Id], [a.AccountRole].[AccountId], [a.AccountRole].[RoleId]
+FROM [AccountRole] AS [a.AccountRole]
+INNER JOIN (
+    SELECT DISTINCT [t1].*
+    FROM (
+        SELECT TOP(1) [a1].[Id]
+        FROM [Account] AS [a1]
+        INNER JOIN [Company] AS [a.Company1] ON [a1].[CompanyId] = [a.Company1].[Id]
+        INNER JOIN [Branch] AS [a.Branch1] ON [a1].[BranchId] = [a.Branch1].[Id]
+        WHERE ([a1].[AccountName] = @__vm_AccountName_0) AND ([a1].[Password] = @__vm_Password_1)
+        ORDER BY [a1].[Id]
+    ) AS [t1]
+) AS [t2] ON [a.AccountRole].[AccountId] = [t2].[Id]
+ORDER BY [t2].[Id] 
+2019-06-27 10:41:01.5369|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (290ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[Code], [o].[CompanyId], [o].[Description], [o].[Name], [o].[OpName1], [o].[OpName10], [o].[OpName2], [o].[OpName3], [o].[OpName4], [o].[OpName5], [o].[OpName6], [o].[OpName7], [o].[OpName8], [o].[OpName9], [o].[Type]
+FROM [Function] AS [o]
+WHERE 0 = 1 
+2019-06-27 10:41:01.5795|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AccountController.Login (AccessManagement), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 1831.5254ms. 
+2019-06-27 10:41:01.5993|Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor|INFO|Executing RedirectResult, redirecting to Index. 
+2019-06-27 10:41:01.6135|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AccountController.Login (AccessManagement) in 2111.6955ms 
+2019-06-27 10:41:01.6218|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AccountController.Login (AccessManagement)' 
+2019-06-27 10:41:01.6218|Microsoft.AspNetCore.Session.DistributedSession|INFO|Session started; Key:0b8f1b21-4ca1-271c-c734-88b3f95380bf, Id:f06d3927-4ab1-862a-918a-6da8efe34457 
+2019-06-27 10:41:01.6688|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2463.5706ms 302  
+2019-06-27 10:41:01.6688|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Account/Index   
+2019-06-27 10:41:01.7282|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:lpf password:123 
+2019-06-27 10:41:01.7431|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AccountController.Index (AccessManagement)' 
+2019-06-27 10:41:01.7683|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AccountController (AccessManagement). 
+2019-06-27 10:41:01.8693|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AccountController.Index (AccessManagement) - Validation state: Valid 
+2019-06-27 10:41:01.8989|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-27 10:41:02.7064|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (276ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccountName], [a].[BranchId], [a].[City], [a].[CompanyId], [a].[CreateTime], [a].[CreateUserId], [a].[Name], [a].[Password], [a].[Phone], [a].[Status], [a].[Type], [a.Company].[Id], [a.Company].[CreateTime], [a.Company].[Name], [a.Company].[Status], [a.Company].[Tel], [a.Company].[UpdateTime], [a.Branch].[Id], [a.Branch].[City], [a.Branch].[CompanyId], [a.Branch].[CreateTime], [a.Branch].[CreateUserId], [a.Branch].[Name], [a.Branch].[ParentBranchId], [a.Branch].[Type]
+FROM [Account] AS [a]
+INNER JOIN [Company] AS [a.Company] ON [a].[CompanyId] = [a.Company].[Id]
+INNER JOIN [Branch] AS [a.Branch] ON [a].[BranchId] = [a.Branch].[Id] 
+2019-06-27 10:41:03.1400|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (394ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[AccountName], [a].[BranchId], [a].[City], [a].[CompanyId], [a].[CreateTime], [a].[CreateUserId], [a].[Id], [a].[Name], [a].[Password], [a].[Phone], CONVERT(VARCHAR(11), [a].[Status]) AS [StatusName], [a].[Type]
+FROM [Account] AS [a] 
+2019-06-27 10:41:03.1400|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AccountController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1270.8431ms. 
+2019-06-27 10:41:03.1616|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-27 10:41:03.2059|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 45.6714ms. 
+2019-06-27 10:41:03.9023|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AccountController.Index (AccessManagement) in 1446.534ms 
+2019-06-27 10:41:03.9885|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/js/paging.js   
+2019-06-27 10:41:04.1008|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/layui/layui.js   
+2019-06-27 10:41:04.1906|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AccountController.Index (AccessManagement)' 
+2019-06-27 10:41:04.2358|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /js/paging.js was not modified 
+2019-06-27 10:41:04.4161|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/layui/layui.js'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\layui\layui.js' 
+2019-06-27 10:41:04.6239|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2550.3394ms 200 text/html; charset=utf-8 
+2019-06-27 10:41:04.7913|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 643.0802ms 304 application/javascript 
+2019-06-27 10:41:04.8324|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 867.9721ms 200 application/javascript 
+2019-06-27 10:41:04.8414|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/layui/css/layui.css   
+2019-06-27 10:41:04.8849|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/layui/css/layui.css'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\layui\css\layui.css' 
+2019-06-27 10:41:05.2422|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1334.0272ms 200 text/css 
+2019-06-27 10:41:05.5791|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/api/Account/GetAppMenu application/json  
+2019-06-27 10:41:05.5899|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/layui/lay/modules/element.js   
+2019-06-27 10:41:05.6171|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 
+2019-06-27 10:41:05.6523|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/layui/lay/modules/element.js'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\layui\lay\modules\element.js' 
+2019-06-27 10:41:05.7416|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Api.AccountController.GetAppMenu (AccessManagement)' 
+2019-06-27 10:41:05.9124|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 120.8081ms 200 application/javascript 
+2019-06-27 10:41:06.0121|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "GetAppMenu", controller = "Account"}. Executing controller action with signature AccessManagement.Models.ApiResponse GetAppMenu() on controller AccessManagement.Api.AccountController (AccessManagement). 
+2019-06-27 10:41:06.1112|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Api.AccountController.GetAppMenu (AccessManagement) - Validation state: Valid 
+2019-06-27 10:41:06.1321|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-27 10:41:06.1911|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Api.AccountController.GetAppMenu (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 20.9757ms. 
+2019-06-27 10:41:06.3013|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|INFO|Executing ObjectResult, writing value of type 'AccessManagement.Models.ApiResponse'. 
+2019-06-27 10:41:06.4115|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (98ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[Code], [o].[Description], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE 0 = 1 
+2019-06-27 10:41:06.4366|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Api.AccountController.GetAppMenu (AccessManagement) in 399.9207ms 
+2019-06-27 10:41:06.4366|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Api.AccountController.GetAppMenu (AccessManagement)' 
+2019-06-27 10:41:06.4366|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[]} 
+2019-06-27 10:41:06.4570|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1005.7539ms 200 application/json; charset=utf-8 
+2019-06-27 10:41:11.8691|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Account/Index   
+2019-06-27 10:41:11.8926|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-27 10:41:11.9040|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AccountController.Index (AccessManagement)' 
+2019-06-27 10:41:12.1714|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AccountController (AccessManagement). 
+2019-06-27 10:41:12.5625|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AccountController.Index (AccessManagement) - Validation state: Valid 
+2019-06-27 10:41:12.6621|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-27 10:41:12.8980|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (126ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccountName], [a].[BranchId], [a].[City], [a].[CompanyId], [a].[CreateTime], [a].[CreateUserId], [a].[Name], [a].[Password], [a].[Phone], [a].[Status], [a].[Type], [a.Company].[Id], [a.Company].[CreateTime], [a.Company].[Name], [a.Company].[Status], [a.Company].[Tel], [a.Company].[UpdateTime], [a.Branch].[Id], [a.Branch].[City], [a.Branch].[CompanyId], [a.Branch].[CreateTime], [a.Branch].[CreateUserId], [a.Branch].[Name], [a.Branch].[ParentBranchId], [a.Branch].[Type]
+FROM [Account] AS [a]
+INNER JOIN [Company] AS [a.Company] ON [a].[CompanyId] = [a.Company].[Id]
+INNER JOIN [Branch] AS [a.Branch] ON [a].[BranchId] = [a.Branch].[Id] 
+2019-06-27 10:41:13.1013|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (190ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[AccountName], [a].[BranchId], [a].[City], [a].[CompanyId], [a].[CreateTime], [a].[CreateUserId], [a].[Id], [a].[Name], [a].[Password], [a].[Phone], CONVERT(VARCHAR(11), [a].[Status]) AS [StatusName], [a].[Type]
+FROM [Account] AS [a] 
+2019-06-27 10:41:13.1104|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AccountController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 538.929ms. 
+2019-06-27 10:41:13.1104|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-27 10:41:13.4083|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 42.0058ms. 
+2019-06-27 10:41:13.5833|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AccountController.Index (AccessManagement) in 1238.3103ms 
+2019-06-27 10:41:13.6091|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/api/Account/GetAppMenu application/json  
+2019-06-27 10:41:13.6091|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AccountController.Index (AccessManagement)' 
+2019-06-27 10:41:13.6341|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-27 10:41:13.6500|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 1774.5288ms 200 text/html; charset=utf-8 
+2019-06-27 10:41:13.7275|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Api.AccountController.GetAppMenu (AccessManagement)' 
+2019-06-27 10:41:13.7669|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "GetAppMenu", controller = "Account"}. Executing controller action with signature AccessManagement.Models.ApiResponse GetAppMenu() on controller AccessManagement.Api.AccountController (AccessManagement). 
+2019-06-27 10:41:13.7777|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/favicon.ico   
+2019-06-27 10:41:13.9011|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Api.AccountController.GetAppMenu (AccessManagement) - Validation state: Valid 
+2019-06-27 10:41:13.9542|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\favicon.ico' 
+2019-06-27 10:41:14.1264|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-27 10:41:14.1474|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 385.1686ms 200 image/x-icon 
+2019-06-27 10:41:14.1474|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Api.AccountController.GetAppMenu (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 231.4293ms. 
+2019-06-27 10:41:14.1707|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|INFO|Executing ObjectResult, writing value of type 'AccessManagement.Models.ApiResponse'. 
+2019-06-27 10:41:14.2595|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (81ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[Code], [o].[Description], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Code] IN (N'AccountManage', N'BranchManage') 
+2019-06-27 10:41:14.2707|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Api.AccountController.GetAppMenu (AccessManagement) in 493.4719ms 
+2019-06-27 10:41:14.2777|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Api.AccountController.GetAppMenu (AccessManagement)' 
+2019-06-27 10:41:14.3773|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-27 10:41:14.4547|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 844.3126ms 200 application/json; charset=utf-8 
+2019-06-27 10:41:51.9054|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Account/Index   
+2019-06-27 10:41:52.1754|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:admin password:admin123 
+2019-06-27 10:41:52.6411|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AccountController.Index (AccessManagement)' 
+2019-06-27 10:41:53.2037|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AccountController (AccessManagement). 
+2019-06-27 10:41:53.4624|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AccountController.Index (AccessManagement) - Validation state: Valid 
+2019-06-27 10:41:53.5014|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-27 10:41:53.7769|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (216ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccountName], [a].[BranchId], [a].[City], [a].[CompanyId], [a].[CreateTime], [a].[CreateUserId], [a].[Name], [a].[Password], [a].[Phone], [a].[Status], [a].[Type], [a.Company].[Id], [a.Company].[CreateTime], [a.Company].[Name], [a.Company].[Status], [a.Company].[Tel], [a.Company].[UpdateTime], [a.Branch].[Id], [a.Branch].[City], [a.Branch].[CompanyId], [a.Branch].[CreateTime], [a.Branch].[CreateUserId], [a.Branch].[Name], [a.Branch].[ParentBranchId], [a.Branch].[Type]
+FROM [Account] AS [a]
+INNER JOIN [Company] AS [a.Company] ON [a].[CompanyId] = [a.Company].[Id]
+INNER JOIN [Branch] AS [a.Branch] ON [a].[BranchId] = [a.Branch].[Id] 
+2019-06-27 10:41:54.8098|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (993ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[AccountName], [a].[BranchId], [a].[City], [a].[CompanyId], [a].[CreateTime], [a].[CreateUserId], [a].[Id], [a].[Name], [a].[Password], [a].[Phone], CONVERT(VARCHAR(11), [a].[Status]) AS [StatusName], [a].[Type]
+FROM [Account] AS [a] 
+2019-06-27 10:41:54.8242|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AccountController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1351.8555ms. 
+2019-06-27 10:41:54.8242|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-27 10:41:54.9013|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 44.3914ms. 
+2019-06-27 10:41:55.4955|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AccountController.Index (AccessManagement) in 1696.6593ms 
+2019-06-27 10:41:55.7354|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AccountController.Index (AccessManagement)' 
+2019-06-27 10:41:56.0588|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/api/Account/GetAppMenu application/json  
+2019-06-27 10:41:56.8889|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 3943.3811ms 200 text/html; charset=utf-8 
+2019-06-27 10:41:57.1025|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 
+2019-06-27 10:41:57.2532|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Api.AccountController.GetAppMenu (AccessManagement)' 
+2019-06-27 10:41:58.0717|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "GetAppMenu", controller = "Account"}. Executing controller action with signature AccessManagement.Models.ApiResponse GetAppMenu() on controller AccessManagement.Api.AccountController (AccessManagement). 
+2019-06-27 10:41:59.1645|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Api.AccountController.GetAppMenu (AccessManagement) - Validation state: Valid 
+2019-06-27 10:41:59.3279|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-27 10:41:59.3538|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Api.AccountController.GetAppMenu (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 164.5946ms. 
+2019-06-27 10:41:59.3700|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|INFO|Executing ObjectResult, writing value of type 'AccessManagement.Models.ApiResponse'. 
+2019-06-27 10:41:59.4843|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (96ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[Code], [o].[Description], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE [o].[Code] IN (N'AccountManage', N'BranchManage') 
+2019-06-27 10:41:59.5027|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Api.AccountController.GetAppMenu (AccessManagement) in 1413.0724ms 
+2019-06-27 10:41:59.5113|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Api.AccountController.GetAppMenu (AccessManagement)' 
+2019-06-27 10:41:59.5113|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[{"id":2,"name":"账号管理","route":"/Account/Index","order":1,"code":"AccountManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]},{"id":1003,"name":"机构管理","route":"/Branch/Index","order":2,"code":"BranchManage","description":null,"parentId":1002,"parent":null,"inverseParent":[]}]} 
+2019-06-27 10:41:59.5387|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 3961.9664ms 200 application/json; charset=utf-8 
+2019-06-27 10:42:19.2168|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/lib/bootstrap/dist/css/bootstrap.css.map   
+2019-06-27 10:42:20.7457|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css.map'. Physical path: 'C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map' 
+2019-06-27 10:42:20.7771|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2055.8672ms 200 text/plain 
+2019-06-27 10:42:25.9433|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/Account/Index   
+2019-06-27 10:42:26.0725|AccessManagement.Middleware.AccountSessionMiddleware|INFO|login name:lpf password:123 
+2019-06-27 10:42:26.0942|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Controllers.AccountController.Index (AccessManagement)' 
+2019-06-27 10:42:26.1468|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller AccessManagement.Controllers.AccountController (AccessManagement). 
+2019-06-27 10:42:26.2998|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Controllers.AccountController.Index (AccessManagement) - Validation state: Valid 
+2019-06-27 10:42:26.3217|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-27 10:42:26.4563|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (123ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccountName], [a].[BranchId], [a].[City], [a].[CompanyId], [a].[CreateTime], [a].[CreateUserId], [a].[Name], [a].[Password], [a].[Phone], [a].[Status], [a].[Type], [a.Company].[Id], [a.Company].[CreateTime], [a.Company].[Name], [a.Company].[Status], [a.Company].[Tel], [a.Company].[UpdateTime], [a.Branch].[Id], [a.Branch].[City], [a.Branch].[CompanyId], [a.Branch].[CreateTime], [a.Branch].[CreateUserId], [a.Branch].[Name], [a.Branch].[ParentBranchId], [a.Branch].[Type]
+FROM [Account] AS [a]
+INNER JOIN [Company] AS [a.Company] ON [a].[CompanyId] = [a.Company].[Id]
+INNER JOIN [Branch] AS [a.Branch] ON [a].[BranchId] = [a.Branch].[Id] 
+2019-06-27 10:42:26.7030|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (226ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[AccountName], [a].[BranchId], [a].[City], [a].[CompanyId], [a].[CreateTime], [a].[CreateUserId], [a].[Id], [a].[Name], [a].[Password], [a].[Phone], CONVERT(VARCHAR(11), [a].[Status]) AS [StatusName], [a].[Type]
+FROM [Account] AS [a] 
+2019-06-27 10:42:26.7595|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Controllers.AccountController.Index (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 411.9381ms. 
+2019-06-27 10:42:26.8126|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2019-06-27 10:42:27.9152|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 304.1427ms. 
+2019-06-27 10:42:28.7598|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Controllers.AccountController.Index (AccessManagement) in 1861.2573ms 
+2019-06-27 10:42:29.0001|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Controllers.AccountController.Index (AccessManagement)' 
+2019-06-27 10:42:29.0509|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request starting HTTP/2.0 GET https://localhost:44334/api/Account/GetAppMenu application/json  
+2019-06-27 10:42:29.2092|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 3099.8696ms 200 text/html; charset=utf-8 
+2019-06-27 10:42:29.2449|AccessManagement.Middleware.LogMiddleware|INFO|Request Path:localhost:44334/api/Account/GetAppMenu requestMethod:GET requestHeaders User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 
+2019-06-27 10:42:29.9563|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'AccessManagement.Api.AccountController.GetAppMenu (AccessManagement)' 
+2019-06-27 10:42:30.0843|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Route matched with {action = "GetAppMenu", controller = "Account"}. Executing controller action with signature AccessManagement.Models.ApiResponse GetAppMenu() on controller AccessManagement.Api.AccountController (AccessManagement). 
+2019-06-27 10:42:30.9099|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executing action method AccessManagement.Api.AccountController.GetAppMenu (AccessManagement) - Validation state: Valid 
+2019-06-27 10:42:31.1055|Microsoft.EntityFrameworkCore.Infrastructure|INFO|Entity Framework Core 2.2.4-servicing-10062 initialized 'AccessManagementContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-06-27 10:42:31.1262|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action method AccessManagement.Api.AccountController.GetAppMenu (AccessManagement), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 195.0672ms. 
+2019-06-27 10:42:31.1374|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|INFO|Executing ObjectResult, writing value of type 'AccessManagement.Models.ApiResponse'. 
+2019-06-27 10:42:31.3581|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (206ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[Code], [o].[Description], [o].[Name], [o].[Order], [o].[ParentId], [o].[Route]
+FROM [AppMenu] AS [o]
+WHERE 0 = 1 
+2019-06-27 10:42:31.3975|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|INFO|Executed action AccessManagement.Api.AccountController.GetAppMenu (AccessManagement) in 1279.6579ms 
+2019-06-27 10:42:31.4211|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'AccessManagement.Api.AccountController.GetAppMenu (AccessManagement)' 
+2019-06-27 10:42:31.4967|AccessManagement.Middleware.LogMiddleware|INFO|Response Path:localhost:44334/api/Account/GetAppMenu
+Body:{"code":0,"message":null,"data":[]} 
+2019-06-27 10:42:31.5172|Microsoft.AspNetCore.Hosting.Internal.WebHost|INFO|Request finished in 2680.162ms 200 application/json; charset=utf-8 

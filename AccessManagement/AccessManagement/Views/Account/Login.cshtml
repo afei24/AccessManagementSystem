@@ -1,0 +1,178 @@
+﻿@model AccessManagementServices.DOTS.AccountViewModel
+@using Microsoft.AspNetCore.Mvc
+
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>登录</title>
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .icon {
+            position: absolute;
+            color: #fff;
+            font-size: 1.3em;
+            margin-top: 7px;
+            margin-left: 8px;
+        }
+
+
+        .search-wrap {
+            width: 760px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            z-index: 9200;
+            margin-left: -375px;
+        }
+
+        .search-form {
+            margin: 200px auto 0 auto !important;
+            background: rgba(61,60,60,0.8);
+            padding: 10px 15px;
+            border-radius: 6px;
+            border: 1px solid rgba(0,0,0,0.5);
+            width: 365px;
+        }
+
+        .containerlogin {
+            background-color: #f3f5f7;
+            max-width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-block {
+            display: inline;
+            width: 30%;
+            float: right;
+        }
+
+        input {
+            padding-left: 30px !important;
+        }
+
+        .form-control00 {
+            width: 100%;
+            height: 40px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #fff;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #858181;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            background: rgba(0,0,0,0.65);
+        }
+
+        .validation-summary-errors ul li {
+            list-style: none;
+            color: #fa0f03;
+        }
+    </style>
+</head>
+<body>
+    <div class="containerlogin">
+        <div class="search-wrap">
+            <div class="search-form">
+                <h5 style="font-size: 1.5em;color:#fff;text-align: center;margin-bottom:20px;">欢迎登录</h5>
+
+
+                <div class="panel-body">
+                    @using (Html.BeginForm(new {  }))
+                    {
+
+                        @Html.AntiForgeryToken()
+
+                    <fieldset>
+                        <div class="form-group">
+                            <span class="icon">
+                                <img src="~/images/username.png">
+                            </span>
+                            @Html.EditorFor(model => model.AccountName, new { htmlAttributes = new { @class = "form-control00", @placeholder = "请输入用户名" } })
+
+                            @Html.ValidationMessageFor(model => model.AccountName)
+                        </div>
+                        <div class="form-group">
+                            <span class="icon">
+                                <img src="~/images/password.png">
+                            </span>
+                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control00", @placeholder = "请输入密码", @type = "password" } })
+
+                            @Html.ValidationMessageFor(model => model.Password)
+                        </div>
+                        <div class="form-group">
+                            @Html.ValidationSummary(true)
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label style="color:#fff">
+                                    @Html.CheckBoxFor(m => m.RememberMe)
+                                    记住我
+                                </label>
+                                <br />
+                                <button type="submit" class="btn btn-primary btn-block">登录</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                    }
+                </div>
+
+            </div>
+        </div>
+
+        <div id="mainSlideshow" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px;  z-index: auto; opacity: 1;overflow: hidden;">
+            <div class="slide"><a><img src="~/images/h3.png" /></a></div>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript">
+        $(function () {
+            changeDivHeight();
+        })
+
+        window.onresize = function () {
+            changeDivHeight();
+        }
+
+        function changeDivHeight() {
+            var h = $(window).height();
+            var w = $(window).width();
+            $("#mainSlideshow").parent().width(w + "px");
+            $("#mainSlideshow").parent().height(h + "px");
+            $("#mainSlideshow").width(w + "px");
+            $("#mainSlideshow").height(h + "px");
+            $("#mainSlideshow .slide").width(w + "px");
+            $("#mainSlideshow .slide").height(h + "px");
+            $("#mainSlideshow .slide a img").width(w);
+            $("#mainSlideshow .slide a img").height(h);
+        }
+
+    </script>
+
+</body>
+</html>
+
+
