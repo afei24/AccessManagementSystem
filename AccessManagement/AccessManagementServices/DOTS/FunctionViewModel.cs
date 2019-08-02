@@ -5,6 +5,7 @@ using System.Text;
 
 namespace AccessManagementServices.DOTS
 {
+    [Serializable]
     public class FunctionViewModel
     {
         [Display(Name = "功能ID")]

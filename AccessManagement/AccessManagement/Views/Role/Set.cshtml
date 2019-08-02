@@ -1,11 +1,10 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "设置";
 }
 
-<br/>
+<br />
 <h3>@ViewData["Name"]</h3>
-<input style="display:none;" id="CompanyId" value="@ViewData["Id"]">
+<input style="display:none;" id="RoleId" value="@ViewData["Id"]">
 <br />
 <div class="form-group">
     <div id="functions" style="padding-left:20px;" lay-filter="allChoose"></div>
@@ -18,7 +17,7 @@
     layui.use('tree', function () {
         var tree = layui.tree;
         $.ajax({
-            url: "/Company/GetReFunctions?id=" + $("#CompanyId").val(),
+            url: "/Role/GetFunctions?id=" + $("#RoleId").val(),
             dataType: "json",
             type: "Get",
             contentType: "application/json",
@@ -47,9 +46,9 @@
         $("#btnSave").click(function () {
             //获得选中的节点
             var checkData = tree.getChecked('functions');
-            var vms = { Id: $("#CompanyId").val(), DataTree: checkData};
+            var vms = { Id: $("#RoleId").val(), DataTree: checkData};
             $.ajax({
-                url: "/Company/Set",
+                url: "/Role/Set",
                 data: vms,
                 dataType: "json",
                 type: "Post",
@@ -58,7 +57,7 @@
                 },
                 success: function (data) {
                     if (data == "ok") {
-                        window.location.href = '/Company/Index';
+                        window.location.href = '/Role/Index';
                     }
                     else {
                         alert("保存失败！");
@@ -66,9 +65,11 @@
                 }
             });
         });
-        
+
     });
 </script>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+

@@ -5,6 +5,7 @@ using System.Text;
 
 namespace AccessManagementServices.DOTS
 {
+    [Serializable]
     public class RoleViewModel
     {
         [Display(Name = "角色ID")]

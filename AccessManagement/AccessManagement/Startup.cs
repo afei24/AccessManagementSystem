@@ -58,6 +58,7 @@ namespace AccessManagement
             services.AddTransient<IAccountServices,AccountServices>();
             services.AddTransient<BranchServices>();
             services.AddTransient<PresetFunctionServices>();
+            services.AddTransient<RoleServices>();
 
             services.AddAutoMapper(typeof(Startup));
             Mapper.Initialize(cfg =>

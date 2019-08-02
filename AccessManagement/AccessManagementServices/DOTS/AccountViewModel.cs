@@ -9,6 +9,11 @@ namespace AccessManagementServices.DOTS
     [Serializable]
     public class AccountViewModel
     {
+        public AccountViewModel()
+        {
+            FunctionViewModels = new List<FunctionViewModel>();
+            PresetFunctionViewModel = new List<PresetFunctionViewModel>();
+        }
         public int Id { get; set; }
 
         [Required]
@@ -42,6 +47,7 @@ namespace AccessManagementServices.DOTS
         [Display(Name = "网点")]
         public int BranchId { get; set; }
         public bool RememberMe { get; set; }
-        public List<FunctionViewModel> Functions { get; set; }
+        public List<FunctionViewModel> FunctionViewModels { get; set; }
+        public List<PresetFunctionViewModel> PresetFunctionViewModel { get; set; }
     }
 }

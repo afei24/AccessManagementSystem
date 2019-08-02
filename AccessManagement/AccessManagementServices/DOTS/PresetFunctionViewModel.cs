@@ -5,6 +5,7 @@ using System.Text;
 
 namespace AccessManagementServices.DOTS
 {
+    [Serializable]
     public class PresetFunctionViewModel
     {
         public int Id { get; set; }

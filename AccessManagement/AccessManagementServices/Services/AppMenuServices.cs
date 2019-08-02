@@ -139,7 +139,7 @@ namespace AccessManagementServices.Services
                         function.Code = vm.Code;
                     }
                 }
-                query = Mapper.Map<AppMenu>(vm);
+                Mapper.Map(vm, query);
                 _accessManagementContext.Entry(query).State = EntityState.Modified;
                 await _accessManagementContext.SaveChangesAsync();
                 return new ServiceResponseBase() { Status = Status.ok };

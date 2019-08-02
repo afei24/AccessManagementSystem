@@ -50,3 +50,8 @@ C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\net
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Views\AppMenu\Details.g.cshtml.cs
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Views\Company\Set.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Views\Role\Index.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Views\Role\Create.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Views\Role\Edit.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Views\Role\Set.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Views\Role\Details.g.cshtml.cs

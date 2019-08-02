@@ -32,6 +32,13 @@ namespace AccessManagement
             CreateMap<AccountViewModel, Account>();
             CreateMap<Account, AccountViewModel>().
                 ForMember(c => c.StatusName, conf => conf.MapFrom(s => s.Status.ToString()));
+
+            CreateMap<RoleViewModel, Role>()
+            .ForMember(d => d.AccountRole, conf => conf.Ignore())
+            .ForMember(d => d.Company, conf => conf.Ignore())
+            .ForMember(d => d.FunctionRole, conf => conf.Ignore());
+            CreateMap<Role, RoleViewModel>()
+                .ForMember(d => d.Functions, conf => conf.Ignore());
         }
     }
 }

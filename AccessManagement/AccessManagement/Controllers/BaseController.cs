@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AccessManagementServices.Common;
+using AccessManagementServices.DOTS;
 using AccessManagementServices.Filters;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NLog;
@@ -25,6 +28,15 @@ namespace AccessManagement.Controllers
             };
 
             return sortCol;
+        }
+
+        public AccountViewModel GetAccount()
+        {
+            if (HttpContext.Session.Get("account") == null)
+            {
+                HttpContext.Response.Redirect("Account/Login");
+            }
+            return (AccountViewModel)SerializeHelper.DeserializeWithBinary(HttpContext.Session.Get("account"));
         }
     }
 }

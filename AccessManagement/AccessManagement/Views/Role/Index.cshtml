@@ -1,84 +1,22 @@
-﻿@model IEnumerable<AccessManagementServices.DOTS.AppMenuViewModel>
+﻿@model IEnumerable<AccessManagementServices.DOTS.RoleViewModel>
 
 @{
-    ViewData["Title"] = "菜单管理";
+    ViewData["Title"] = "角色管理";
 }
 
-<br />
-<h2>菜单管理</h2>
-<br/>
+<h1>角色管理</h1>
+
 <div class="layui-inline">
     <label class="layui-label">名称</label>&nbsp;
     <input type="text" name="name" id="name" class="layui-text">&nbsp;&nbsp;
-    <label class="layui-label">编码</label>&nbsp;
-    <input type="text" name="cod" id="code" class="layui-text">&nbsp;&nbsp;
     <button type="button" id="btnSearch" class="layui-btn layui-btn-sm" lay-event="delete"><i class="layui-icon layui-icon-search">查询</i></button>
 </div>
-
-<table class="table" id="appmenu_tb" lay-filter="appmenu">
-    @*<thead>
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Id)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Name)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Route)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Order)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Code)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Description)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.ParentId)
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Id)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Name)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Route)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Order)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Code)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Description)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.ParentId)
-                    </td>
-                    <td>
-                        @Html.ActionLink("编辑", "Edit", new { /* id=item.PrimaryKey */ }) |
-                        @Html.ActionLink("详情", "Details", new { /* id=item.PrimaryKey */ }) |
-                        @Html.ActionLink("删除", "Delete", new { /* id=item.PrimaryKey */ })
-                    </td>
-                </tr>
-            }
-        </tbody>*@
+<table class="table" id="role_tb" lay-filter="role">
 </table>
 <script type="text/html" id="bar">
     <a class="layui-btn layui-btn-xs" lay-event="detail">查看</a>
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-xs" lay-event="set">设置</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 
     <!-- 这里同样支持 laytpl 语法，如： -->
@@ -99,10 +37,10 @@
 
         //第一个实例
         var tableIns = table.render({
-            elem: '#appmenu_tb'
+            elem: '#role_tb'
             //, height: 100%
             //, width:100%
-            , url: '/appmenu/AjaxIndex/' //数据接口
+            , url: '/role/AjaxIndex/' //数据接口
             , where: { name: layui.$('#name').val(), code: layui.$('#code').val() }
             , parseData: function (res) { //res 即为原始返回的数据
                 return {
@@ -115,13 +53,10 @@
             , page: true //开启分页
             , cols: [[ //表头
                 { field: 'id', fixed: 'left', type: 'checkbox', sort: true }
-                , { field: 'name', title: 'Name', }
-                , { field: 'route', title: 'Route',  }
-                , { field: 'order', title: 'Order', totalRow: true, totalRowText: '合计', sort: true }
-                , { field: 'code', title: 'Code', sort: true }
+                , { field: 'name', title: 'Name', sort: true }
                 , { field: 'description', title: 'Description', }
-                , { field: 'parentId', title: 'ParentId', }
-                , { fixed: 'right', width: 150, align: 'center', toolbar: '#bar' }
+                , { field: 'companyId', title: 'CompanyId', }
+                , { fixed: 'right', width: 200, align: 'center', toolbar: '#bar' }
             ]]
             , toolbar: '#menubar'
             , defaultToolbar: ['filter', 'print', 'exports']
@@ -146,14 +81,14 @@
         });
 
         //监听工具条
-        table.on('tool(appmenu)', function (obj) { //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
+        table.on('tool(role)', function (obj) { //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
             var data = obj.data; //获得当前行数据
             var layEvent = obj.event; //获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
             var tr = obj.tr; //获得当前行 tr 的DOM对象
 
             if (layEvent === 'detail') { //查看
                 //do somehing
-                window.location.href = "/AppMenu/Details/" + obj.data.id;
+                window.location.href = "/role/Details/" + obj.data.id;
             } else if (layEvent === 'del') { //删除
                 layer.confirm('确定要删除吗', function (index) {
                     obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
@@ -164,35 +99,29 @@
                 });
             } else if (layEvent === 'edit') { //编辑
                 //do something
-                window.location.href = "/AppMenu/Edit/" + obj.data.id;
+                window.location.href = "/role/Edit/" + obj.data.id;
                 //同步更新缓存对应的值
                 //obj.update({
                 //    username: '123'
                 //    , title: 'xxx'
                 //});
             }
-            else if (layEvent === 'add') { //编辑
-                //do something
-
-                //同步更新缓存对应的值
-                obj.update({
-                    username: '123'
-                    , title: 'xxx'
-                });
+            else if (layEvent === 'set') { //设置
+                window.location.href = "/role/Set/" + obj.data.id;
             }
         });
 
 
         //监听事件
-        table.on('toolbar(appmenu)', function (obj) {
+        table.on('toolbar(role)', function (obj) {
             var checkStatus = table.checkStatus(obj.config.id);
             switch (obj.event) {
                 case 'add':
-                    window.location.href = "/AppMenu/Create";
+                    window.location.href = "/role/Create";
                     break;
                 case 'delete':
                     layer.confirm('确定要删除吗', function (index) {
-                        var checkStatus = table.checkStatus('appmenu_tb'); //idTest 即为基础参数 id 对应的值
+                        var checkStatus = table.checkStatus('role_tb'); //idTest 即为基础参数 id 对应的值
 
                         console.log(checkStatus.data) //获取选中行的数据
                         console.log(checkStatus.data.length) //获取选中行数量，可作为是否有选中行的条件
@@ -205,16 +134,16 @@
                         layer.close(index);
                         //向服务端发送删除指令
                     });
-                    
+
                     break;
                 case 'search':
-                    
+
                     break;
             };
         });
 
-        //监听排序事件 
-        table.on('sort(appmenu)', function (obj) { //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
+        //监听排序事件
+        table.on('sort(role)', function (obj) { //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
             console.log(obj.field); //当前排序的字段名
             console.log(obj.type); //当前排序类型：desc（降序）、asc（升序）、null（空对象，默认排序）
             console.log(this); //当前排序的 th 对象
@@ -228,15 +157,14 @@
 
         $("#btnSearch").click(function () {
             var txtname = layui.$('#name').val();
-            var txtcode = layui.$('#code').val();
             tableIns.reload({
-                where: { name: txtname, code: txtcode }
+                where: { name: txtname }
             });
         });
         function Del(ids) {
             var idsStr = ids.join(",");
             $.ajax({
-                url: "/AppMenu/DeleteIds?ids=" + idsStr,
+                url: "/role/DeleteIds?ids=" + idsStr,
                 type: "Get",
                 dataType: "json",
                 error: function (data) {
@@ -249,12 +177,12 @@
                     else {
                         tableIns.reload();
                     }
-                    
+
                 }
             });
         };
     });
 
-    
+
 
 </script>

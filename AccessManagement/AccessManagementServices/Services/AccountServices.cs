@@ -37,16 +37,20 @@ namespace AccessManagementServices.Services
 
         }
 
-        public async Task<AccountViewModel> GetById(int id)
+        public async Task<AccountViewModel> GetById(int id,string action="index")
         {
             try
             {
                 var query = await _context.Account.FirstOrDefaultAsync(o => o.Id == id);
                 var vm = _mapper.Map<AccountViewModel>(query);
-                //var functions = await _context.Function.Where(o => o.CompanyId == vm.).ToListAsync();
-                //foreach (var function in functions)
+                //if (action == "index")
                 //{
-                //    vm.Functions.Add(_mapper.Map<FunctionViewModel>(function));
+                //    var functions = await _context.Function.Where(o => o.CompanyId == vm.CompanyId).ToListAsync();
+                //    foreach (var function in functions)
+                //    {
+                //        vm.PresetFunctionViewModel.Add(_mapper.Map<PresetFunctionViewModel>(function));
+                //    }
+                //    var accountFunctions = _context.AccountFunction.Where(o => o.AccountId == vm.Id).Select(o=>o.func);
                 //}
                 return vm;
             }

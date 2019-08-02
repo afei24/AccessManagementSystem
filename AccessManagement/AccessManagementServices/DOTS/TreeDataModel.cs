@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AccessManagement.Models
+namespace AccessManagementServices.DOTS
 {
     public class TreeDataModel
     {
@@ -11,6 +11,7 @@ namespace AccessManagement.Models
         public string title { get; set; }
         public bool Checked { get; set; }
         public bool disabled { get; set; }
-        public List<TreeDataModel> children { get; set; }
+        public bool spread { get; set; }
+        public TreeDataModel[] children { get; set; }
     }
 }

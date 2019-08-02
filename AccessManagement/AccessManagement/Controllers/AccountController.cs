@@ -20,11 +20,14 @@ namespace AccessManagement.Controllers
         IMapper _mapper;
         private IAccountServices _accountServices;
         private AccessManagementContext _context;
-        public AccountController(IAccountServices accountServices, IMapper mapper, AccessManagementContext context)
+        private PresetFunctionServices _presetFunctionServices;
+        public AccountController(IAccountServices accountServices, IMapper mapper, AccessManagementContext context
+            ,PresetFunctionServices presetFunctionServices)
         {
             _accountServices = accountServices;
             _mapper = mapper;
             _context = context;
+            _presetFunctionServices = presetFunctionServices;
     }
         // GET: Account
         public async Task<ActionResult> Index()
