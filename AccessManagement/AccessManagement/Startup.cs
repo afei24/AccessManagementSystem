@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AccessManagement.Filter;
 using AccessManagement.Middleware;
 using AccessManagementData;
 using AccessManagementServices;
@@ -48,7 +49,11 @@ namespace AccessManagement
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie();
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc(
+                options =>
+                {
+                    options.Filters.Add<HttpGlobalExceptionFilter>(); //加入全局异常类
+                }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContext<AccessManagementContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
                 providerOptions => providerOptions.EnableRetryOnFailure()));
@@ -100,7 +105,7 @@ namespace AccessManagement
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Account}/{action=Index}/{id?}");
             });
             
         }

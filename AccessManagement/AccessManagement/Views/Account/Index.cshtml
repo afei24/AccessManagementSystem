@@ -1,103 +1,198 @@
 ﻿@model IEnumerable<AccessManagementServices.DOTS.AccountViewModel>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "账号管理";
 }
 
-<h1>Index</h1>
+<br />
+<h2>账号管理</h2>
+<br />
+<div class="layui-inline">
+    <label class="layui-label">账号</label>&nbsp;
+    <input type="text" name="name" id="name" class="layui-text">&nbsp;&nbsp;
+    <button type="button" id="btnSearch" class="layui-btn layui-btn-sm" lay-event="delete"><i class="layui-icon layui-icon-search">查询</i></button>
+</div>
+<table class="table" id="account_tb" lay-filter="account"></table>
+<script type="text/html" id="bar">
+    @*<a class="layui-btn layui-btn-xs" lay-event="detail">查看</a>*@
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AccountName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Password)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Type)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.StatusName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.City)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Phone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreateTime)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreateUserId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CompanyId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BranchId)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Id)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.AccountName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Password)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Type)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.StatusName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.City)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Phone)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CreateTime)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CreateUserId)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CompanyId)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.BranchId)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+    <!-- 这里同样支持 laytpl 语法，如： -->
+    @*{{#  if(d.auth > 2){ }}
+        <a class="layui-btn layui-btn-xs" lay-event="check">审核</a>
+        {{#  } }}*@
+</script>
+<script type="text/html" id="menubar">
+    <div class="layui-table-tool-temp">
+        <div class="layui-inline" lay-event="add"><i class="layui-icon layui-icon-add-1"></i></div>
+        @*<div class="layui-inline" lay-event="update"><i class="layui-icon layui-icon-edit"></i></div>*@
+        <div class="layui-inline" lay-event="delete"><i class="layui-icon layui-icon-delete"></i></div>
+    </div>
+</script>
+<script>
+    layui.use('table', function () {
+        var table = layui.table;
+
+        //第一个实例
+        var tableIns = table.render({
+            elem: '#account_tb'
+            //, height: 100%
+            //, width:100%
+            , url: '/account/AjaxIndex/' //数据接口
+            , where: { name: layui.$('#name').val() }
+            , parseData: function (res) { //res 即为原始返回的数据
+                return {
+                    "code": res.status, //解析接口状态
+                    "msg": res.message, //解析提示文本
+                    "count": res.total, //解析数据长度
+                    "data": res.data //解析数据列表
+                };
+            }
+            , page: true //开启分页
+            , cols: [[ //表头
+                { field: 'id', fixed: 'left', type: 'checkbox', sort: true }
+                , { field: 'accountName', title: '账号', sort: true, width: 100}
+                , { field: 'name', title: '名称', sort: true, width: 150  }
+                , { field: 'statusName', title: '状态' }
+                , { field: 'city', title: '城市', }
+                , { field: 'phone', title: '手机号', width: 150 }
+                , { field: 'createTimeStr', title: '创建时间', sort: true, width: 250 }
+                , { field: 'branchName', title: '所在网点', width: 150  }
+                , { fixed: 'right', width: 150, align: 'center', toolbar: '#bar' }
+            ]]
+            , toolbar: '#menubar'
+            , defaultToolbar: ['filter', 'print', 'exports']
+            , title: '菜单'
+            , done: function (res, curr, count) {
+                //如果是异步请求数据方式，res即为你接口返回的信息。
+                //如果是直接赋值的方式，res即为：{data: [], count: 99} data为当前页数据、count为数据总长度
+                console.log(res);
+
+                //得到当前页码
+                console.log(curr);
+
+                //得到数据总量
+                console.log(count);
+            },
+            text: {
+                none: '暂无相关数据' //默认：无数据。注：该属性为 layui 2.2.5 开始新增
+            }
+            , even: true
+            , skin: 'line'
+            , autoSort: false
+        });
+
+        //监听工具条
+        table.on('tool(account)', function (obj) { //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
+            var data = obj.data; //获得当前行数据
+            var layEvent = obj.event; //获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
+            var tr = obj.tr; //获得当前行 tr 的DOM对象
+
+            if (layEvent === 'detail') { //查看
+                //do somehing
+                window.location.href = "/account/Details/" + obj.data.id;
+            } else if (layEvent === 'del') { //删除
+                layer.confirm('确定要删除吗', function (index) {
+                    obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
+                    var ids = [obj.data.id];
+                    Del(ids);
+                    layer.close(index);
+                    //向服务端发送删除指令
+                });
+            } else if (layEvent === 'edit') { //编辑
+                //do something
+                window.location.href = "/account/Edit/" + obj.data.id;
+                //同步更新缓存对应的值
+                //obj.update({
+                //    username: '123'
+                //    , title: 'xxx'
+                //});
+            }
+            else if (layEvent === 'add') { //编辑
+                //do something
+
+                //同步更新缓存对应的值
+                obj.update({
+                    username: '123'
+                    , title: 'xxx'
+                });
+            }
+        });
+
+
+        //监听事件
+        table.on('toolbar(account)', function (obj) {
+            var checkStatus = table.checkStatus(obj.config.id);
+            switch (obj.event) {
+                case 'add':
+                    window.location.href = "/account/Create";
+                    break;
+                case 'delete':
+                    layer.confirm('确定要删除吗', function (index) {
+                        var checkStatus = table.checkStatus('account_tb'); //idTest 即为基础参数 id 对应的值
+
+                        console.log(checkStatus.data) //获取选中行的数据
+                        console.log(checkStatus.data.length) //获取选中行数量，可作为是否有选中行的条件
+                        console.log(checkStatus.isAll) //表格是否全选
+                        var ids = [];
+                        for (var i = 0; i < checkStatus.data.length; i++) {
+                            ids.push(checkStatus.data[i].id);
+                        }
+                        Del(ids);
+                        layer.close(index);
+                        //向服务端发送删除指令
+                    });
+
+                    break;
+                case 'search':
+
+                    break;
+            };
+        });
+
+        //监听排序事件
+        table.on('sort(account)', function (obj) { //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
+            console.log(obj.field); //当前排序的字段名
+            console.log(obj.type); //当前排序类型：desc（降序）、asc（升序）、null（空对象，默认排序）
+            console.log(this); //当前排序的 th 对象
+
+            //尽管我们的 table 自带排序功能，但并没有请求服务端。
+            //有些时候，你可能需要根据当前排序的字段，重新向服务端发送请求，从而实现服务端排序，如：
+            tableIns.reload({
+                where: { field: obj.field, type: obj.type }
+            });
+        });
+
+        $("#btnSearch").click(function () {
+            var txtname = layui.$('#name').val();
+            tableIns.reload({
+                where: { name: txtname }
+            });
+        });
+        function Del(ids) {
+            var idsStr = ids.join(",");
+            $.ajax({
+                url: "/account/DeleteIds?ids=" + idsStr,
+                type: "Get",
+                dataType: "json",
+                error: function (data) {
+                    alert("删除失败！");
+                },
+                success: function (data) {
+                    if (data != "ok") {
+                        layer.msg("删除失败，"+data);
+                    }
+                    else {
+                        tableIns.reload();
+                    }
+
+                }
+            });
+        };
+    });
+
+
+
+</script>
 

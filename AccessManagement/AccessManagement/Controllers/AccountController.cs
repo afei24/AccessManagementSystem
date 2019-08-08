@@ -7,33 +7,55 @@ using AccessManagementData;
 using AccessManagementServices;
 using AccessManagementServices.Common;
 using AccessManagementServices.DOTS;
+using AccessManagementServices.Filters;
 using AccessManagementServices.Services;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace AccessManagement.Controllers
 {
-    public class AccountController : Controller
+    public class AccountController : BaseController
     {
         IMapper _mapper;
         private IAccountServices _accountServices;
         private AccessManagementContext _context;
         private PresetFunctionServices _presetFunctionServices;
+        private BasicInfoServices _basicInfoServices;
         public AccountController(IAccountServices accountServices, IMapper mapper, AccessManagementContext context
-            ,PresetFunctionServices presetFunctionServices)
+            ,PresetFunctionServices presetFunctionServices, ILogger<AccountController> logger
+            , BasicInfoServices basicInfoServices)
+            : base(logger)
         {
             _accountServices = accountServices;
             _mapper = mapper;
             _context = context;
             _presetFunctionServices = presetFunctionServices;
+            _basicInfoServices = basicInfoServices;
     }
         // GET: Account
         public async Task<ActionResult> Index()
         {
-            var vms = await _accountServices.GetList();
-            return View(vms);
+            //var vms = await _accountServices.GetList();
+            return View();
+        }
+
+        public async Task<ActionResult> AjaxIndex()
+        {
+            var result = await _accountServices.GetList(GetFilters(), GetSort(),GetAccount());
+            return Json(result);
+        }
+        public AccountFilters GetFilters()
+        {
+            var filters = new AccountFilters()
+            {
+                Page = Convert.ToInt32(HttpContext.Request.Query["page"]),
+                Limit = Convert.ToInt32(HttpContext.Request.Query["limit"]),
+                Name = HttpContext.Request.Query["name"],
+            };
+            return filters;
         }
 
         public ActionResult Login()
@@ -52,10 +74,11 @@ namespace AccessManagement.Controllers
                 var company = _mapper.Map<CompanyViewModel>(account.Company);
                 var functionIds = account.AccountFunction.Select(o=>o.FunctionId).ToList();
                 var functions = _context.Function.Where(o=>functionIds.Contains(o.Id)).ToList();
-                foreach (var role in account.AccountRole)
+                foreach (var accountRole in account.AccountRole)
                 {
-                    var roleFunctionIds = role.Role.FunctionRole.Select(o=>o.FunctionId).ToList();
-                    var _functions = _context.Function.Where(o=> roleFunctionIds.Contains(o.Id)).ToList();
+                    var _functionIds =await _context.FunctionRole.Where(o=>o.RoleId == accountRole.RoleId)
+                        .Select(o=>o.FunctionId).ToListAsync();
+                    var _functions = _context.Function.Where(o=> _functionIds.Contains(o.Id)).ToList();
                     functions = functions.Union(_functions).ToList();
                 }
                 HttpContext.Session.Set("account", SerializeHelper.SerializeToBinary(vmAccount));
@@ -76,48 +99,61 @@ namespace AccessManagement.Controllers
         }
 
         // GET: Account/Create
-        public ActionResult Create()
+        public async Task<ActionResult> Create()
         {
-            return View();
+            var vm = new AccountViewModel();
+            await Init(vm);
+            return View(vm);
         }
 
         // POST: Account/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<ActionResult> Create(AccountViewModel vm)
         {
-            try
+            var result = await _accountServices.Create(vm, GetAccount()); 
+            if (result.Status == Status.ok)
             {
-                // TODO: Add insert logic here
-
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            else
             {
-                return View();
+                ModelState.AddModelError("", "保存失败: " + result.Message);
+                await Init(vm);
+                return View(vm);
             }
         }
 
         // GET: Account/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<ActionResult> Edit(int id)
         {
-            return View();
+            try
+            {
+                var vm = await _accountServices.GetById(id);
+                await Init(vm);
+                return View(vm);
+            }
+            catch (Exception ex)
+            {
+                return View();
+            } 
         }
 
         // POST: Account/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<ActionResult> Edit(int id, AccountViewModel vm)
         {
-            try
+            var result = await _accountServices.Update(vm);
+            if (result.Status == Status.ok)
             {
-                // TODO: Add update logic here
-
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            else
             {
-                return View();
+                ModelState.AddModelError("", "保存失败: " + result.Message);
+                await Init(vm);
+                return View(vm);
             }
         }
 
@@ -142,6 +178,27 @@ namespace AccessManagement.Controllers
             {
                 return View();
             }
+        }
+        public async Task<ActionResult> DeleteIds(string ids)
+        {
+            try
+            {
+                var result = await _accountServices.Delete(ids);
+                if (result.Status == Status.ok)
+                    return Json("ok");
+                else
+                    return Json(result.Message);
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        private async Task Init(AccountViewModel vm)
+        {
+            ViewBag.Roles =await _basicInfoServices.GetRoles(GetAccount());
+            ViewBag.Branchs = await _basicInfoServices.GetBranchs(GetAccount());
         }
     }
 }

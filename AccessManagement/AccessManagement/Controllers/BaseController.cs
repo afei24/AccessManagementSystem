@@ -34,7 +34,7 @@ namespace AccessManagement.Controllers
         {
             if (HttpContext.Session.Get("account") == null)
             {
-                HttpContext.Response.Redirect("Account/Login");
+                HttpContext.Response.Redirect("/Account/Login");
             }
             return (AccountViewModel)SerializeHelper.DeserializeWithBinary(HttpContext.Session.Get("account"));
         }

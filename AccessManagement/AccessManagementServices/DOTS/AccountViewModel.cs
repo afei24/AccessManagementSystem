@@ -1,4 +1,5 @@
 ﻿using AccessManagementServices.Common;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -28,14 +29,14 @@ namespace AccessManagementServices.DOTS
         [Display(Name = "姓名")]
         public string Name { get; set; }
         [Required]
-        [Display(Name = "类型")]
-        public int Type { get; set; }
+        [Display(Name = "状态")]
         public string StatusName { get; set; }
         [Required]
         [Display(Name = "城市")]
         public string City { get; set; }
         [Required]
         [Display(Name = "手机")]
+        [Phone]
         public string Phone { get; set; }
         [Display(Name = "创建时间")]
         public DateTime CreateTime { get; set; }
@@ -44,9 +45,15 @@ namespace AccessManagementServices.DOTS
         public int CreateUserId { get; set; }
         [Display(Name = "公司")]
         public int CompanyId { get; set; }
+        [Required]
         [Display(Name = "网点")]
         public int BranchId { get; set; }
+        public string BranchName { get; set; }
+        public string CreateTimeStr { get; set; }
         public bool RememberMe { get; set; }
+        [Required]
+        [Display(Name = "角色")]
+        public string RoleId { get; set; }
         public List<FunctionViewModel> FunctionViewModels { get; set; }
         public List<PresetFunctionViewModel> PresetFunctionViewModel { get; set; }
     }

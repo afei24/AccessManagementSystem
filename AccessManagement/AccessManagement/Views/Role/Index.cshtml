@@ -4,15 +4,17 @@
     ViewData["Title"] = "角色管理";
 }
 
-<h1>角色管理</h1>
-
+<br />
+<h2>
+    角色管理
+</h2>
+<br />
 <div class="layui-inline">
     <label class="layui-label">名称</label>&nbsp;
     <input type="text" name="name" id="name" class="layui-text">&nbsp;&nbsp;
     <button type="button" id="btnSearch" class="layui-btn layui-btn-sm" lay-event="delete"><i class="layui-icon layui-icon-search">查询</i></button>
 </div>
-<table class="table" id="role_tb" lay-filter="role">
-</table>
+<table class="table" id="role_tb" lay-filter="role"></table>
 <script type="text/html" id="bar">
     <a class="layui-btn layui-btn-xs" lay-event="detail">查看</a>
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
@@ -172,7 +174,7 @@
                 },
                 success: function (data) {
                     if (data != "ok") {
-                        layer.msg("删除失败，"+data);
+                        layer.msg("删除失败，" + data);
                     }
                     else {
                         tableIns.reload();

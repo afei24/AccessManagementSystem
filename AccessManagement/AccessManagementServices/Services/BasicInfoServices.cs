@@ -24,10 +24,31 @@ namespace AccessManagementServices.Services
             return EnumHelper.EnumToList<ComapnyStatus>();
         }
 
+        public IList<SelectListItem> GetAccountStatus()
+        {
+            return EnumHelper.EnumToList<AccountStatus>();
+        }
+
         public async Task<IList<AppMenuViewModel>> GetParentAppMenu()
         {
             var parentAM = _context.AppMenu.Where(a=>a.ParentId == null || a.ParentId == 0);
             var vms = await parentAM.ProjectTo<AppMenuViewModel>().ToListAsync();
+            return vms;
+        }
+
+        public async Task<List<SelectListItem>> GetRoles(AccountViewModel account)
+        {
+            var role = _context.Role.Where(a => a.CompanyId == account.CompanyId);
+            var vms = role.ProjectTo<RoleViewModel>()
+                .Select(o=> new SelectListItem() { Text = o.Name,Value = o.Id.ToString()}).ToList();
+            return vms;
+        }
+
+        public async Task<List<SelectListItem>> GetBranchs(AccountViewModel account)
+        {
+            var branchs = _context.Branch.Where(a => a.CompanyId == account.CompanyId);
+            var vms = branchs.ProjectTo<BranchViewModel>()
+                .Select(o => new SelectListItem() { Text = o.Name, Value = o.Id.ToString() }).ToList();
             return vms;
         }
     }

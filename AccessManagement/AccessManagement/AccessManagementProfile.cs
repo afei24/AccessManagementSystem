@@ -29,9 +29,12 @@ namespace AccessManagement
             CreateMap<PresetFunctionViewModel, ReSetFunction>();
             CreateMap<ReSetFunction, PresetFunctionViewModel>();
 
-            CreateMap<AccountViewModel, Account>();
+            CreateMap<AccountViewModel, Account>().
+            ForMember(c => c.Status, conf => conf.MapFrom(s => Enum.Parse(typeof(AccountStatus), s.StatusName)));
             CreateMap<Account, AccountViewModel>().
-                ForMember(c => c.StatusName, conf => conf.MapFrom(s => s.Status.ToString()));
+                ForMember(c => c.StatusName, conf => conf.MapFrom(s => s.Status.ToString())).
+                ForMember(c => c.CreateTimeStr, conf => conf.MapFrom(s => s.CreateTime.ToString("yyyy-MM-dd hh:mm"))).
+                ForMember(c => c.BranchName, conf => conf.MapFrom(s => s.Branch.Name));
 
             CreateMap<RoleViewModel, Role>()
             .ForMember(d => d.AccountRole, conf => conf.Ignore())

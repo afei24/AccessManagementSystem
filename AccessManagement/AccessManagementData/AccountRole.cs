@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace AccessManagementData
 {
+    [Serializable]
     public partial class AccountRole
     {
         public int Id { get; set; }

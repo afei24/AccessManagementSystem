@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AccessManagement.Models;
 using AccessManagementData;
 using AccessManagementServices.Common;
+using AccessManagementServices.DOTS;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -45,8 +46,29 @@ namespace AccessManagement.Api
             {
                 var functions = (List<Function>)SerializeHelper.DeserializeWithBinary(HttpContext.Session.Get("functions"));
                 var codes = functions.Select(o => o.Code).ToList();
-                var appmenu = _context.AppMenu.Where(o => codes.Contains(o.Code));
-                return new ApiResponse() { code = 0, data = appmenu };
+                var appmenus = _context.AppMenu.Where(o => codes.Contains(o.Code)).ToList();
+                var appmenuParentIds = appmenus.Select(o=>o.ParentId).Distinct().Where(o=> o>0).ToList();
+                List<AppMenuModel> _appmenus = new List<AppMenuModel>();
+                foreach (var appmenuParentId in appmenuParentIds)
+                {
+                    var parent = _context.AppMenu.FirstOrDefault(o=>o.Id == appmenuParentId);
+                    if (parent != null)
+                    {
+                        AppMenuModel _parent = new AppMenuModel() {
+                            Id = parent.Id,
+                            Name = parent.Name
+                        };
+                        var childrens = appmenus.Where(o=>o.ParentId == appmenuParentId).ToList();
+                        _parent.AppMenus = childrens.Select(o=>new AppMenuChildren() {
+                            Name = o.Name,
+                            Route = o.Route,
+                            Order = o.Order
+                        }).ToList();
+                        _appmenus.Add(_parent);
+                    }
+                }
+                
+                return new ApiResponse() { code = 0, data = _appmenus };
             }
             else
             {

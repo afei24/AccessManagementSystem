@@ -2,24 +2,47 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AccessManagementServices.Common;
+using AccessManagementServices.DOTS;
+using AccessManagementServices.Filters;
 using AccessManagementServices.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Extensions.Logging;
 
 namespace AccessManagement.Controllers
 {
-    public class BranchController : Controller
+    public class BranchController : BaseController
     {
         private BranchServices _branchServices;
-        public BranchController(BranchServices branchServices)
+        private BasicInfoServices _basicInfoServices;
+        public BranchController(BranchServices branchServices, ILogger<BranchController> logger
+            , BasicInfoServices basicInfoServices)
+            : base(logger)
         {
             _branchServices = branchServices;
+            _basicInfoServices = basicInfoServices;
         }
         // GET: Branch
         public async Task<ActionResult> Index()
         {
-            var vms =await  _branchServices.GetList();
-            return View(vms);
+            return View();
+        }
+        public async Task<ActionResult> AjaxIndex()
+        {
+            var result = await _branchServices.GetList(GetFilters(), GetSort(), GetAccount());
+            return Json(result);
+        }
+        public BranchFilters GetFilters()
+        {
+            var filters = new BranchFilters()
+            {
+                Page = Convert.ToInt32(HttpContext.Request.Query["page"]),
+                Limit = Convert.ToInt32(HttpContext.Request.Query["limit"]),
+                Name = HttpContext.Request.Query["name"],
+            };
+            return filters;
         }
 
         // GET: Branch/Details/5
@@ -29,48 +52,61 @@ namespace AccessManagement.Controllers
         }
 
         // GET: Branch/Create
-        public ActionResult Create()
+        public async Task<ActionResult> Create()
         {
-            return View();
+            var vm = new BranchViewModel();
+            await Init(vm);
+            return View(vm);
         }
 
         // POST: Branch/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<ActionResult> Create(BranchViewModel vm)
         {
-            try
+            var result = await _branchServices.Create(vm, GetAccount());
+            if (result.Status == Status.ok)
             {
-                // TODO: Add insert logic here
-
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            else
             {
-                return View();
+                ModelState.AddModelError("", "保存失败: " + result.Message);
+                await Init(vm);
+                return View(vm);
             }
         }
 
         // GET: Branch/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<ActionResult> Edit(int id)
         {
-            return View();
+            try
+            {
+                var vm = await _branchServices.GetById(id);
+                await Init(vm);
+                return View(vm);
+            }
+            catch (Exception ex)
+            {
+                return View();
+            }
         }
 
         // POST: Branch/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<ActionResult> Edit(int id, BranchViewModel vm)
         {
-            try
+            var result = await _branchServices.Update(vm,GetAccount());
+            if (result.Status == Status.ok)
             {
-                // TODO: Add update logic here
-
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            else
             {
-                return View();
+                ModelState.AddModelError("", "保存失败: " + result.Message);
+                await Init(vm);
+                return View(vm);
             }
         }
 
@@ -95,6 +131,33 @@ namespace AccessManagement.Controllers
             {
                 return View();
             }
+        }
+
+        public async Task<ActionResult> DeleteIds(string ids)
+        {
+            try
+            {
+                var result = await _branchServices.Delete(ids);
+                if (result.Status == Status.ok)
+                    return Json("ok");
+                else
+                    return Json(result.Message);
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        private async Task Init(BranchViewModel vm)
+        {
+            var branchs = await _basicInfoServices.GetBranchs(GetAccount());
+            if (vm.Id != 0)
+            {
+                branchs = branchs.Where(o=> o.Text != vm.Name).ToList();
+            }
+            branchs.Insert(0, new SelectListItem() { Text = "", Value = "" });
+            ViewBag.Branchs = branchs;
         }
     }
 }

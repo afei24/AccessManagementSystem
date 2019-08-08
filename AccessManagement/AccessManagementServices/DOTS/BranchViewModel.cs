@@ -15,6 +15,7 @@ namespace AccessManagementServices.DOTS
         }
         public int Id { get; set; }
 
+        [Display(Name = "父机构")]
         public int? ParentBranchId { get; set; }
 
         [Required]

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AccessManagement.Models;
 using AccessManagementServices.Common;
 using AccessManagementServices.DOTS;
+using AccessManagementServices.Filters;
 using AccessManagementServices.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -32,18 +33,25 @@ namespace AccessManagement.Controllers
         // GET: Company
         public async Task<ActionResult> Index()
         {
-            try
-            {
-                _logger.LogInformation("Index");
-                var vms = await _companyServices.GetList();
-                return View(vms);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex,ex.Message);
-                return View();
-            }
+            return View();
         }
+
+        public async Task<ActionResult> AjaxIndex()
+        {
+            var result = await _companyServices.GetList(GetFilters(), GetSort(), GetAccount());
+            return Json(result);
+        }
+        public CompanyFilters GetFilters()
+        {
+            var filters = new CompanyFilters()
+            {
+                Page = Convert.ToInt32(HttpContext.Request.Query["page"]),
+                Limit = Convert.ToInt32(HttpContext.Request.Query["limit"]),
+                Name = HttpContext.Request.Query["name"],
+            };
+            return filters;
+        }
+
 
         // GET: Company/Details/5
         public ActionResult Details(int id)
@@ -64,15 +72,16 @@ namespace AccessManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Create(CompanyViewModel vm)
         {
-            try
+            var result = await _companyServices.Create(vm, GetAccount());
+            if (result.Status == Status.ok)
             {
-                await _companyServices.Create(vm);
-
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            else
             {
-                return View();
+                ModelState.AddModelError("", "保存失败: " + result.Message);
+                await Init(vm);
+                return View(vm);
             }
         }
 
@@ -88,19 +97,16 @@ namespace AccessManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Edit(int id, CompanyViewModel vm)
         {
-            try
+            var result = await _companyServices.Update(vm);
+            if (result.Status == Status.ok)
             {
-                var result = await _companyServices.Update(vm);
-                if (result.Status != Status.ok)
-                {
-                    return Content("<script>alert('保存失败');history.back();</script>");
-                }
                 return RedirectToAction(nameof(Index));
             }
-            catch(Exception ex)
+            else
             {
-                _logger.LogError(ex, ex.Message);
-                return View();
+                ModelState.AddModelError("", "保存失败: " + result.Message);
+                await Init(vm);
+                return View(vm);
             }
         }
 
@@ -368,6 +374,22 @@ namespace AccessManagement.Controllers
                 // TODO: Add delete logic here
 
                 return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        public async Task<ActionResult> DeleteIds(string ids)
+        {
+            try
+            {
+                var result = await _companyServices.Delete(ids);
+                if (result.Status == Status.ok)
+                    return Json("ok");
+                else
+                    return Json(result.Message);
             }
             catch
             {
