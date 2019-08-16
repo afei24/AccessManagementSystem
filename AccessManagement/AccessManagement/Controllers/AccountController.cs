@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using WMSData;
 
 namespace AccessManagement.Controllers
 {
@@ -24,9 +25,10 @@ namespace AccessManagement.Controllers
         private AccessManagementContext _context;
         private PresetFunctionServices _presetFunctionServices;
         private BasicInfoServices _basicInfoServices;
+        private LuJCDBContext _luJCDBContext;
         public AccountController(IAccountServices accountServices, IMapper mapper, AccessManagementContext context
             ,PresetFunctionServices presetFunctionServices, ILogger<AccountController> logger
-            , BasicInfoServices basicInfoServices)
+            , BasicInfoServices basicInfoServices, LuJCDBContext luJCDBContext)
             : base(logger)
         {
             _accountServices = accountServices;
@@ -34,6 +36,7 @@ namespace AccessManagement.Controllers
             _context = context;
             _presetFunctionServices = presetFunctionServices;
             _basicInfoServices = basicInfoServices;
+            _luJCDBContext = luJCDBContext;
     }
         // GET: Account
         public async Task<ActionResult> Index()

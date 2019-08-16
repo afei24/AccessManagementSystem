@@ -9,5 +9,7 @@ namespace AccessManagementServices.Filters
     {
         public int Page { get; set; }
         public int Limit { get; set; }
+        public int CompanyId { get; set; }
+        public int BranchId { get; set; }
     }
 }

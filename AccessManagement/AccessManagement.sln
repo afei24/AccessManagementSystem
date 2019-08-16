@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessManagement", "AccessM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessManagementServices", "AccessManagementServices\AccessManagementServices.csproj", "{58F87E22-6A1B-41B0-8DA8-7331B1CC23D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessManagementData", "AccessManagementData\AccessManagementData.csproj", "{19BF0E70-9009-4B5C-977C-425ACAE8DDD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessManagementData", "AccessManagementData\AccessManagementData.csproj", "{19BF0E70-9009-4B5C-977C-425ACAE8DDD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMSData", "WMSData\WMSData.csproj", "{0B4E6EEE-7038-4CFB-A8CE-89D0E49DDF16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{19BF0E70-9009-4B5C-977C-425ACAE8DDD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19BF0E70-9009-4B5C-977C-425ACAE8DDD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19BF0E70-9009-4B5C-977C-425ACAE8DDD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B4E6EEE-7038-4CFB-A8CE-89D0E49DDF16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4E6EEE-7038-4CFB-A8CE-89D0E49DDF16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B4E6EEE-7038-4CFB-A8CE-89D0E49DDF16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4E6EEE-7038-4CFB-A8CE-89D0E49DDF16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

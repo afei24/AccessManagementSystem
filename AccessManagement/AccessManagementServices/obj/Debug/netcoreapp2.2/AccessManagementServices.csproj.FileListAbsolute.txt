@@ -1,8 +1,12 @@
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementServices\bin\Debug\netcoreapp2.2\AccessManagementServices.deps.json
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagementServices\bin\Debug\netcoreapp2.2\AccessManagementServices.runtimeconfig.json
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagementServices\bin\Debug\netcoreapp2.2\AccessManagementServices.runtimeconfig.dev.json
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementServices\bin\Debug\netcoreapp2.2\AccessManagementServices.dll
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementServices\bin\Debug\netcoreapp2.2\AccessManagementServices.pdb
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementServices\bin\Debug\netcoreapp2.2\AccessManagementData.dll
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagementServices\bin\Debug\netcoreapp2.2\WMSData.dll
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementServices\bin\Debug\netcoreapp2.2\AccessManagementData.pdb
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagementServices\bin\Debug\netcoreapp2.2\WMSData.pdb
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementServices\obj\Debug\netcoreapp2.2\AccessManagementServices.csprojAssemblyReference.cache
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementServices\obj\Debug\netcoreapp2.2\AccessManagementServices.csproj.CoreCompileInputs.cache
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagementServices\obj\Debug\netcoreapp2.2\AccessManagementServices.AssemblyInfoInputs.cache

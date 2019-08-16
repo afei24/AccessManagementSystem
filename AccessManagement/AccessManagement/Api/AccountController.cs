@@ -8,6 +8,7 @@ using AccessManagementServices.Common;
 using AccessManagementServices.DOTS;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WMSData;
 
 namespace AccessManagement.Api
 {
@@ -16,9 +17,11 @@ namespace AccessManagement.Api
     public class AccountController : ControllerBase
     {
         private AccessManagementContext _context;
-        public AccountController(AccessManagementContext context)
+        private LuJCDBContext _luJCDBContext;
+        public AccountController(AccessManagementContext context, LuJCDBContext luJCDBContext)
         {
             _context = context;
+            _luJCDBContext = luJCDBContext;
         }
         // GET: api/Account
         [HttpGet]

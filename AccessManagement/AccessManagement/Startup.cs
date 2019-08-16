@@ -20,6 +20,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;
+using WMSData;
 
 namespace AccessManagement
 {
@@ -57,6 +58,9 @@ namespace AccessManagement
             services.AddDbContext<AccessManagementContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
                 providerOptions => providerOptions.EnableRetryOnFailure()));
+            services.AddDbContext<LuJCDBContext>(options =>
+                options.UseSqlServer(Configuration["WMSConnectionStrings:DefaultConnection"],
+                providerOptions => providerOptions.EnableRetryOnFailure()));
             services.AddTransient<CompanyServices, CompanyServices>();
             services.AddTransient<BasicInfoServices, BasicInfoServices>();
             services.AddTransient<AppMenuServices>();
@@ -64,6 +68,11 @@ namespace AccessManagement
             services.AddTransient<BranchServices>();
             services.AddTransient<PresetFunctionServices>();
             services.AddTransient<RoleServices>();
+            services.AddTransient<LocationServices>();
+            services.AddTransient<SupplierServices>();
+            services.AddTransient<CustomerServices>();
+            services.AddTransient<MeasureServices>();
+            
 
             services.AddAutoMapper(typeof(Startup));
             Mapper.Initialize(cfg =>
@@ -106,6 +115,8 @@ namespace AccessManagement
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Account}/{action=Index}/{id?}");
+                routes.MapAreaRoute("IMS", "IMS", "IMS/{controller}/{action}/{id?}",
+                    defaults: new { Controller = "Location", Action = "Index" });
             });
             
         }
