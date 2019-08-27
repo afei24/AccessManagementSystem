@@ -42,5 +42,6 @@ namespace WMSData
         public string VolumeSize { get; set; }
         public string Volume { get; set; }
         public string Batch { get; set; }
+        public int CompanyId { get; set; }
     }
 }

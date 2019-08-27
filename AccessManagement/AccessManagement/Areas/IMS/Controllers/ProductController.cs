@@ -2,20 +2,49 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AccessManagement.Controllers;
+using AccessManagementServices.Filters;
+using AccessManagementServices.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace AccessManagement.Areas.IMS.Controllers
 {
     [Area("IMS")]
-    public class ProductController : Controller
+    public class ProductController : BaseController
     {
-        // GET: Product
-        public ActionResult Index()
+        private ProductServices _productServices;
+        private BasicInfoServices _basicInfoServices;
+        public ProductController(ProductServices productServices, BasicInfoServices basicInfoServices
+            , ILogger<ProductController> logger)
+            : base(logger)
+        {
+            _productServices = productServices;
+            _basicInfoServices = basicInfoServices;
+        }
+
+        // GET: IMS/Location
+        public async Task<IActionResult> Index()
         {
             return View();
         }
-
+        public async Task<ActionResult> AjaxIndex()
+        {
+            var result = await _productServices.GetList(GetFilters(), GetSort());
+            return Json(result);
+        }
+        public ProductFilters GetFilters()
+        {
+            var filters = new ProductFilters()
+            {
+                Page = Convert.ToInt32(HttpContext.Request.Query["page"]),
+                Limit = Convert.ToInt32(HttpContext.Request.Query["limit"]),
+                Name = HttpContext.Request.Query["name"],
+                Code = HttpContext.Request.Query["code"],
+            };
+            return filters;
+        }
         // GET: Product/Details/5
         public ActionResult Details(int id)
         {

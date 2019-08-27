@@ -66,3 +66,16 @@ C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\net
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\IMS\Views\Supplier\Index.g.cshtml.cs
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\IMS\Views\Customer\Index.g.cshtml.cs
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\IMS\Views\Measure\Index.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\IMS\Views\Goods\Index.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\IMS\Views\Product\Index.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\WMS\Views\InStorage\Index.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\WMS\Views\OutStorage\Index.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\WMS\Views\CheckStock\Index.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\Report\Views\LocalProduct\Index.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\Report\Views\ProductReport\Index.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\Report\Views\InStorageReport\Index.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\Report\Views\OutStorageReport\Index.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\Report\Views\BadReport\Index.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\WMS\Views\Bad\Index.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\Report\Views\CustomerReport\Index.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\Report\Views\SupplierReport\Index.g.cshtml.cs

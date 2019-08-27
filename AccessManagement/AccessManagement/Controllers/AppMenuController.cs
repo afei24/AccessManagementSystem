@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AccessManagement.Filter;
 using AccessManagement.Models;
 using AccessManagementServices.Common;
 using AccessManagementServices.DOTS;
@@ -15,6 +16,7 @@ using Microsoft.Extensions.Logging;
 
 namespace AccessManagement.Controllers
 {
+    [Access(FunctionCode.AppMenuManage)]
     public class AppMenuController : BaseController
     {
         private AppMenuServices _appMenuServices;

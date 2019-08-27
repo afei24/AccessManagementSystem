@@ -12,5 +12,6 @@ namespace WMSData
         public DateTime CreateTime { get; set; }
         public string CreateUser { get; set; }
         public string Remark { get; set; }
+        public int CompanyId { get; set; }
     }
 }

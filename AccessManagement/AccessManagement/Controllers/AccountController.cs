@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AccessManagement.Filter;
 using AccessManagement.Helper;
 using AccessManagementData;
 using AccessManagementServices;
@@ -39,6 +40,7 @@ namespace AccessManagement.Controllers
             _luJCDBContext = luJCDBContext;
     }
         // GET: Account
+        [Access(FunctionCode.AccountManage)]
         public async Task<ActionResult> Index()
         {
             //var vms = await _accountServices.GetList();

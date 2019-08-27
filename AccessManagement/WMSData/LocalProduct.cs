@@ -28,5 +28,6 @@ namespace WMSData
         public string Batch { get; set; }
         public double? InPrice { get; set; }
         public double? OutPrice { get; set; }
+        public int CompanyId { get; set; }
     }
 }

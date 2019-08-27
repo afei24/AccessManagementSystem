@@ -36,5 +36,6 @@ namespace WMSData
         public string EquipmentNum { get; set; }
         public string EquipmentCode { get; set; }
         public string Remark { get; set; }
+        public int CompanyId { get; set; }
     }
 }

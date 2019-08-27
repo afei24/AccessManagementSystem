@@ -58,6 +58,10 @@
   <ItemGroup>
     <Folder Include="Areas\IMS\Data\" />
     <Folder Include="Areas\IMS\Models\" />
+    <Folder Include="Areas\Report\Data\" />
+    <Folder Include="Areas\Report\Models\" />
+    <Folder Include="Areas\WMS\Data\" />
+    <Folder Include="Areas\WMS\Models\" />
   </ItemGroup>
 
 </Project>

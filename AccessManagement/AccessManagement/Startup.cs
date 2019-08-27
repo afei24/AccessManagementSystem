@@ -72,7 +72,13 @@ namespace AccessManagement
             services.AddTransient<SupplierServices>();
             services.AddTransient<CustomerServices>();
             services.AddTransient<MeasureServices>();
-            
+            services.AddTransient<ProductCategoryServices>();
+            services.AddTransient<ProductServices>();
+            services.AddTransient<InStorageServices>();
+            services.AddTransient<OutStorageServices>(); 
+            services.AddTransient<BadReportServices>();
+            services.AddTransient<CheckStockServices>();
+            services.AddTransient<LocalProductServices>(); 
 
             services.AddAutoMapper(typeof(Startup));
             Mapper.Initialize(cfg =>
@@ -114,9 +120,13 @@ namespace AccessManagement
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Account}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
                 routes.MapAreaRoute("IMS", "IMS", "IMS/{controller}/{action}/{id?}",
                     defaults: new { Controller = "Location", Action = "Index" });
+                routes.MapAreaRoute("WMS", "WMS", "WMS/{controller}/{action}/{id?}",
+                    defaults: new { Controller = "InStorage", Action = "Index" });
+                routes.MapAreaRoute("Report", "Report", "Report/{controller}/{action}/{id?}",
+                    defaults: new { Controller = "LocalProduct", Action = "Index" });
             });
             
         }
