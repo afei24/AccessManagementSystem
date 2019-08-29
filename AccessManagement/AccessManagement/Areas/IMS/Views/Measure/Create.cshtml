@@ -1,0 +1,29 @@
+﻿@model AccessManagementServices.DOTS.WMS.IMS.MeasureViewModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Create";
+}
+
+<br />
+<h3>新建</h3>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MeasureName" class="control-label"></label>
+                <input asp-for="MeasureName" class="form-control" />
+                <span asp-validation-for="MeasureName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="保存" class="layui-btn" />
+                <a asp-action="Index" class="layui-btn layui-btn-normal">返回</a>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

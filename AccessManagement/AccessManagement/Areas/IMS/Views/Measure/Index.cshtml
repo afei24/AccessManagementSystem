@@ -9,14 +9,14 @@
 <div class="layui-inline">
     <label class="layui-label">名称</label>&nbsp;
     <input type="text" name="name" id="name" class="layui-text">&nbsp;&nbsp;
-    <label class="layui-label">编码</label>&nbsp;
-    <input type="text" name="cod" id="code" class="layui-text">&nbsp;&nbsp;
+    @*<label class="layui-label">编码</label>&nbsp;
+    <input type="text" name="cod" id="code" class="layui-text">&nbsp;&nbsp;*@
     <button type="button" id="btnSearch" class="layui-btn layui-btn-sm" lay-event="delete"><i class="layui-icon layui-icon-search">查询</i></button>
 </div>
 
 <table class="table" id="measure_tb" lay-filter="measure"></table>
 <script type="text/html" id="bar">
-    <a class="layui-btn layui-btn-xs" lay-event="detail">查看</a>
+    @*<a class="layui-btn layui-btn-xs" lay-event="detail">查看</a>*@
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 
@@ -54,7 +54,7 @@
             , page: true //开启分页
             , cols: [[ //表头
                 { field: 'id', fixed: 'left', type: 'checkbox', sort: true }
-                , { field: 'measureNum', title: '编号', }
+                , { field: 'id', title: '编号', sort: true  }
                 , { field: 'measureName', title: '名称', sort: true }
                 , { fixed: 'right', width: 150, align: 'center', toolbar: '#bar' }
             ]]

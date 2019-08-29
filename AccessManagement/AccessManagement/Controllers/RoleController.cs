@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AccessManagement.Filter;
 using AccessManagementServices.Common;
 using AccessManagementServices.DOTS;
 using AccessManagementServices.Filters;
@@ -12,6 +13,7 @@ using Microsoft.Extensions.Logging;
 
 namespace AccessManagement.Controllers
 {
+    [Access(FunctionCode.RoleManage)]
     public class RoleController : BaseController
     {
         private RoleServices _roleServices;

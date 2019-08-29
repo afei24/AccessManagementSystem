@@ -1,0 +1,113 @@
+﻿@model AccessManagementServices.DOTS.WMS.IMS.ProductViewModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "新建";
+}
+
+<br />
+<h3>新建</h3>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BarCode" class="control-label"></label>
+                <input asp-for="BarCode" class="form-control" />
+                <span asp-validation-for="BarCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductName" class="control-label"></label>
+                <input asp-for="ProductName" class="form-control" />
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CateName" class="control-label"></label>
+                <select asp-items="@Model.Goods" asp-for="CateName" class="form-control"></select>
+                <span asp-validation-for="CateName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Num" class="control-label"></label>
+                <input asp-for="Num" class="form-control" />
+                <span asp-validation-for="Num" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MinNum" class="control-label"></label>
+                <input asp-for="MinNum" class="form-control" />
+                <span asp-validation-for="MinNum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaxNum" class="control-label"></label>
+                <input asp-for="MaxNum" class="form-control" />
+                <span asp-validation-for="MaxNum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Size" class="control-label"></label>
+                <input asp-for="Size" class="form-control" />
+                <span asp-validation-for="Size" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnitName" class="control-label"></label>
+                <select asp-items="@Model.Measures" asp-for="UnitName" class="form-control"></select>
+                <span asp-validation-for="UnitName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InPrice" class="control-label"></label>
+                <input asp-for="InPrice" class="form-control" />
+                <span asp-validation-for="InPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OutPrice" class="control-label"></label>
+                <input asp-for="OutPrice" class="form-control" />
+                <span asp-validation-for="OutPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AvgPrice" class="control-label"></label>
+                <input asp-for="AvgPrice" class="form-control" />
+                <span asp-validation-for="AvgPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StorageNum" class="control-label"></label>
+                <select asp-items="@Model.Branchs" asp-for="StorageNum" class="form-control"></select>
+                <span asp-validation-for="StorageNum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CusName" class="control-label"></label>
+                <select asp-items="@Model.Customers" asp-for="CusName" class="form-control"></select>
+                <span asp-validation-for="CusName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CanDepositNum" class="control-label"></label>
+                <input asp-for="CanDepositNum" class="form-control" />
+                <span asp-validation-for="CanDepositNum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValidityDays" class="control-label"></label>
+                <input asp-for="ValidityDays" class="form-control" />
+                <span asp-validation-for="ValidityDays" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VolumeSize" class="control-label"></label>
+                <input asp-for="VolumeSize" class="form-control" />
+                <span asp-validation-for="VolumeSize" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Volume" class="control-label"></label>
+                <input asp-for="Volume" class="form-control" />
+                <span asp-validation-for="Volume" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Remark" class="control-label"></label>
+                <input asp-for="Remark" class="form-control" />
+                <span asp-validation-for="Remark" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="保存" class="layui-btn" />
+                <a asp-action="Index" class="layui-btn layui-btn-normal">返回</a>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

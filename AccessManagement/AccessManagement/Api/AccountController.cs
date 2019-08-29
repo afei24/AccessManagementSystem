@@ -43,7 +43,7 @@ namespace AccessManagement.Api
 
         [HttpGet]
         [Route("GetAppMenu")]
-        public ApiResponse GetAppMenu()
+        public ApiResponse GetAppMenu(string itemedStrs)
         {
             if (HttpContext.Session.Get("functions") != null)
             {
@@ -61,6 +61,10 @@ namespace AccessManagement.Api
                             Id = parent.Id,
                             Name = parent.Name
                         };
+                        if (itemedStrs.Contains(_parent.Id.ToString()))
+                        {
+                            _parent.IsItemed = true;
+                        }
                         var childrens = appmenus.Where(o=>o.ParentId == appmenuParentId).ToList();
                         _parent.AppMenus = childrens.Select(o=>new AppMenuChildren() {
                             Name = o.Name,

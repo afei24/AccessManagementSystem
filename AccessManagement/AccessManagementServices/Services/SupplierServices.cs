@@ -24,9 +24,9 @@ namespace AccessManagementServices.Services
         {
             _context = context;
         }
-        public async Task<ResponseModel<SupplierViewModel>> GetList(SupplierFilter filters, SortCol sortCol)
+        public async Task<ResponseModel<SupplierViewModel>> GetList(SupplierFilter filters, SortCol sortCol, AccountViewModel account)
         {
-            var query = _context.Supplier.Where(o => o.Id != 0);
+            var query = _context.Supplier.Where(o => o.IsDelete == 0 && account.CompanyId == account.CompanyId);
             query = Search(query, filters);
             query = Sort(query, sortCol);
             var vms = await query.Skip((filters.Page - 1) * filters.Limit).Take(filters.Limit)
@@ -68,7 +68,7 @@ namespace AccessManagementServices.Services
                     query = sortCol.Type == "desc" ? query.OrderBy(o => o.Id) :
                         query.OrderByDescending(o => o.Id);
                     break;
-                case "localName":
+                case "supName":
                     query = sortCol.Type == "desc" ? query.OrderBy(o => o.SupName) :
                         query.OrderByDescending(o => o.SupName);
                     break;
@@ -87,10 +87,14 @@ namespace AccessManagementServices.Services
                      && o.CompanyId == account.CompanyId);
                 if (isExist)
                 {
-                    return new ServiceResponseBase() { Status = Status.error, Message = "存在重复库位" };
+                    return new ServiceResponseBase() { Status = Status.error, Message = "存在重复供应商" };
                 }
-                //vm.CompanyId = account.CompanyId;
+                vm.CompanyId = account.CompanyId;
+                vm.CreateTime = DateTime.Now;
+                vm.CreateUser = account.Name;
+                
                 var supplier = Mapper.Map<Supplier>(vm);
+                supplier.SupNum = supplier.Id.ToString();
                 await _context.Supplier.AddAsync(supplier);
                 await _context.SaveChangesAsync();
                 return new ServiceResponseBase() { Status = Status.ok };
@@ -109,7 +113,7 @@ namespace AccessManagementServices.Services
                      && o.CompanyId == account.CompanyId && o.Id != vm.Id);
                 if (isExist)
                 {
-                    return new ServiceResponseBase() { Status = Status.error, Message = "存在重复角色" };
+                    return new ServiceResponseBase() { Status = Status.error, Message = "存在重复供应商" };
                 }
                 var supplier = await _context.Supplier.FirstOrDefaultAsync(o => o.Id == vm.Id);
                 Mapper.Map(vm, supplier);
@@ -135,10 +139,10 @@ namespace AccessManagementServices.Services
                         continue;
 
                     var _id = Convert.ToInt32(id);
-                    var Supplier = await _context.Supplier.FirstOrDefaultAsync(o => o.Id == _id);
-                    if (Supplier != null)
+                    var supplier = await _context.Supplier.FirstOrDefaultAsync(o => o.Id == _id);
+                    if (supplier != null)
                     {
-                        _context.Entry(Supplier).State = EntityState.Deleted;
+                        supplier.IsDelete = 1;
                     }
                 }
 

@@ -23,13 +23,15 @@ namespace AccessManagementServices.Services
         {
             _context = context;
         }
-        public async Task<ResponseModel<LocationViewModel>> GetList(LocationFilters filters, SortCol sortCol)
+        public async Task<ResponseModel<LocationViewModel>> GetList(LocationFilters filters, SortCol sortCol
+            , AccountViewModel account)
         {
-            var query = _context.Location.Where(o => o.Id != 0);
+            var query = _context.Location.Where(o => o.IsDelete == 0&& o.CompanyId == account.CompanyId);
             query = Search(query, filters);
             query = Sort(query, sortCol);
             var vms = await query.Skip((filters.Page - 1) * filters.Limit).Take(filters.Limit)
                 .ProjectTo<LocationViewModel>().ToListAsync();
+
             ResponseModel<LocationViewModel> result = new ResponseModel<LocationViewModel>();
             result.status = 0;
             result.message = "";
@@ -67,9 +69,9 @@ namespace AccessManagementServices.Services
                     query = sortCol.Type == "desc" ? query.OrderBy(o => o.Id) :
                         query.OrderByDescending(o => o.Id);
                     break;
-                case "localName":
-                    query = sortCol.Type == "desc" ? query.OrderBy(o => o.LocalName) :
-                        query.OrderByDescending(o => o.LocalName);
+                case "localBarCode":
+                    query = sortCol.Type == "desc" ? query.OrderBy(o => o.LocalBarCode) :
+                        query.OrderByDescending(o => o.LocalBarCode);
                     break;
                 default:
                     query = query.OrderByDescending(o => o.Id);
@@ -82,14 +84,26 @@ namespace AccessManagementServices.Services
         {
             try
             {
-                var isExist = await _context.Location.AnyAsync(o => o.LocalName == vm.LocalName
+                var isExist = await _context.Location.AnyAsync(o => o.LocalBarCode == vm.LocalBarCode
                      && o.CompanyId == account.CompanyId);
                 if (isExist)
                 {
-                    return new ServiceResponseBase() { Status = Status.error, Message = "存在重复库位" };
+                    return new ServiceResponseBase() { Status = Status.error, Message = "存在重复条码" };
                 }
                 //vm.CompanyId = account.CompanyId;
                 var location = Mapper.Map<Location>(vm);
+                location.CompanyId = account.CompanyId;
+                location.LocalNum = location.Id.ToString();
+                location.CreateTime = DateTime.Now;
+                location.Rack = "";
+                location.Length = 0;                location.Width = 0;
+                location.Height = 0;
+                location.X = 0;
+                location.Y = 0;
+                location.Z = 0;
+                location.UnitNum = "";
+                location.UnitName = "";
+                location.StorageNum = location.BranchId.ToString();
                 await _context.Location.AddAsync(location);
                 await _context.SaveChangesAsync();
                 return new ServiceResponseBase() { Status = Status.ok };
@@ -104,14 +118,23 @@ namespace AccessManagementServices.Services
         {
             try
             {
-                var isExist = await _context.Location.AnyAsync(o => o.LocalName == vm.LocalName
+                var isExist = await _context.Location.AnyAsync(o => o.LocalBarCode == vm.LocalBarCode
                      && o.CompanyId == account.CompanyId && o.Id != vm.Id);
                 if (isExist)
                 {
-                    return new ServiceResponseBase() { Status = Status.error, Message = "存在重复角色" };
+                    return new ServiceResponseBase() { Status = Status.error, Message = "存在重复条码" };
                 }
                 var location = await _context.Location.FirstOrDefaultAsync(o => o.Id == vm.Id);
                 Mapper.Map(vm, location);
+                location.Rack = "";
+                location.Length = 0;                location.Width = 0;
+                location.Height = 0;
+                location.X = 0;
+                location.Y = 0;
+                location.Z = 0;
+                location.UnitNum = "";
+                location.UnitName = "";
+                location.StorageNum = location.BranchId.ToString();
                 _context.Entry(location).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
                 return new ServiceResponseBase() { Status = Status.ok };
@@ -137,7 +160,7 @@ namespace AccessManagementServices.Services
                     var location = await _context.Location.FirstOrDefaultAsync(o => o.Id == _id);
                     if (location != null)
                     {
-                        _context.Entry(location).State = EntityState.Deleted;
+                        location.IsDelete = 1;
                     }
                 }
 

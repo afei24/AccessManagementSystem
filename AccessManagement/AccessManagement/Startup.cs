@@ -78,8 +78,8 @@ namespace AccessManagement
             services.AddTransient<OutStorageServices>(); 
             services.AddTransient<BadReportServices>();
             services.AddTransient<CheckStockServices>();
-            services.AddTransient<LocalProductServices>(); 
-
+            services.AddTransient<LocalProductServices>();
+            //services.AddScoped<AddHeaderFilterWithDI>();
             services.AddAutoMapper(typeof(Startup));
             Mapper.Initialize(cfg =>
                 {

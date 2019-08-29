@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AccessManagement.Controllers;
+using AccessManagementServices.Common;
+using AccessManagementServices.DOTS;
 using AccessManagementServices.Filters;
 using AccessManagementServices.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -33,7 +35,13 @@ namespace AccessManagement.Areas.IMS.Controllers
         }
         public async Task<ActionResult> AjaxIndex()
         {
-            var result = await _locationServices.GetList(GetFilters(), GetSort());
+            var result = await _locationServices.GetList(GetFilters(), GetSort(), GetAccount());
+            var branchs =await _basicInfoServices.GetBranchs(GetAccount());
+            foreach (var vm in result.data)
+            {
+                var branchId = vm.BranchId.ToString();
+                vm.StorageNum = branchs.FirstOrDefault(o=>o.Value == branchId).Text;
+            }
             return Json(result);
         }
         public LocationFilters GetFilters()
@@ -55,9 +63,11 @@ namespace AccessManagement.Areas.IMS.Controllers
         }
 
         // GET: IMS/Location/Create
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            return View();
+            var vm = new LocationViewModel();
+            await Init(vm);
+            return View(vm);
         }
 
         // POST: IMS/Location/Create
@@ -65,19 +75,27 @@ namespace AccessManagement.Areas.IMS.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,LocalNum,LocalBarCode,LocalName,StorageNum,StorageType,LocalType,Rack,Length,Width,Height,X,Y,Z,UnitNum,UnitName,Remark,IsForbid,IsDefault,IsDelete,CreateTime")] Location location)
+        public async Task<IActionResult> Create(LocationViewModel vm)
         {
-            if (ModelState.IsValid)
+            var result = await _locationServices.Create(vm, GetAccount());
+            if (result.Status == Status.ok)
             {
+                return RedirectToAction(nameof(Index));
             }
-            return View(location);
+            else
+            {
+                ModelState.AddModelError("", "保存失败: " + result.Message);
+                await Init(vm);
+                return View(vm);
+            }
         }
 
         // GET: IMS/Location/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-
-            return View();
+            var vm = await _locationServices.GetById((int)id);
+            await Init(vm);
+            return View(vm);
         }
 
         // POST: IMS/Location/Edit/5
@@ -85,27 +103,19 @@ namespace AccessManagement.Areas.IMS.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,LocalNum,LocalBarCode,LocalName,StorageNum,StorageType,LocalType,Rack,Length,Width,Height,X,Y,Z,UnitNum,UnitName,Remark,IsForbid,IsDefault,IsDelete,CreateTime")] Location location)
+        public async Task<IActionResult> Edit(int id, LocationViewModel vm)
         {
-            if (id != location.Id)
+            var result = await _locationServices.Update(vm, GetAccount());
+            if (result.Status == Status.ok)
             {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    //_context.Update(location);
-                    //await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-
-                }
                 return RedirectToAction(nameof(Index));
             }
-            return View(location);
+            else
+            {
+                ModelState.AddModelError("", "保存失败: " + result.Message);
+                await Init(vm);
+                return View(vm);
+            }
         }
 
         // GET: IMS/Location/Delete/5
@@ -126,6 +136,26 @@ namespace AccessManagement.Areas.IMS.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             return RedirectToAction(nameof(Index));
+        }
+        public async Task<ActionResult> DeleteIds(string ids)
+        {
+            try
+            {
+                var result = await _locationServices.Delete(ids);
+                if (result.Status == Status.ok)
+                    return Json("ok");
+                else
+                    return Json(result.Message);
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        public async Task Init(LocationViewModel vm)
+        {
+            vm.Branchs =await _basicInfoServices.GetBranchs(GetAccount());
         }
 
     }

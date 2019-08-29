@@ -14,6 +14,7 @@ namespace AccessManagementServices.DOTS
         public int Id { get; set; }
         public string Name { get; set; }
         public List<AppMenuChildren> AppMenus { get; set; }
+        public bool IsItemed { get; set; }
     }
 
     public class AppMenuChildren

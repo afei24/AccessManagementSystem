@@ -24,9 +24,9 @@ namespace AccessManagementServices.Services
         {
             _context = context;
         }
-        public async Task<ResponseModel<MeasureViewModel>> GetList(MeasureFilters filters, SortCol sortCol)
+        public async Task<ResponseModel<MeasureViewModel>> GetList(MeasureFilters filters, SortCol sortCol,AccountViewModel account)
         {
-            var query = _context.Measure.Where(o => o.Id != 0);
+            var query = _context.Measure.Where(o => o.CompanyId == account.CompanyId);
             query = Search(query, filters);
             query = Sort(query, sortCol);
             var vms = await query.Skip((filters.Page - 1) * filters.Limit).Take(filters.Limit)
@@ -68,7 +68,7 @@ namespace AccessManagementServices.Services
                     query = sortCol.Type == "desc" ? query.OrderBy(o => o.Id) :
                         query.OrderByDescending(o => o.Id);
                     break;
-                case "localName":
+                case "measureName":
                     query = sortCol.Type == "desc" ? query.OrderBy(o => o.MeasureName) :
                         query.OrderByDescending(o => o.MeasureName);
                     break;
@@ -87,10 +87,12 @@ namespace AccessManagementServices.Services
                      && o.CompanyId == account.CompanyId);
                 if (isExist)
                 {
-                    return new ServiceResponseBase() { Status = Status.error, Message = "存在重复库位" };
+                    return new ServiceResponseBase() { Status = Status.error, Message = "存在重复名称" };
                 }
-                //vm.CompanyId = account.CompanyId;
+                vm.CompanyId = account.CompanyId;
                 var measure = Mapper.Map<Measure>(vm);
+                measure.MeasureNum = "";
+                measure.Sn = "";
                 await _context.Measure.AddAsync(measure);
                 await _context.SaveChangesAsync();
                 return new ServiceResponseBase() { Status = Status.ok };
@@ -109,10 +111,12 @@ namespace AccessManagementServices.Services
                      && o.CompanyId == account.CompanyId && o.Id != vm.Id);
                 if (isExist)
                 {
-                    return new ServiceResponseBase() { Status = Status.error, Message = "存在重复角色" };
+                    return new ServiceResponseBase() { Status = Status.error, Message = "存在重复名称" };
                 }
                 var measure = await _context.Measure.FirstOrDefaultAsync(o => o.Id == vm.Id);
                 Mapper.Map(vm, measure);
+                measure.MeasureNum = "";
+                measure.Sn = "";
                 _context.Entry(measure).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
                 return new ServiceResponseBase() { Status = Status.ok };

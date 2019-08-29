@@ -68,6 +68,7 @@ namespace AccessManagement.Controllers
             return View(new AccountViewModel());
         }
 
+        //[ServiceFilter(typeof(AddHeaderFilterWithDI))]
         [HttpPost]
         public async Task<ActionResult> Login(AccountViewModel vm)
         {
@@ -90,7 +91,8 @@ namespace AccessManagement.Controllers
                 HttpContext.Session.Set("branch", SerializeHelper.SerializeToBinary(branch));
                 HttpContext.Session.Set("company", SerializeHelper.SerializeToBinary(company));
                 HttpContext.Session.Set("functions", SerializeHelper.SerializeToBinary(functions));
-                return Redirect("Index");
+                var appmenu =await _context.AppMenu.FirstOrDefaultAsync(o=>o.Code == functions.FirstOrDefault().Code);
+                return Redirect(appmenu.Route);
             }
             ModelState.AddModelError("", "用户名或密码错误。");
             return View();

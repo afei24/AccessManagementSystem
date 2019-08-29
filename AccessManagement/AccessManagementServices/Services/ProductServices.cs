@@ -24,9 +24,10 @@ namespace AccessManagementServices.Services
         {
             _context = context;
         }
-        public async Task<ResponseModel<ProductViewModel>> GetList(ProductFilters filters, SortCol sortCol)
+        public async Task<ResponseModel<ProductViewModel>> GetList(ProductFilters filters, SortCol sortCol
+            ,AccountViewModel account)
         {
-            var query = _context.Product.Where(o => o.Id != 0);
+            var query = _context.Product.Where(o => o.IsDelete == 0 && o.CompanyId == account.CompanyId);
             query = Search(query, filters);
             query = Sort(query, sortCol);
             var vms = await query.Skip((filters.Page - 1) * filters.Limit).Take(filters.Limit)
@@ -58,6 +59,10 @@ namespace AccessManagementServices.Services
             {
                 query = query.Where(o => o.ProductName.Contains(filters.Name));
             }
+            if (!string.IsNullOrWhiteSpace(filters.Code))
+            {
+                query = query.Where(o => o.BarCode.Contains(filters.Code));
+            }
             return query;
         }
         public IQueryable<Product> Sort(IQueryable<Product> query, SortCol sortCol)
@@ -68,9 +73,13 @@ namespace AccessManagementServices.Services
                     query = sortCol.Type == "desc" ? query.OrderBy(o => o.Id) :
                         query.OrderByDescending(o => o.Id);
                     break;
-                case "localName":
+                case "productName":
                     query = sortCol.Type == "desc" ? query.OrderBy(o => o.ProductName) :
                         query.OrderByDescending(o => o.ProductName);
+                    break;
+                case "barCode":
+                    query = sortCol.Type == "desc" ? query.OrderBy(o => o.BarCode) :
+                        query.OrderByDescending(o => o.BarCode);
                     break;
                 default:
                     query = query.OrderByDescending(o => o.Id);
@@ -83,13 +92,16 @@ namespace AccessManagementServices.Services
         {
             try
             {
-                var isExist = await _context.Product.AnyAsync(o => o.ProductName == vm.ProductName
+                var isExist = await _context.Product.AnyAsync(o => o.BarCode == vm.BarCode
                      && o.CompanyId == account.CompanyId);
                 if (isExist)
                 {
-                    return new ServiceResponseBase() { Status = Status.error, Message = "存在重复库位" };
+                    return new ServiceResponseBase() { Status = Status.error, Message = "存在重复条码" };
                 }
-                //vm.CompanyId = account.CompanyId;
+                vm.CompanyId = account.CompanyId;
+                vm.CreateTime = DateTime.Now;
+                vm.CreateUser = account.Name;
+                vm.SnNum = "";
                 var product = Mapper.Map<Product>(vm);
                 await _context.Product.AddAsync(product);
                 await _context.SaveChangesAsync();
@@ -105,13 +117,14 @@ namespace AccessManagementServices.Services
         {
             try
             {
-                var isExist = await _context.Product.AnyAsync(o => o.ProductName == vm.ProductName
+                var isExist = await _context.Product.AnyAsync(o => o.BarCode == vm.BarCode
                      && o.CompanyId == account.CompanyId && o.Id != vm.Id);
                 if (isExist)
                 {
-                    return new ServiceResponseBase() { Status = Status.error, Message = "存在重复角色" };
+                    return new ServiceResponseBase() { Status = Status.error, Message = "存在重复条码" };
                 }
                 var product = await _context.Product.FirstOrDefaultAsync(o => o.Id == vm.Id);
+                vm.SnNum = "";
                 Mapper.Map(vm, product);
                 _context.Entry(product).State = EntityState.Modified;
                 await _context.SaveChangesAsync();

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AccessManagement.Controllers;
+using AccessManagementServices.Common;
+using AccessManagementServices.DOTS.WMS.IMS;
 using AccessManagementServices.Filters;
 using AccessManagementServices.Services;
 using Microsoft.AspNetCore.Http;
@@ -31,7 +33,7 @@ namespace AccessManagement.Areas.IMS.Controllers
         }
         public async Task<ActionResult> AjaxIndex()
         {
-            var result = await _productCategoryServices.GetList(GetFilters(), GetSort());
+            var result = await _productCategoryServices.GetList(GetFilters(), GetSort(),GetAccount());
             return Json(result);
         }
         public ProductCategoryFilters GetFilters()
@@ -51,49 +53,47 @@ namespace AccessManagement.Areas.IMS.Controllers
             return View();
         }
 
-        // GET: Goods/Create
-        public ActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            return View();
+            var vm = new ProductCategoryViewModel();
+            return View(vm);
         }
 
-        // POST: Goods/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<IActionResult> Create(ProductCategoryViewModel vm)
         {
-            try
+            var result = await _productCategoryServices.Create(vm, GetAccount());
+            if (result.Status == Status.ok)
             {
-                // TODO: Add insert logic here
-
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            else
             {
-                return View();
+                ModelState.AddModelError("", "保存失败: " + result.Message);
+                return View(vm);
             }
         }
 
-        // GET: Goods/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int? id)
         {
-            return View();
+            var vm = await _productCategoryServices.GetById((int)id);
+            return View(vm);
         }
 
-        // POST: Goods/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<IActionResult> Edit(int id, ProductCategoryViewModel vm)
         {
-            try
+            var result = await _productCategoryServices.Update(vm, GetAccount());
+            if (result.Status == Status.ok)
             {
-                // TODO: Add update logic here
-
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            else
             {
-                return View();
+                ModelState.AddModelError("", "保存失败: " + result.Message);
+                return View(vm);
             }
         }
 
@@ -113,6 +113,22 @@ namespace AccessManagement.Areas.IMS.Controllers
                 // TODO: Add delete logic here
 
                 return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        public async Task<ActionResult> DeleteIds(string ids)
+        {
+            try
+            {
+                var result = await _productCategoryServices.Delete(ids);
+                if (result.Status == Status.ok)
+                    return Json("ok");
+                else
+                    return Json(result.Message);
             }
             catch
             {

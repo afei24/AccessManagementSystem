@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AccessManagement.Filter;
 using AccessManagementServices.Common;
 using AccessManagementServices.DOTS;
 using AccessManagementServices.Filters;
@@ -13,6 +14,7 @@ using Microsoft.Extensions.Logging;
 
 namespace AccessManagement.Controllers
 {
+    [Access(FunctionCode.BranchManage)]
     public class BranchController : BaseController
     {
         private BranchServices _branchServices;

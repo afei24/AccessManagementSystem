@@ -79,3 +79,16 @@ C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\net
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\WMS\Views\Bad\Index.g.cshtml.cs
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\Report\Views\CustomerReport\Index.g.cshtml.cs
 C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\Report\Views\SupplierReport\Index.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\IMS\Views\Customer\Create.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\IMS\Views\Customer\Edit.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\IMS\Views\_ViewImports.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\Report\Views\_ViewImports.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\WMS\Views\_ViewImports.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\IMS\Views\Supplier\Create.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\IMS\Views\Supplier\Edit.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\IMS\Views\Measure\Create.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\IMS\Views\Measure\Edit.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\IMS\Views\Goods\Create.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\IMS\Views\Goods\Edit.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\IMS\Views\Product\Create.g.cshtml.cs
+C:\项目\AccessManagementSystem\AccessManagement\AccessManagement\obj\Debug\netcoreapp2.2\Razor\Areas\IMS\Views\Product\Edit.g.cshtml.cs

@@ -109,8 +109,25 @@
         </div>
     </div>
     <script>
+        var itemeds = [];
+        var itemedStrs
+        function divchild() {
+            //这里是divchild事件的代码 
+            console.log('divchild事件');
+            stopPropagation();
+            
+        }
+
+        function stopPropagation(e) {
+            e = e || window.event;
+            if (e.stopPropagation) { //W3C阻止冒泡方法  
+                e.stopPropagation();
+            } else {
+                e.cancelBubble = true; //IE阻止冒泡方法  
+            }
+        }
         $.ajax({
-            url: "/api/Account/GetAppMenu",
+            url: "/api/Account/GetAppMenu?itemedStrs=" + itemedStrs,
             dataType: "json",
             type: "Get",
             contentType: "application/json",
@@ -123,18 +140,28 @@
                 else {
                     for (var i = 0; i < data.data.length; i++) {
                         var itemed = "";
-                        if (i == 0) {
+                        if (data.data[i].IsItemed) {
                             itemed = " layui-nav-itemed";
                         }
-                        var liStr = '<li class="layui-nav-item' + itemed + '"><a class="" href="javascript:;" >' +
+                        var liStr = '<li class="layui-nav-item' + itemed + '" id="' + data.data[i].id+'"><a class="" href="javascript:;" >' +
                             data.data[i].name + '</a><dl class="layui-nav-child">';
                         for (var j = 0; j < data.data[i].appMenus.length; j++) {
                             liStr += '<dd><a href="' + data.data[i].appMenus[j].route
-                                + '">' + data.data[i].appMenus[j].name + '</a></dd>';
+                                + '" onclick="divchild(this)" >' + data.data[i].appMenus[j].name + '</a></dd>';
                         }
                         liStr += '</dl></li >';
                         $("#leftScroll").append(liStr);
                     }
+                    $(".layui-nav-item").click(function () {
+                        var id = $(this).attr("id");
+                        if (itemeds.indexOf(id) > -1) {
+                            itemeds.pop(id);
+                        }
+                        else {
+                            itemeds.push(id);
+                        }
+                        itemedStrs = itemeds.join(',');
+                    });
                 }
                 //千万不要忘了加载 element模块。虽然大部分行为都是在加载完该模块后自动完成的，
                 //但一些交互操作，如呼出二级菜单等，需借助element模块才能使用

@@ -1,0 +1,45 @@
+﻿@model AccessManagementServices.DOTS.WMS.IMS.MeasureViewModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "编辑";
+}
+
+<br />
+<h3>编辑</h3>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group" style="display:none;">
+                <label asp-for="Sn" class="control-label"></label>
+                <input asp-for="Sn" class="form-control" />
+                <span asp-validation-for="Sn" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="display:none;">
+                <label asp-for="MeasureNum" class="control-label"></label>
+                <input asp-for="MeasureNum" class="form-control" />
+                <span asp-validation-for="MeasureNum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MeasureName" class="control-label"></label>
+                <input asp-for="MeasureName" class="form-control" />
+                <span asp-validation-for="MeasureName" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="display:none;">
+                <label asp-for="CompanyId" class="control-label"></label>
+                <input asp-for="CompanyId" class="form-control" />
+                <span asp-validation-for="CompanyId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="保存" class="layui-btn" />
+                <a asp-action="Index" class="layui-btn layui-btn-normal">返回</a>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

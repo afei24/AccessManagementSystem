@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AccessManagement.Filter;
 using AccessManagement.Models;
 using AccessManagementServices.Common;
 using AccessManagementServices.DOTS;
@@ -15,6 +16,7 @@ using NLog;
 
 namespace AccessManagement.Controllers
 {
+    [Access(FunctionCode.CompanyManagement)]
     public class CompanyController : BaseController
     {
         private CompanyServices _companyServices;

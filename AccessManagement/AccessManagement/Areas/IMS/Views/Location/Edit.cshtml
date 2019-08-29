@@ -1,19 +1,19 @@
-﻿@model WMSData.Location
-
+﻿@model AccessManagementServices.DOTS.LocationViewModel
+@inject AccessManagementServices.Services.BasicInfoServices BasicInfoServices;
 @{
-    ViewData["Title"] = "Edit";
+    Layout = "_Layout";
+    ViewData["Title"] = "编辑";
 }
 
-<h1>Edit</h1>
-
-<h4>Location</h4>
+<br />
+<h3>编辑</h3>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
-            <div class="form-group">
+            <div class="form-group" style="display:none;">
                 <label asp-for="LocalNum" class="control-label"></label>
                 <input asp-for="LocalNum" class="form-control" />
                 <span asp-validation-for="LocalNum" class="text-danger"></span>
@@ -28,99 +28,64 @@
                 <input asp-for="LocalName" class="form-control" />
                 <span asp-validation-for="LocalName" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:none;">
                 <label asp-for="StorageNum" class="control-label"></label>
                 <input asp-for="StorageNum" class="form-control" />
                 <span asp-validation-for="StorageNum" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:none;">
                 <label asp-for="StorageType" class="control-label"></label>
                 <input asp-for="StorageType" class="form-control" />
                 <span asp-validation-for="StorageType" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="BranchId" class="control-label"></label>
+                <select asp-items="@Model.Branchs" asp-for="BranchId" class="form-control"></select>
+                <span asp-validation-for="StorageNum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="LocalType" class="control-label"></label>
-                <input asp-for="LocalType" class="form-control" />
+                <select asp-items="@BasicInfoServices.GetLocalType()" asp-for="LocalType" class="form-control"></select>
                 <span asp-validation-for="LocalType" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Rack" class="control-label"></label>
-                <input asp-for="Rack" class="form-control" />
-                <span asp-validation-for="Rack" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Length" class="control-label"></label>
-                <input asp-for="Length" class="form-control" />
-                <span asp-validation-for="Length" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Width" class="control-label"></label>
-                <input asp-for="Width" class="form-control" />
-                <span asp-validation-for="Width" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Height" class="control-label"></label>
-                <input asp-for="Height" class="form-control" />
-                <span asp-validation-for="Height" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="X" class="control-label"></label>
-                <input asp-for="X" class="form-control" />
-                <span asp-validation-for="X" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Y" class="control-label"></label>
-                <input asp-for="Y" class="form-control" />
-                <span asp-validation-for="Y" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Z" class="control-label"></label>
-                <input asp-for="Z" class="form-control" />
-                <span asp-validation-for="Z" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UnitNum" class="control-label"></label>
-                <input asp-for="UnitNum" class="form-control" />
-                <span asp-validation-for="UnitNum" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UnitName" class="control-label"></label>
-                <input asp-for="UnitName" class="form-control" />
-                <span asp-validation-for="UnitName" class="text-danger"></span>
-            </div>
+
             <div class="form-group">
                 <label asp-for="Remark" class="control-label"></label>
                 <input asp-for="Remark" class="form-control" />
                 <span asp-validation-for="Remark" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:none;">
                 <label asp-for="IsForbid" class="control-label"></label>
                 <input asp-for="IsForbid" class="form-control" />
                 <span asp-validation-for="IsForbid" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:none;">
                 <label asp-for="IsDefault" class="control-label"></label>
                 <input asp-for="IsDefault" class="form-control" />
                 <span asp-validation-for="IsDefault" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:none;">
                 <label asp-for="IsDelete" class="control-label"></label>
                 <input asp-for="IsDelete" class="form-control" />
                 <span asp-validation-for="IsDelete" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:none;">
                 <label asp-for="CreateTime" class="control-label"></label>
                 <input asp-for="CreateTime" class="form-control" />
                 <span asp-validation-for="CreateTime" class="text-danger"></span>
             </div>
+            <div class="form-group" style="display:none;">
+                <label asp-for="CompanyId" class="control-label"></label>
+                <input asp-for="CompanyId" class="form-control" />
+                <span asp-validation-for="CompanyId" class="text-danger"></span>
+            </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="保存" class="layui-btn" />
+                <a asp-action="Index" class="layui-btn layui-btn-normal">返回</a>
             </div>
         </form>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

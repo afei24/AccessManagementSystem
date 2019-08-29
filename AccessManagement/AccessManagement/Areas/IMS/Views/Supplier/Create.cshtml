@@ -1,0 +1,55 @@
+﻿@model AccessManagementServices.DOTS.WMS.IMS.SupplierViewModel
+@inject AccessManagementServices.Services.BasicInfoServices BasicInfoServices;
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Create";
+}
+
+<br />
+<h3>新建</h3>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SupName" class="control-label"></label>
+                <input asp-for="SupName" class="form-control" />
+                <span asp-validation-for="SupName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SupType" class="control-label"></label>
+                <select asp-items="@BasicInfoServices.GetSupType()" asp-for="SupType" class="form-control"></select>
+                <span asp-validation-for="SupType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactName" class="control-label"></label>
+                <input asp-for="ContactName" class="form-control" />
+                <span asp-validation-for="ContactName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="保存" class="layui-btn" />
+                <a asp-action="Index" class="layui-btn layui-btn-normal">返回</a>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
