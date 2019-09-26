@@ -1,4 +1,5 @@
-﻿@{
+﻿@inject AccessManagementServices.Services.BasicInfoServices BasicInfoServices;
+@{
     Layout = "_Layout";
     ViewData["Title"] = "入库管理";
 }
@@ -8,22 +9,30 @@
 <br />
 <div class="layui-inline">
     <label class="layui-label">单号</label>&nbsp;
-    <input type="text" name="name" id="orderNum" class="layui-text">&nbsp;&nbsp;
-    <label class="layui-label">编码</label>&nbsp;
-    <input type="text" name="cod" id="code" class="layui-text">&nbsp;&nbsp;
+    <div class="layui-inline">
+        <input type="text" name="name" id="orderNum" class="layui-input">
+    </div>&nbsp;&nbsp;
+    <label class="layui-label">状态</label>&nbsp;
+    <div class="layui-inline">
+        <select asp-items="@BasicInfoServices.GetInOpStatus()" id="status"  class="layui-select"></select>
+    </div>&nbsp;&nbsp;
+    <label class="layui-label">时间</label>&nbsp;
+    <div class="layui-inline">
+        <input type="text" class="layui-input" id="startTime">
+    </div>
+    <div class="layui-inline">
+        <input type="text" class="layui-input" id="endTime">
+    </div>&nbsp;&nbsp;
     <button type="button" id="btnSearch" class="layui-btn layui-btn-sm" lay-event="delete"><i class="layui-icon layui-icon-search">查询</i></button>
 </div>
 
 <table class="table" id="InStorage_tb" lay-filter="InStorage"></table>
 <script type="text/html" id="bar">
-    <a class="layui-btn layui-btn-xs" lay-event="detail">查看</a>
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
-
-    <!-- 这里同样支持 laytpl 语法，如： -->
-    @*{{#  if(d.auth > 2){ }}
-        <a class="layui-btn layui-btn-xs" lay-event="check">审核</a>
-        {{#  } }}*@
+    {{#  if(d.statusStr != '已上架'){ }}
+    <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="check">审核</a>
+    {{#  } }}
 </script>
 <script type="text/html" id="menubar">
     <div class="layui-table-tool-temp">
@@ -42,7 +51,11 @@
             //, height: 100%
             //, width:100%
             , url: '/WMS/InStorage/AjaxIndex/' //数据接口
-            , where: { name: layui.$('#name').val(), code: layui.$('#code').val() }
+            , where: {
+                name: layui.$('#name').val(), code: layui.$('#code').val(),
+                status: layui.$('#status').val(),
+                startTime: layui.$('#startTime').val(),
+                endTime: layui.$('#endTime').val()}
             , parseData: function (res) { //res 即为原始返回的数据
                 return {
                     "code": res.status, //解析接口状态
@@ -56,10 +69,10 @@
                 { field: 'id', fixed: 'left', type: 'checkbox', sort: true }
                 , { field: 'orderNum', title: '入库单号', width: 150, }
                 , { field: 'supName', title: '供应商', width: 150, }
-                , { field: 'num', title: '带扫描数量', width: 150, sort: true }
+                , { field: 'num', title: '待入库数量', width: 150, sort: true }
                 , { field: 'realNum', title: '入库数量', width: 150, sort: true }
                 , { field: 'putNum', title: '上架数量', width: 150, }
-                , { field: 'status', title: '状态', width: 150, }
+                , { field: 'statusStr', title: '状态', width: 150, }
                 , { field: 'createUser', title: '创建人', width: 150, }
                 , { field: 'createTime', title: '创建时间', width: 150, }
                 , { fixed: 'right', width: 150, align: 'center', toolbar: '#bar' }
@@ -112,14 +125,8 @@
                 //    , title: 'xxx'
                 //});
             }
-            else if (layEvent === 'add') { //编辑
-                //do something
-
-                //同步更新缓存对应的值
-                obj.update({
-                    username: '123'
-                    , title: 'xxx'
-                });
+            else if (layEvent === 'check') { //编辑
+                Check(obj.data.id);
             }
         });
 
@@ -171,7 +178,12 @@
             var orderNum = layui.$('#orderNum').val();
             var txtcode = layui.$('#code').val();
             tableIns.reload({
-                where: { orderNum: orderNum, code: txtcode }
+                where: {
+                    orderNum: orderNum, code: txtcode,
+                    status: layui.$('#status').val(),
+                    startTime: layui.$('#startTime').val(),
+                    endTime: layui.$('#endTime').val()
+                }
             });
         });
         function Del(ids) {
@@ -194,8 +206,39 @@
                 }
             });
         };
-    });
+        function Check(id) {
+            $.ajax({
+                url: "/WMS/InStorage/Check?id=" + id,
+                type: "Get",
+                dataType: "json",
+                error: function (data) {
+                    alert("审核失败！");
+                },
+                success: function (data) {
+                    if (data != "ok") {
+                        layer.msg("审核失败，" + data);
+                    }
+                    else {
+                        tableIns.reload();
+                    }
 
+                }
+            });
+        };
+    });
+    layui.use('laydate', function () {
+        var laydate = layui.laydate;
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#startTime' //指定元素
+            , type: 'datetime'
+        });
+        laydate.render({
+            elem: '#endTime' //指定元素
+            , type: 'datetime'
+        });
+    });
 
 
 </script>

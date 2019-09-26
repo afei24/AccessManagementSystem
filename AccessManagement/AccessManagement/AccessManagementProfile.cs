@@ -2,6 +2,7 @@
 using AccessManagementServices.Common;
 using AccessManagementServices.DOTS;
 using AccessManagementServices.DOTS.WMS.IMS;
+using AccessManagementServices.DOTS.WMS.WWMS;
 using AutoMapper;
 using System;
 using System.Collections.Generic;
@@ -51,6 +52,23 @@ namespace AccessManagement
             CreateMap<SupplierViewModel, Supplier>();
             CreateMap<Supplier, SupplierViewModel>()
                 .ForMember(d => d.SupTypeStr, conf => conf.MapFrom(s => (Enum.Parse(typeof(SupType), s.SupType.ToString())).ToString()));
+            CreateMap<InStorageViewModel, InStorage>();
+            CreateMap<InStorage, InStorageViewModel>()
+                .ForMember(d => d.StatusStr, conf => conf.MapFrom(s => (Enum.Parse(typeof(InOpStatus), s.Status.ToString())).ToString()));
+
+            CreateMap<OutStorageViewModel, OutStorage>();
+            CreateMap<OutStorage, OutStorageViewModel>()
+                .ForMember(d => d.StatusStr, conf => conf.MapFrom(s => (Enum.Parse(typeof(OutOpStatus), s.Status.ToString())).ToString()));
+
+            CreateMap<BadReportViewModel, BadReport>();
+            CreateMap<BadReport, BadReportViewModel>()
+                .ForMember(d => d.StatusStr, conf => conf.MapFrom(s => (Enum.Parse(typeof(BadStatus), s.Status.ToString())).ToString()))
+                .ForMember(d => d.BadTypeStr, conf => conf.MapFrom(s => (Enum.Parse(typeof(BadType), s.BadType.ToString())).ToString()));
+
+            CreateMap<BadReportDetailViewModel, BadReportDetail>();
+            CreateMap<BadReportDetail, BadReportDetailViewModel>();
+
+
             CreateMap<ProductViewModel, Product>();
             CreateMap<Product, ProductViewModel>()
                 .ForMember(d => d.LocalName, conf => conf.Ignore())

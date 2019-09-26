@@ -24,9 +24,9 @@ namespace AccessManagementServices.Services
             _accessManagementContext = accessManagementContext;
         }
 
-        public async Task<ResponseModel<RoleViewModel>> GetList(RoleFilters filters, SortCol sortCol)
+        public async Task<ResponseModel<RoleViewModel>> GetList(RoleFilters filters, SortCol sortCol,AccountViewModel account)
         {
-            var query = _accessManagementContext.Role.Where(o => o.Id != 0);
+            var query = _accessManagementContext.Role.Where(o => o.CompanyId == account.CompanyId);
             query = Search(query, filters);
             query = Sort(query, sortCol);
             var vms = await query.Skip((filters.Page - 1) * filters.Limit).Take(filters.Limit)

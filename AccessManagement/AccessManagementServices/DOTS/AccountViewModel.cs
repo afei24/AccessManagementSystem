@@ -17,24 +17,23 @@ namespace AccessManagementServices.DOTS
         }
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "请填写账号")]
         [StringLength(100)]
         [Display(Name = "账号")]
         public string AccountName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "请填写密码")]
         [Display(Name = "密码")]
         public string Password { get; set; }
-        [Required]
+        [Required(ErrorMessage = "请填写姓名")]
         [Display(Name = "姓名")]
         public string Name { get; set; }
         [Required]
         [Display(Name = "状态")]
         public string StatusName { get; set; }
-        [Required]
+        [Required(ErrorMessage = "请填写城市")]
         [Display(Name = "城市")]
         public string City { get; set; }
-        [Required]
         [Display(Name = "手机")]
         [Phone]
         public string Phone { get; set; }

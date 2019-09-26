@@ -3,6 +3,7 @@ using AccessManagementServices.Common;
 using AccessManagementServices.DOTS;
 using AccessManagementServices.DOTS.WMS.IMS;
 using AutoMapper.QueryableExtensions;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -26,6 +27,36 @@ namespace AccessManagementServices.Services
         public IList<SelectListItem> GetCompanyStatus()
         {
             return EnumHelper.EnumToList<ComapnyStatus>();
+        }
+
+        public IList<SelectListItem> GetInType()
+        {
+            return EnumHelper.EnumToList<InType>();
+        }
+
+        public IList<SelectListItem> GetInOpStatus()
+        {
+            return EnumHelper.EnumToList<InOpStatus>();
+        }
+
+        public IList<SelectListItem> GetOutType()
+        {
+            return EnumHelper.EnumToList<OutType>();
+        }
+
+        public IList<SelectListItem> GetOutOpStatus()
+        {
+            return EnumHelper.EnumToList<OutOpStatus>();
+        }
+
+        public IList<SelectListItem> GetBadType()
+        {
+            return EnumHelper.EnumToList<BadType>();
+        }
+
+        public IList<SelectListItem> GetBadStatus()
+        {
+            return EnumHelper.EnumToList<BadStatus>();
         }
 
         public IList<SelectListItem> GetAccountStatus()
@@ -93,6 +124,34 @@ namespace AccessManagementServices.Services
             var vms = branchs.ProjectTo<LocationViewModel>()
                 .Select(o => new SelectListItem() { Text = o.LocalBarCode, Value = o.Id.ToString() }).ToList();
             return vms;
+        }
+        public async Task<List<SelectListItem>> GetSuppliers(AccountViewModel account)
+        {
+            var suppliers = _contextWMS.Supplier.Where(a => a.CompanyId == account.CompanyId);
+            var vms = suppliers.ProjectTo<SupplierViewModel>()
+                .Select(o => new SelectListItem() { Text = o.SupName, Value = o.Id.ToString() }).ToList();
+            return vms;
+        }
+        public async Task<List<SelectListItem>> GetProducts(AccountViewModel account)
+        {
+            var products = _contextWMS.Product.Where(a => a.CompanyId == account.CompanyId);
+            var vms = products.ProjectTo<ProductViewModel>()
+                .Select(o => new SelectListItem() { Text = o.ProductName, Value = o.Id.ToString() }).ToList();
+            return vms;
+        }
+
+        public async Task<List<ProductViewModel>> GetProduct(AccountViewModel account)
+        {
+            var products = _contextWMS.Product.Where(a => a.CompanyId == account.CompanyId);
+            var vms = products.ProjectTo<ProductViewModel>().ToList();
+            return vms;
+        }
+
+        public async Task<LocalProduct> GetLocalProducts(AccountViewModel account,string productNum,string localNum)
+        {
+            var localProduct = await _contextWMS.LocalProduct.FirstOrDefaultAsync(a => a.CompanyId == account.CompanyId && a.ProductNum == productNum
+                && a.LocalNum == localNum);
+            return localProduct;
         }
     }
 }

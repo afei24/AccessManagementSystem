@@ -25,13 +25,30 @@ namespace AccessManagementServices.Services
             _context = context;
         }
         public async Task<ResponseModel<ProductViewModel>> GetList(ProductFilters filters, SortCol sortCol
-            ,AccountViewModel account)
+            ,AccountViewModel account,string type="管理")
         {
             var query = _context.Product.Where(o => o.IsDelete == 0 && o.CompanyId == account.CompanyId);
             query = Search(query, filters);
             query = Sort(query, sortCol);
             var vms = await query.Skip((filters.Page - 1) * filters.Limit).Take(filters.Limit)
                 .ProjectTo<ProductViewModel>().ToListAsync();
+            if (type == "报表")
+            {
+                foreach (var vm in vms)
+                {
+                    var productNum = vm.Id.ToString();
+                    vm.LocalProductNum =  _context.LocalProduct.Where(o=>o.ProductNum == productNum
+                    && o.CompanyId == account.CompanyId).Select(o=>o.Num).Sum();
+
+                    vm.InStorageNum = _context.InStorDetail.Where(o => o.ProductNum == productNum)
+                        .Select(o => (int)o.PutRealNum).Sum();
+
+                    vm.OutStorageNum = _context.OutStoDetail.Where(o => o.ProductNum == productNum)
+                        .Select(o => (int)o.PutRealNum).Sum();
+
+                    vm.BadReportNum = _context.BadReportDetail.Where(o => o.ProductNum == productNum).Select(o => o.Num).Sum();
+                }
+            }
             ResponseModel<ProductViewModel> result = new ResponseModel<ProductViewModel>();
             result.status = 0;
             result.message = "";
@@ -101,7 +118,7 @@ namespace AccessManagementServices.Services
                 vm.CompanyId = account.CompanyId;
                 vm.CreateTime = DateTime.Now;
                 vm.CreateUser = account.Name;
-                vm.SnNum = "";
+                vm.SnNum = Guid.NewGuid().ToString();
                 var product = Mapper.Map<Product>(vm);
                 await _context.Product.AddAsync(product);
                 await _context.SaveChangesAsync();

@@ -8,5 +8,8 @@ namespace AccessManagementServices.Filters
     {
         public string OrderNum { get; set; }
         public string Code { get; set; }
+        public string Status { get; set; }
+        public string StartDateTime { get; set; }
+        public string EndDateTime { get; set; }
     }
 }

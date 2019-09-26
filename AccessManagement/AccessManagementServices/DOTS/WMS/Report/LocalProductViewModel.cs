@@ -30,5 +30,6 @@ namespace AccessManagementServices.DOTS.WMS.Report
         public double? InPrice { get; set; }
         public double? OutPrice { get; set; }
         public int CompanyId { get; set; }
+        public string Status { get; set; }
     }
 }

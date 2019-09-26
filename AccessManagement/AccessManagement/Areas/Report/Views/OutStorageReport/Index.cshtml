@@ -7,14 +7,19 @@
 <h2>出库报表</h2>
 <br />
 <div class="layui-inline">
-    <label class="layui-label">单号</label>&nbsp;
-    <input type="text" name="name" id="orderNum" class="layui-text">&nbsp;&nbsp;
-    <label class="layui-label">编码</label>&nbsp;
-    <input type="text" name="cod" id="code" class="layui-text">&nbsp;&nbsp;
+    <label class="layui-label">日期</label>&nbsp;
+    <div class="layui-inline">
+        <input type="text" class="layui-input" id="startTime">
+    </div>
+    <div class="layui-inline">
+        <input type="text" class="layui-input" id="endTime">
+    </div>&nbsp;&nbsp;
     <button type="button" id="btnSearch" class="layui-btn layui-btn-sm" lay-event="delete"><i class="layui-icon layui-icon-search">查询</i></button>
 </div>
 
 <table class="table" id="OutStorageReport_tb" lay-filter="OutStorageReport"></table>
+<div id="container" style="width: 550px; height: 400px; margin: 0 auto"></div>
+<script src="https://code.highcharts.com/highcharts.js"></script>
 <script type="text/html" id="bar">
     <a class="layui-btn layui-btn-xs" lay-event="detail">查看</a>
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
@@ -27,9 +32,6 @@
 </script>
 <script type="text/html" id="menubar">
     <div class="layui-table-tool-temp">
-        <div class="layui-inline" lay-event="add"><i class="layui-icon layui-icon-add-1"></i></div>
-        @*<div class="layui-inline" lay-event="update"><i class="layui-icon layui-icon-edit"></i></div>*@
-        <div class="layui-inline" lay-event="delete"><i class="layui-icon layui-icon-delete"></i></div>
     </div>
 </script>
 <script>
@@ -42,7 +44,9 @@
             //, height: 100%
             //, width:100%
             , url: '/Report/OutStorageReport/AjaxIndex/' //数据接口
-            , where: { name: layui.$('#name').val(), code: layui.$('#code').val() }
+            , where: {
+                startTime: layui.$('#startTime').val(),
+                endTime: layui.$('#endTime').val() }
             , parseData: function (res) { //res 即为原始返回的数据
                 return {
                     "code": res.status, //解析接口状态
@@ -54,13 +58,10 @@
             , page: true //开启分页
             , cols: [[ //表头
                 { field: 'id', fixed: 'left', type: 'checkbox', sort: true }
-                , { field: 'orderNum', title: '单号', width: 150, }
-                , { field: 'cusName', title: '客户', width: 150, }
-                , { field: 'putNum', title: '数量', width: 150, }
-                , { field: 'amount', title: '总价', width: 150, }
-                , { field: 'createUser', title: '创建人', width: 150, }
-                , { field: 'createTime', title: '创建时间', width: 150, }
-                , { fixed: 'right', width: 150, align: 'center', toolbar: '#bar' }
+                , { field: 'createTimeStr', title: '日期', }
+                , { field: 'num', title: '数量', sort: true }
+                , { field: 'price', title: '总价', sort: true }
+                //, { fixed: 'right', width: 150, align: 'center', toolbar: '#bar' }
             ]]
             , toolbar: '#menubar'
             , defaultToolbar: ['filter', 'print', 'exports']
@@ -75,6 +76,67 @@
 
                 //得到数据总量
                 console.log(count);
+                var _categories = [];
+                var _data = [];
+                var _dataprice = [];
+                for (var i = 0; i < res.data.length; i++) {
+                    _categories.push(res.data[i].createTimeStr);
+                    _data.push(res.data[i].num);
+                    _dataprice.push(res.data[i].price);
+                }
+                var title = {
+                    text: '出库报表统计'
+                };
+                var subtitle = {
+                    text: 'Source: runoob.com'
+                };
+                var xAxis = {
+                    categories: _categories
+                };
+                var yAxis = {
+                    title: {
+                        text: '数量'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                };
+
+                var tooltip = {
+                    valueSuffix: ''
+                }
+
+                var legend = {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    borderWidth: 0
+                };
+
+                var series = [
+                    {
+                        name: '数量',
+                        data: _data
+                    },
+                    {
+                        name: '总价',
+                        data: _dataprice
+                    },
+                ];
+
+                var json = {};
+
+                json.title = title;
+                //json.subtitle = subtitle;
+                json.xAxis = xAxis;
+                json.yAxis = yAxis;
+                json.tooltip = tooltip;
+                json.legend = legend;
+                json.series = series;
+
+                $('#container').highcharts(json);
             },
             text: {
                 none: '暂无相关数据' //默认：无数据。注：该属性为 layui 2.2.5 开始新增
@@ -169,7 +231,22 @@
             var orderNum = layui.$('#orderNum').val();
             var txtcode = layui.$('#code').val();
             tableIns.reload({
-                where: { orderNum: orderNum, code: txtcode }
+                where: {
+                    startTime: layui.$('#startTime').val(),
+                    endTime: layui.$('#endTime').val() }
+            });
+        });
+        layui.use('laydate', function () {
+            var laydate = layui.laydate;
+
+            //执行一个laydate实例
+            laydate.render({
+                elem: '#startTime' //指定元素
+                , type: 'date'
+            });
+            laydate.render({
+                elem: '#endTime' //指定元素
+                , type: 'date'
             });
         });
         function Del(ids) {
@@ -183,7 +260,7 @@
                 },
                 success: function (data) {
                     if (data != "ok") {
-                        layer.msg("删除失败，"+data);
+                        layer.msg("删除失败，" + data);
                     }
                     else {
                         tableIns.reload();

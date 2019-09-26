@@ -16,11 +16,11 @@ namespace AccessManagementServices.DOTS
         }
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "请填写公司名称")]
         [Display(Name = "公司名称")]
         public string Name { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "请填写联系电话")]
         [StringLength(50)]
         [Display(Name = "联系电话")]
         [RegularExpression(@"^\s*(((1\d{10})|(\d{3,4}-\d{7,8})(-\d{1,4}){0,1})[\s,，]+)*((1\d{10})|(\d{3,4}-\d{7,8})(-\d{1,4}){0,1})\s*$", ErrorMessage = "请输入正确格式，如有多个请用逗号隔开")]

@@ -7,10 +7,13 @@
 <h2>报损报表</h2>
 <br />
 <div class="layui-inline">
-    <label class="layui-label">单号</label>&nbsp;
-    <input type="text" name="name" id="orderNum" class="layui-text">&nbsp;&nbsp;
-    <label class="layui-label">编码</label>&nbsp;
-    <input type="text" name="cod" id="code" class="layui-text">&nbsp;&nbsp;
+    <label class="layui-label">日期</label>&nbsp;
+    <div class="layui-inline">
+        <input type="text" class="layui-input" id="startTime">
+    </div>
+    <div class="layui-inline">
+        <input type="text" class="layui-input" id="endTime">
+    </div>&nbsp;&nbsp;
     <button type="button" id="btnSearch" class="layui-btn layui-btn-sm" lay-event="delete"><i class="layui-icon layui-icon-search">查询</i></button>
 </div>
 
@@ -27,11 +30,11 @@
 </script>
 <script type="text/html" id="menubar">
     <div class="layui-table-tool-temp">
-        <div class="layui-inline" lay-event="add"><i class="layui-icon layui-icon-add-1"></i></div>
-        @*<div class="layui-inline" lay-event="update"><i class="layui-icon layui-icon-edit"></i></div>*@
-        <div class="layui-inline" lay-event="delete"><i class="layui-icon layui-icon-delete"></i></div>
     </div>
 </script>
+<div id="container" style="width: 550px; height: 400px; margin: 0 auto"></div>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
 <script>
     layui.use('table', function () {
         var table = layui.table;
@@ -42,7 +45,9 @@
             //, height: 100%
             //, width:100%
             , url: '/Report/BadReport/AjaxIndex/' //数据接口
-            , where: { name: layui.$('#name').val(), code: layui.$('#code').val() }
+            , where: {
+                startTime: layui.$('#startTime').val(),
+                endTime: layui.$('#endTime').val() }
             , parseData: function (res) { //res 即为原始返回的数据
                 return {
                     "code": res.status, //解析接口状态
@@ -54,12 +59,12 @@
             , page: true //开启分页
             , cols: [[ //表头
                 { field: 'id', fixed: 'left', type: 'checkbox', sort: true }
-                , { field: 'productNum', title: '产品编码', width: 150, }
-                , { field: 'barCode', title: '条码', width: 150, }
-                , { field: 'productName', title: '名称', width: 150, sort: true }
-                , { field: 'num', title: '数量', width: 150, sort: true }
-                , { field: 'amount', title: '总价', width: 150, }
-                , { fixed: 'right', width: 150, align: 'center', toolbar: '#bar' }
+               // , { field: 'productNum', title: '产品编码', width: 150, }
+                , { field: 'barCode', title: '条码',  }
+                , { field: 'productName', title: '名称',  sort: true }
+                , { field: 'num', title: '数量',  sort: true }
+                //, { field: 'amount', title: '总价', width: 150, }
+                //, { fixed: 'right', width: 150, align: 'center', toolbar: '#bar' }
             ]]
             , toolbar: '#menubar'
             , defaultToolbar: ['filter', 'print', 'exports']
@@ -74,6 +79,44 @@
 
                 //得到数据总量
                 console.log(count);
+                var datas = [];
+                for (var i = 0; i < res.data.length; i++) {
+                    datas.push([res.data[i].productName, res.data[i].num]);
+                }
+                var chart = {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false
+                };
+                var title = {
+                    text: '报损报表统计'
+                };
+                var tooltip = {
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                };
+                var plotOptions = {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: false
+                        },
+                        showInLegend: true
+                    }
+                };
+                var series = [{
+                    type: 'pie',
+                    name: '比例',
+                    data: datas
+                }];
+
+                var json = {};
+                json.chart = chart;
+                json.title = title;
+                json.tooltip = tooltip;
+                json.series = series;
+                json.plotOptions = plotOptions;
+                $('#container').highcharts(json);
             },
             text: {
                 none: '暂无相关数据' //默认：无数据。注：该属性为 layui 2.2.5 开始新增
@@ -164,11 +207,24 @@
             });
         });
 
+        layui.use('laydate', function () {
+            var laydate = layui.laydate;
+
+            //执行一个laydate实例
+            laydate.render({
+                elem: '#startTime' //指定元素
+                , type: 'date'
+            });
+            laydate.render({
+                elem: '#endTime' //指定元素
+                , type: 'date'
+            });
+        });
         $("#btnSearch").click(function () {
-            var orderNum = layui.$('#orderNum').val();
-            var txtcode = layui.$('#code').val();
             tableIns.reload({
-                where: { orderNum: orderNum, code: txtcode }
+                where: {
+                    startTime: layui.$('#startTime').val(),
+                    endTime: layui.$('#endTime').val() }
             });
         });
         function Del(ids) {
@@ -182,7 +238,7 @@
                 },
                 success: function (data) {
                     if (data != "ok") {
-                        layer.msg("删除失败，"+data);
+                        layer.msg("删除失败，" + data);
                     }
                     else {
                         tableIns.reload();

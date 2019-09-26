@@ -29,7 +29,7 @@ namespace AccessManagement.Controllers
         }
         public async Task<ActionResult> AjaxIndex()
         {
-            var result = await _roleServices.GetList(GetFilters(), GetSort());
+            var result = await _roleServices.GetList(GetFilters(), GetSort(),GetAccount());
             return Json(result);
         }
         public RoleFilters GetFilters()

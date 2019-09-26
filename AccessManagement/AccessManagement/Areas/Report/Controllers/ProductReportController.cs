@@ -29,7 +29,7 @@ namespace AccessManagement.Areas.Report.Controllers
         }
         public async Task<ActionResult> AjaxIndex()
         {
-            var result = await _productServices.GetList(GetFilters(), GetSort(),GetAccount());
+            var result = await _productServices.GetList(GetFilters(), GetSort(),GetAccount(), "报表");
             return Json(result);
         }
         public ProductFilters GetFilters()

@@ -96,8 +96,12 @@ namespace AccessManagementServices.Services
             {
                 var query = await _context.Account.FirstOrDefaultAsync(o => o.Id == id);
                 var vm = _mapper.Map<AccountViewModel>(query);
-                var accountRole = await _context.AccountRole.FirstOrDefaultAsync(o=>o.AccountId == vm.Id);
-                vm.RoleId = accountRole.RoleId.ToString();
+                var accountRole = await _context.AccountRole.FirstOrDefaultAsync(o => o.AccountId == vm.Id);
+                if (accountRole != null)
+                {
+                    vm.RoleId = accountRole.RoleId.ToString();
+                }
+                
                 return vm;
             }
             catch (Exception ex)
@@ -168,6 +172,10 @@ namespace AccessManagementServices.Services
                 {
                     accountRole.RoleId = Convert.ToInt32(vm.RoleId);
                     _context.Entry(accountRole).State = EntityState.Modified;
+                }
+                else
+                {
+                    _context.AccountRole.Add(new AccountRole() { AccountId = query.Id,RoleId = Convert.ToInt32(vm.RoleId) });
                 }
                 await _context.SaveChangesAsync();
                 return new ServiceResponseBase() { Status = Status.ok };

@@ -7,9 +7,9 @@
 <h2>货品统计</h2>
 <br />
 <div class="layui-inline">
-    <label class="layui-label">单号</label>&nbsp;
-    <input type="text" name="name" id="orderNum" class="layui-text">&nbsp;&nbsp;
-    <label class="layui-label">编码</label>&nbsp;
+    <label class="layui-label">名称</label>&nbsp;
+    <input type="text" name="name" id="name" class="layui-text">&nbsp;&nbsp;
+    <label class="layui-label">条码</label>&nbsp;
     <input type="text" name="cod" id="code" class="layui-text">&nbsp;&nbsp;
     <button type="button" id="btnSearch" class="layui-btn layui-btn-sm" lay-event="delete"><i class="layui-icon layui-icon-search">查询</i></button>
 </div>
@@ -27,9 +27,9 @@
 </script>
 <script type="text/html" id="menubar">
     <div class="layui-table-tool-temp">
-        <div class="layui-inline" lay-event="add"><i class="layui-icon layui-icon-add-1"></i></div>
+        @*<div class="layui-inline" lay-event="add"><i class="layui-icon layui-icon-add-1"></i></div>*@
         @*<div class="layui-inline" lay-event="update"><i class="layui-icon layui-icon-edit"></i></div>*@
-        <div class="layui-inline" lay-event="delete"><i class="layui-icon layui-icon-delete"></i></div>
+        @*<div class="layui-inline" lay-event="delete"><i class="layui-icon layui-icon-delete"></i></div>*@
     </div>
 </script>
 <script>
@@ -54,18 +54,18 @@
             , page: true //开启分页
             , cols: [[ //表头
                 { field: 'id', fixed: 'left', type: 'checkbox', sort: true }
-                , { field: 'barCode', title: '条码', width: 150, }
-                , { field: 'productName', title: '名称', width: 150, }
-                , { field: 'minNum', title: '下限', width: 150, sort: true }
-                , { field: 'maxNum', title: '上限', width: 150, sort: true }
-                , { field: 'unitNum', title: '规格', width: 150, }
-                , { field: 'unitName', title: '单位', width: 150, }
-                , { field: 'cateName', title: '类型', width: 150, }
-                , { field: 'LocalProductNum', title: '库存数量', width: 150}
-                , { field: 'InStorageNum', title: '入库数量', width: 150, }
-                , { field: 'OutStorageNum', title: '出库数量', width: 150}
-                , { field: 'BadReportNum', title: '报损数量', width: 150, }
-                , { fixed: 'right', width: 150, align: 'center', toolbar: '#bar' }
+                , { field: 'barCode', title: '条码', }
+                , { field: 'productName', title: '名称',  }
+                , { field: 'minNum', title: '下限',  sort: true }
+                , { field: 'maxNum', title: '上限',  sort: true }
+                , { field: 'size', title: '规格',  }
+                , { field: 'unitName', title: '单位', }
+                , { field: 'cateName', title: '类型',  }
+                , { field: 'localProductNum', title: '库存数量',}
+                , { field: 'inStorageNum', title: '入库数量',  }
+                , { field: 'outStorageNum', title: '出库数量',}
+                , { field: 'badReportNum', title: '报损数量',  }
+               // , { fixed: 'right', width: 150, align: 'center', toolbar: '#bar' }
             ]]
             , toolbar: '#menubar'
             , defaultToolbar: ['filter', 'print', 'exports']
@@ -171,10 +171,9 @@
         });
 
         $("#btnSearch").click(function () {
-            var orderNum = layui.$('#orderNum').val();
             var txtcode = layui.$('#code').val();
             tableIns.reload({
-                where: { orderNum: orderNum, code: txtcode }
+                where: { name: layui.$('#name').val(), code: txtcode }
             });
         });
         function Del(ids) {

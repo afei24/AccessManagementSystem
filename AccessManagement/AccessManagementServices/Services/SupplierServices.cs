@@ -26,7 +26,7 @@ namespace AccessManagementServices.Services
         }
         public async Task<ResponseModel<SupplierViewModel>> GetList(SupplierFilter filters, SortCol sortCol, AccountViewModel account)
         {
-            var query = _context.Supplier.Where(o => o.IsDelete == 0 && account.CompanyId == account.CompanyId);
+            var query = _context.Supplier.Where(o => o.IsDelete == 0 && o.CompanyId == account.CompanyId);
             query = Search(query, filters);
             query = Sort(query, sortCol);
             var vms = await query.Skip((filters.Page - 1) * filters.Limit).Take(filters.Limit)

@@ -1,0 +1,301 @@
+﻿@model AccessManagementServices.DOTS.WMS.WWMS.OutStorageViewModel
+@inject AccessManagementServices.Services.BasicInfoServices BasicInfoServices;
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "编辑";
+}
+
+<br />
+<h3>编辑</h3>
+<hr />
+
+<form asp-action="Edit">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group col-md-4">
+        <label asp-for="OutType" class="control-label"></label>
+        <select asp-for="OutType" asp-items="@BasicInfoServices.GetOutType()" class="form-control"></select>
+        <span asp-validation-for="OutType" class="text-danger"></span>
+    </div>
+    <div class="form-group col-md-4">
+        <label asp-for="CusNum" class="control-label"></label>
+        <select asp-for="CusNum" asp-items="@Model.Customers" class="form-control"></select>
+        <span asp-validation-for="CusNum" class="text-danger"></span>
+    </div>
+    <div class="form-group col-md-4">
+        <label asp-for="Phone" class="control-label"></label>
+        <input asp-for="Phone" class="form-control" readonly="readonly" />
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+    <div class="form-group col-md-4">
+        <label asp-for="Remark" class="control-label"></label>
+        <input asp-for="Remark" class="form-control" />
+        <span asp-validation-for="Remark" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="button" value="添加产品" class="layui-btn" id="addProduct" />
+    </div>
+    <table class="table" id="OutStorage_tb" lay-filter="OutStorage"></table>
+    <div class="form-group">
+        <input type="submit" value="保存" class="layui-btn" />
+        <a asp-action="Index" class="layui-btn layui-btn-normal">返回</a>
+    </div>
+</form>
+
+<script type="text/html" id="bar">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<script>
+    var tableIns;
+    layui.use('table', function () {
+        var table = layui.table;
+
+        //第一个实例
+        tableIns = table.render({
+            elem: '#OutStorage_tb'
+            //, height: 100%
+            //, width:100%
+            , url: '/WMS/OutStorage/GetStorDetail/' //数据接口
+            , where: {
+                name: layui.$('#name').val(), code: layui.$('#code').val(),
+                status: layui.$('#status').val(),
+                startTime: layui.$('#startTime').val(),
+                endTime: layui.$('#endTime').val()
+            }
+            , parseData: function (res) { //res 即为原始返回的数据
+                return {
+                    "code": res.status, //解析接口状态
+                    "msg": res.message, //解析提示文本
+                    "count": res.total, //解析数据长度
+                    "data": res.data //解析数据列表
+                };
+            }
+            , page: true //开启分页
+            , cols: [[ //表头
+                { field: 'productNum', fixed: 'left', type: 'checkbox', sort: true }
+                , { field: 'productName', title: '产品名称' }
+                , { field: 'localNum', title: '库位条码'}
+                , { field: 'num', title: '数量'}
+                , { field: 'outPrice', title: '出库价格' }
+                , { fixed: 'right', width: 150, align: 'center', toolbar: '#bar' }
+            ]]
+            , toolbar: '#menubar'
+            , defaultToolbar: ['filter', 'print', 'exports']
+            , title: '菜单'
+            , done: function (res, curr, count) {
+                //如果是异步请求数据方式，res即为你接口返回的信息。
+                //如果是直接赋值的方式，res即为：{data: [], count: 99} data为当前页数据、count为数据总长度
+                console.log(res);
+
+                //得到当前页码
+                console.log(curr);
+
+                //得到数据总量
+                console.log(count);
+            },
+            text: {
+                none: '暂无相关数据' //默认：无数据。注：该属性为 layui 2.2.5 开始新增
+            }
+            , even: true
+            , skin: 'line'
+            , autoSort: false
+        });
+
+        //监听工具条
+        table.on('tool(OutStorage)', function (obj) { //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
+            var data = obj.data; //获得当前行数据
+            var layEvent = obj.event; //获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
+            var tr = obj.tr; //获得当前行 tr 的DOM对象
+
+            if (layEvent === 'detail') { //查看
+                //do somehing
+                window.location.href = "/WMS/OutStorage/Details/" + obj.data.id;
+            } else if (layEvent === 'del') { //删除
+                layer.confirm('确定要删除吗', function (index) {
+                    obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
+                    var ids = [obj.data.id];
+                    var productNum = [obj.data.productNum];
+                    var localNum = [obj.data.localNum];
+                    Del(productNum,localNum);
+                    layer.close(index);
+                    //向服务端发送删除指令
+                });
+            } else if (layEvent === 'edit') { //编辑
+                var productNum = [obj.data.productNum];
+                var localNum = [obj.data.localNum];
+                layui.use('layer', function () {
+                    var layer = layui.layer;
+                    var html = '<div class="layui-input-inline" style="width: 250px;">'
+                        + '<label class="layui-label" style = "width: 100px;">出库价格</label>'
+                        + '<div class="layui-input-inline" style="width: 200px;">'
+                        + '<input id="ePrice" class="layui-input" /></div></div >';
+                    html += '<div class="layui-input-inline" style="width: 250px;">';
+                    html += '<label class="layui-label" style = "width: 100px;">出库数量</label>';
+                    html += '<div class="layui-input-inline" style="width: 200px;">';
+                    html += '<input id="eNum" class="layui-input" /></div></div >';
+                    layer.open({
+                        title: '编辑产品',
+                        type: 0,
+                        content:html,
+                        zindex: 100,
+                        btn: ['添加', '关闭']
+                        , yes: function (index, layero) {
+                            layer.closeAll();
+                            $.ajax({
+                                url: "/WMS/OutStorage/EditStorDetail",
+                                data: {
+                                    ProductNum: productNum, LocalNum: localNum,
+                                    Num: $("#eNum").val(), OutPrice: $("#ePrice").val()
+                                },
+                                type: "Post",
+                                dataType: "json",
+                                error: function (data) {
+                                    alert("失败！");
+                                },
+                                success: function (data) {
+                                    if (data == "库存不够！") {
+                                        alert("库存不够！");
+                                    }
+                                    else {
+                                        tableIns.reload({
+                                            where: {
+                                            }
+                                        });
+                                    }
+                                }
+                            });
+                        }
+                        , btn2: function (index, layero) {
+                            //按钮【按钮二】的回调
+
+                            //return false 开启该代码可禁止点击该按钮关闭
+                        }
+                    });
+                });
+            }
+            else if (layEvent === 'add') { //编辑
+                //do something
+
+                //同步更新缓存对应的值
+                obj.update({
+                    username: '123'
+                    , title: 'xxx'
+                });
+            }
+        });
+
+
+        function Del(productNum, localNum) {
+            $.ajax({
+                url: "/WMS/OutStorage/DeleteStorDetail?productNum=" + productNum + "&localNum=" + localNum,
+                type: "POST",
+                dataType: "json",
+                error: function (data) {
+                    alert("删除失败！");
+                },
+                success: function (data) {
+                    tableIns.reload();
+                }
+            });
+        };
+    });
+    //Demo
+    layui.use('form', function () {
+        var form = layui.form;
+
+        //监听提交
+        form.on('submit(storageForm)', function (data) {
+            layer.msg(JSON.stringify(data.field));
+            return false;
+        });
+    });
+    layui.use('layer', function () {
+        var layer = layui.layer;
+        $("#addProduct").click(function () {
+            var html = '<div class="layui-input-inline" style="width: 250px;">'
+                +'<label class="layui-label" style = "width: 100px;">出库价格</label>'
+                    +'<div class="layui-input-inline" style="width: 200px;">'
+                + '<input id="Price" class="layui-input" /></div></div >';
+            html += '<div class="layui-input-inline" style="width: 250px;">';
+            html += '<label class="layui-label" style = "width: 100px;">出库数量</label>';
+            html+= '<div class="layui-input-inline" style="width: 200px;">';
+            html += '<input id="Num" class="layui-input" /></div></div >';
+            $.ajax({
+                url: "/WMS/OutStorage/GetAddProductHtml",
+                type: "Get",
+                dataType: "json",
+                error: function (data) {
+                    alert("失败！");
+                },
+                success: function (data) {
+                    layer.open({
+                        title: '添加产品',
+                        type: 0,
+                        content: data + html,
+                        zindex: 100,
+                        btn: ['添加', '关闭']
+                        , yes: function (index, layero) {
+                            layer.closeAll();
+                        }
+                        , btn2: function (index, layero) {
+                            //按钮【按钮二】的回调
+
+                            //return false 开启该代码可禁止点击该按钮关闭
+                        }
+                    });
+
+                    $(".layui-layer-btn0").click(function () {
+                        $.ajax({
+                            url: "/WMS/OutStorage/AddStorDetail",
+                            data: {
+                                ProductNum: $("#product").val(), LocalNum: $("#location").val(),
+                                Num: $("#Num").val(), OutPrice: $("#Price").val()},
+                            type: "Post",
+                            dataType: "json",
+                            error: function (data) {
+                                alert("失败！");
+                            },
+                            success: function (data) {
+                                if (data == "库存不够！") {
+                                    alert("库存不够！");
+                                }
+                                else {
+                                    tableIns.reload({
+                                        where: {
+                                        }
+                                    });
+                                }
+
+                            }
+                        });
+                    });
+                }
+            });
+
+        });
+    });
+    $("#CusNum").change(function () {
+        var id = $("#CusNum").val();
+        if (id == "0") {
+            //$("#Contact").val("");
+            $("#Phone").val("");
+            return;
+        }
+        $.ajax({
+            url: "/api/Ims/GetCustomer/"+id,
+            type: "Get",
+            dataType: "json",
+            error: function (data) {
+                alert("失败！");
+            },
+            success: function (data) {
+                //$("#Contact").val(data.data.contact);
+                $("#Phone").val(data.data.phone);
+            }
+        });
+    });
+</script>
+

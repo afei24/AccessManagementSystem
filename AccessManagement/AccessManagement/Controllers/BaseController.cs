@@ -37,7 +37,8 @@ namespace AccessManagement.Controllers
                 HttpContext.Response.Redirect("/Account/Login");
                 return new AccountViewModel();
             }
-            return (AccountViewModel)SerializeHelper.DeserializeWithBinary(HttpContext.Session.Get("account"));
+            var account = (AccountViewModel)SerializeHelper.DeserializeWithBinary(HttpContext.Session.Get("account"));
+            return account;
         }
     }
 }

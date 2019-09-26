@@ -7,107 +7,168 @@
 <br />
 <h3>新建</h3>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="BarCode" class="control-label"></label>
-                <input asp-for="BarCode" class="form-control" />
+<form asp-action="Create" class="layui-form" id="productForm">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="layui-inline">
+        <div class="layui-input-inline" style="width: 300px;">
+            <label asp-for="BarCode" class="layui-form-label"></label>
+            <div class="layui-input-inline" style="width: 200px;">
+                <input asp-for="BarCode" class="layui-input" />
                 <span asp-validation-for="BarCode" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="ProductName" class="control-label"></label>
-                <input asp-for="ProductName" class="form-control" />
+        </div>
+        <div class="layui-input-inline" style="width: 300px;">
+            <label asp-for="ProductName" class="layui-form-label"></label>
+            <div class="layui-input-inline" style="width: 200px;">
+                <input asp-for="ProductName" class="layui-input" />
                 <span asp-validation-for="ProductName" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="CateName" class="control-label"></label>
-                <select asp-items="@Model.Goods" asp-for="CateName" class="form-control"></select>
+        </div>
+    </div>
+    <div class="layui-inline">
+        <div class="layui-input-inline" style="width: 300px;">
+            <label asp-for="CateName" class="layui-form-label"></label>
+            <div class="layui-input-inline" style="width: 200px;">
+                <select asp-items="@Model.Goods" asp-for="CateName" lay-verify="" lay-search></select>
                 <span asp-validation-for="CateName" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Num" class="control-label"></label>
-                <input asp-for="Num" class="form-control" />
+        </div>
+        <div class="layui-input-inline" style="width: 300px;">
+            <label asp-for="Num" class="layui-form-label"></label>
+            <div class="layui-input-inline" style="width: 200px;">
+                <input asp-for="Num" class="layui-input" />
                 <span asp-validation-for="Num" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="MinNum" class="control-label"></label>
-                <input asp-for="MinNum" class="form-control" />
+        </div>
+    </div>
+    <div class="layui-inline">
+        <div class="layui-input-inline" style="width: 300px;">
+            <label asp-for="MinNum" class="layui-form-label"></label>
+            <div class="layui-input-inline" style="width: 200px;">
+                <input asp-for="MinNum" class="layui-input" />
                 <span asp-validation-for="MinNum" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="MaxNum" class="control-label"></label>
-                <input asp-for="MaxNum" class="form-control" />
+        </div>
+        <div class="layui-input-inline" style="width: 300px;">
+            <label asp-for="MaxNum" class="layui-form-label"></label>
+            <div class="layui-input-inline" style="width: 200px;">
+                <input asp-for="MaxNum" class="layui-input" />
                 <span asp-validation-for="MaxNum" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Size" class="control-label"></label>
-                <input asp-for="Size" class="form-control" />
+        </div>
+    </div>
+    <div class="layui-inline">
+        <div class="layui-input-inline" style="width: 300px;">
+            <label asp-for="Size" class="layui-form-label"></label>
+            <div class="layui-input-inline" style="width: 200px;">
+                <input asp-for="Size" class="layui-input" />
                 <span asp-validation-for="Size" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="UnitName" class="control-label"></label>
-                <select asp-items="@Model.Measures" asp-for="UnitName" class="form-control"></select>
+        </div>
+        <div class="layui-input-inline" style="width: 300px;">
+            <label asp-for="UnitName" class="layui-form-label"></label>
+            <div class="layui-input-inline" style="width: 200px;">
+                <select asp-items="@Model.Measures" asp-for="UnitName" lay-verify="" lay-search></select>
                 <span asp-validation-for="UnitName" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="InPrice" class="control-label"></label>
-                <input asp-for="InPrice" class="form-control" />
+        </div>
+    </div>
+    <div class="layui-inline">
+        <div class="layui-input-inline" style="width: 300px;">
+            <label asp-for="InPrice" class="layui-form-label"></label>
+            <div class="layui-input-inline" style="width: 200px;">
+                <input asp-for="InPrice" class="layui-input" />
                 <span asp-validation-for="InPrice" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="OutPrice" class="control-label"></label>
-                <input asp-for="OutPrice" class="form-control" />
+        </div>
+        <div class="layui-input-inline" style="width: 300px;">
+            <label asp-for="OutPrice" class="layui-form-label"></label>
+            <div class="layui-input-inline" style="width: 200px;">
+                <input asp-for="OutPrice" class="layui-input" />
                 <span asp-validation-for="OutPrice" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="AvgPrice" class="control-label"></label>
-                <input asp-for="AvgPrice" class="form-control" />
+        </div>
+    </div>
+    <div class="layui-inline">
+        <div class="layui-input-inline" style="width: 300px;">
+            <label asp-for="AvgPrice" class="layui-form-label"></label>
+            <div class="layui-input-inline" style="width: 200px;">
+                <input asp-for="AvgPrice" class="layui-input" />
                 <span asp-validation-for="AvgPrice" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="StorageNum" class="control-label"></label>
-                <select asp-items="@Model.Branchs" asp-for="StorageNum" class="form-control"></select>
+        </div>
+        <div class="layui-input-inline" style="width: 300px;">
+            <label asp-for="StorageNum" class="layui-form-label"></label>
+            <div class="layui-input-inline" style="width: 200px;">
+                <select asp-items="@Model.Branchs" asp-for="StorageNum" lay-verify="" lay-search></select>
                 <span asp-validation-for="StorageNum" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="CusName" class="control-label"></label>
-                <select asp-items="@Model.Customers" asp-for="CusName" class="form-control"></select>
-                <span asp-validation-for="CusName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CanDepositNum" class="control-label"></label>
-                <input asp-for="CanDepositNum" class="form-control" />
+        </div>
+    </div>
+    <div class="layui-inline">
+        <div class="layui-input-inline" style="width: 300px;">
+            <label asp-for="CanDepositNum" class="layui-form-label"></label>
+            <div class="layui-input-inline" style="width: 200px;">
+                <input asp-for="CanDepositNum" class="layui-input" />
                 <span asp-validation-for="CanDepositNum" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="ValidityDays" class="control-label"></label>
-                <input asp-for="ValidityDays" class="form-control" />
+        </div>
+        <div class="layui-input-inline" style="width: 300px;">
+            <label asp-for="CusName" class="layui-form-label"></label>
+            <div class="layui-input-inline" style="width: 200px;">
+                <select asp-items="@Model.Customers" asp-for="CusName" lay-verify="" lay-search></select>
+                <span asp-validation-for="CusName" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="layui-inline">
+        <div class="layui-input-inline" style="width: 300px;">
+            <label asp-for="ValidityDays" class="layui-form-label"></label>
+            <div class="layui-input-inline" style="width: 200px;">
+                <input asp-for="ValidityDays" class="layui-input" />
                 <span asp-validation-for="ValidityDays" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="VolumeSize" class="control-label"></label>
-                <input asp-for="VolumeSize" class="form-control" />
+        </div>
+        <div class="layui-input-inline" style="width: 300px;">
+            <label asp-for="VolumeSize" class="layui-form-label"></label>
+            <div class="layui-input-inline" style="width: 200px;">
+                <input asp-for="VolumeSize" class="layui-input" />
                 <span asp-validation-for="VolumeSize" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Volume" class="control-label"></label>
-                <input asp-for="Volume" class="form-control" />
+        </div>
+    </div>
+    <div class="layui-inline">
+        <div class="layui-input-inline" style="width: 300px;">
+            <label asp-for="Volume" class="layui-form-label"></label>
+            <div class="layui-input-inline" style="width: 200px;">
+                <input asp-for="Volume" class="layui-input" />
                 <span asp-validation-for="Volume" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Remark" class="control-label"></label>
-                <input asp-for="Remark" class="form-control" />
-                <span asp-validation-for="Remark" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="保存" class="layui-btn" />
-                <a asp-action="Index" class="layui-btn layui-btn-normal">返回</a>
-            </div>
-        </form>
+        </div>
     </div>
-</div>
+    <div class="layui-form-item layui-form-text">
+        <label asp-for="Remark" class="layui-form-label"></label>
+        <div class="layui-input-block">
+            <textarea name="Remark" placeholder="请输入内容" class="layui-textarea"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="保存" class="layui-btn" />
+        <a asp-action="Index" class="layui-btn layui-btn-normal">返回</a>
+    </div>
+</form>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+<script>
+//Demo
+layui.use('form', function(){
+  var form = layui.form;
+
+  //监听提交
+    form.on('submit(productForm)', function(data){
+    layer.msg(JSON.stringify(data.field));
+    return false;
+  });
+});
+</script>

@@ -30,7 +30,7 @@ namespace AccessManagement.Areas.Report.Controllers
         }
         public async Task<ActionResult> AjaxIndex()
         {
-            var result = await _inStorageServices.GetList(GetFilters(), GetSort());
+            var result = await _inStorageServices.GetListSupReport(GetFilters(), GetSort(),GetAccount());
             return Json(result);
         }
         public InStorageFilters GetFilters()
@@ -41,6 +41,9 @@ namespace AccessManagement.Areas.Report.Controllers
                 Limit = Convert.ToInt32(HttpContext.Request.Query["limit"]),
                 OrderNum = HttpContext.Request.Query["orderNum"],
                 Code = HttpContext.Request.Query["code"],
+                Status = HttpContext.Request.Query["status"],
+                StartDateTime = HttpContext.Request.Query["startTime"],
+                EndDateTime = HttpContext.Request.Query["endTime"],
             };
             return filters;
         }

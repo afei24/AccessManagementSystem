@@ -65,6 +65,10 @@ namespace AccessManagement.Controllers
 
         public ActionResult Login()
         {
+            //HttpContext.Session.Set("account", null);
+            //HttpContext.Session.Set("branch", null);
+            //HttpContext.Session.Set("company", null);
+            //HttpContext.Session.Set("functions", null);
             return View(new AccountViewModel());
         }
 
@@ -78,9 +82,10 @@ namespace AccessManagement.Controllers
                 var vmAccount = _mapper.Map<AccountViewModel>(account);
                 var branch = _mapper.Map<BranchViewModel>(account.Branch);
                 var company = _mapper.Map<CompanyViewModel>(account.Company);
-                var functionIds = account.AccountFunction.Select(o=>o.FunctionId).ToList();
+                var functionIds = _context.AccountFunction.Where(o=>o.AccountId == account.Id).Select(o=>o.FunctionId).ToList();
                 var functions = _context.Function.Where(o=>functionIds.Contains(o.Id)).ToList();
-                foreach (var accountRole in account.AccountRole)
+                var accountRoles = _context.AccountRole.Where(o=>o.AccountId == account.Id).ToList();
+                foreach (var accountRole in accountRoles)
                 {
                     var _functionIds =await _context.FunctionRole.Where(o=>o.RoleId == accountRole.RoleId)
                         .Select(o=>o.FunctionId).ToListAsync();

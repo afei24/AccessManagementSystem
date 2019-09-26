@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AccessManagement.Controllers;
+using AccessManagementServices.Common;
 using AccessManagementServices.Filters;
 using AccessManagementServices.Services;
 using Microsoft.AspNetCore.Http;
@@ -29,7 +30,7 @@ namespace AccessManagement.Areas.Report.Controllers
         }
         public async Task<ActionResult> AjaxIndex()
         {
-            var result = await _localProductServices.GetList(GetFilters(), GetSort());
+            var result = await _localProductServices.GetList(GetFilters(), GetSort(),GetAccount());
             return Json(result);
         }
         public LocalProductFilters GetFilters()
@@ -38,8 +39,8 @@ namespace AccessManagement.Areas.Report.Controllers
             {
                 Page = Convert.ToInt32(HttpContext.Request.Query["page"]),
                 Limit = Convert.ToInt32(HttpContext.Request.Query["limit"]),
-                OrderNum = HttpContext.Request.Query["orderNum"],
-                Code = HttpContext.Request.Query["code"],
+                LocalNum = HttpContext.Request.Query["localNum"],
+                ProductNum = HttpContext.Request.Query["productNum"],
             };
             return filters;
         }
@@ -112,6 +113,22 @@ namespace AccessManagement.Areas.Report.Controllers
                 // TODO: Add delete logic here
 
                 return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        public async Task<ActionResult> DeleteIds(string ids)
+        {
+            try
+            {
+                var result = await _localProductServices.Delete(ids);
+                if (result.Status == Status.ok)
+                    return Json("ok");
+                else
+                    return Json(result.Message);
             }
             catch
             {

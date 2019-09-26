@@ -74,8 +74,12 @@ namespace AccessManagement.Api
                         _appmenus.Add(_parent);
                     }
                 }
-                
-                return new ApiResponse() { code = 0, data = _appmenus };
+                if (HttpContext.Session.Get("account") == null)
+                {
+                    return new ApiResponse() { code = -1 };
+                }
+                var account = (AccountViewModel)SerializeHelper.DeserializeWithBinary(HttpContext.Session.Get("account"));
+                return new ApiResponse() { code = 0, data = _appmenus,message = account.Name };
             }
             else
             {

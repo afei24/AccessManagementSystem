@@ -24,13 +24,35 @@ namespace AccessManagementServices.Services
         {
             _context = context;
         }
-        public async Task<ResponseModel<LocalProductViewModel>> GetList(LocalProductFilters filters, SortCol sortCol)
+        public async Task<ResponseModel<LocalProductViewModel>> GetList(LocalProductFilters filters, SortCol sortCol,AccountViewModel account)
         {
-            var query = _context.LocalProduct.Where(o => o.Id != 0);
+            var query = _context.LocalProduct.Where(o => o.CompanyId == account.CompanyId);
             query = Search(query, filters);
             query = Sort(query, sortCol);
             var vms = await query.Skip((filters.Page - 1) * filters.Limit).Take(filters.Limit)
                 .ProjectTo<LocalProductViewModel>().ToListAsync();
+            var barCodes = vms.Select(o=>o.BarCode).ToList();
+            var products = _context.Product.Where(o=> barCodes.Contains(o.BarCode)).ToList();
+            foreach (var vm in vms)
+            {
+                var product = products.FirstOrDefault(o=>o.BarCode == vm.BarCode);
+                if (product == null)
+                {
+                    continue;
+                }
+                if (vm.Num < product.MinNum)
+                {
+                    vm.Status = "下限预警";
+                }
+                else if (vm.Num > product.MaxNum)
+                {
+                    vm.Status = "上限预警";
+                }
+                else
+                {
+                    vm.Status = "正常";
+                }
+            }
             ResponseModel<LocalProductViewModel> result = new ResponseModel<LocalProductViewModel>();
             result.status = 0;
             result.message = "";
@@ -54,9 +76,14 @@ namespace AccessManagementServices.Services
         }
         public IQueryable<LocalProduct> Search(IQueryable<LocalProduct> query, LocalProductFilters filters)
         {
-            if (!string.IsNullOrWhiteSpace(filters.OrderNum))
+            if (!string.IsNullOrWhiteSpace(filters.LocalNum))
             {
-                query = query.Where(o => o.BarCode.Contains(filters.OrderNum));
+                query = query.Where(o => o.LocalNum.Contains(filters.LocalNum));
+            }
+
+            if (!string.IsNullOrWhiteSpace(filters.ProductNum))
+            {
+                query = query.Where(o => o.ProductNum.Contains(filters.ProductNum));
             }
             return query;
         }

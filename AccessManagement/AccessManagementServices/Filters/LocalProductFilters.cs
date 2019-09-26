@@ -6,7 +6,7 @@ namespace AccessManagementServices.Filters
 {
     public class LocalProductFilters : BaseFilters
     {
-        public string OrderNum { get; set; }
-        public string Code { get; set; }
+        public string LocalNum { get; set; }
+        public string ProductNum { get; set; }
     }
 }
